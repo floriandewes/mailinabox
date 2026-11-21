@@ -82,7 +82,7 @@ On the machine:
 ```
 sudo apt update
 sudo apt install -y git
-git clone https://github.com/quantenland/mailinabox
+git clone https://github.com/floriandewes/mailinabox
 cd mailinabox
 sudo setup/start.sh
 ```
