@@ -464,32 +464,54 @@ def post_install_func(env):
 	ret = []
 
 	# Get the certificate to use for PRIMARY_HOSTNAME.
+	# use_main_cert=False + allow_missing_cert=True is required: with the
+	# default allow_missing_cert=False, get_domain_ssl_files falls back to
+	# returning ssl_certificate.pem itself when no real cert is found, and
+	# the symlink update below would then create a self-referential loop
+	# (ssl_certificate.pem -> ssl_certificate.pem), which breaks nginx.
 	ssl_certificates = get_ssl_certificates(env)
-	cert = get_domain_ssl_files(env['PRIMARY_HOSTNAME'], ssl_certificates, env, use_main_cert=False)
+	cert = get_domain_ssl_files(env['PRIMARY_HOSTNAME'], ssl_certificates, env,
+		use_main_cert=False, allow_missing_cert=True)
+	system_ssl_certificate = os.path.join(env["STORAGE_ROOT"], 'ssl', 'ssl_certificate.pem')
+
 	if not cert:
 		# Ruh-row, we don't have any certificate usable
-		# for the primary hostname.
+		# for the primary hostname. Do not touch the symlink.
 		ret.append("there is no valid certificate for " + env['PRIMARY_HOSTNAME'])
+	else:
+		ssl_certificate = os.path.abspath(cert['certificate'])
+		system_ssl_certificate_abs = os.path.abspath(system_ssl_certificate)
 
-	# Symlink the best cert for PRIMARY_HOSTNAME to the system
-	# certificate path, which is hard-coded for various purposes, and then
-	# restart postfix and dovecot.
-	system_ssl_certificate = os.path.join(os.path.join(env["STORAGE_ROOT"], 'ssl', 'ssl_certificate.pem'))
-	if cert and os.readlink(system_ssl_certificate) != cert['certificate']:
-		# Update symlink.
-		ret.append("updating primary certificate")
-		ssl_certificate = cert['certificate']
-		os.unlink(system_ssl_certificate)
-		os.symlink(ssl_certificate, system_ssl_certificate)
+		# Never point the system certificate path at itself.
+		if ssl_certificate == system_ssl_certificate_abs:
+			ret.append("refusing to create a self-referential SSL certificate symlink for " + env['PRIMARY_HOSTNAME'])
+		elif not os.path.isfile(ssl_certificate):
+			ret.append("certificate file is missing or unreadable: " + ssl_certificate)
+		else:
+			# Symlink the best cert for PRIMARY_HOSTNAME to the system
+			# certificate path, which is hard-coded for various purposes, and then
+			# restart postfix and dovecot.
+			current_target = None
+			if os.path.islink(system_ssl_certificate):
+				current_target = os.readlink(system_ssl_certificate)
+				if not os.path.isabs(current_target):
+					current_target = os.path.abspath(os.path.join(
+						os.path.dirname(system_ssl_certificate_abs), current_target))
+			if current_target != ssl_certificate:
+				# Update symlink (replace broken/self/stale links and regular files).
+				ret.append("updating primary certificate")
+				if os.path.lexists(system_ssl_certificate):
+					os.unlink(system_ssl_certificate)
+				os.symlink(ssl_certificate, system_ssl_certificate)
 
-		# Restart postfix and dovecot so they pick up the new file.
-		shell('check_call', ["/usr/sbin/service", "postfix", "restart"])
-		shell('check_call', ["/usr/sbin/service", "dovecot", "restart"])
-		ret.append("mail services restarted")
+				# Restart postfix and dovecot so they pick up the new file.
+				shell('check_call', ["/usr/sbin/service", "postfix", "restart"])
+				shell('check_call', ["/usr/sbin/service", "dovecot", "restart"])
+				ret.append("mail services restarted")
 
-		# The DANE TLSA record will remain valid so long as the private key
-		# hasn't changed. We don't ever change the private key automatically.
-		# If the user does it, they must manually update DNS.
+				# The DANE TLSA record will remain valid so long as the private key
+				# hasn't changed. We don't ever change the private key automatically.
+				# If the user does it, they must manually update DNS.
 
 	# Update the web configuration so nginx picks up the new certificate file.
 	from web_update import do_web_update

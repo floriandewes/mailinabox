@@ -69,7 +69,15 @@ fi
 # Generate a self-signed SSL certificate because things like nginx, dovecot,
 # etc. won't even start without some certificate in place, and we need nginx
 # so we can offer the user a control panel to install a better certificate.
-if [ ! -f "$STORAGE_ROOT/ssl/ssl_certificate.pem" ]; then
+#
+# A broken or self-referential ssl_certificate.pem symlink (-f follows links and
+# is false in both cases) must be treated as missing and replaced, or nginx
+# fails with "Too many levels of symbolic links".
+SYSTEM_CERT="$STORAGE_ROOT/ssl/ssl_certificate.pem"
+if [ -L "$SYSTEM_CERT" ] && [ ! -f "$SYSTEM_CERT" ]; then
+	rm -f "$SYSTEM_CERT"
+fi
+if [ ! -f "$SYSTEM_CERT" ]; then
 	# Generate a certificate signing request.
 	CSR=/tmp/ssl_cert_sign_req-$$.csr
 	hide_output \
@@ -86,8 +94,12 @@ if [ ! -f "$STORAGE_ROOT/ssl/ssl_certificate.pem" ]; then
 	rm -f $CSR
 
 	# Symlink the certificate into the system certificate path, so system services
-	# can find it.
-	ln -s "$CERT" "$STORAGE_ROOT/ssl/ssl_certificate.pem"
+	# can find it. -sfn replaces any stale/broken link; refuse a self-target.
+	if [ "$CERT" = "$SYSTEM_CERT" ]; then
+		echo "Refusing to create self-referential SSL certificate symlink." >&2
+		exit 1
+	fi
+	ln -sfn "$CERT" "$SYSTEM_CERT"
 fi
 
 # Generate some Diffie-Hellman cipher bits.
