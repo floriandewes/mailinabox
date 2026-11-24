@@ -15,6 +15,15 @@ source setup/functions.sh # load our functions
 echo "$PRIMARY_HOSTNAME" > /etc/hostname
 hostname "$PRIMARY_HOSTNAME"
 
+# Ensure PRIMARY_HOSTNAME resolves locally to loopback. Roundcube's CardDAV
+# plugin calls https://$PRIMARY_HOSTNAME/cloud/... on every login. If public
+# DNS points at the wrong IP or the hoster has no NAT hairpin, that HTTPS
+# request hangs until nginx returns 504 on POST /mail/?_task=login.
+# Reuse an existing loopback mapping if present; otherwise add one.
+if ! grep -E '^[[:space:]]*127\.[0-9.]+[[:space:]]' /etc/hosts | grep -qw "$PRIMARY_HOSTNAME"; then
+	echo "127.0.0.1 $PRIMARY_HOSTNAME" >> /etc/hosts
+fi
+
 # ### Fix permissions
 
 # The default Ubuntu Bionic image on Scaleway throws warnings during setup about incorrect

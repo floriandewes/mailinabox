@@ -155,6 +155,11 @@ cat > $RCM_CONFIG <<EOF;
 EOF
 
 # Configure CardDav
+#
+# Keep the URL on PRIMARY_HOSTNAME (not 127.0.0.1): Nextcloud's trusted_domains
+# and the TLS certificate are for that name. Local resolution must hit this
+# box — setup/system.sh maps PRIMARY_HOSTNAME to 127.0.0.1 in /etc/hosts so
+# login does not depend on public DNS or NAT hairpin (nginx 504 otherwise).
 cat > ${RCM_PLUGIN_DIR}/carddav/config.inc.php <<EOF;
 <?php
 /* Do not edit. Written by Mail-in-a-Box. Regenerated on updates. */
