@@ -112,6 +112,22 @@ PRIVATE_IPV6=$PRIVATE_IPV6
 MTA_STS_MODE=${DEFAULT_MTA_STS_MODE:-enforce}
 EOF
 
+# Capture installed packages before setup starts installing the mail
+# stack. The uninstaller diffs against this file to decide what apt
+# packages to purge. Only do this on first-time setup: capturing on a
+# later re-run would snapshot Mail-in-a-Box packages as the baseline and
+# make uninstall via diff a no-op. Existing baselines are never
+# overwritten. questions.sh may already have pulled in dialog/python;
+# those stay in the baseline and are kept. Boxes installed before this
+# feature have no baseline; uninstall falls back to a curated list.
+source setup/package-baseline.sh
+if [ -n "${FIRST_TIME_SETUP:-}" ]; then
+	capture_package_baseline "$STORAGE_ROOT"
+elif [ ! -f "$(package_baseline_path "$STORAGE_ROOT")" ]; then
+	echo "Note: no package baseline at $STORAGE_ROOT/installer/dpkg-selections-baseline.txt"
+	echo "Uninstall will use the curated Mail-in-a-Box package list (see setup/uninstall.sh)."
+fi
+
 # Start service configuration.
 source setup/system.sh
 source setup/ssl.sh

@@ -105,6 +105,33 @@ Log in with the email address and the password you just chose. If the hostname d
 
 To change an answer later, run `sudo mailinabox` from this directory.
 
+Uninstall
+---------
+
+Setup records a package baseline early in install at `$STORAGE_ROOT/installer/dpkg-selections-baseline.txt` (normally `/home/user-data/installer/...`). The uninstaller uses that baseline to purge packages the installer added, and also reverses other side effects (systemd units, cron, nginx fragments, fail2ban jails, `/usr/local/lib` trees, and so on).
+
+From the repository root:
+
+```
+sudo setup/uninstall.sh
+```
+
+Confirm with `YES`, or pass `--yes` for non-interactive use. **Mail and other data under `/home/user-data` are kept by default.** To delete that data as well:
+
+```
+sudo setup/uninstall.sh --yes --purge-data
+```
+
+Use `--dry-run` to print actions without changing the system.
+
+If the box was installed before baseline capture existed, uninstall falls back to a curated package list from `setup/*.sh` and may leave some installer-pulled dependencies behind. On a clean machine (or after uninstall), you can record a baseline for the next install with:
+
+```
+sudo setup/uninstall.sh --record-baseline
+```
+
+After uninstall, review `ufw status` and `/etc/resolv.conf`. Prefer a fresh OS image when you want a completely clean slate; otherwise you can keep `/home/user-data` and run `sudo setup/start.sh` again to reinstall on top of existing data.
+
 The [upstream setup guide](https://mailinabox.email/guide.html) describes the same kind of appliance. Install from this repository, not from that guide's one-line installer, which tracks the upstream Ubuntu release.
 
 For help, DO NOT contact Josh directly --- I don't do tech support by email or tweet (no exceptions).
