@@ -38,7 +38,9 @@ Config file search order (first existing file wins):
 
 Copy conf/install.conf.example to install.conf and fill in values.
 Required for first-time headless install:
-  PRIMARY_HOSTNAME, PUBLIC_IP, EMAIL_ADDR, EMAIL_PW
+  PRIMARY_HOSTNAME  (explicit FQDN; "auto" is not allowed)
+  PUBLIC_IP         (IPv4 address, or "auto" to detect)
+  EMAIL_ADDR, EMAIL_PW
 Optional:
   PUBLIC_IPV6, STORAGE_USER, STORAGE_ROOT, TIMEZONE, SKIP_NETWORK_CHECKS
 EOF
@@ -180,14 +182,27 @@ if [ -n "${INSTALL_CONFIG_STRICT:-}" ] && [ ! -f /etc/mailinabox.conf ]; then
 		echo "or pass --config=PATH. See: setup/start.sh --help" >&2
 		exit 1
 	fi
-	require_install_var PRIMARY_HOSTNAME "e.g. box.example.com or auto"
+	require_install_var PRIMARY_HOSTNAME "explicit FQDN, e.g. box.example.com"
 	require_install_var PUBLIC_IP "IPv4 address or auto"
 	require_install_var EMAIL_ADDR "first admin email"
 	require_install_var EMAIL_PW "password, min 8 characters"
+	if [ "${PRIMARY_HOSTNAME}" = "auto" ]; then
+		echo "PRIMARY_HOSTNAME must be an explicit FQDN (e.g. box.example.com)." >&2
+		echo "The value \"auto\" is not allowed for headless/agent installs." >&2
+		exit 1
+	fi
 	if [ "${#EMAIL_PW}" -lt 8 ]; then
 		echo "EMAIL_PW must be at least 8 characters." >&2
 		exit 1
 	fi
+fi
+
+# Config-file / agent path: reject PRIMARY_HOSTNAME=auto even without --noninteractive.
+# Vagrant may still set PRIMARY_HOSTNAME=auto via the environment without a config file.
+if [ -n "${MAILINABOX_CONFIG:-}" ] && [ "${PRIMARY_HOSTNAME:-}" = "auto" ]; then
+	echo "PRIMARY_HOSTNAME must be an explicit FQDN (e.g. box.example.com)." >&2
+	echo "The value \"auto\" is not allowed in install.conf." >&2
+	exit 1
 fi
 
 unset _MIAB_SETUP_DIR _MIAB_REPO_ROOT MAILINABOX_CONFIG_RESOLVED

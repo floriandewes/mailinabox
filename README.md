@@ -79,10 +79,10 @@ sudo setup/start.sh --noninteractive --config=/path/to/install.conf
 
 | Key | What to ask the user | Notes |
 | --- | --- | --- |
-| `PRIMARY_HOSTNAME` | What should this box be called in DNS? | FQDN; suggested `box.<their-domain>`. Use `auto` only for tests (machine FQDN). |
+| `PRIMARY_HOSTNAME` | What should this box be called in DNS? | **Explicit FQDN required** (suggested `box.<their-domain>`). `auto` is rejected for headless/agent installs. |
 | `EMAIL_ADDR` | First admin email address? | Domain after `@` must be one they control. Becomes control-panel login. |
 | `EMAIL_PW` | Password for that account? | Minimum 8 characters. Stored in the config file — protect the file. |
-| `PUBLIC_IP` | Public IPv4 of this machine? | From VPS panel / ISP. Or `auto` to detect. |
+| `PUBLIC_IP` | Public IPv4 of this machine? | From VPS panel / ISP, **or `auto`** to detect (common on DHCP/VPS). |
 
 **Optional values:**
 
@@ -99,8 +99,8 @@ sudo setup/start.sh --noninteractive --config=/path/to/install.conf
 * No config file → interactive prompts (unchanged default).
 * Complete `install.conf` (all required keys set) → setup skips prompts even without the flag; still prefer `--noninteractive` so agents fail loudly if a key is missing.
 * `--noninteractive` / `--headless` with incomplete config → exit with an error (does not hang on dialog/`getpass`).
-* Let's Encrypt: setup still auto-agrees to the subscriber agreement (same as interactive). Ensure the hostname will resolve to this box before expecting valid public certificates.
-* After install, the user must point nameserver (or equivalent) records at the box; the control panel shows what to set.
+* TLS / Let's Encrypt: unchanged from interactive install — setup auto-agrees to the LE subscriber agreement and uses a self-signed certificate until DNS for `PRIMARY_HOSTNAME` points at this box; public LE certs come after that.
+* **TODO:** agent-oriented DNS guidance (glue records, nameservers at the registrar, and related post-install steps) is not documented here yet — coming later. Until then, the control panel lists the records to set after install.
 
 See `conf/install.conf.example` for a commented template.
 
