@@ -23,21 +23,27 @@
 
 # --- Required for first-time headless install --------------------------------
 
-# Fully qualified hostname for this box (DNS A/AAAA should point here later).
+# Fully qualified hostname for this box. DNS (A/AAAA/NS) need not resolve
+# yet — install may proceed with self-signed TLS; point DNS afterward.
 # Suggested form: box.example.com
 # Must be an explicit FQDN — "auto" is not allowed for headless/agent installs.
+# Agents: ask the user; do not invent.
 PRIMARY_HOSTNAME=box.example.com
 
 # First mail account (also the control-panel admin). The domain after @ must
 # be one you control. You can add more addresses after install.
+# Agents: must ask the user. Never invent admin@ from PRIMARY_HOSTNAME.
 EMAIL_ADDR=me@example.com
 
 # Password for EMAIL_ADDR (minimum 8 characters). Prompt does not echo in
 # interactive installs; here it must be set explicitly for headless use.
+# Agents: ask whether to generate or use a user-provided password; if
+# generating, show it once securely.
 EMAIL_PW=change-me-now
 
 # Public IPv4 of this machine. Prefer the address from the VPS panel / ISP.
 # "auto" is allowed: setup detects the public IP (typical on DHCP/VPS).
+# Agents: confirm PUBLIC_IP=auto is OK, or take an explicit IP.
 PUBLIC_IP=auto
 
 # --- Optional ----------------------------------------------------------------
@@ -51,7 +57,8 @@ PUBLIC_IPV6=
 #STORAGE_ROOT=/home/user-data
 
 # System time zone (IANA name). Used instead of the interactive tzdata
-# prompt. Default when unset in headless mode: Etc/UTC.
+# prompt. Agents: must ask; do not silently default. Only if the user
+# declines, leave unset (headless default: Etc/UTC) and say so.
 #TIMEZONE=Europe/Berlin
 
 # Set to 1 to skip Spamhaus hostname/IP and outbound port-25 checks.
