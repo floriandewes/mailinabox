@@ -18,8 +18,8 @@ Requirements
 * **Inbound ports used:** 22 (SSH), 25/465/587 (SMTP), 80/443 (HTTP/HTTPS), 53 TCP/UDP (DNS), 993/995 (IMAP/POP), 4190 (ManageSieve)
 
 
-Installation
-------------
+Manual install
+--------------
 
 On the machine:
 
@@ -48,6 +48,61 @@ When it finishes it prints `Your Mail-in-a-Box is running.` and the control pane
 Log in with that email and password. If DNS is not ready yet, use the `https://<ip>/admin` address printed at the end and verify the certificate fingerprint. The control panel lists the nameserver records to set at your registrar.
 
 To change an answer later, run `sudo mailinabox` from this directory.
+
+
+### Agentic AI
+
+Agents can install Mail-in-a-Box without a TTY by writing a single config file, then running setup with `--noninteractive`. **Collect every value from the user before writing the file** — setup will not prompt, and missing required keys abort immediately.
+
+**Config file location (search order, first existing file wins):**
+
+1. `--config=/path/to/file` on the command line
+2. `$MAILINABOX_CONFIG` environment variable
+3. `install.conf` in the repository root (recommended; same directory as `README.md`)
+4. `$HOME/mailinabox-install.conf`
+
+Copy the example and edit it:
+
+```
+cp conf/install.conf.example install.conf
+# edit install.conf — never commit it (it is gitignored; it holds EMAIL_PW)
+sudo setup/start.sh --noninteractive
+```
+
+Or pass an explicit path:
+
+```
+sudo setup/start.sh --noninteractive --config=/path/to/install.conf
+```
+
+**Values the agent must collect (required for first-time headless install):**
+
+| Key | What to ask the user | Notes |
+| --- | --- | --- |
+| `PRIMARY_HOSTNAME` | What should this box be called in DNS? | FQDN; suggested `box.<their-domain>`. Use `auto` only for tests (machine FQDN). |
+| `EMAIL_ADDR` | First admin email address? | Domain after `@` must be one they control. Becomes control-panel login. |
+| `EMAIL_PW` | Password for that account? | Minimum 8 characters. Stored in the config file — protect the file. |
+| `PUBLIC_IP` | Public IPv4 of this machine? | From VPS panel / ISP. Or `auto` to detect. |
+
+**Optional values:**
+
+| Key | What to ask the user | Default if omitted |
+| --- | --- | --- |
+| `PUBLIC_IPV6` | Public IPv6, if any? | Empty (none). Or `auto` to detect. |
+| `STORAGE_USER` | System user that owns mail data? | `user-data` |
+| `STORAGE_ROOT` | Directory for mail / Nextcloud data? | `/home/user-data` |
+| `TIMEZONE` | IANA time zone for cron/backups? | `Etc/UTC` in headless mode (interactive installs use `tzdata`) |
+| `SKIP_NETWORK_CHECKS` | Skip Spamhaus / outbound port-25 checks? | unset (checks run). Set to `1` only if the user understands the risk. |
+
+**Behavior:**
+
+* No config file → interactive prompts (unchanged default).
+* Complete `install.conf` (all required keys set) → setup skips prompts even without the flag; still prefer `--noninteractive` so agents fail loudly if a key is missing.
+* `--noninteractive` / `--headless` with incomplete config → exit with an error (does not hang on dialog/`getpass`).
+* Let's Encrypt: setup still auto-agrees to the subscriber agreement (same as interactive). Ensure the hostname will resolve to this box before expecting valid public certificates.
+* After install, the user must point nameserver (or equivalent) records at the box; the control panel shows what to set.
+
+See `conf/install.conf.example` for a commented template.
 
 
 Uninstall

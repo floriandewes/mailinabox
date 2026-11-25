@@ -1,0 +1,57 @@
+# Mail-in-a-Box headless install config (KEY=VALUE)
+#
+# Recommended location (first default search path):
+#   copy this file to install.conf in the repository root
+#   (same directory as README.md / setup/)
+#
+# Alternate location:
+#   $HOME/mailinabox-install.conf
+#
+# Override path:
+#   sudo setup/start.sh --noninteractive --config=/path/to/file
+#   sudo MAILINABOX_CONFIG=/path/to/file setup/start.sh --noninteractive
+#
+# Search order: --config=PATH, $MAILINABOX_CONFIG, ./install.conf,
+# then $HOME/mailinabox-install.conf.
+#
+# When this file is present and all required keys below are set, setup
+# asks no questions. With --noninteractive, missing keys fail immediately
+# (agents must not hang). Without a config file, install stays interactive.
+#
+# Do not commit a filled-in install.conf — it contains the admin password.
+# install.conf is listed in .gitignore.
+
+# --- Required for first-time headless install --------------------------------
+
+# Fully qualified hostname for this box (DNS A/AAAA should point here later).
+# Suggested form: box.example.com
+# Use "auto" to take the machine's current FQDN (testing only).
+PRIMARY_HOSTNAME=box.example.com
+
+# First mail account (also the control-panel admin). The domain after @ must
+# be one you control. You can add more addresses after install.
+EMAIL_ADDR=me@example.com
+
+# Password for EMAIL_ADDR (minimum 8 characters). Prompt does not echo in
+# interactive installs; here it must be set explicitly for headless use.
+EMAIL_PW=change-me-now
+
+# Public IPv4 address of this machine, as given by your ISP / VPS panel.
+# Use "auto" to detect via a public API (or local interface).
+PUBLIC_IP=auto
+
+# --- Optional ----------------------------------------------------------------
+
+# Public IPv6. Leave empty if the machine has none; set an address; or "auto".
+PUBLIC_IPV6=
+
+# Storage account and directory for mail / Nextcloud data (defaults shown).
+#STORAGE_USER=user-data
+#STORAGE_ROOT=/home/user-data
+
+# System time zone (IANA name). Used instead of the interactive tzdata
+# prompt. Default when unset in headless mode: Etc/UTC.
+#TIMEZONE=Europe/Berlin
+
+# Set to 1 to skip Spamhaus hostname/IP and outbound port-25 checks.
+#SKIP_NETWORK_CHECKS=1
