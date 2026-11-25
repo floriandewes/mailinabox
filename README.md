@@ -14,7 +14,7 @@ Requirements
 * **RAM:** 512 MB minimum (setup refuses less); 768 MB+ recommended to avoid load warnings; 1 GB+ preferred
 * **Disk:** enough for the OS plus growing mail/Nextcloud data; if RAM is under 2 GB, setup may create a 1 GB swap file when ≥5 GB free disk is available
 * **Network:** public IPv4 (IPv6 optional); outbound TCP port 25 must work (residential ISPs often block it)
-* **Hostname / DNS:** a domain you control; suggested hostname `box.<your-domain>`; you will point nameserver (or equivalent) records at this box after install
+* **Hostname / DNS:** a domain you control; suggested hostname `box.<your-domain>`; DNS (A/AAAA/NS) need not resolve before install — point nameserver (or equivalent) records at this box afterward
 * **Inbound ports used:** 22 (SSH), 25/465/587 (SMTP), 80/443 (HTTP/HTTPS), 53 TCP/UDP (DNS), 993/995 (IMAP/POP), 4190 (ManageSieve)
 
 
@@ -52,47 +52,58 @@ To change an answer later, run `sudo mailinabox` from this directory.
 
 ### Agentic AI
 
-Agents can install Mail-in-a-Box without a TTY by writing a single config file, then running setup with `--noninteractive`. **Collect every value from the user before writing the file** — setup will not prompt, and missing required keys abort immediately.
+Agents install without a TTY by writing `install.conf`, then running setup with `--noninteractive`. Setup will not prompt; missing required keys abort immediately. Follow this checklist in order.
 
-**Config file location (search order, first existing file wins):**
+**1. Ask the user (do not invent or derive silently)**
+
+Collect these before writing any config file:
+
+| Key | Ask | Rules |
+| --- | --- | --- |
+| `PRIMARY_HOSTNAME` | What FQDN should this box use? | **Must ask.** Explicit FQDN only (suggested `box.<their-domain>`). `auto` is rejected. |
+| `EMAIL_ADDR` | What should the first admin mailbox be? | **Must ask.** Never invent `admin@` (or any address) from the hostname. Domain after `@` must be one they control. Becomes control-panel login. |
+| `EMAIL_PW` | Generate a password, or use one you provide? | **Must ask.** If generating, show the password once securely (minimum 8 characters). Stored in the config file — protect the file. |
+| `TIMEZONE` | What IANA time zone should the box use? | **Must ask** (e.g. `Europe/Berlin`). Do not silently default. Only if the user declines, use `Etc/UTC` and say so. |
+| `PUBLIC_IP` | Is `PUBLIC_IP=auto` OK, or what is the public IPv4? | **Must confirm.** `auto` detects on typical VPS/DHCP; otherwise take an explicit address from the VPS panel / ISP. |
+
+Also ask when relevant (defaults apply if omitted):
+
+| Key | Ask | Default if omitted |
+| --- | --- | --- |
+| `PUBLIC_IPV6` | Public IPv6, if any? | Empty (none). Or `auto` to detect. |
+| `STORAGE_USER` | System user that owns mail data? | `user-data` |
+| `STORAGE_ROOT` | Directory for mail / Nextcloud data? | `/home/user-data` |
+| `SKIP_NETWORK_CHECKS` | Skip Spamhaus / outbound port-25 checks? | unset (checks run). Set to `1` only if the user understands the risk. |
+
+**DNS timing:** The primary hostname and domain do **not** need to resolve (A/AAAA/NS) before installation. Proceed even if DNS is unset; setup uses a self-signed certificate until DNS points here. Glue records, registrar nameservers, and the A/AAAA for `PRIMARY_HOSTNAME` can be configured afterward. (**TODO:** fuller agent-oriented DNS guidance later. Until then, the control panel lists the records to set after install.)
+
+**2. Write `install.conf`**
+
+Config search order (first existing file wins):
 
 1. `--config=/path/to/file` on the command line
 2. `$MAILINABOX_CONFIG` environment variable
 3. `install.conf` in the repository root (recommended; same directory as `README.md`)
 4. `$HOME/mailinabox-install.conf`
 
-Copy the example and edit it:
-
 ```
 cp conf/install.conf.example install.conf
 # edit install.conf — never commit it (it is gitignored; it holds EMAIL_PW)
+```
+
+Or pass an explicit path with `--config=` / `$MAILINABOX_CONFIG`. See `conf/install.conf.example` for a commented template.
+
+**3. Run noninteractive setup**
+
+```
 sudo setup/start.sh --noninteractive
 ```
 
-Or pass an explicit path:
+Or: `sudo setup/start.sh --noninteractive --config=/path/to/install.conf`
 
-```
-sudo setup/start.sh --noninteractive --config=/path/to/install.conf
-```
+**4. Report back**
 
-**Values the agent must collect (required for first-time headless install):**
-
-| Key | What to ask the user | Notes |
-| --- | --- | --- |
-| `PRIMARY_HOSTNAME` | What should this box be called in DNS? | **Explicit FQDN required** (suggested `box.<their-domain>`). `auto` is rejected for headless/agent installs. |
-| `EMAIL_ADDR` | First admin email address? | Domain after `@` must be one they control. Becomes control-panel login. |
-| `EMAIL_PW` | Password for that account? | Minimum 8 characters. Stored in the config file — protect the file. |
-| `PUBLIC_IP` | Public IPv4 of this machine? | From VPS panel / ISP, **or `auto`** to detect (common on DHCP/VPS). |
-
-**Optional values:**
-
-| Key | What to ask the user | Default if omitted |
-| --- | --- | --- |
-| `PUBLIC_IPV6` | Public IPv6, if any? | Empty (none). Or `auto` to detect. |
-| `STORAGE_USER` | System user that owns mail data? | `user-data` |
-| `STORAGE_ROOT` | Directory for mail / Nextcloud data? | `/home/user-data` |
-| `TIMEZONE` | IANA time zone for cron/backups? | `Etc/UTC` in headless mode (interactive installs use `tzdata`) |
-| `SKIP_NETWORK_CHECKS` | Skip Spamhaus / outbound port-25 checks? | unset (checks run). Set to `1` only if the user understands the risk. |
+After success, tell the user: admin email, password (if you generated it — show once), control panel URL (`https://<PRIMARY_HOSTNAME>/admin` or the `https://<ip>/admin` URL printed at the end), and that DNS (glue / registrar NS / A record) still needs to be set — see the control panel System status / DNS pages. Reminder: hostname need not have resolved before install.
 
 **Behavior:**
 
@@ -100,9 +111,6 @@ sudo setup/start.sh --noninteractive --config=/path/to/install.conf
 * Complete `install.conf` (all required keys set) → setup skips prompts even without the flag; still prefer `--noninteractive` so agents fail loudly if a key is missing.
 * `--noninteractive` / `--headless` with incomplete config → exit with an error (does not hang on dialog/`getpass`).
 * TLS / Let's Encrypt: unchanged from interactive install — setup auto-agrees to the LE subscriber agreement and uses a self-signed certificate until DNS for `PRIMARY_HOSTNAME` points at this box; public LE certs come after that.
-* **TODO:** agent-oriented DNS guidance (glue records, nameservers at the registrar, and related post-install steps) is not documented here yet — coming later. Until then, the control panel lists the records to set after install.
-
-See `conf/install.conf.example` for a commented template.
 
 
 Uninstall
