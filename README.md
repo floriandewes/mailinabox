@@ -5,6 +5,81 @@ This is a fork of [Mail-in-a-Box](https://github.com/mail-in-a-box/mailinabox) b
 
 **The original project website and setup guide are at [https://mailinabox.email](https://mailinabox.email).**
 
+
+Requirements
+------------
+
+* **OS:** Debian 13 (Trixie) only — fresh machine dedicated to mail (installer aborts otherwise)
+* **CPU:** x86_64 or i686 (only architectures tested)
+* **RAM:** 512 MB minimum (setup refuses less); 768 MB+ recommended to avoid load warnings; 1 GB+ preferred
+* **Disk:** enough for the OS plus growing mail/Nextcloud data; if RAM is under 2 GB, setup may create a 1 GB swap file when ≥5 GB free disk is available
+* **Network:** public IPv4 (IPv6 optional); outbound TCP port 25 must work (residential ISPs often block it)
+* **Hostname / DNS:** a domain you control; suggested hostname `box.<your-domain>`; you will point nameserver (or equivalent) records at this box after install
+* **Inbound ports used:** 22 (SSH), 25/465/587 (SMTP), 80/443 (HTTP/HTTPS), 53 TCP/UDP (DNS), 993/995 (IMAP/POP), 4190 (ManageSieve)
+
+
+Installation
+------------
+
+On the machine:
+
+```
+sudo apt update
+sudo apt install -y git
+git clone https://github.com/floriandewes/mailinabox
+cd mailinabox
+sudo setup/start.sh
+```
+
+Install from the `main` branch of this repository. This port sets up a new box; it does not upgrade an older Mail-in-a-Box data directory. Do not use the upstream one-line installer at mailinabox.email — that tracks the Ubuntu release.
+
+Setup asks for:
+
+* Time zone (`tzdata`) — pick the zone you live in
+* Admin email address — the domain after `@` must be one you control
+* Hostname — keep the suggestion `box.` plus that domain
+* Public IP — when the machine cannot detect it; leave IPv6 empty if none
+* Password for the first mail account — the prompt does not echo it
+
+When it finishes it prints `Your Mail-in-a-Box is running.` and the control panel URL:
+
+	https://box.example.com/admin
+
+Log in with that email and password. If DNS is not ready yet, use the `https://<ip>/admin` address printed at the end and verify the certificate fingerprint. The control panel lists the nameserver records to set at your registrar.
+
+To change an answer later, run `sudo mailinabox` from this directory.
+
+
+Uninstall
+---------
+
+**Experimental.** The uninstaller is new tooling: test on a disposable machine before relying on it for a production box.
+
+Setup records a package baseline early in install at `$STORAGE_ROOT/installer/dpkg-selections-baseline.txt` (normally `/home/user-data/installer/...`). Uninstall uses that baseline to purge packages the installer added, and also reverses other side effects (systemd units, cron, nginx fragments, fail2ban jails, `/usr/local/lib` trees, and so on).
+
+From the repository root:
+
+```
+sudo setup/uninstall.sh
+```
+
+Confirm with `YES`, or pass `--yes` for non-interactive use. **Mail and other data under `/home/user-data` are kept by default.** To delete that data as well:
+
+```
+sudo setup/uninstall.sh --yes --purge-data
+```
+
+Use `--dry-run` to print actions without changing the system.
+
+If the box was installed before baseline capture existed, uninstall falls back to a curated package list from `setup/*.sh` and may leave some installer-pulled dependencies behind. On a clean machine (or after uninstall), you can record a baseline for the next install with:
+
+```
+sudo setup/uninstall.sh --record-baseline
+```
+
+After uninstall, review `ufw status` and `/etc/resolv.conf`. Prefer a fresh OS image for a completely clean slate; otherwise keep `/home/user-data` and run `sudo setup/start.sh` again to reinstall on top of existing data.
+
+
 Compared with the original
 --------------------------
 
@@ -70,42 +145,6 @@ Internationalized domain names are supported and configured easily (but SMTPUTF8
 It also supports static website hosting since the box is serving HTTPS anyway. (To serve a website for your domains elsewhere, just add a custom DNS "A" record in you Mail-in-a-Box's control panel to point domains to another server.)
 
 For more information on how Mail-in-a-Box handles your privacy, see the [security details page](security.md).
-
-
-Installation
-------------
-
-Use a fresh Debian 13 (Trixie) machine that will only run mail. The installer stops if it is not Debian 13. Give it at least 1 GB of RAM (the installer refuses to run below 512 MB) and a public IP address that can make outbound connections on port 25.
-
-On the machine:
-
-```
-sudo apt update
-sudo apt install -y git
-git clone https://github.com/floriandewes/mailinabox
-cd mailinabox
-sudo setup/start.sh
-```
-
-`main` is the branch to install. This port sets up a new box. It does not upgrade an older Mail-in-a-Box data directory.
-
-Setup asks for a few things:
-
-* The time zone, through Debian's `tzdata` prompt. Pick the zone you live in.
-* The email address that will administer the box. The domain after the `@` must be one you control.
-* The hostname. Keep the suggestion, `box.` plus that domain.
-* The public IP, when the machine cannot detect it. Leave IPv6 empty if the machine has none.
-* A password for that first mail account. The prompt does not echo it.
-
-The installer then installs and configures the mail stack and registers with Let's Encrypt. When it finishes it prints `Your Mail-in-a-Box is running.` and the control panel address:
-
-	https://box.example.com/admin
-
-Log in with the email address and the password you just chose. If the hostname does not resolve yet, open the `https://<ip>/admin` address printed at the end and check the certificate fingerprint shown there. The control panel lists the nameserver records to set at the domain registrar.
-
-To change an answer later, run `sudo mailinabox` from this directory.
-
-The [upstream setup guide](https://mailinabox.email/guide.html) describes the same kind of appliance. Install from this repository, not from that guide's one-line installer, which tracks the upstream Ubuntu release.
 
 For help, DO NOT contact Josh directly --- I don't do tech support by email or tweet (no exceptions).
 
