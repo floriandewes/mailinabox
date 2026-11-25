@@ -211,11 +211,18 @@ if [ -z "${NONINTERACTIVE:-}" ]; then
 		restart_service rsyslog
 	fi
 else
-	# This is a non-interactive setup so we can't ask the user.
-	# If /etc/timezone is missing, set it to UTC.
-	if [ ! -f /etc/timezone ]; then
-		echo "Setting timezone to UTC."
-		echo "Etc/UTC" > /etc/timezone
+	# Non-interactive: use TIMEZONE from install.conf / environment, else UTC.
+	# timedatectl keeps /etc/localtime correct on Debian 13; also write
+	# /etc/timezone for Nextcloud and Z-Push.
+	tz="${TIMEZONE:-Etc/UTC}"
+	if [ -n "${TIMEZONE:-}" ] || [ ! -f /etc/timezone ]; then
+		echo "Setting timezone to $tz."
+		if command -v timedatectl >/dev/null 2>&1; then
+			timedatectl set-timezone "$tz" || {
+				echo "Warning: timedatectl failed for '$tz'; writing /etc/timezone only." >&2
+			}
+		fi
+		echo "$tz" > /etc/timezone
 		restart_service rsyslog
 	fi
 fi

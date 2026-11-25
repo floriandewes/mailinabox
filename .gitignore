@@ -7,3 +7,6 @@ externals/
 .vagrant
 api/docs/api-docs.html
 *.code-workspace
+# Filled-in headless install config (may contain EMAIL_PW). See conf/install.conf.example.
+/install.conf
+mailinabox-install.conf

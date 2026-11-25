@@ -31,8 +31,19 @@ if [ -z "${NONINTERACTIVE:-}" ]; then
 		\n\nNOTE: You should only install this on a brand new Debian 13 (Trixie) installation 100% dedicated to Mail-in-a-Box. Mail-in-a-Box will, for example, remove apache2."
 fi
 
+# Fail closed in headless mode instead of calling dialog/getpass with no TTY.
+fail_missing_noninteractive() {
+	echo "Headless install is missing $1." >&2
+	echo "Set it in install.conf (see conf/install.conf.example) or pass it in the environment." >&2
+	exit 1
+}
+
 # The box needs a name.
 if [ -z "${PRIMARY_HOSTNAME:-}" ]; then
+	if [ -n "${NONINTERACTIVE:-}" ]; then
+		fail_missing_noninteractive "PRIMARY_HOSTNAME"
+	fi
+
 	if [ -z "${DEFAULT_PRIMARY_HOSTNAME:-}" ]; then
 		# We recommend to use box.example.com as this hosts name. The
 		# domain the user possibly wants to use is example.com then.
@@ -113,6 +124,10 @@ if [ -z "${PUBLIC_IP:-}" ]; then
 	fi
 
 	if [ -z "${PUBLIC_IP:-}" ]; then
+		if [ -n "${NONINTERACTIVE:-}" ]; then
+			fail_missing_noninteractive "PUBLIC_IP"
+		fi
+
 		input_box "Public IP Address" \
 			"Enter the public IP address of this machine, as given to you by your ISP.
 			\n\nPublic IP address:" \
@@ -140,20 +155,25 @@ if [ -z "${PUBLIC_IPV6:-}" ]; then
 		PUBLIC_IPV6=$GUESSED_IP
 		MATCHED=1
 	elif [[ -z "${DEFAULT_PUBLIC_IPV6:-}" ]]; then
-		DEFAULT_PUBLIC_IP=$(get_default_privateip 6)
+		DEFAULT_PUBLIC_IPV6=$(get_default_privateip 6)
 	fi
 
 	if [[ -z "${PUBLIC_IPV6:-}" && $MATCHED == 0 ]]; then
-		input_box "IPv6 Address (Optional)" \
-			"Enter the public IPv6 address of this machine, as given to you by your ISP.
-			\n\nLeave blank if the machine does not have an IPv6 address.
-			\n\nPublic IPv6 address:" \
-			"${DEFAULT_PUBLIC_IPV6:-}" \
-			PUBLIC_IPV6
+		# Headless: leave empty (no IPv6) rather than prompt.
+		if [ -n "${NONINTERACTIVE:-}" ]; then
+			PUBLIC_IPV6="${DEFAULT_PUBLIC_IPV6:-}"
+		else
+			input_box "IPv6 Address (Optional)" \
+				"Enter the public IPv6 address of this machine, as given to you by your ISP.
+				\n\nLeave blank if the machine does not have an IPv6 address.
+				\n\nPublic IPv6 address:" \
+				"${DEFAULT_PUBLIC_IPV6:-}" \
+				PUBLIC_IPV6
 
-		if [ ! -n "$PUBLIC_IPV6_EXITCODE" ]; then
-			# user hit ESC/cancel
-			exit
+			if [ ! -n "$PUBLIC_IPV6_EXITCODE" ]; then
+				# user hit ESC/cancel
+				exit
+			fi
 		fi
 	fi
 fi

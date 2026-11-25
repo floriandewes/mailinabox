@@ -31,7 +31,13 @@ if [ -z "$(management/cli.py user)" ]; then
 				fi
 			done
 
-		# But in a non-interactive shell, just make something up.
+		# Strict agent/headless installs must supply EMAIL_ADDR in install.conf.
+		elif [ -n "${INSTALL_CONFIG_STRICT:-}" ]; then
+			echo "Headless install requires EMAIL_ADDR for the first mail account." >&2
+			echo "Set it in install.conf (see conf/install.conf.example)." >&2
+			exit 1
+
+		# But in a non-interactive shell (e.g. Vagrant), just make something up.
 		# This is normally for testing.
 		else
 			# Use me@PRIMARY_HOSTNAME
@@ -45,6 +51,13 @@ if [ -z "$(management/cli.py user)" ]; then
 		echo
 		echo "Okay. I'm about to set up $EMAIL_ADDR for you. This account will also"
 		echo "have access to the box's control panel."
+	fi
+
+	# Headless/agent installs must not hang on getpass — require EMAIL_PW.
+	if [ -z "${EMAIL_PW:-}" ] && [ -n "${NONINTERACTIVE:-}" ]; then
+		echo "Headless install requires EMAIL_PW for $EMAIL_ADDR." >&2
+		echo "Set it in install.conf (see conf/install.conf.example)." >&2
+		exit 1
 	fi
 
 	# Create the user's mail account. This will ask for a password if none was given above.

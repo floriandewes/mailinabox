@@ -4,6 +4,10 @@
 
 source setup/functions.sh # load our functions
 
+# Optional headless install config (--noninteractive, --config=, install.conf).
+# Must run before preflight/questions so agents never hit dialog prompts.
+source setup/load-install-config.sh "$@"
+
 # Check system setup: Are we running as root on Ubuntu 18.04 on a
 # machine with enough memory? Is /tmp mounted with exec.
 # If not, this shows an error and exits.
@@ -53,10 +57,11 @@ fi
 
 # Put a start script in a global location. We tell the user to run 'mailinabox'
 # in the first dialog prompt, so we should do this before that starts.
+# Pass through CLI args so `mailinabox --noninteractive` keeps working.
 cat > /usr/local/bin/mailinabox << EOF;
 #!/bin/bash
 cd $PWD
-source setup/start.sh
+source setup/start.sh "\$@"
 EOF
 chmod +x /usr/local/bin/mailinabox
 
