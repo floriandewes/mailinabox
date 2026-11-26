@@ -1,70 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>this is Trixie Mail</title>
-		<meta name="robots" content="noindex">
-	</head>
-	<body>
-		<h1 id="headline">this is Trixie Mail</h1>
-		<p id="blurb">an agentic fork of Mail-in-a-Box — <a href="https://github.com/quantenland-ai/TrixieMail">https://github.com/quantenland-ai/TrixieMail</a></p>
-		<script>
-		/* Phase 1 public homepage i18n. "Trixie Mail" stays untranslated.
-		   Locale: navigator.language → en. Not the /admin cookie (Path=/admin). */
-		(function () {
-			var STRINGS = {
-				en: {
-					title: "this is Trixie Mail",
-					blurb: "an agentic fork of Mail-in-a-Box — "
-				},
-				de: {
-					title: "dies ist Trixie Mail",
-					blurb: "ein agentischer Fork von Mail-in-a-Box — "
-				},
-				fr: {
-					title: "ceci est Trixie Mail",
-					blurb: "une version agentique de Mail-in-a-Box — "
-				},
-				es: {
-					title: "esto es Trixie Mail",
-					blurb: "un fork agentico de Mail-in-a-Box — "
-				},
-				it: {
-					title: "questo è Trixie Mail",
-					blurb: "un fork agentico di Mail-in-a-Box — "
-				},
-				pt: {
-					title: "isto é Trixie Mail",
-					blurb: "um fork agentico do Mail-in-a-Box — "
-				},
-				nl: {
-					title: "dit is Trixie Mail",
-					blurb: "een agentische fork van Mail-in-a-Box — "
-				},
-				pl: {
-					title: "to jest Trixie Mail",
-					blurb: "agentyczny fork Mail-in-a-Box — "
-				}
-			};
-			var nav = (navigator.language || "en").toLowerCase().replace("_", "-");
-			var base = nav.split("-")[0];
-			var lang = STRINGS[base] ? base : "en";
-			var s = STRINGS[lang];
-			document.documentElement.lang = lang;
-			document.title = s.title;
-			var h = document.getElementById("headline");
-			if (h) h.textContent = s.title;
-			var b = document.getElementById("blurb");
-			if (b) {
-				var href = "https://github.com/quantenland-ai/TrixieMail";
-				b.textContent = "";
-				b.appendChild(document.createTextNode(s.blurb));
-				var a = document.createElement("a");
-				a.href = href;
-				a.textContent = href;
-				b.appendChild(a);
-			}
-		})();
-		</script>
-	</body>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex">
+	<title>trixiemail</title>
+	<style>
+		:root {
+			--bg: #0a0a0a;
+			--fg: #33ff66;
+			--dim: #1a8f3c;
+			--border: #33ff66;
+		}
+		* { box-sizing: border-box; }
+		html, body {
+			margin: 0;
+			padding: 0;
+			min-height: 100%;
+			background: var(--bg);
+			color: var(--fg);
+			font-family: "Courier New", Courier, monospace;
+		}
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 1.5rem;
+		}
+		.bbs {
+			max-width: 52rem;
+			width: 100%;
+			border: 2px solid var(--border);
+			padding: 1.25rem 1.5rem 1.5rem;
+			box-shadow: 0 0 0 1px var(--dim);
+		}
+		.header {
+			text-align: center;
+			border-bottom: 1px dashed var(--dim);
+			padding-bottom: 1rem;
+			margin-bottom: 1rem;
+		}
+		.header .sys {
+			color: var(--dim);
+			font-size: 0.85rem;
+			letter-spacing: 0.08em;
+			margin: 0 0 0.75rem;
+		}
+		pre.logo {
+			margin: 0;
+			overflow-x: auto;
+			font-size: clamp(0.45rem, 1.8vw, 0.85rem);
+			line-height: 1.15;
+			color: var(--fg);
+			text-align: left;
+			display: inline-block;
+		}
+		.tag {
+			margin: 0.85rem 0 0;
+			font-size: 0.95rem;
+			letter-spacing: 0.12em;
+		}
+		.msg {
+			margin: 0 0 1rem;
+			line-height: 1.5;
+		}
+		.msg p { margin: 0.4rem 0; }
+		.sep {
+			color: var(--dim);
+			margin: 1rem 0;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+		a {
+			color: var(--fg);
+			text-decoration: underline;
+		}
+		a:hover, a:focus {
+			color: #99ffbb;
+		}
+		.footer {
+			margin: 1rem 0 0;
+			color: var(--dim);
+			font-size: 0.85rem;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<main class="bbs">
+		<header class="header">
+			<p class="sys">*** connected — node 01 — public default ***</p>
+			<pre class="logo" aria-label="trixiemail"> _____ ____  _____  __  _____ _____ __  __    _    ___ _
+|_   _|  _ \|_ _\ \/ / |_   _| ____|  \/  |  / \  |_ _| |
+  | | | |_) || | \  /    | | |  _| | |\/| | / _ \  | || |
+  | | |  _ &lt; | | /  \    | | | |___| |  | |/ ___ \ | || |___
+  |_| |_| \_\___/_/\_\   |_| |_____|_|  |_/_/   \_\___|_____|</pre>
+			<p class="tag">trixiemail</p>
+		</header>
+
+		<section class="msg">
+			<p>welcome to <strong>trixiemail</strong>.</p>
+			<p>this node is online. there is nothing else to see here yet.</p>
+			<p>source &amp; docs:</p>
+			<p><a href="https://github.com/quantenland-ai/trixiemail">https://github.com/quantenland-ai/trixiemail</a></p>
+		</section>
+
+		<p class="sep">-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-</p>
+
+		<p class="footer">[ end of board — hang up anytime ]</p>
+	</main>
+</body>
 </html>
