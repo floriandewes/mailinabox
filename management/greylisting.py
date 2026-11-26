@@ -30,7 +30,7 @@ _FALSE = {"false", "no", "off", "n", "~", "null"}
 
 
 def canonical_restrictions(enabled):
-	"""Recipient restrictions Mail-in-a-Box writes during setup."""
+	"""Recipient restrictions Trixie Mail writes during setup."""
 	checks = list(BASE_RECIPIENT_CHECKS)
 	if enabled:
 		checks.insert(checks.index(QUOTA_CHECK), POSTGREY_CHECK)

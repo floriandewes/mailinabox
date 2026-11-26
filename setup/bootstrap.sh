@@ -1,8 +1,10 @@
 #!/bin/bash
 #########################################################
-# This script is intended to be run like this:
+# Bootstrap for Trixie Mail (Debian 13). Example:
 #
-#   curl https://mailinabox.email/setup.sh | sudo bash
+#   curl -sL https://raw.githubusercontent.com/quantenland-ai/TrixieMail/main/setup/bootstrap.sh | sudo bash
+#
+# Do not use https://mailinabox.email/setup.sh — that is upstream Ubuntu.
 #
 #########################################################
 
@@ -21,12 +23,12 @@ if [ -z "$TAG" ]; then
 	# Debian is identified from os-release because lsb_release is not
 	# installed on a minimal Debian image. The first TAG= line below must
 	# stay the latest supported release (git tag; product version is in
-	# VERSION as YY.MM without the leading v).
+	# VERSION as YY.MM[.N] without the leading v).
 	# Ubuntu is not supported.
 	. /etc/os-release
 	if [ "${ID:-}" = "debian" ] && [ "${VERSION_ID:-}" = "13" ]; then
 		# Debian 13 (trixie).
-		TAG=v26.11
+		TAG=v26.11.1
 	else
 		echo "This installer only runs on Debian 13 (Trixie)."
 		echo "You are running: ${PRETTY_NAME:-${ID:-unknown} ${VERSION_ID:-}}"
@@ -40,7 +42,7 @@ if [[ $EUID -ne 0 ]]; then
 	exit 1
 fi
 
-# Clone the Mail-in-a-Box repository if it doesn't exist.
+# Clone the Trixie Mail repository if it doesn't exist.
 if [ ! -d "$HOME/mailinabox" ]; then
 	if [ ! -f /usr/bin/git ]; then
 		echo "Installing git . . ."
@@ -50,10 +52,10 @@ if [ ! -d "$HOME/mailinabox" ]; then
 	fi
 
 	if [ "$SOURCE" == "" ]; then
-		SOURCE=https://github.com/floriandewes/mailinabox
+		SOURCE=https://github.com/quantenland-ai/TrixieMail
 	fi
 
-	echo "Downloading Mail-in-a-Box $TAG. . ."
+	echo "Downloading Trixie Mail $TAG. . ."
 	git clone \
 		-b "$TAG" --depth 1 \
 		"$SOURCE" \
@@ -68,7 +70,7 @@ cd "$HOME/mailinabox" || exit
 
 # Update it.
 if [ "$TAG" != "$(git describe --always)" ]; then
-	echo "Updating Mail-in-a-Box to $TAG . . ."
+	echo "Updating Trixie Mail to $TAG . . ."
 	git fetch --depth 1 --force --prune origin tag "$TAG"
 	if ! git checkout -q "$TAG"; then
 		echo "Update failed. Did you modify something in $PWD?"

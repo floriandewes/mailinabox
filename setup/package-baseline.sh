@@ -1,9 +1,9 @@
 #!/bin/bash
-# Package baseline helpers for Mail-in-a-Box uninstall.
+# Package baseline helpers for Trixie Mail uninstall.
 # Sourced from setup/start.sh and setup/uninstall.sh.
 #
 # Captures the set of installed packages before setup mutates the system,
-# so a later uninstall can purge only what Mail-in-a-Box added.
+# so a later uninstall can purge only what Trixie Mail added.
 
 # Relative to STORAGE_ROOT. Kept under user-data so it survives across
 # re-runs of setup on the same data directory.
@@ -46,7 +46,7 @@ function capture_package_baseline {
 
 	# Record both the raw selections and a short header for operators.
 	{
-		echo "# Mail-in-a-Box package baseline"
+		echo "# Trixie Mail package baseline"
 		echo "# Captured: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
 		echo "# Host: $(hostname -f 2>/dev/null || hostname)"
 		echo "# Format: dpkg --get-selections"

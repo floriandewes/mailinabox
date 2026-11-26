@@ -115,7 +115,7 @@ SECRET_KEY=$(dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64 | sed s/=//g)
 cat > $RCM_CONFIG <<EOF;
 <?php
 /*
- * Do not edit. Written by Mail-in-a-Box. Regenerated on updates.
+ * Do not edit. Written by Trixie Mail. Regenerated on updates.
  */
 \$config = array();
 \$config['log_dir'] = '/var/log/roundcubemail/';
@@ -157,7 +157,7 @@ EOF
 # Configure CardDav
 cat > ${RCM_PLUGIN_DIR}/carddav/config.inc.php <<EOF;
 <?php
-/* Do not edit. Written by Mail-in-a-Box. Regenerated on updates. */
+/* Do not edit. Written by Trixie Mail. Regenerated on updates. */
 \$prefs['_GLOBAL']['hide_preferences'] = true;
 \$prefs['_GLOBAL']['suppress_version_warning'] = true;
 \$prefs['ownCloud'] = array(

@@ -19,7 +19,7 @@ mkdir -p /etc/nsd/zones
 touch /etc/nsd/zones.conf
 
 cat > /etc/nsd/nsd.conf << EOF;
-# Do not edit. Overwritten by Mail-in-a-Box setup.
+# Do not edit. Overwritten by Trixie Mail setup.
 server:
   hide-version: yes
   logfile: "/var/log/nsd.log"
@@ -140,7 +140,7 @@ done
 # 30-day validation window, so we had better re-sign before then.
 cat > /etc/cron.daily/mailinabox-dnssec << EOF;
 #!/bin/bash
-# Mail-in-a-Box
+# Trixie Mail
 # Re-sign any DNS zones with DNSSEC because the signatures expire periodically.
 $PWD/tools/dns_update
 EOF

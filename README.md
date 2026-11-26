@@ -1,14 +1,34 @@
-Mail in a Box on Debian 13 Trixie
-====================================
+Trixie Mail
+===========
 
-This is a fork of [Mail-in-a-Box](https://github.com/mail-in-a-box/mailinabox) by [@JoshData](https://github.com/JoshData) and [contributors](https://github.com/mail-in-a-box/mailinabox/graphs/contributors). It is being ported to Debian 13 (Trixie), and the software it installs is updated to current releases. It is still a one-click mail server: SMTP, IMAP, webmail, contacts, calendar, and DNS on one machine.
+**Trixie Mail** (software id **TrixieMail**) is an **agentic fork** of [Mail-in-a-Box](https://github.com/mail-in-a-box/mailinabox) by [@JoshData](https://github.com/JoshData) and [contributors](https://github.com/mail-in-a-box/mailinabox/graphs/contributors). Upstream credit stands: this project builds on that design and codebase.
 
-**The original project website and setup guide are at [https://mailinabox.email](https://mailinabox.email).**
+It remains a one-click mail server (SMTP, IMAP, webmail, contacts, calendar, DNS) on a single machine, with changes aimed at Debian 13 and headless / AI-agent installs.
+
+**Upstream website / Ubuntu line:** [https://mailinabox.email](https://mailinabox.email) — do not use that installer for this fork.
+
+**This repository:** [https://github.com/quantenland-ai/TrixieMail](https://github.com/quantenland-ai/TrixieMail) (Quantenland AI GmbH / `quantenland-ai`)
+
+
+What changed in this fork
+-------------------------
+
+| Area | This fork |
+| --- | --- |
+| OS | **Debian 13 (Trixie) only** (not Ubuntu) |
+| Product name | **Trixie Mail** / **TrixieMail** |
+| Versioning | **YY.MM[.N]** (current **26.11.1**) |
+| Headless install | Optional `install.conf` + `--noninteractive` for agents |
+| Uninstall | Experimental `setup/uninstall.sh` (package baseline) |
+| Stack pins | Newer Nextcloud / PHP / crypto vs upstream Ubuntu 22.04 line |
+
+Runtime paths inherited from Mail-in-a-Box (`/etc/mailinabox.conf`, `/usr/local/lib/mailinabox`, `/usr/local/bin/mailinabox`, systemd unit `mailinabox.service`, etc.) are **kept on purpose** so existing boxes and tooling do not break. Setup also installs a `trixiemail` command alias. See [Runtime paths](#runtime-paths).
+
 
 Versioning
 ----------
 
-This fork versions as **YY.MM** (see the top-level `VERSION` file; current release **26.11**), targeting a release about every 1–2 months. Release history is in `CHANGELOG.md`. The control panel, `/admin/system/version` API, and setup banner read `VERSION`.
+This fork versions as **YY.MM[.N]** (see the top-level `VERSION` file; current release **26.11.1**), targeting a release about every 1–2 months. Release history is in `CHANGELOG.md`. The control panel, `/admin/system/version` API, and setup banner read `VERSION`. Git tags and `TAG=` in `setup/bootstrap.sh` use a leading `v` (for example `v26.11.1`).
 
 
 Requirements
@@ -31,12 +51,12 @@ On the machine:
 ```
 sudo apt update
 sudo apt install -y git
-git clone https://github.com/floriandewes/mailinabox
-cd mailinabox
+git clone https://github.com/quantenland-ai/TrixieMail
+cd TrixieMail
 sudo setup/start.sh
 ```
 
-Install from the `main` branch of this repository. This port sets up a new box; it does not upgrade an older Mail-in-a-Box data directory. Do not use the upstream one-line installer at mailinabox.email — that tracks the Ubuntu release.
+Install from the `main` branch of this repository. This port sets up a new box; it does not upgrade an older Mail-in-a-Box Ubuntu data directory. Do not use the upstream one-line installer at mailinabox.email — that tracks the Ubuntu release.
 
 Setup asks for:
 
@@ -46,13 +66,13 @@ Setup asks for:
 * Public IP — when the machine cannot detect it; leave IPv6 empty if none
 * Password for the first mail account — the prompt does not echo it
 
-When it finishes it prints `Your Mail-in-a-Box is running.` and the control panel URL:
+When it finishes it prints `Your Trixie Mail is running.` and the control panel URL:
 
 	https://box.example.com/admin
 
 Log in with that email and password. If DNS is not ready yet, use the `https://<ip>/admin` address printed at the end and verify the certificate fingerprint. The control panel lists the nameserver records to set at your registrar.
 
-To change an answer later, run `sudo mailinabox` from this directory.
+To change an answer later, run `sudo trixiemail` or `sudo mailinabox` from the install directory (both invoke the same setup).
 
 
 ### Agentic AI
@@ -87,7 +107,7 @@ Also ask when relevant (defaults apply if omitted):
 Config search order (first existing file wins):
 
 1. `--config=/path/to/file` on the command line
-2. `$MAILINABOX_CONFIG` environment variable
+2. `$MAILINABOX_CONFIG` environment variable (kept for compatibility)
 3. `install.conf` in the repository root (recommended; same directory as `README.md`)
 4. `$HOME/mailinabox-install.conf`
 
@@ -148,12 +168,31 @@ sudo setup/uninstall.sh --record-baseline
 After uninstall, review `ufw status` and `/etc/resolv.conf`. Prefer a fresh OS image for a completely clean slate; otherwise keep `/home/user-data` and run `sudo setup/start.sh` again to reinstall on top of existing data.
 
 
+Runtime paths
+-------------
+
+These Mail-in-a-Box paths are **unchanged** in Trixie Mail (compatibility):
+
+| Path / name | Role |
+| --- | --- |
+| `/etc/mailinabox.conf` | Install settings |
+| `/usr/local/lib/mailinabox/` | Management code + venv |
+| `/usr/local/bin/mailinabox` | Re-run setup |
+| `/usr/local/bin/trixiemail` | Same as `mailinabox` (alias) |
+| `/var/lib/mailinabox/` | API key and related state |
+| `mailinabox.service` | Management daemon unit |
+| `$HOME/mailinabox` | Directory used by `setup/bootstrap.sh` when cloning |
+| `$STORAGE_ROOT/mailinabox.version` | Migration marker |
+
+Display name in the UI and docs is **Trixie Mail**; the software id is **TrixieMail**.
+
+
 Compared with the original
 --------------------------
 
 The original column is what [mail-in-a-box/mailinabox](https://github.com/mail-in-a-box/mailinabox) `master` installs today. The fork column is what this repository installs on Debian 13.
 
-| Software | Original Mail-in-a-Box | This fork |
+| Software | Original Mail-in-a-Box | Trixie Mail |
 | --- | --- | --- |
 | Operating system | Ubuntu 22.04 LTS | Debian 13 (Trixie) only |
 | PHP | 8.0 | 8.4 |
@@ -180,6 +219,7 @@ Our goals are to:
 * Make deploying a good mail server easy.
 * Promote [decentralization](http://redecentralize.org/), innovation, and privacy on the web.
 * Have automated, auditable, and [idempotent](https://web.archive.org/web/20190518072631/https://sharknet.us/2014/02/01/automated-configuration-management-challenges-with-idempotency/) configuration.
+* Support headless / agent-driven installs without sacrificing explicit user consent for identity and secrets.
 * **Not** make a totally unhackable, NSA-proof server.
 * **Not** make something customizable by power users.
 
@@ -189,9 +229,9 @@ Additionally, this project has a [Code of Conduct](CODE_OF_CONDUCT.md), which su
 In The Box
 ----------
 
-Mail-in-a-Box turns a fresh Debian 13 (Trixie) 64-bit machine into a working mail server by installing and configuring various components.
+Trixie Mail turns a fresh Debian 13 (Trixie) 64-bit machine into a working mail server by installing and configuring various components.
 
-It is a one-click email appliance. There are no user-configurable setup options. It "just works."
+It is a one-click email appliance. There are no user-configurable setup options beyond the few install questions (or `install.conf`). It "just works."
 
 The components installed are:
 
@@ -210,37 +250,35 @@ It also includes system management tools:
 
 Internationalized domain names are supported and configured easily (but SMTPUTF8 is not supported, unfortunately).
 
-It also supports static website hosting since the box is serving HTTPS anyway. (To serve a website for your domains elsewhere, just add a custom DNS "A" record in you Mail-in-a-Box's control panel to point domains to another server.)
+It also supports static website hosting since the box is serving HTTPS anyway. (To serve a website for your domains elsewhere, just add a custom DNS "A" record in your Trixie Mail control panel to point domains to another server.)
 
-For more information on how Mail-in-a-Box handles your privacy, see the [security details page](security.md).
+For more information on privacy, see the [security details page](security.md).
 
-For help, DO NOT contact Josh directly --- I don't do tech support by email or tweet (no exceptions).
+For help with **upstream** Mail-in-a-Box (Ubuntu), use the [discussion forum](https://discourse.mailinabox.email/). For this fork, open an issue on [quantenland-ai/TrixieMail](https://github.com/quantenland-ai/TrixieMail).
 
-Post your question on the [discussion forum](https://discourse.mailinabox.email/) instead, where maintainers and Mail-in-a-Box users may be able to help you.
-
-Note that while we want everything to "just work," we can't control the rest of the Internet. Other mail services might block or spam-filter email sent from your Mail-in-a-Box.
-This is a challenge faced by everyone who runs their own mail server, with or without Mail-in-a-Box. See our discussion forum for tips about that.
+Note that while we want everything to "just work," we can't control the rest of the Internet. Other mail services might block or spam-filter email sent from your box. This is a challenge faced by everyone who runs their own mail server.
 
 
 Contributing and Development
 ----------------------------
 
-Mail-in-a-Box is an open source project. Your contributions and pull requests are welcome. See [CONTRIBUTING](CONTRIBUTING.md) to get started. 
+Trixie Mail is an open source project. Your contributions and pull requests are welcome. See [CONTRIBUTING](CONTRIBUTING.md) to get started.
 
 
 The Acknowledgements
 --------------------
 
-This project was inspired in part by the ["NSA-proof your email in 2 hours"](http://sealedabstract.com/code/nsa-proof-your-e-mail-in-2-hours/) blog post by Drew Crawford, [Sovereign](https://github.com/sovereign/sovereign) by Alex Payne, and conversations with <a href="https://twitter.com/shevski" target="_blank">@shevski</a>, <a href="https://github.com/konklone" target="_blank">@konklone</a>, and <a href="https://github.com/gregelin" target="_blank">@GregElin</a>.
+Upstream Mail-in-a-Box was inspired in part by the ["NSA-proof your email in 2 hours"](http://sealedabstract.com/code/nsa-proof-your-e-mail-in-2-hours/) blog post by Drew Crawford, [Sovereign](https://github.com/sovereign/sovereign) by Alex Payne, and conversations with <a href="https://twitter.com/shevski" target="_blank">@shevski</a>, <a href="https://github.com/konklone" target="_blank">@konklone</a>, and <a href="https://github.com/gregelin" target="_blank">@GregElin</a>.
 
-Mail-in-a-Box is similar to [iRedMail](http://www.iredmail.org/) and [Modoboa](https://github.com/tonioo/modoboa).
+Mail-in-a-Box (and thus this fork) is similar to [iRedMail](http://www.iredmail.org/) and [Modoboa](https://github.com/tonioo/modoboa).
 
 
 The History
 -----------
 
-* In 2007 I wrote a relatively popular Mozilla Thunderbird extension that added client-side SPF and DKIM checks to mail to warn users about possible phishing: [add-on page](https://addons.mozilla.org/en-us/thunderbird/addon/sender-verification-anti-phish/), [source](https://github.com/JoshData/thunderbird-spf).
-* In August 2013 I began Mail-in-a-Box by combining my own mail server configuration with the setup in ["NSA-proof your email in 2 hours"](http://sealedabstract.com/code/nsa-proof-your-e-mail-in-2-hours/) and making the setup steps reproducible with bash scripts.
+* In 2007 Josh Data wrote a relatively popular Mozilla Thunderbird extension that added client-side SPF and DKIM checks to mail to warn users about possible phishing: [add-on page](https://addons.mozilla.org/en-us/thunderbird/addon/sender-verification-anti-phish/), [source](https://github.com/JoshData/thunderbird-spf).
+* In August 2013 Mail-in-a-Box began by combining that mail server configuration with the setup in ["NSA-proof your email in 2 hours"](http://sealedabstract.com/code/nsa-proof-your-e-mail-in-2-hours/) and making the setup steps reproducible with bash scripts.
 * Mail-in-a-Box was a semifinalist in the 2014 [Knight News Challenge](https://www.newschallenge.org/challenge/2014/submissions/mail-in-a-box), but it was not selected as a winner.
 * Mail-in-a-Box hit the front page of Hacker News in [April](https://news.ycombinator.com/item?id=7634514) 2014, [September](https://news.ycombinator.com/item?id=8276171) 2014, [May](https://news.ycombinator.com/item?id=9624267) 2015, and [November](https://news.ycombinator.com/item?id=13050500) 2016.
-* FastCompany mentioned Mail-in-a-Box a [roundup of privacy projects](http://www.fastcompany.com/3047645/your-own-private-cloud) on June 26, 2015.
+* FastCompany mentioned Mail-in-a-Box in a [roundup of privacy projects](http://www.fastcompany.com/3047645/your-own-private-cloud) on June 26, 2015.
+* This **Trixie Mail** fork ports the stack to Debian 13 (Trixie), adds headless/`install.conf` agent installs, an experimental uninstaller, and is maintained under Quantenland AI as **TrixieMail**.

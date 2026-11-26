@@ -1,4 +1,4 @@
-# Mail-in-a-Box headless install config (KEY=VALUE)
+# Trixie Mail headless install config (KEY=VALUE)
 #
 # Recommended location (first default search path):
 #   copy this file to install.conf in the repository root

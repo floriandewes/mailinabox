@@ -147,7 +147,7 @@ echo "Updating system packages..."
 hide_output apt-get update --allow-releaseinfo-change
 apt_get_quiet upgrade
 
-# Old kernels pile up over time and take up a lot of disk space, and because of Mail-in-a-Box
+# Old kernels pile up over time and take up a lot of disk space, and because of Trixie Mail
 # changes there may be other packages that are no longer needed. Clear out anything apt knows
 # is safe to delete.
 
