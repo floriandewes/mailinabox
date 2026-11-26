@@ -36,6 +36,10 @@ And for testing:
 
     $ sudo NO_NETWORK_TESTING=1 tests/run.sh
 
+### Control panel UI strings (i18n)
+
+User-visible control-panel text must go through gettext: `_()` / `{% trans %}` in Jinja/Python, and `t()` / `tn()` in inline JS (seed new JS msgids in `management/locale/js_messages.py`). Keep the product name **Trixie Mail** untranslated. After adding strings, run `management/locale/extract.sh`, update `.po` files, then `management/locale/compile.sh`. Locale preference is cookie `trixiemail_lang` + `localStorage` only (fork-only; not for upstream Mail-in-a-Box).
+
 Please see the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 Testing

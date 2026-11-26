@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ current_locale }}">
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{hostname}} - Trixie Mail Control Panel</title>
+        <title>{{hostname}} - {% trans %}Trixie Mail Control Panel{% endtrans %}</title>
 
         <meta name="robots" content="noindex, nofollow">
 
@@ -93,14 +93,14 @@
     </head>
     <body>
 
-    <!--[if lt IE 8]><p>Internet Explorer version 8 or any modern web browser is required to use this website, sorry.<![endif]-->
+    <!--[if lt IE 8]><p>{% trans %}Internet Explorer version 8 or any modern web browser is required to use this website, sorry.{% endtrans %}<![endif]-->
     <!--[if gt IE 7]><!-->
 
     <div class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">{% trans %}Toggle navigation{% endtrans %}</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -110,35 +110,43 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="dropdown if-logged-in-admin">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans %}System{% endtrans %} <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#system_status">Status Checks</a></li>
-                <li><a href="#tls">TLS (SSL) Certificates</a></li>
-                <li><a href="#system_backup">Backup Status</a></li>
+                <li><a href="#system_status">{% trans %}Status Checks{% endtrans %}</a></li>
+                <li><a href="#tls">{% trans %}TLS (SSL) Certificates{% endtrans %}</a></li>
+                <li><a href="#system_backup">{% trans %}Backup Status{% endtrans %}</a></li>
                 <li class="divider"></li>
-                <li class="dropdown-header">Advanced Pages</li>
-                <li><a href="#custom_dns">Custom DNS</a></li>
-                <li><a href="#external_dns">External DNS</a></li>
-                <li><a href="#munin">Munin Monitoring</a></li>
+                <li class="dropdown-header">{% trans %}Advanced Pages{% endtrans %}</li>
+                <li><a href="#custom_dns">{% trans %}Custom DNS{% endtrans %}</a></li>
+                <li><a href="#external_dns">{% trans %}External DNS{% endtrans %}</a></li>
+                <li><a href="#munin">{% trans %}Munin Monitoring{% endtrans %}</a></li>
               </ul>
             </li>
-            <li><a href="#mail-guide" class="if-logged-in-not-admin">Mail</a></li>
+            <li><a href="#mail-guide" class="if-logged-in-not-admin">{% trans %}Mail{% endtrans %}</a></li>
             <li class="dropdown if-logged-in-admin">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mail &amp; Users <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans %}Mail & Users{% endtrans %} <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#mail-guide">Instructions</a></li>
-                <li><a href="#users">Users</a></li>
-                <li><a href="#aliases">Aliases</a></li>
+                <li><a href="#mail-guide">{% trans %}Instructions{% endtrans %}</a></li>
+                <li><a href="#users">{% trans %}Users{% endtrans %}</a></li>
+                <li><a href="#aliases">{% trans %}Aliases{% endtrans %}</a></li>
                 <li class="divider"></li>
-                <li class="dropdown-header">Your Account</li>
-                <li><a href="#mfa">Two-Factor Authentication</a></li>
+                <li class="dropdown-header">{% trans %}Your Account{% endtrans %}</li>
+                <li><a href="#mfa">{% trans %}Two-Factor Authentication{% endtrans %}</a></li>
               </ul>
             </li>
-            <li><a href="#sync_guide" class="if-logged-in">Contacts/Calendar</a></li>
-            <li><a href="#web" class="if-logged-in-admin">Web</a></li>
+            <li><a href="#sync_guide" class="if-logged-in">{% trans %}Contacts/Calendar{% endtrans %}</a></li>
+            <li><a href="#web" class="if-logged-in-admin">{% trans %}Web{% endtrans %}</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li class="if-logged-in"><a href="#" onclick="do_logout(); return false;" style="color: white">Log out</a></li>
+            <li class="dropdown" id="lang_switcher">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="{% trans %}Language{% endtrans %}">{{ current_locale|upper }} <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                {% for loc in locale_choices %}
+                <li{% if loc.code == current_locale %} class="active"{% endif %}><a href="#" onclick="set_language('{{ loc.code }}'); return false;">{{ loc.label }}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+            <li class="if-logged-in"><a href="#" onclick="do_logout(); return false;" style="color: white">{% trans %}Log out{% endtrans %}</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -204,14 +212,14 @@
       <hr>
 
       <footer>
-        <p>This is <a href="https://github.com/quantenland-ai/TrixieMail">Trixie Mail</a> (agentic fork of Mail-in-a-Box).</p>
+        <p>{% trans %}This is <a href="https://github.com/quantenland-ai/TrixieMail">Trixie Mail</a> (agentic fork of Mail-in-a-Box).{% endtrans %}</p>
       </footer>
     </div> <!-- /container -->
 
         <div id="ajax_loading_indicator" style="display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 100000; text-align: center; background-color: rgba(255,255,255,.75)">
           <div style="margin: 20% auto">
             <div><span class="fa fa-spinner fa-pulse"></span></div>
-            <div>Loading...</div>
+            <div>{% trans %}Loading...{% endtrans %}</div>
           </div>
         </div>
 
@@ -219,15 +227,15 @@
           <div class="modal-dialog modal-sm">
             <div class="modal-content">
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close Dialog">&times;</button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="{{ _('Close Dialog') }}">&times;</button>
                 <h4 class="modal-title" id="errorModalTitle"> </h4>
               </div>
               <div class="modal-body">
                 <p> </p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Yes</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">{% trans %}OK{% endtrans %}</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">{% trans %}Yes{% endtrans %}</button>
               </div>
             </div>
           </div>
@@ -237,6 +245,88 @@
         <script src="/admin/assets/bootstrap/js/bootstrap.min.js"></script>
 
         <script>
+/* Control-panel i18n: catalog from server; msgid = English source text. */
+var I18N_CATALOG = {{ i18n_catalog|tojson }};
+var I18N_LOCALE = {{ current_locale|tojson }};
+var I18N_LOCALSTORAGE_KEY = {{ i18n_localstorage_key|tojson }};
+var I18N_COOKIE_NAME = {{ i18n_cookie_name|tojson }};
+
+function t(msgid, vars) {
+  var s = (I18N_CATALOG && I18N_CATALOG[msgid]) ? I18N_CATALOG[msgid] : msgid;
+  if (vars) {
+    s = s.replace(/%\(([^)]+)\)s/g, function(_, key) {
+      return (key in vars) ? vars[key] : "%(" + key + ")s";
+    });
+  }
+  return s;
+}
+
+function tn(singular, plural, n, vars) {
+  var key = singular + "\0" + plural;
+  var forms = (I18N_CATALOG && I18N_CATALOG[key]) ? I18N_CATALOG[key] : null;
+  var s;
+  if (forms && forms.length) {
+    // Simplified English-like plural pick; gettext plural index is language-specific.
+    // For Phase 1 EU langs with dual forms this matches n==1 ? 0 : 1 except Slavic
+    // (pl uses three forms). Prefer server-rendered strings for complex plurals.
+    var idx = (n == 1) ? 0 : Math.min(1, forms.length - 1);
+    if (I18N_LOCALE === "pl") {
+      // Polish: 1 → 0; 2-4 (not 12-14) → 1; else → 2
+      if (n == 1) idx = 0;
+      else if (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) idx = Math.min(1, forms.length - 1);
+      else idx = Math.min(2, forms.length - 1);
+    }
+    s = forms[idx] || forms[0] || (n == 1 ? singular : plural);
+  } else {
+    s = (n == 1) ? singular : plural;
+    if (I18N_CATALOG && I18N_CATALOG[singular] && n == 1) s = I18N_CATALOG[singular];
+  }
+  if (vars) {
+    s = s.replace(/%\(([^)]+)\)s/g, function(_, key) {
+      return (key in vars) ? vars[key] : "%(" + key + ")s";
+    });
+    s = s.replace(/%\(num\)s/g, String(n)).replace(/%d/g, String(n));
+  }
+  return s;
+}
+
+function set_language(code) {
+  try {
+    if (typeof localStorage != "undefined")
+      localStorage.setItem(I18N_LOCALSTORAGE_KEY, code);
+  } catch (_) {}
+  var secure = (location.protocol === "https:") ? "; Secure" : "";
+  document.cookie = I18N_COOKIE_NAME + "=" + encodeURIComponent(code)
+    + "; path=/admin; max-age=31536000; SameSite=Lax" + secure;
+  // Also notify server (sets cookie with correct Secure flag).
+  try {
+    $.ajax({
+      url: "/admin/locale/set",
+      method: "POST",
+      data: { lang: code },
+      complete: function() { location.reload(); }
+    });
+  } catch (_) {
+    location.reload();
+  }
+}
+
+// Mirror cookie from localStorage if cookie missing (e.g. after cookie clear).
+(function() {
+  try {
+    if (typeof localStorage == "undefined") return;
+    var stored = localStorage.getItem(I18N_LOCALSTORAGE_KEY);
+    if (!stored) {
+      localStorage.setItem(I18N_LOCALSTORAGE_KEY, I18N_LOCALE);
+      return;
+    }
+    var match = document.cookie.match(new RegExp("(?:^|; )" + I18N_COOKIE_NAME + "=([^;]*)"));
+    if (!match && stored !== I18N_LOCALE) {
+      set_language(stored);
+    }
+  } catch (_) {}
+})();
+
 var global_modal_state = null;
 var global_modal_funcs = null;
 
@@ -273,7 +363,7 @@ function show_modal_error(title, message, callback) {
     $('#global_modal p').html("").append(message);
     $('#global_modal .modal-dialog').removeClass("modal-sm");
   }
-  $('#global_modal .btn-default').show().text("OK");
+  $('#global_modal .btn-default').show().text(t("OK"));
   $('#global_modal .btn-danger').hide();
   global_modal_funcs = [callback, callback];
   global_modal_state = null;
@@ -292,7 +382,7 @@ function show_modal_confirm(title, question, verb, yes_callback, cancel_callback
     $('#global_modal .modal-body').html("").append(question);
   }
   if (typeof verb == 'string') {
-    $('#global_modal .btn-default').show().text("Cancel");
+    $('#global_modal .btn-default').show().text(t("Cancel"));
     $('#global_modal .btn-danger').show().text(verb);
   } else {
     $('#global_modal .btn-default').show().text(verb[1]);
@@ -317,14 +407,14 @@ function ajax_with_indicator(options) {
   options.success = function(data) {
     hide_loading_indicator();
     if (data.status == "error")
-      show_modal_error("Error", data.message);
+      show_modal_error(t("Error"), data.message);
     else if (old_success)
       old_success(data);
   };
   options.error = function(jqxhr) {
     hide_loading_indicator();
     if (!old_error)
-      show_modal_error("Error", "Something went wrong, sorry.")
+      show_modal_error(t("Error"), t("Something went wrong, sorry."))
     else
       old_error(jqxhr.responseText, jqxhr);
   };
@@ -364,7 +454,7 @@ function api(url, method, data, callback, callback_error, headers) {
 
   function default_error(text, xhr) {
     if (xhr.status != 403) // else handled below
-      show_modal_error("Error", "Something went wrong, sorry.")
+      show_modal_error(t("Error"), t("Something went wrong, sorry."))
   }
 
   ajax_with_indicator({

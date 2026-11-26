@@ -15,9 +15,10 @@ import multiprocessing.pool
 
 from functools import wraps
 
-from flask import Flask, request, render_template, Response, send_from_directory, make_response
+from flask import Flask, request, render_template, Response, send_from_directory, make_response, g, jsonify
+from flask_babel import Babel
 
-import auth, utils
+import auth, utils, i18n
 from mailconfig import get_mail_users, get_mail_users_ex, get_admins, add_mail_user, set_mail_password, remove_mail_user
 from mailconfig import get_mail_user_privileges, add_remove_mail_user_privilege
 from mailconfig import get_mail_aliases, get_mail_aliases_ex, get_mail_domains, add_mail_alias, remove_mail_alias
@@ -44,6 +45,31 @@ with open(os.path.join(os.path.dirname(me), "csr_country_codes.tsv"), encoding="
 		csr_country_codes.append((code, name))
 
 app = Flask(__name__, template_folder=os.path.abspath(os.path.join(os.path.dirname(me), "templates")))
+
+# Control-panel i18n (gettext / Flask-Babel). Locale dir: management/locale/
+babel = Babel()
+babel.init_app(
+	app,
+	default_locale="en",
+	default_domain="messages",
+	default_translation_directories=i18n.locale_dir(),
+	locale_selector=i18n.get_locale,
+)
+
+@app.before_request
+def _i18n_before_request():
+	g.locale = i18n.get_locale()
+
+@app.context_processor
+def _i18n_template_context():
+	lang = i18n.get_locale_for_template()
+	return {
+		"current_locale": lang,
+		"locale_choices": i18n.locale_switcher_entries(),
+		"i18n_catalog": i18n.load_json_catalog(lang),
+		"i18n_localstorage_key": i18n.LOCALSTORAGE_KEY,
+		"i18n_cookie_name": i18n.COOKIE_NAME,
+	}
 
 # Decorator to protect views that require a user with 'admin' privileges.
 def authorized_personnel_only(viewfunc):
@@ -135,6 +161,19 @@ def index():
 		backup_s3_hosts=backup_s3_hosts,
 		csr_country_codes=csr_country_codes,
 	)
+
+@app.route('/locale/<lang>.json')
+def locale_catalog(lang):
+	# Browser JSON catalog for t()/tn(). Unauthenticated; catalogs are not secret.
+	resolved = i18n.normalize_locale(lang) or "en"
+	return jsonify(i18n.load_json_catalog(resolved))
+
+@app.route('/locale/set', methods=["POST"])
+def locale_set():
+	# Persist language choice in cookie (JS also mirrors to localStorage).
+	lang = i18n.normalize_locale(request.form.get("lang") or (request.get_json(silent=True) or {}).get("lang")) or "en"
+	resp = jsonify({"status": "ok", "lang": lang})
+	return i18n.apply_locale_cookie(resp, lang)
 
 # Create a session key by checking the username/password in the Authorization header.
 @app.route('/login', methods=["POST"])
