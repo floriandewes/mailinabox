@@ -3,21 +3,21 @@
 #backup-status tr.full-backup td { font-weight: bold; }
 </style>
 
-<h2>Backup Status</h2>
+<h2>{% trans %}Backup Status{% endtrans %}</h2>
 
-<p>The box makes an incremental backup each night. You can store the backup on any Amazon Web Services S3-compatible service, or other options.</p>
+<p>{% trans %}The box makes an incremental backup each night. You can store the backup on any Amazon Web Services S3-compatible service, or other options.{% endtrans %}</p>
 
-<h3>Configuration</h3>
+<h3>{% trans %}Configuration{% endtrans %}</h3>
 
 <form class="form-horizontal" role="form" onsubmit="set_custom_backup(); return false;">
   <div class="form-group">
-    <label for="backup-target-type" class="col-sm-2 control-label">Backup to:</label>
+    <label for="backup-target-type" class="col-sm-2 control-label">{% trans %}Backup to:{% endtrans %}</label>
     <div class="col-sm-2">
       <select class="form-control" rows="1" id="backup-target-type" onchange="toggle_form()">
-        <option value="off">Nowhere (Disable Backups)</option>
+        <option value="off">{% trans %}Nowhere (Disable Backups){% endtrans %}</option>
         <option value="local">{{hostname}}</option>
         <option value="rsync">rsync</option>
-        <option value="s3">S3 (Amazon or compatible) </option>
+        <option value="s3">{% trans %}S3 (Amazon or compatible){% endtrans %} </option>
         <option value="b2">Backblaze B2</option>
       </select>
     </div>
@@ -25,102 +25,102 @@
   <!-- LOCAL BACKUP -->
   <div class="form-group backup-target-local">
     <div class="col-sm-10 col-sm-offset-2">
-      <p>Backups are stored on this machine&rsquo;s own hard disk. You are responsible for periodically using SFTP (FTP over SSH) to copy the backup files from <tt class="backup-location"></tt> to a safe location. These files are encrypted, so they are safe to store anywhere.</p>
-      <p>Separately copy the encryption password from <tt class="backup-encpassword-file"></tt> to a safe and secure location. You will need this file to decrypt backup files.</p>
+      <p>{% trans %}Backups are stored on this machine&rsquo;s own hard disk. You are responsible for periodically using SFTP (FTP over SSH) to copy the backup files from <tt class="backup-location"></tt> to a safe location. These files are encrypted, so they are safe to store anywhere.{% endtrans %}</p>
+      <p>{% trans %}Separately copy the encryption password from <tt class="backup-encpassword-file"></tt> to a safe and secure location. You will need this file to decrypt backup files.{% endtrans %}</p>
     </div>
   </div>
   <!-- RSYNC BACKUP -->
   <div class="form-group backup-target-rsync">
     <div class="col-sm-10 col-sm-offset-2">
 
-      <p>Backups synced to a remote machine using rsync over SSH, with local
+      <p>{% trans %}Backups synced to a remote machine using rsync over SSH, with local
       copies in <tt class="backup-location"></tt>. These files are encrypted, so
-      they are safe to store anywhere.</p> <p>Separately copy the encryption
+      they are safe to store anywhere.{% endtrans %}</p> <p>{% trans %}Separately copy the encryption
       password from <tt class="backup-encpassword-file"></tt> to a safe and
-      secure location. You will need this file to decrypt backup files.</p>
+      secure location. You will need this file to decrypt backup files.{% endtrans %}</p>
 
     </div>
   </div>
   <div class="form-group backup-target-rsync">
-    <label for="backup-target-rsync-host" class="col-sm-2 control-label">Hostname</label>
+    <label for="backup-target-rsync-host" class="col-sm-2 control-label">{% trans %}Hostname{% endtrans %}</label>
     <div class="col-sm-8">
-      <input type="text" placeholder="hostname.local" class="form-control" rows="1" id="backup-target-rsync-host">
+      <input type="text" placeholder="{{ _('hostname.local') }}" class="form-control" rows="1" id="backup-target-rsync-host">
       <div class="small" style="margin-top: 2px">
-	The hostname at your rsync provider, e.g. <tt>da2327.rsync.net</tt>.  Optionally includes a colon
-	and the provider's non-standard ssh port number, e.g. <tt>u215843.your-storagebox.de:23</tt>. 
+	{% trans %}The hostname at your rsync provider, e.g. <tt>da2327.rsync.net</tt>.  Optionally includes a colon
+	and the provider's non-standard ssh port number, e.g. <tt>u215843.your-storagebox.de:23</tt>.{% endtrans %} 
       </div>
     </div>
   </div>
   <div class="form-group backup-target-rsync">
-    <label for="backup-target-rsync-path" class="col-sm-2 control-label">Path</label>
+    <label for="backup-target-rsync-path" class="col-sm-2 control-label">{% trans %}Path{% endtrans %}</label>
     <div class="col-sm-8">
         <input type="text" placeholder="/backups/{{hostname}}" class="form-control" rows="1" id="backup-target-rsync-path">
     </div>
   </div>
   <div class="form-group backup-target-rsync">
-    <label for="backup-target-rsync-user" class="col-sm-2 control-label">Username</label>
+    <label for="backup-target-rsync-user" class="col-sm-2 control-label">{% trans %}Username{% endtrans %}</label>
     <div class="col-sm-8">
       <input type="text" class="form-control" rows="1" id="backup-target-rsync-user">
     </div>
   </div>
   <div class="form-group backup-target-rsync">
-    <label for="ssh-pub-key" class="col-sm-2 control-label">Public SSH Key</label>
+    <label for="ssh-pub-key" class="col-sm-2 control-label">{% trans %}Public SSH Key{% endtrans %}</label>
     <div class="col-sm-8">
       <input type="text" class="form-control" rows="1" id="ssh-pub-key" readonly>
       <div class="small" style="margin-top: 2px">
-        Copy the Public SSH Key above, and paste it within the <tt>~/.ssh/authorized_keys</tt>
+        {% trans %}Copy the Public SSH Key above, and paste it within the <tt>~/.ssh/authorized_keys</tt>
         of target user on the backup server specified above. That way you'll enable secure and
-        passwordless authentication from your Trixie Mail server and your backup server.
+        passwordless authentication from your Trixie Mail server and your backup server.{% endtrans %}
       </div>
     </div>
     <div id="copy_pub_key_div" class="col-sm">
-      <button type="button" class="btn btn-small" onclick="copy_pub_key_to_clipboard()">Copy</button>
+      <button type="button" class="btn btn-small" onclick="copy_pub_key_to_clipboard()">{% trans %}Copy{% endtrans %}</button>
     </div> 
   </div>
   <!-- S3 BACKUP -->
   <div class="form-group backup-target-s3">
     <div class="col-sm-10 col-sm-offset-2">
-      <p>Backups are stored in an S3-compatible bucket. You must have an AWS or other S3 service account already.</p>
-      <p>You MUST manually copy the encryption password from <tt class="backup-encpassword-file"></tt> to a safe and secure location. You will need this file to decrypt backup files. It is <b>NOT</b> stored in your S3 bucket.</p>
+      <p>{% trans %}Backups are stored in an S3-compatible bucket. You must have an AWS or other S3 service account already.{% endtrans %}</p>
+      <p>{% trans %}You MUST manually copy the encryption password from <tt class="backup-encpassword-file"></tt> to a safe and secure location. You will need this file to decrypt backup files. It is <b>NOT</b> stored in your S3 bucket.{% endtrans %}</p>
     </div>
   </div>
   <div class="form-group backup-target-s3">
-    <label for="backup-target-s3-host-select" class="col-sm-2 control-label">S3 Region</label>
+    <label for="backup-target-s3-host-select" class="col-sm-2 control-label">{% trans %}S3 Region{% endtrans %}</label>
     <div class="col-sm-8">
       <select class="form-control" rows="1" id="backup-target-s3-host-select">
         {% for name, host in backup_s3_hosts %}
           <option value="{{host}}">{{name}}</option>
         {% endfor %}
-        <option value="other">Other (non AWS)</option>
+        <option value="other">{% trans %}Other (non AWS){% endtrans %}</option>
       </select>
     </div>
   </div>
   <div class="form-group backup-target-s3">
-    <label for="backup-target-s3-host" class="col-sm-2 control-label">S3 Host / Endpoint</label>
+    <label for="backup-target-s3-host" class="col-sm-2 control-label">{% trans %}S3 Host / Endpoint{% endtrans %}</label>
     <div class="col-sm-8">
       <input type="text" placeholder="https://s3.backuphost.com" class="form-control" rows="1" id="backup-target-s3-host">
     </div>
   </div>
   <div class="form-group backup-target-s3">
-    <label for="backup-target-s3-region-name" class="col-sm-2 control-label">S3 Region Name <span style="font-weight: normal">(if required)</span></label>
+    <label for="backup-target-s3-region-name" class="col-sm-2 control-label">{% trans %}S3 Region Name{% endtrans %} <span style="font-weight: normal">{% trans %}(if required){% endtrans %}</span></label>
     <div class="col-sm-8">
       <input type="text" placeholder="region.name" class="form-control" rows="1" id="backup-target-s3-region-name">
     </div>
   </div>
   <div class="form-group backup-target-s3">
-    <label for="backup-target-s3-path" class="col-sm-2 control-label">S3 Bucket &amp; Path</label>
+    <label for="backup-target-s3-path" class="col-sm-2 control-label">{% trans %}S3 Bucket &amp; Path{% endtrans %}</label>
     <div class="col-sm-8">
       <input type="text" placeholder="bucket-name/backup-directory" class="form-control" rows="1" id="backup-target-s3-path">
     </div>
   </div>
   <div class="form-group backup-target-s3">
-    <label for="backup-target-user" class="col-sm-2 control-label">S3 Access Key</label>
+    <label for="backup-target-user" class="col-sm-2 control-label">{% trans %}S3 Access Key{% endtrans %}</label>
     <div class="col-sm-8">
       <input type="text" class="form-control" rows="1" id="backup-target-user">
     </div>
   </div>
   <div class="form-group backup-target-s3">
-    <label for="backup-target-pass" class="col-sm-2 control-label">S3 Secret Access Key</label>
+    <label for="backup-target-pass" class="col-sm-2 control-label">{% trans %}S3 Secret Access Key{% endtrans %}</label>
     <div class="col-sm-8">
       <input type="text" class="form-control" rows="1" id="backup-target-pass">
     </div>
@@ -128,53 +128,53 @@
   <!-- Backblaze -->
   <div class="form-group backup-target-b2">
       <div class="col-sm-10 col-sm-offset-2">
-        <p>Backups are stored in a <a href="https://www.backblaze.com/" target="_blank" rel="noreferrer">Backblaze</a> B2 bucket. You must have a Backblaze account already.</p>
-        <p>You MUST manually copy the encryption password from <tt class="backup-encpassword-file"></tt> to a safe and secure location. You will need this file to decrypt backup files. It is NOT stored in your Backblaze B2 bucket.</p>
+        <p>{% trans %}Backups are stored in a <a href="https://www.backblaze.com/" target="_blank" rel="noreferrer">Backblaze</a> B2 bucket. You must have a Backblaze account already.{% endtrans %}</p>
+        <p>{% trans %}You MUST manually copy the encryption password from <tt class="backup-encpassword-file"></tt> to a safe and secure location. You will need this file to decrypt backup files. It is NOT stored in your Backblaze B2 bucket.{% endtrans %}</p>
       </div>
   </div>
   <div class="form-group backup-target-b2">
-      <label for="backup-target-b2-user" class="col-sm-2 control-label">B2 Application KeyID</label>
+      <label for="backup-target-b2-user" class="col-sm-2 control-label">{% trans %}B2 Application KeyID{% endtrans %}</label>
       <div class="col-sm-8">
         <input type="text" class="form-control" rows="1" id="backup-target-b2-user">
       </div>
   </div>
   <div class="form-group backup-target-b2">
-      <label for="backup-target-b2-pass" class="col-sm-2 control-label">B2 Application Key</label>
+      <label for="backup-target-b2-pass" class="col-sm-2 control-label">{% trans %}B2 Application Key{% endtrans %}</label>
       <div class="col-sm-8">
         <input type="text" class="form-control" rows="1" id="backup-target-b2-pass">
       </div>
   </div>
   <div class="form-group backup-target-b2">
-      <label for="backup-target-b2-bucket" class="col-sm-2 control-label">B2 Bucket</label>
+      <label for="backup-target-b2-bucket" class="col-sm-2 control-label">{% trans %}B2 Bucket{% endtrans %}</label>
       <div class="col-sm-8">
         <input type="text" class="form-control" rows="1" id="backup-target-b2-bucket">
       </div>
   </div>
   <!-- Common -->
   <div class="form-group backup-target-local backup-target-rsync backup-target-s3 backup-target-b2">
-    <label for="min-age" class="col-sm-2 control-label">Retention Days:</label>
+    <label for="min-age" class="col-sm-2 control-label">{% trans %}Retention Days:{% endtrans %}</label>
     <div class="col-sm-8">
       <input type="number" class="form-control" rows="1" id="min-age">
-      <div class="small" style="margin-top: 2px">This is the minimum time backup data is kept for. The box makes an incremental backup most nights, which requires that previous backups back to the most recent full backup be preserved, so backup data is often kept much longer than this setting. Full backups are made periodically when the incremental backup data size exceeds a limit.</div>
+      <div class="small" style="margin-top: 2px">{% trans %}This is the minimum time backup data is kept for. The box makes an incremental backup most nights, which requires that previous backups back to the most recent full backup be preserved, so backup data is often kept much longer than this setting. Full backups are made periodically when the incremental backup data size exceeds a limit.{% endtrans %}</div>
     </div>
   </div>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <button id="set-s3-backup-button" type="submit" class="btn btn-primary">Save</button>
+      <button id="set-s3-backup-button" type="submit" class="btn btn-primary">{% trans %}Save{% endtrans %}</button>
     </div>
   </div>
 </form>
 
-<h3>Available backups</h3>
+<h3>{% trans %}Available backups{% endtrans %}</h3>
 
-<p>The backup location currently contains the backups listed below. The total size of the backups is currently <span id="backup-total-size"></span>.</p>
+<p>{% trans %}The backup location currently contains the backups listed below. The total size of the backups is currently <span id="backup-total-size"></span>.{% endtrans %}</p>
 
 <table id="backup-status" class="table" style="width: auto">
   <thead>
-    <th scope="col" colspan="2">When</th>
-    <th scope="col">Type</th>
-    <th scope="col">Size</th>
-    <th scope="col">Deleted in...</th>
+    <th scope="col" colspan="2">{% trans %}When{% endtrans %}</th>
+    <th scope="col">{% trans %}Type{% endtrans %}</th>
+    <th scope="col">{% trans %}Size{% endtrans %}</th>
+    <th scope="col">{% trans %}Deleted in...{% endtrans %}</th>
   </thead>
   <tbody>
   </tbody>
@@ -190,7 +190,7 @@ function toggle_form() {
 }
 
 function nice_size(bytes) {
-  var powers = ['bytes', 'KB', 'MB', 'GB', 'TB'];
+  var powers = [t('bytes'), t('KB'), t('MB'), t('GB'), t('TB')];
   while (true) {
     if (powers.length == 1) break;
     if (bytes < 1000) break;
@@ -208,14 +208,14 @@ function nice_size(bytes) {
 function show_system_backup() {
   show_custom_backup()
 
-  $('#backup-status tbody').html("<tr><td colspan='2' class='text-muted'>Loading...</td></tr>")
+  $('#backup-status tbody').html("<tr><td colspan='2' class='text-muted'>" + t("Loading...") + "</td></tr>")
   api(
     "/system/backup/status",
     "GET",
     { },
     function(r) {
       if (r.error) {
-          show_modal_error("Backup Error", $("<pre/>").text(r.error));
+          show_modal_error(t("Backup Error"), $("<pre/>").text(r.error));
           return;
       }
 
@@ -223,11 +223,11 @@ function show_system_backup() {
       var total_disk_size = 0;
 
       if (typeof r.backups == "undefined") {
-        var tr = $('<tr><td colspan="3">Backups are turned off.</td></tr>');
+        var tr = $('<tr><td colspan="3">' + t("Backups are turned off.") + '</td></tr>');
         $('#backup-status tbody').append(tr);
         return;
       } else if (r.backups.length == 0) {
-        var tr = $('<tr><td colspan="3">No backups have been made yet.</td></tr>');
+        var tr = $('<tr><td colspan="3">' + t("No backups have been made yet.") + '</td></tr>');
         $('#backup-status tbody').append(tr);
       }
 
@@ -236,13 +236,13 @@ function show_system_backup() {
         var tr = $('<tr/>');
         if (b.full) tr.addClass("full-backup");
         tr.append( $('<td/>').text(b.date_str) );
-        tr.append( $('<td/>').text(b.date_delta + " ago") );
-        tr.append( $('<td/>').text(b.full ? "full" : "increment") );
+        tr.append( $('<td/>').text(t("%(delta)s ago", {delta: b.date_delta})) );
+        tr.append( $('<td/>').text(b.full ? t("full") : t("increment")) );
         tr.append( $('<td style="text-align: right"/>').text( nice_size(b.size)) );
         if (b.deleted_in)
           tr.append( $('<td/>').text(b.deleted_in) );
         else
-          tr.append( $('<td class="text-muted">unknown</td>') );
+          tr.append( $('<td class="text-muted">' + t("unknown") + '</td>') );
         $('#backup-status tbody').append(tr);
 
         total_disk_size += b.size;
@@ -335,11 +335,11 @@ function set_custom_backup() {
     },
     function(r) {
       // use .text() --- it's a text response, not html
-      show_modal_error("Backup configuration", $("<p/>").text(r), function() { if (r == "OK") show_system_backup(); }); // refresh after modal on success
+      show_modal_error(t("Backup configuration"), $("<p/>").text(r), function() { if (r == "OK") show_system_backup(); }); // refresh after modal on success
     },
     function(r) {
       // use .text() --- it's a text response, not html
-      show_modal_error("Backup configuration", $("<p/>").text(r));
+      show_modal_error(t("Backup configuration"), $("<p/>").text(r));
     });
   return false;
 }

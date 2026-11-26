@@ -1,4 +1,4 @@
-<h2>Users</h2>
+<h2>{% trans %}Users{% endtrans %}</h2>
 
 <style>
 #user_table tr.account_inactive td.address { color: #888; text-decoration: line-through; }
@@ -9,48 +9,48 @@
 .row-center { text-align: center; }
 </style>
 
-<h3>Add a mail user</h3>
+<h3>{% trans %}Add a mail user{% endtrans %}</h3>
 
-<p>Add an email address to this system. This will create a new login username/password.</p>
+<p>{% trans %}Add an email address to this system. This will create a new login username/password.{% endtrans %}</p>
 
 <form class="form-inline" role="form" onsubmit="return do_add_user(); return false;">
   <div class="form-group">
-    <label class="sr-only" for="adduserEmail">Email address</label>
-    <input type="email" class="form-control" id="adduserEmail" placeholder="Email Address">
+    <label class="sr-only" for="adduserEmail">{% trans %}Email address{% endtrans %}</label>
+    <input type="email" class="form-control" id="adduserEmail" placeholder="{{ _('Email Address') }}">
   </div>
   <div class="form-group">
-    <label class="sr-only" for="adduserPassword">Password</label>
-    <input type="password" class="form-control" id="adduserPassword" placeholder="Password">
+    <label class="sr-only" for="adduserPassword">{% trans %}Password{% endtrans %}</label>
+    <input type="password" class="form-control" id="adduserPassword" placeholder="{{ _('Password') }}">
   </div>
   <div class="form-group">
     <select class="form-control" id="adduserPrivs">
-      <option value="">Normal User</option>
-      <option value="admin">Administrator</option>
+      <option value="">{% trans %}Normal User{% endtrans %}</option>
+      <option value="admin">{% trans %}Administrator{% endtrans %}</option>
     </select>
   </div>
   <div class="form-group">
-      <label class="sr-only" for="adduserQuota">Quota</label>
-      <input type="text" class="form-control" id="adduserQuota" placeholder="Quota" style="width:5em;" value="0">
+      <label class="sr-only" for="adduserQuota">{% trans %}Quota{% endtrans %}</label>
+      <input type="text" class="form-control" id="adduserQuota" placeholder="{{ _('Quota') }}" style="width:5em;" value="0">
   </div>
-  <button type="submit" class="btn btn-primary">Add User</button>
+  <button type="submit" class="btn btn-primary">{% trans %}Add User{% endtrans %}</button>
 </form>
 <ul style="margin-top: 1em; padding-left: 1.5em; font-size: 90%;">
-  <li>Passwords must be at least eight characters consisting of English letters and numbers only. For best results, <a href="#" onclick="return generate_random_password()">generate a random password</a>.</li>
-  <li>Use <a href="#aliases">aliases</a> to create email addresses that forward to existing accounts.</li>
-  <li>Administrators get access to this control panel.</li>
-  <li>User accounts cannot contain any international (non-ASCII) characters, but <a href="#aliases">aliases</a> can.</li>
-  <li>Quotas may not contain any spaces, commas or decimal points. Suffixes of G (gigabytes) and M (megabytes) are allowed.  For unlimited storage enter 0 (zero)</li>
+  <li>{% trans %}Passwords must be at least eight characters consisting of English letters and numbers only. For best results, <a href="#" onclick="return generate_random_password()">generate a random password</a>.{% endtrans %}</li>
+  <li>{% trans %}Use <a href="#aliases">aliases</a> to create email addresses that forward to existing accounts.{% endtrans %}</li>
+  <li>{% trans %}Administrators get access to this control panel.{% endtrans %}</li>
+  <li>{% trans %}User accounts cannot contain any international (non-ASCII) characters, but <a href="#aliases">aliases</a> can.{% endtrans %}</li>
+  <li>{% trans %}Quotas may not contain any spaces, commas or decimal points. Suffixes of G (gigabytes) and M (megabytes) are allowed.  For unlimited storage enter 0 (zero){% endtrans %}</li>
 </ul>
 
-<h3>Existing mail users</h3>
+<h3>{% trans %}Existing mail users{% endtrans %}</h3>
 <table id="user_table" class="table" style="width: auto">
   <thead>
     <tr>
-      <th scope="col" width="35%">Email Address</th>
-      <th scope="col" class="row-center">Size</th>
-      <th scope="col" class="row-center">Used</th>
-      <th scope="col" class="row-center">Quota</th>
-      <th scope="col">Actions</th>
+      <th scope="col" width="35%">{% trans %}Email Address{% endtrans %}</th>
+      <th scope="col" class="row-center">{% trans %}Size{% endtrans %}</th>
+      <th scope="col" class="row-center">{% trans %}Used{% endtrans %}</th>
+      <th scope="col" class="row-center">{% trans %}Quota{% endtrans %}</th>
+      <th scope="col">{% trans %}Actions{% endtrans %}</th>
     </tr>
   </thead>
   <tbody>
@@ -71,15 +71,15 @@
         </span>
 
         <span class="if_active">
-          <a href="#" onclick="users_set_quota(this); return false;" class='setquota' title="Set Quota">
-              set quota
+          <a href="#" onclick="users_set_quota(this); return false;" class='setquota' title="{{ _('Set Quota') }}">
+              {% trans %}set quota{% endtrans %}
           </a>
           |
         </span>
 
         <span class="if_active">
-          <a href="#" onclick="users_set_password(this); return false;" class='setpw' title="Set Password">
-            set password
+          <a href="#" onclick="users_set_password(this); return false;" class='setpw' title="{{ _('Set Password') }}">
+            {% trans %}set password{% endtrans %}
           </a>
           |
         </span>
@@ -87,83 +87,83 @@
         <span class='add-privs'>
         </span>
 
-        <a href="#" onclick="users_remove(this); return false;" class='if_active' title="Archive Account">
-          archive account
+        <a href="#" onclick="users_remove(this); return false;" class='if_active' title="{{ _('Archive Account') }}">
+          {% trans %}archive account{% endtrans %}
         </a>
     </td>
   </tr>
   <tr id="user-extra-template" class="if_inactive">
     <td colspan="3" style="border: 0; padding-top: 0">
-      <div class='restore_info' style='color: #888; font-size: 90%'>To restore account, create a new account with this email address. Or to permanently delete the mailbox, delete the directory <tt></tt> on the machine.</div>
+      <div class='restore_info' style='color: #888; font-size: 90%'>{% trans %}To restore account, create a new account with this email address. Or to permanently delete the mailbox, delete the directory <tt></tt> on the machine.{% endtrans %}</div>
     </td>
   </tr>
   </table>
 </div>
 
-<h3>Mail user API (advanced)</h3>
+<h3>{% trans %}Mail user API (advanced){% endtrans %}</h3>
 
-<p>Use your box&rsquo;s mail user API to add/change/remove users from the command-line or custom services you build.</p>
+<p>{% trans %}Use your box&rsquo;s mail user API to add/change/remove users from the command-line or custom services you build.{% endtrans %}</p>
 
-<p>Usage:</p>
+<p>{% trans %}Usage:{% endtrans %}</p>
 
 <pre>curl -X <b>VERB</b> [-d "<b>parameters</b>"] --user {email}:{password} https://{{hostname}}/admin/mail/users[<b>action</b>]</pre>
 
-<p>Brackets denote an optional argument. Please note that the POST body <code>parameters</code> must be URL-encoded.</p>
+<p>{% trans %}Brackets denote an optional argument. Please note that the POST body <code>parameters</code> must be URL-encoded.{% endtrans %}</p>
 
-<p>The email and password given to the <code>--user</code> option must be an administrative user on this system.</p>
+<p>{% trans %}The email and password given to the <code>--user</code> option must be an administrative user on this system.{% endtrans %}</p>
 
-<h4 style="margin-bottom: 0">Verbs</h4>
+<h4 style="margin-bottom: 0">{% trans %}Verbs{% endtrans %}</h4>
 
 <table class="table" style="margin-top: .5em">
-<thead><th scope="col"> Verb</th> <th scope="col"> Action</th><th scope="col"> </th></thead>
-<tr><td>GET</td><td><i>(none)</i></td> <td>Returns a list of existing mail users. Adding <code>?format=json</code> to the URL will give JSON-encoded results.</td></tr>
+<thead><th scope="col"> {% trans %}Verb{% endtrans %}</th> <th scope="col"> {% trans %}Action{% endtrans %}</th><th scope="col"> </th></thead>
+<tr><td>GET</td><td><i>{% trans %}(none){% endtrans %}</i></td> <td>{% trans %}Returns a list of existing mail users. Adding <code>?format=json</code> to the URL will give JSON-encoded results.{% endtrans %}</td></tr>
 <tr>
     <td>POST</td>
     <td>/add</td>
-    <td>Adds a new mail user. Required POST-body parameters are <code>email</code> and <code>password</code>. Optional parameters: <code>privilege=admin</code> and <code>quota</code></td>
+    <td>{% trans %}Adds a new mail user. Required POST-body parameters are <code>email</code> and <code>password</code>. Optional parameters: <code>privilege=admin</code> and <code>quota</code>{% endtrans %}</td>
 </tr>
 <tr>
     <td>POST</td>
     <td>/remove</td>
-    <td>Removes a mail user. Required POST-by parameter is <code>email</code>.</td>
+    <td>{% trans %}Removes a mail user. Required POST-by parameter is <code>email</code>.{% endtrans %}</td>
 </tr>
-<tr><td>POST</td><td>/privileges/add</td> <td>Used to make a mail user an admin. Required POST-body parameters are <code>email</code> and <code>privilege=admin</code>.</td></tr>
-<tr><td>POST</td><td>/privileges/remove</td> <td>Used to remove the admin privilege from a mail user. Required POST-body parameter is <code>email</code>.</td></tr>
+<tr><td>POST</td><td>/privileges/add</td> <td>{% trans %}Used to make a mail user an admin. Required POST-body parameters are <code>email</code> and <code>privilege=admin</code>.{% endtrans %}</td></tr>
+<tr><td>POST</td><td>/privileges/remove</td> <td>{% trans %}Used to remove the admin privilege from a mail user. Required POST-body parameter is <code>email</code>.{% endtrans %}</td></tr>
 <tr>
     <td>GET</td>
     <td>/quota</td>
-    <td>Get the quota for a mail user. Required POST-body parameters are <code>email</code> and will return JSON result</td>
+    <td>{% trans %}Get the quota for a mail user. Required POST-body parameters are <code>email</code> and will return JSON result{% endtrans %}</td>
 </tr>
 <tr>
     <td>POST</td>
     <td>/quota</td>
-    <td>Set the quota for a mail user. Required POST-body parameters are <code>email</code> and <code>quota</code>.</td>
+    <td>{% trans %}Set the quota for a mail user. Required POST-body parameters are <code>email</code> and <code>quota</code>.{% endtrans %}</td>
 </tr>
 </table>
 
-<h4>Examples:</h4>
+<h4>{% trans %}Examples:{% endtrans %}</h4>
 
-<p>Try these examples. For simplicity the examples omit the <code>--user me@mydomain.com:yourpassword</code> command line argument which you must fill in with your administrative email address and password.</p>
+<p>{% trans %}Try these examples. For simplicity the examples omit the <code>--user me@mydomain.com:yourpassword</code> command line argument which you must fill in with your administrative email address and password.{% endtrans %}</p>
 
-<pre># Gives a JSON-encoded list of all mail users
+<pre># {% trans %}Gives a JSON-encoded list of all mail users{% endtrans %}
 curl -X GET https://{{hostname}}/admin/mail/users?format=json
 
-# Adds a new email user
+# {% trans %}Adds a new email user{% endtrans %}
 curl -X POST -d "email=new_user@mydomail.com" -d "password=s3curE_pa5Sw0rD" https://{{hostname}}/admin/mail/users/add
 
-# Removes a email user
+# {% trans %}Removes a email user{% endtrans %}
 curl -X POST -d "email=new_user@mydomail.com" https://{{hostname}}/admin/mail/users/remove
 
-# Adds admin privilege to an email user
+# {% trans %}Adds admin privilege to an email user{% endtrans %}
 curl -X POST -d "email=new_user@mydomail.com" -d "privilege=admin" https://{{hostname}}/admin/mail/users/privileges/add
 
-# Removes admin privilege from an email user
+# {% trans %}Removes admin privilege from an email user{% endtrans %}
 curl -X POST -d "email=new_user@mydomail.com" https://{{hostname}}/admin/mail/users/privileges/remove
 </pre>
 
 <script>
 function show_users() {
-  $('#user_table tbody').html("<tr><td colspan='2' class='text-muted'>Loading...</td></tr>")
+  $('#user_table tbody').html("<tr><td colspan='2' class='text-muted'>" + t("Loading...") + "</td></tr>")
   api(
     "/mail/users",
     "GET",
@@ -193,10 +193,10 @@ function show_users() {
           n.find('.address').text(user.email);
           n.find('.box-size').text(user.box_size);
           if (user.box_size == '?') {
-            n.find('.box-size').attr('title', 'Mailbox size is unkown')
+            n.find('.box-size').attr('title', t('Mailbox size is unkown'))
           }
           n.find('.percent').text(user.percent);
-          n.find('.quota').text((user.quota == '0') ? 'unlimited' : user.quota);
+          n.find('.quota').text((user.quota == '0') ? t('unlimited') : user.quota);
           n2.find('.restore_info tt').text(user.mailbox);
 
           if (user.status == 'inactive') continue;
@@ -204,7 +204,7 @@ function show_users() {
           var add_privs = ["admin"];
 
           for (var j = 0; j < user.privileges.length; j++) {
-            var p = $("<span><b><span class='name'></span></b> (<a href='#' onclick='mod_priv(this, \"remove\"); return false;' title='Remove Privilege'>remove privilege</a>) |</span>");
+            var p = $("<span><b><span class='name'></span></b> (<a href='#' onclick='mod_priv(this, \"remove\"); return false;' title=\"" + t("Remove Privilege") + "\">" + t("remove privilege") + "</a>) |</span>");
             p.find('span.name').text(user.privileges[j]);
             n.find('.privs').append(p);
             if (add_privs.indexOf(user.privileges[j]) >= 0)
@@ -212,8 +212,7 @@ function show_users() {
           }
 
           for (var j = 0; j < add_privs.length; j++) {
-            var p = $("<span><a href='#' onclick='mod_priv(this, \"add\"); return false;' title='Add Privilege'>make <span class='name'></span></a> | </span>");
-            p.find('span.name').text(add_privs[j]);
+            var p = $("<span><a href='#' onclick='mod_priv(this, \"add\"); return false;' title=\"" + t("Add Privilege") + "\">" + t("make <span class='name'>%(privilege)s</span>", {privilege: $('<div/>').text(add_privs[j]).html()}) + "</a> | </span>");
             n.find('.add-privs').append(p);
           }
         }
@@ -237,26 +236,27 @@ function do_add_user() {
     },
     function(r) {
       // Responses are multiple lines of pre-formatted text.
-      show_modal_error("Add User", $("<pre/>").text(r));
+      show_modal_error(t("Add User"), $("<pre/>").text(r));
       show_users()
     },
     function(r) {
-      show_modal_error("Add User", r);
+      show_modal_error(t("Add User"), r);
     });
   return false;
 }
 
 function users_set_password(elem) {
   var email = $(elem).parents('tr').attr('data-email');
+  var email_esc = $('<div/>').text(email).html();
 
   var yourpw = "";
   if (api_credentials != null && email == api_credentials.username)
-    yourpw = "<p class='text-danger'>If you change your own password, you will be logged out of this control panel and will need to log in again.</p>";
+    yourpw = t("<p class='text-danger'>If you change your own password, you will be logged out of this control panel and will need to log in again.</p>");
 
   show_modal_confirm(
-    "Set Password",
-    $("<p>Set a new password for <b>" + email + "</b>?</p> <p><label for='users_set_password_pw' style='display: block; font-weight: normal'>New Password:</label><input type='password' id='users_set_password_pw'></p><p><small>Passwords must be at least eight characters and may not contain spaces.</small>" + yourpw + "</p>"),
-    "Set Password",
+    t("Set Password"),
+    $(t("<p>Set a new password for <b>%(email)s</b>?</p> <p><label for='users_set_password_pw' style='display: block; font-weight: normal'>New Password:</label><input type='password' id='users_set_password_pw'></p><p><small>Passwords must be at least eight characters and may not contain spaces.</small>%(yourpw)s</p>", {email: email_esc, yourpw: yourpw})),
+    t("Set Password"),
     function() {
       api(
         "/mail/users/password",
@@ -267,10 +267,10 @@ function users_set_password(elem) {
         },
         function(r) {
           // Responses are multiple lines of pre-formatted text.
-          show_modal_error("Set Password", $("<pre/>").text(r));
+          show_modal_error(t("Set Password"), $("<pre/>").text(r));
         },
         function(r) {
-          show_modal_error("Set Password", r);
+          show_modal_error(t("Set Password"), r);
         });
     });
 }
@@ -278,16 +278,13 @@ function users_set_password(elem) {
 function users_set_quota(elem) {
     var email = $(elem).parents('tr').attr('data-email');
     var quota = $(elem).parents('tr').attr('data-quota');
+    var email_esc = $('<div/>').text(email).html();
+    var quota_esc = $('<div/>').text(quota).html();
 
     show_modal_confirm(
-        "Set Quota",
-        $("<p>Set quota for <b>" + email + "</b>?</p>" +
-            "<p>" +
-            "<label for='users_set_quota' style='display: block; font-weight: normal'>Quota:</label>" +
-            "<input type='text' id='users_set_quota' value='" + quota + "'></p>" +
-            "<p><small>Quotas may not contain any spaces or commas.  Suffixes of G (gigabytes) and M (megabytes) are allowed.</small></p>" +
-            "<p><small>For unlimited storage enter 0 (zero)</small></p>"),
-        "Set Quota",
+        t("Set Quota"),
+        $(t("<p>Set quota for <b>%(email)s</b>?</p><p><label for='users_set_quota' style='display: block; font-weight: normal'>Quota:</label><input type='text' id='users_set_quota' value='%(quota)s'></p><p><small>Quotas may not contain any spaces or commas.  Suffixes of G (gigabytes) and M (megabytes) are allowed.</small></p><p><small>For unlimited storage enter 0 (zero)</small></p>", {email: email_esc, quota: quota_esc})),
+        t("Set Quota"),
         function() {
             api(
                 "/mail/users/quota",
@@ -300,24 +297,25 @@ function users_set_quota(elem) {
                     show_users();
                 },
                 function(r) {
-                    show_modal_error("Set Quota", r);
+                    show_modal_error(t("Set Quota"), r);
                 });
         });
 }
 
 function users_remove(elem) {
   var email = $(elem).parents('tr').attr('data-email');
+  var email_esc = $('<div/>').text(email).html();
 
   // can't remove yourself
   if (api_credentials != null && email == api_credentials.username) {
-    show_modal_error("Archive User", "You cannot archive your own account.");
+    show_modal_error(t("Archive User"), t("You cannot archive your own account."));
     return;
   }
 
   show_modal_confirm(
-    "Archive User",
-    $("<p>Are you sure you want to archive <b>" + email + "</b>?</p> <p>The user's mailboxes will not be deleted (you can do that later), but the user will no longer be able to log into any services on this machine.</p>"),
-    "Archive",
+    t("Archive User"),
+    $(t("<p>Are you sure you want to archive <b>%(email)s</b>?</p> <p>The user's mailboxes will not be deleted (you can do that later), but the user will no longer be able to log into any services on this machine.</p>", {email: email_esc})),
+    t("Archive"),
     function() {
       api(
         "/mail/users/remove",
@@ -327,11 +325,11 @@ function users_remove(elem) {
         },
         function(r) {
           // Responses are multiple lines of pre-formatted text.
-          show_modal_error("Remove User", $("<pre/>").text(r));
+          show_modal_error(t("Remove User"), $("<pre/>").text(r));
           show_users();
         },
         function(r) {
-          show_modal_error("Remove User", r);
+          show_modal_error(t("Remove User"), r);
         });
     });
 }
@@ -339,18 +337,28 @@ function users_remove(elem) {
 function mod_priv(elem, add_remove) {
   var email = $(elem).parents('tr').attr('data-email');
   var priv = $(elem).parents('td').find('.name').text();
+  var email_esc = $('<div/>').text(email).html();
+  var priv_esc = $('<div/>').text(priv).html();
 
   // can't remove your own admin access
   if (priv == "admin" && add_remove == "remove" && api_credentials != null && email == api_credentials.username) {
-    show_modal_error("Modify Privileges", "You cannot remove the admin privilege from yourself.");
+    show_modal_error(t("Modify Privileges"), t("You cannot remove the admin privilege from yourself."));
     return;
   }
 
-  var add_remove1 = add_remove.charAt(0).toUpperCase() + add_remove.substring(1);
+  var confirm_msg;
+  var confirm_verb;
+  if (add_remove == "remove") {
+    confirm_msg = t("<p>Are you sure you want to remove the %(privilege)s privilege for <b>%(email)s</b>?</p>", {privilege: priv_esc, email: email_esc});
+    confirm_verb = t("Remove");
+  } else {
+    confirm_msg = t("<p>Are you sure you want to add the %(privilege)s privilege for <b>%(email)s</b>?</p>", {privilege: priv_esc, email: email_esc});
+    confirm_verb = t("Add");
+  }
   show_modal_confirm(
-    "Modify Privileges",
-    $("<p>Are you sure you want to " + add_remove + " the " + priv + " privilege for <b>" + email + "</b>?</p>"),
-    add_remove1,
+    t("Modify Privileges"),
+    $(confirm_msg),
+    confirm_verb,
     function() {
       api(
         "/mail/users/privileges/" + add_remove,
@@ -370,7 +378,7 @@ function generate_random_password() {
   var charset = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789"; // confusable characters skipped
   for (var i = 0; i < 12; i++)
     pw += charset.charAt(Math.floor(Math.random() * charset.length));
-  show_modal_error("Random Password", "<p>Here, try this:</p> <p><code style='font-size: 110%'>" + pw + "</code></p>");
+  show_modal_error(t("Random Password"), t("<p>Here, try this:</p> <p><code style='font-size: 110%'>%(password)s</code></p>", {password: $('<div/>').text(pw).html()}));
   return false; // cancel click
 }
 </script>
