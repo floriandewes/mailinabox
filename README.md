@@ -1,32 +1,7 @@
 Trixie Mail
 ===========
 
-**Trixie Mail** (software id **TrixieMail**) is an **agentic fork** of [Mail-in-a-Box](https://github.com/mail-in-a-box/mailinabox) by [@JoshData](https://github.com/JoshData) and [contributors](https://github.com/mail-in-a-box/mailinabox/graphs/contributors). Upstream credit stands: this project builds on that design and codebase.
-
-It remains a one-click mail server (SMTP, IMAP, webmail, contacts, calendar, DNS) on a single machine, with changes aimed at Debian 13 and headless / AI-agent installs.
-
-**This repository:** [https://github.com/quantenland-ai/TrixieMail](https://github.com/quantenland-ai/TrixieMail) (Quantenland AI GmbH / `quantenland-ai`)
-
-
-What changed in this fork
--------------------------
-
-| Area | This fork |
-| --- | --- |
-| OS | **Debian 13 (Trixie) only** (not Ubuntu) |
-| Product name | **Trixie Mail** / **TrixieMail** |
-| Versioning | **YY.MM[.N]** (current **26.11.1**) |
-| Headless install | Optional `install.conf` + `--noninteractive` for agents |
-| Uninstall | Experimental `setup/uninstall.sh` (package baseline) |
-| Stack pins | Newer Nextcloud / PHP / crypto vs upstream Ubuntu 22.04 line |
-
-Runtime paths inherited from Mail-in-a-Box (`/etc/mailinabox.conf`, `/usr/local/lib/mailinabox`, `/usr/local/bin/mailinabox`, systemd unit `mailinabox.service`, etc.) are **kept on purpose** so existing boxes and tooling do not break. Setup also installs a `trixiemail` command alias. See [Runtime paths](#runtime-paths).
-
-
-Versioning
-----------
-
-This fork versions as **YY.MM[.N]** (see the top-level `VERSION` file; current release **26.11.1**), targeting a release about every 1–2 months. Release history is in `CHANGELOG.md`. The control panel, `/admin/system/version` API, and setup banner read `VERSION`. Git tags and `TAG=` in `setup/bootstrap.sh` use a leading `v` (for example `v26.11.1`).
+**Trixie Mail** (software id **TrixieMail**) is an **agentic fork** of [Mail-in-a-Box](https://github.com/mail-in-a-box/mailinabox) by [@JoshData](https://github.com/JoshData) and [contributors](https://github.com/mail-in-a-box/mailinabox/graphs/contributors). This fork updates all the software to the latest available versions. It is a one-click mail server (SMTP, IMAP, webmail, contacts, calendar, DNS) on a single machine, with changes aimed at Debian 13 and headless / AI-agent installs.
 
 
 Requirements
@@ -73,7 +48,7 @@ Log in with that email and password. If DNS is not ready yet, use the `https://<
 To change an answer later, run `sudo trixiemail` or `sudo mailinabox` from the install directory (both invoke the same setup).
 
 
-### Agentic AI
+### Installation instructions for agents
 
 Agents install without a TTY by writing `install.conf`, then running setup with `--noninteractive`. Setup will not prompt; missing required keys abort immediately. Follow this checklist in order.
 
@@ -255,6 +230,12 @@ For more information on privacy, see the [security details page](security.md).
 For help with **upstream** Mail-in-a-Box (Ubuntu), use the [discussion forum](https://discourse.mailinabox.email/). For this fork, open an issue on [quantenland-ai/TrixieMail](https://github.com/quantenland-ai/TrixieMail).
 
 Note that while we want everything to "just work," we can't control the rest of the Internet. Other mail services might block or spam-filter email sent from your box. This is a challenge faced by everyone who runs their own mail server.
+
+
+Versioning
+----------
+
+This fork versions as **YY.MM[.N]** (see the top-level `VERSION` file; current release **26.11.1**), targeting a release about every 1–2 months. Release history is in `CHANGELOG.md`. The control panel, `/admin/system/version` API, and setup banner read `VERSION`. Git tags and `TAG=` in `setup/bootstrap.sh` use a leading `v` (for example `v26.11.1`).
 
 
 Contributing and Development
