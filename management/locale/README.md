@@ -15,4 +15,4 @@ Changing language in the control panel also writes `$STORAGE_ROOT/ui_locale`. Th
 - translated subjects in `management/email_administrator.py` (cron mail)
 - Roundcube `$config['language']` and Nextcloud `default_language` on the next setup re-run
 
-The public default homepage (`conf/www_default.html`) uses the visitor’s `navigator.language` instead (static nginx file; admin cookie is `Path=/admin`).
+The public default homepage (`conf/www_default.html`) is a static BBS-style placeholder (not localized).
