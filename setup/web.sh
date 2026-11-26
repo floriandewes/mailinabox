@@ -137,15 +137,10 @@ cat conf/mta-sts.txt \
          > /var/lib/mailinabox/mta-sts.txt
 chmod a+r /var/lib/mailinabox/mta-sts.txt
 
-# Make a default homepage. Install when missing; refresh when the file is still
-# a stock MIAB/Trixie placeholder so setup re-runs pick up conf/www_default.html.
-# Custom sites that replaced index.html are left alone.
+# make a default homepage
 mkdir -p "$STORAGE_ROOT/www/default"
-DEFAULT_INDEX="$STORAGE_ROOT/www/default/index.html"
-if [ ! -f "$DEFAULT_INDEX" ] \
-	|| grep -qE 'trixiemail-stock-www-default|this is a mail-in-a-box|this is Trixie Mail|Phase 1 public homepage i18n|\*\*\* connected — node 01 — public default \*\*\*' "$DEFAULT_INDEX"
-then
-	cp conf/www_default.html "$DEFAULT_INDEX"
+if [ ! -f "$STORAGE_ROOT/www/default/index.html" ]; then
+	cp conf/www_default.html "$STORAGE_ROOT/www/default/index.html"
 fi
 chown -R "$STORAGE_USER" "$STORAGE_ROOT/www"
 
