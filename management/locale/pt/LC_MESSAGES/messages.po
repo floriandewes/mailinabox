@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Trixie Mail VERSION\n"
 "Report-Msgid-Bugs-To: https://github.com/quantenland-ai/trixiemail\n"
-"POT-Creation-Date: 2026-11-26 15:16+0000\n"
-"PO-Revision-Date: 2026-11-26 15:20+0000\n"
+"POT-Creation-Date: 2026-11-26 15:24+0000\n"
+"PO-Revision-Date: 2026-11-26 16:30+0000\n"
 "Last-Translator: Trixie Mail i18n <noreply@localhost>\n"
 "Language: pt\n"
 "Language-Team: pt\n"
@@ -19,6 +19,1804 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.19.0\n"
+
+#. Status: mt
+#. Phase: 1
+#: auth.py:53
+msgid "Authorization header invalid."
+msgstr "Cabeçalho de autorização inválido."
+
+#. Status: mt
+#. Phase: 1
+#: auth.py:57
+msgid "No email address, password, session key, or API key provided."
+msgstr ""
+"Nenhum endereço de e-mail, palavra-passe, chave de sessão ou chave API "
+"fornecido."
+
+#. Status: mt
+#. Phase: 1
+#: auth.py:78
+msgid "Enter a password."
+msgstr "Introduza uma palavra-passe."
+
+#. Status: mt
+#. Phase: 1
+#: auth.py:121
+msgid "Incorrect email address or password."
+msgstr "Endereço de e-mail ou palavra-passe incorrectos."
+
+#. Status: mt
+#. Phase: 1
+#: backup.py:501
+#, python-format
+msgid "Connection to rsync host failed: %(reason)s"
+msgstr "Falha na ligação ao anfitrião rsync: %(reason)s"
+
+#. Status: mt
+#. Phase: 1
+#: backup.py:515
+msgid "Enter an S3 bucket name."
+msgstr "Introduza um nome de bucket S3."
+
+#. Status: mt
+#. Phase: 1
+#: backup.py:548
+msgid "B2 Bucket does not exist. Please double check your information!"
+msgstr "O bucket B2 não existe. Verifique novamente as suas informações!"
+
+#. Status: mt
+#. Phase: 1
+#: daemon.py:108
+msgid "You are not an administrator."
+msgstr "Não é um administrador."
+
+#. Status: mt
+#. Phase: 1
+#: daemon.py:341
+msgid "Greylisting value must be 'on' or 'off'."
+msgstr "O valor de greylisting deve ser 'on' ou 'off'."
+
+#. Status: mt
+#. Phase: 1
+#: daemon.py:451
+msgid "No value for the record provided."
+msgstr "Nenhum valor fornecido para o registo."
+
+#. Status: mt
+#. Phase: 1
+#: daemon.py:540
+msgid "Invalid domain name."
+msgstr "Nome de domínio inválido."
+
+#. Status: mt
+#. Phase: 1
+#: daemon.py:581
+msgid "Bad Input"
+msgstr "Entrada incorrecta"
+
+#. Status: mt
+#. Phase: 1
+#: daemon.py:603
+msgid "Invalid user or MFA id."
+msgstr "Utilizador ou id MFA inválido."
+
+#. Status: mt
+#. Phase: 1
+#: daemon.py:696
+msgid "No reboot is required, so it is not allowed."
+msgstr "Não é necessário reiniciar, pelo que não é permitido."
+
+#. Status: mt
+#. Phase: 1
+#: daemon.py:802
+msgid "a path must be specified"
+msgstr "deve ser especificado um caminho"
+
+#. Status: mt
+#. Phase: 1
+#: daemon.py:817
+msgid "error processing graph image"
+msgstr "erro ao processar a imagem do gráfico"
+
+#. Status: mt
+#. Phase: 1
+#: dns_update.py:603
+#, python-format
+msgid "%(zone)s is not a domain name that corresponds to a zone."
+msgstr "%(zone)s não é um nome de domínio correspondente a uma zona."
+
+#. Status: mt
+#. Phase: 1
+#: dns_update.py:910
+#, python-format
+msgid ""
+"%(qname)s is not a domain name or a subdomain of a domain name managed by"
+" this box."
+msgstr ""
+"%(qname)s não é um nome de domínio nem um subdomínio de um nome de "
+"domínio gerido por este sistema."
+
+#. Status: mt
+#. Phase: 1
+#: dns_update.py:917
+msgid "Invalid name."
+msgstr "Nome inválido."
+
+#. Status: mt
+#. Phase: 1
+#: dns_update.py:923
+msgid "That's an IPv6 address."
+msgstr "Isso é um endereço IPv6."
+
+#. Status: mt
+#. Phase: 1
+#: dns_update.py:924
+msgid "That's an IPv4 address."
+msgstr "Isso é um endereço IPv4."
+
+#. Status: mt
+#. Phase: 1
+#: dns_update.py:927
+msgid "NS records can only be set for subdomains."
+msgstr "Os registos NS só podem ser definidos para subdomínios."
+
+#. Status: mt
+#. Phase: 1
+#: dns_update.py:935
+msgid "Invalid value."
+msgstr "Valor inválido."
+
+#. Status: mt
+#. Phase: 1
+#: dns_update.py:941
+#, python-format
+msgid "Unknown record type '%(rtype)s'."
+msgstr "Tipo de registo desconhecido '%(rtype)s'."
+
+#. Status: mt
+#. Phase: 1
+#: dns_update.py:976
+#, python-format
+msgid "Invalid action: %(action)s"
+msgstr "Acção inválida: %(action)s"
+
+#. Status: mt
+#. Phase: 1
+#: dns_update.py:1053
+#, python-format
+msgid "Could not resolve the IP address of %(item)s."
+msgstr "Não foi possível resolver o endereço IP de %(item)s."
+
+#. Status: mt
+#. Phase: 1
+#: dns_update.py:1063
+#, python-format
+msgid "'%(item)s' is not an IPv4 or IPv6 address or subnet."
+msgstr "'%(item)s' não é um endereço ou sub-rede IPv4 ou IPv6."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:317 mailconfig.py:522
+msgid "No email address provided."
+msgstr "Nenhum endereço de e-mail fornecido."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:319
+msgid "Invalid email address."
+msgstr "Endereço de e-mail inválido."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:321
+msgid ""
+"User account email addresses may only use the lowercase ASCII letters "
+"a-z, the digits 0-9, underscore (_), hyphen (-), and period (.)."
+msgstr ""
+"Os endereços de e-mail das contas de utilizador só podem usar as letras "
+"ASCII minúsculas a-z, os dígitos 0-9, o underscore (_), o hífen (-) e o "
+"ponto (.)."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:326
+msgid ""
+"You may not make a user account for that address because it is frequently"
+" used for domain control validation. Use an alias instead if necessary."
+msgstr ""
+"Não pode criar uma conta de utilizador para esse endereço porque é "
+"frequentemente usado para validação de controlo de domínio. Se "
+"necessário, use um alias."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:359
+msgid "User already exists."
+msgstr "O utilizador já existe."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:380 mailconfig.py:396 mailconfig.py:409 mailconfig.py:451
+#: mailconfig.py:460 mailconfig.py:476
+#, python-format
+msgid "That's not a user (%(email)s)."
+msgstr "Isso não é um utilizador (%(email)s)."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:431
+msgid "No quota provided."
+msgstr "Nenhuma quota fornecida."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:434
+msgid "Quotas cannot contain spaces, commas, or decimal points."
+msgstr "As quotas não podem conter espaços, vírgulas ou pontos decimais."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:437
+msgid "Invalid quota."
+msgstr "Quota inválida."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:481
+#, python-format
+msgid "That's not a valid privilege (%(priv)s)."
+msgstr "Isso não é um privilégio válido (%(priv)s)."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:500
+msgid "Invalid action."
+msgstr "Acção inválida."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:506
+msgid "Something went wrong."
+msgstr "Algo correu mal."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:524
+#, python-format
+msgid "Invalid email address (%(address)s)."
+msgstr "Endereço de e-mail inválido (%(address)s)."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:553
+#, python-format
+msgid "Invalid receiver email address (%(email)s)."
+msgstr "Endereço de e-mail do destinatário inválido (%(email)s)."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:558
+msgid ""
+"This alias can only have administrators of this system as destinations "
+"because the address is frequently used for domain control validation."
+msgstr ""
+"Este alias só pode ter administradores deste sistema como destinos porque"
+" o endereço é frequentemente usado para validação de controlo de domínio."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:573
+#, python-format
+msgid "Invalid permitted sender: %(login)s is not a user on this system."
+msgstr "Remetente permitido inválido: %(login)s não é um utilizador neste sistema."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:578
+msgid "The alias must either forward to an address or have a permitted sender."
+msgstr "O alias deve reencaminhar para um endereço ou ter um remetente permitido."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:592
+#, python-format
+msgid "Alias already exists (%(address)s)."
+msgstr "O alias já existe (%(address)s)."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:611
+#, python-format
+msgid "That's not an alias (%(address)s)."
+msgstr "Isso não é um alias (%(address)s)."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:713
+msgid "No password provided."
+msgstr "Nenhuma palavra-passe fornecida."
+
+#. Status: mt
+#. Phase: 1
+#: mailconfig.py:716
+msgid "Passwords must be at least eight characters."
+msgstr "As palavras-passe devem ter pelo menos oito caracteres."
+
+#. Status: mt
+#. Phase: 1
+#: mfa.py:14
+msgid "User does not exist."
+msgstr "O utilizador não existe."
+
+#. Status: mt
+#. Phase: 1
+#: mfa.py:45
+msgid "Invalid token."
+msgstr "Token inválido."
+
+#. Status: mt
+#. Phase: 1
+#: mfa.py:48
+msgid "Invalid MFA type."
+msgstr "Tipo MFA inválido."
+
+#. Status: mt
+#. Phase: 1
+#: mfa.py:73
+msgid "No secret provided."
+msgstr "Nenhum segredo fornecido."
+
+#. Status: mt
+#. Phase: 1
+#: mfa.py:76
+msgid "Secret should be a 32 characters base32 string"
+msgstr "O segredo deve ser uma cadeia base32 de 32 caracteres"
+
+#. Status: mt
+#. Phase: 1
+#: ssl_certificates.py:430
+msgid "This is a self-signed certificate. I can't install that."
+msgstr "Este é um certificado autoassinado. Não o posso instalar."
+
+#. Status: mt
+#. Phase: 1
+#: ssl_certificates.py:538
+msgid "This is not a certificate file."
+msgstr "Este não é um ficheiro de certificado."
+
+#. Status: mt
+#. Phase: 1
+#: ssl_certificates.py:540
+#, python-format
+msgid "There is a problem with the certificate file: %(err)s"
+msgstr "Há um problema com o ficheiro do certificado: %(err)s"
+
+#. Status: mt
+#. Phase: 1
+#: ssl_certificates.py:552
+#, python-format
+msgid "The certificate is for the wrong domain name. It is for %(names)s."
+msgstr "O certificado é para o nome de domínio incorrecto. É para %(names)s."
+
+#. Status: mt
+#. Phase: 1
+#: ssl_certificates.py:560
+#, python-format
+msgid "The private key file %(path)s is not a private key file: %(err)s"
+msgstr ""
+"O ficheiro de chave privada %(path)s não é um ficheiro de chave privada: "
+"%(err)s"
+
+#. Status: mt
+#. Phase: 1
+#: ssl_certificates.py:565
+#, python-format
+msgid "The private key file %(path)s is not a private key file."
+msgstr "O ficheiro de chave privada %(path)s não é um ficheiro de chave privada."
+
+#. Status: mt
+#. Phase: 1
+#: ssl_certificates.py:568
+#, python-format
+msgid "The certificate does not correspond to the private key at %(path)s."
+msgstr "O certificado não corresponde à chave privada em %(path)s."
+
+#. Status: mt
+#. Phase: 1
+#: ssl_certificates.py:590
+#, python-format
+msgid ""
+"The certificate has expired or is not yet valid. It is valid from "
+"%(start)s to %(end)s."
+msgstr ""
+"O certificado expirou ou ainda não é válido. É válido de %(start)s a "
+"%(end)s."
+
+#. Status: mt
+#. Phase: 1
+#: ssl_certificates.py:614
+#, python-format
+msgid ""
+"The certificate is missing an intermediate chain or the intermediate "
+"chain is incorrect or incomplete. (%(detail)s)"
+msgstr ""
+"Falta ao certificado uma cadeia intermédia ou a cadeia está incorrecta ou"
+" incompleta. (%(detail)s)"
+
+#. Status: mt
+#. Phase: 1
+#: ssl_certificates.py:617
+msgid "There is a problem with the certificate."
+msgstr "Há um problema com o certificado."
+
+#. Status: mt
+#. Phase: 1
+#: ssl_certificates.py:627
+#, python-format
+msgid "The certificate expires in %(days)d days on %(date)s."
+msgstr "O certificado expira em %(days)d dias a %(date)s."
+
+#. Status: mt
+#. Phase: 1
+#: ssl_certificates.py:630
+#, python-format
+msgid "The certificate expires on %(date)s."
+msgstr "O certificado expira a %(date)s."
+
+#. Status: mt
+#. Phase: 1
+#: ssl_certificates.py:635
+#, python-format
+msgid "The certificate is expiring soon: %(info)s"
+msgstr "O certificado expira em breve: %(info)s"
+
+#. Status: mt
+#. Phase: 1
+#: ssl_certificates.py:648
+msgid "File does not contain valid PEM data."
+msgstr "O ficheiro não contém dados PEM válidos."
+
+#. Status: mt
+#. Phase: 1
+#: ssl_certificates.py:659
+msgid "File is not a valid PEM-formatted file."
+msgstr "O ficheiro não é um ficheiro com formato PEM válido."
+
+#. Status: mt
+#. Phase: 1
+#: ssl_certificates.py:666
+#, python-format
+msgid "Unsupported PEM object type: %(type)s"
+msgstr "Tipo de objecto PEM não suportado: %(type)s"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:27
+msgid "Local DNS (bind9)"
+msgstr "DNS local (bind9)"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:29
+msgid "Local DNS Control (bind9/rndc)"
+msgstr "Controlo DNS local (bind9/rndc)"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:30
+msgid "Dovecot LMTP LDA"
+msgstr "Dovecot LMTP LDA"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:31
+msgid "Postgrey"
+msgstr "Postgrey"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:32
+msgid "Spamassassin"
+msgstr "Spamassassin"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:33
+msgid "OpenDKIM"
+msgstr "OpenDKIM"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:34
+msgid "OpenDMARC"
+msgstr "OpenDMARC"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:35
+msgid "Trixie Mail Management Daemon"
+msgstr "Daemon de gestão do Trixie Mail"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:36
+msgid "SSH Login (ssh)"
+msgstr "Início de sessão SSH (ssh)"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:37
+msgid "Public DNS (nsd4)"
+msgstr "DNS público (nsd4)"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:38
+msgid "Incoming Mail (SMTP/postfix)"
+msgstr "Correio de entrada (SMTP/postfix)"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:39
+msgid "Outgoing Mail (SMTP 465/postfix)"
+msgstr "Correio de saída (SMTP 465/postfix)"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:40
+msgid "Outgoing Mail (SMTP 587/postfix)"
+msgstr "Correio de saída (SMTP 587/postfix)"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:42
+msgid "IMAPS (dovecot)"
+msgstr "IMAPS (dovecot)"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:43
+msgid "Mail Filters (Sieve/dovecot)"
+msgstr "Filtros de correio (Sieve/dovecot)"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:44
+msgid "HTTP Web (nginx)"
+msgstr "Web HTTP (nginx)"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:45
+msgid "HTTPS Web (nginx)"
+msgstr "Web HTTPS (nginx)"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:50 templates/index.html:113
+msgid "System"
+msgstr "Sistema"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:85
+msgid "fail2ban is not running."
+msgstr "fail2ban não está em execução."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:89
+msgid "All system services are running."
+msgstr "Todos os serviços do sistema estão em execução."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:128
+#, python-format
+msgid ""
+"%(name)s is running (and available over IPv4 and the local IPv6 address),"
+" but it is not publicly accessible at %(ip)s:%(port)d."
+msgstr ""
+"%(name)s está em execução (e disponível via IPv4 e o endereço IPv6 "
+"local), mas não é acessível publicamente em %(ip)s:%(port)d."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:130
+#, python-format
+msgid ""
+"%(name)s is running and available over IPv4 but is not accessible over "
+"IPv6 at %(ip)s port %(port)d."
+msgstr ""
+"%(name)s está em execução e disponível via IPv4 mas não é acessível via "
+"IPv6 em %(ip)s porta %(port)d."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:134
+#, python-format
+msgid "%(name)s is running but is not publicly accessible at %(ip)s:%(port)d."
+msgstr ""
+"%(name)s está em execução mas não é acessível publicamente em "
+"%(ip)s:%(port)d."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:136 status_checks.py:146
+#, python-format
+msgid "%(name)s is not running (port %(port)d)."
+msgstr "%(name)s não está em execução (porta %(port)d)."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:165
+msgid ""
+"The ufw program was not installed. If your system is able to run "
+"iptables, rerun the setup."
+msgstr ""
+"O programa ufw não foi instalado. Se o seu sistema puder executar "
+"iptables, volte a executar a configuração."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:172
+msgid ""
+"The firewall is not working on this machine. An error was received\n"
+"\t\t\t\t\twhile trying to check the firewall. To investigate run 'sudo "
+"ufw status'."
+msgstr ""
+"A firewall não está a funcionar nesta máquina. Foi recebido um erro\n"
+"\t\t\t\t\tao tentar verificar a firewall. Para investigar, execute 'sudo "
+"ufw status'."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:182
+#, python-format
+msgid ""
+"Port %(port)s (%(name)s) should be allowed in the firewall, please re-run"
+" the setup."
+msgstr ""
+"A porta %(port)s (%(name)s) deve ser permitida na firewall; volte a "
+"executar a configuração."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:185
+msgid "Firewall is active."
+msgstr "A firewall está activa."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:187
+msgid ""
+"The firewall is disabled on this machine. This might be because the "
+"system\n"
+"\t\t\tis protected by an external firewall. We can't protect the system "
+"against bruteforce attacks\n"
+"\t\t\twithout the local firewall active. Connect to the system via ssh "
+"and try to run: ufw enable."
+msgstr ""
+"A firewall está desactivada nesta máquina. Isso pode dever-se ao sistema\n"
+"\t\t\testar protegido por uma firewall externa. Não podemos proteger o "
+"sistema contra ataques de força bruta\n"
+"\t\t\tsem a firewall local activa. Ligue-se ao sistema via ssh e tente "
+"executar: ufw enable."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:198
+msgid "SSH disallows password-based login."
+msgstr "O SSH não permite início de sessão com palavra-passe."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:200
+msgid ""
+"The SSH server on this machine permits password-based login. A more "
+"secure\n"
+"\t\t\t\tway to log in is using a public key. Add your SSH public key to "
+"$HOME/.ssh/authorized_keys, check\n"
+"\t\t\t\tthat you can log in without a password, set the option "
+"'PasswordAuthentication no' in\n"
+"\t\t\t\t/etc/ssh/sshd_config, and then restart the openssh via 'sudo "
+"service ssh restart'."
+msgstr ""
+"O servidor SSH nesta máquina permite início de sessão com palavra-passe. "
+"Uma forma mais segura\n"
+"\t\t\t\tde iniciar sessão é usar uma chave pública. Adicione a sua chave "
+"pública SSH a $HOME/.ssh/authorized_keys, verifique\n"
+"\t\t\t\tque consegue iniciar sessão sem palavra-passe, defina a opção "
+"'PasswordAuthentication no' em\n"
+"\t\t\t\t/etc/ssh/sshd_config e depois reinicie o openssh com 'sudo "
+"service ssh restart'."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:212
+msgid ""
+"System updates have been installed and a reboot of the machine is "
+"required."
+msgstr ""
+"Foram instaladas actualizações do sistema e é necessário reiniciar a "
+"máquina."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:214
+msgid "System software is up to date."
+msgstr "O software do sistema está actualizado."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:216
+#, python-format
+msgid "There are %d software packages that can be updated."
+msgstr "Há %d pacotes de software que podem ser actualizados."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:223
+msgid "System administrator address"
+msgstr "Endereço do administrador do sistema"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:230
+#, python-format
+msgid "The disk has %.2f GB space remaining."
+msgstr "O disco tem %.2f GB de espaço restante."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:232
+#, python-format
+msgid "The disk has more than %(pct)s%% free space."
+msgstr "O disco tem mais de %(pct)s%% de espaço livre."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:235 status_checks.py:238
+#, python-format
+msgid "The disk has less than %(pct)s%% free space."
+msgstr "O disco tem menos de %(pct)s%% de espaço livre."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:250
+#, python-format
+msgid ""
+"The backup cache directory %(path)s has more than one backup target "
+"cache. Consider clearing this directory to save disk space."
+msgstr ""
+"O directório de cache de cópia de segurança %(path)s tem mais do que uma "
+"cache de destino de cópia. Considere limpar este directório para poupar "
+"espaço em disco."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:255
+#, python-format
+msgid "System memory is %(pct)s%% free."
+msgstr "A memória do sistema está livre em %(pct)s%%."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:257
+#, python-format
+msgid "System free memory is at least %(pct)s%%."
+msgstr "A memória livre do sistema é de pelo menos %(pct)s%%."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:260 status_checks.py:263
+#, python-format
+msgid "System free memory is below %(pct)s%%."
+msgstr "A memória livre do sistema está abaixo de %(pct)s%%."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:273
+msgid "Backups are disabled. It is recommended to enable a backup for your box."
+msgstr ""
+"As cópias de segurança estão desactivadas. É recomendado activar uma "
+"cópia de segurança para o seu sistema."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:276
+msgid "Backups are enabled"
+msgstr "As cópias de segurança estão activadas"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:291
+msgid "Backup is more than a week old"
+msgstr "A cópia de segurança tem mais de uma semana"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:293
+msgid ""
+"Could not obtain backup status or no backup has been made (yet). This "
+"could happen if you have just enabled backups. In that case, check back "
+"tomorrow."
+msgstr ""
+"Não foi possível obter o estado da cópia de segurança ou ainda não foi "
+"feita nenhuma. Isto pode acontecer se acabou de activar as cópias. Nesse "
+"caso, volte amanhã."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:300
+msgid "Network"
+msgstr "Rede"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:309
+msgid "Outbound mail (SMTP port 25) is not blocked."
+msgstr "O correio de saída (porta SMTP 25) não está bloqueado."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:311
+msgid ""
+"Outbound mail (SMTP port 25) seems to be blocked by your network. You\n"
+"\t\t\twill not be able to send any mail. Many residential networks block "
+"port 25 to prevent hijacked\n"
+"\t\t\tmachines from being able to send spam. A quick connection test to "
+"Google's mail server on port 25\n"
+"\t\t\tfailed."
+msgstr ""
+"O correio de saída (porta SMTP 25) parece estar bloqueado pela sua rede. "
+"Não\n"
+"\t\t\tconseguirá enviar qualquer correio. Muitas redes residenciais "
+"bloqueiam a porta 25 para impedir que máquinas\n"
+"\t\t\tcomprometidas enviem spam. Um teste rápido de ligação ao servidor "
+"de correio da Google na porta 25\n"
+"\t\t\tfalhou."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:338
+#, python-format
+msgid "%(type)s address is not blacklisted by zen.spamhaus.org."
+msgstr "O endereço %(type)s não está na lista negra do zen.spamhaus.org."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:340
+#, python-format
+msgid ""
+"Connection to zen.spamhaus.org timed out. Could not determine whether "
+"this box's\n"
+"\t\t \t%(type)s address is blacklisted. Please try again later."
+msgstr ""
+"Tempo limite da ligação a zen.spamhaus.org esgotado. Não foi possível "
+"determinar se o endereço\n"
+"\t\t \t%(type)s deste sistema está na lista negra. Tente novamente mais "
+"tarde."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:343
+#, python-format
+msgid ""
+"Could not connect to zen.spamhaus.org. Could not determine whether this "
+"box's\n"
+"\t\t\t%(type)s address is blacklisted. Please try again later."
+msgstr ""
+"Não foi possível ligar a zen.spamhaus.org. Não foi possível determinar se"
+" o endereço\n"
+"\t\t\t%(type)s deste sistema está na lista negra. Tente novamente mais "
+"tarde."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:346
+#, python-format
+msgid ""
+"Incorrect spamhaus query: %(query)s. Could not determine whether\n"
+"\t\t \tthis box's %(type)s address is blacklisted."
+msgstr ""
+"Consulta spamhaus incorrecta: %(query)s. Não foi possível determinar se\n"
+"\t\t \to endereço %(type)s deste sistema está na lista negra."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:349
+#, python-format
+msgid ""
+"Trixie Mail is configured to use a public DNS server. This is not "
+"supported by\n"
+"\t\t\tspamhaus. Could not determine whether this box's %(type)s address "
+"is blacklisted."
+msgstr ""
+"O Trixie Mail está configurado para usar um servidor DNS público. Isto "
+"não é suportado pelo\n"
+"\t\t\tspamhaus. Não foi possível determinar se o endereço %(type)s deste "
+"sistema está na lista negra."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:352
+#, python-format
+msgid ""
+"Too many queries have been performed on the spamhaus server. Could not "
+"determine\n"
+"\t\t \twhether this box's %(type)s address is blacklisted."
+msgstr ""
+"Foram efectuadas demasiadas consultas ao servidor spamhaus. Não foi "
+"possível determinar\n"
+"\t\t \tse o endereço %(type)s deste sistema está na lista negra."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:355
+#, python-format
+msgid ""
+"The %(type)s address of this machine %(addr)s is listed in the Spamhaus "
+"Block\n"
+"\t\t \tList (code %(code)s), which may prevent recipients from receiving "
+"your email. See\n"
+"\t\t \thttp://www.spamhaus.org/query/ip/%(addr)s."
+msgstr ""
+"O endereço %(type)s desta máquina %(addr)s está listado na Spamhaus Block"
+"\n"
+"\t\t \tList (código %(code)s), o que pode impedir que os destinatários "
+"recebam o seu e-mail. Consulte\n"
+"\t\t \thttp://www.spamhaus.org/query/ip/%(addr)s."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:418
+#, python-format
+msgid "Domain name is invalid: %(err)s"
+msgstr "O nome de domínio é inválido: %(err)s"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:475
+#, python-format
+msgid ""
+"Nameserver glue records are correct at registrar. [ns1/ns2.%(host)s ↦ "
+"%(ip)s]"
+msgstr ""
+"Os registos glue dos nameservers estão correctos no registador. "
+"[ns1/ns2.%(host)s ↦ %(ip)s]"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:480
+#, python-format
+msgid ""
+"Nameserver glue records (ns1.%(host)s and ns2.%(host)s) should be "
+"configured at your domain name\n"
+"\t\t\tregistrar as having the IP address of this box (%(ip)s). They "
+"currently report addresses of %(ns_ips)s. If you have set up External "
+"DNS, this may be OK."
+msgstr ""
+"Os registos glue dos nameservers (ns1.%(host)s e ns2.%(host)s) devem ser "
+"configurados no seu registador\n"
+"\t\t\tde nomes de domínio como tendo o endereço IP deste sistema "
+"(%(ip)s). Actualmente reportam os endereços %(ns_ips)s. Se configurou DNS"
+" externo, isto pode estar correcto."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:484
+#, python-format
+msgid ""
+"Nameserver glue records are incorrect. The ns1.%(host)s and ns2.%(host)s "
+"nameservers must be configured at your domain name\n"
+"\t\t\tregistrar as having the IP address %(ip)s. They currently report "
+"addresses of %(ns_ips)s. It may take several hours for\n"
+"\t\t\tpublic DNS to update after a change."
+msgstr ""
+"Os registos glue dos nameservers estão incorrectos. Os nameservers "
+"ns1.%(host)s e ns2.%(host)s devem ser configurados no seu registador\n"
+"\t\t\tde nomes de domínio como tendo o endereço IP %(ip)s. Actualmente "
+"reportam os endereços %(ns_ips)s. Pode demorar várias horas até\n"
+"\t\t\to DNS público actualizar após uma alteração."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:491
+#, python-format
+msgid "Domain resolves to box's IP address. [%(host)s ↦ %(ips)s]"
+msgstr "O domínio resolve para o endereço IP do sistema. [%(host)s ↦ %(ips)s]"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:493
+#, python-format
+msgid ""
+"This domain must resolve to this box's IP address (%(ips)s) in public DNS"
+" but it currently resolves\n"
+"\t\t\tto %(resolved)s. It may take several hours for public DNS to update"
+" after a change. This problem may result from other\n"
+"\t\t\tissues listed above."
+msgstr ""
+"Este domínio deve resolver para o endereço IP deste sistema (%(ips)s) no "
+"DNS público mas actualmente resolve\n"
+"\t\t\tpara %(resolved)s. Pode demorar várias horas até o DNS público "
+"actualizar após uma alteração. Este problema pode resultar de outros\n"
+"\t\t\tproblemas listados acima."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:503
+#, python-format
+msgid "Reverse DNS is set correctly at ISP. [%(ips)s ↦ %(host)s]"
+msgstr "O DNS inverso está definido correctamente no ISP. [%(ips)s ↦ %(host)s]"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:505
+#, python-format
+msgid ""
+"This box's reverse DNS is currently %(rdns)s, but it should be "
+"%(domain)s. Your ISP or cloud provider will have instructions\n"
+"\t\t\ton setting up reverse DNS for this box."
+msgstr ""
+"O DNS inverso deste sistema é actualmente %(rdns)s, mas deveria ser "
+"%(domain)s. O seu ISP ou fornecedor de cloud terá instruções\n"
+"\t\t\tsobre como configurar o DNS inverso para este sistema."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:508
+#, python-format
+msgid ""
+"This box's reverse DNS is currently %(rdns4)s (IPv4) and %(rdns6)s "
+"(IPv6), but it should be %(domain)s. Your ISP or cloud provider will have"
+" instructions\n"
+"\t\t\ton setting up reverse DNS for this box."
+msgstr ""
+"O DNS inverso deste sistema é actualmente %(rdns4)s (IPv4) e %(rdns6)s "
+"(IPv6), mas deveria ser %(domain)s. O seu ISP ou fornecedor de cloud terá"
+" instruções\n"
+"\t\t\tsobre como configurar o DNS inverso para este sistema."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:516
+#, python-format
+msgid "The DANE TLSA record for incoming mail is correct (%(qname)s)."
+msgstr "O registo DANE TLSA para o correio de entrada está correcto (%(qname)s)."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:521
+msgid "The DANE TLSA record for incoming mail is not set. This is optional."
+msgstr ""
+"O registo DANE TLSA para o correio de entrada não está definido. Isto é "
+"opcional."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:523
+#, python-format
+msgid ""
+"The DANE TLSA record for incoming mail (%(qname)s) is not correct. It is "
+"'%(got)s' but it should be '%(expected)s'.\n"
+"\t\t\tIt may take several hours for public DNS to update after a change."
+msgstr ""
+"O registo DANE TLSA para o correio de entrada (%(qname)s) não está "
+"correcto. É '%(got)s' mas deveria ser '%(expected)s'.\n"
+"\t\t\tPode demorar várias horas até o DNS público actualizar após uma "
+"alteração."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:527
+msgid "Hostmaster contact address"
+msgstr "Endereço de contacto do hostmaster"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:533
+#, python-format
+msgid "%(name)s exists as a mail alias. [%(alias)s ↦ %(dest)s]"
+msgstr "%(name)s existe como alias de correio. [%(alias)s ↦ %(dest)s]"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:535
+#, python-format
+msgid ""
+"You must set the destination of the mail alias for %(alias)s to direct "
+"email to you or another administrator."
+msgstr ""
+"Deve definir o destino do alias de correio para %(alias)s de forma a "
+"direcionar o e-mail para si ou outro administrador."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:537
+#, python-format
+msgid ""
+"You must add a mail alias for %(alias)s which directs email to you or "
+"another administrator."
+msgstr ""
+"Deve adicionar um alias de correio para %(alias)s que direcione o e-mail "
+"para si ou outro administrador."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:565
+#, python-format
+msgid "Nameservers are set correctly at registrar. [%(ns)s]"
+msgstr "Os nameservers estão definidos correctamente no registador. [%(ns)s]"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:568
+#, python-format
+msgid ""
+"The nameservers set on this domain at your domain name registrar should "
+"be %(correct)s. They are currently %(existing)s.\n"
+"\t\t\tIf you are using External DNS, this may be OK."
+msgstr ""
+"Os nameservers definidos neste domínio no seu registador de nomes de "
+"domínio devem ser %(correct)s. Actualmente são %(existing)s.\n"
+"\t\t\tSe estiver a usar DNS externo, isto pode estar correcto."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:572
+#, python-format
+msgid ""
+"The nameservers set on this domain are incorrect. They are currently "
+"%(existing)s. Use your domain name registrar's\n"
+"\t\t\tcontrol panel to set the nameservers to %(correct)s."
+msgstr ""
+"Os nameservers definidos neste domínio estão incorrectos. Actualmente são"
+" %(existing)s. Use o\n"
+"\t\t\tpainel de controlo do seu registador de nomes de domínio para "
+"definir os nameservers para %(correct)s."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:584
+#, python-format
+msgid ""
+"Secondary nameserver %(ns)s is not valid (it doesn't resolve to an IP "
+"address)."
+msgstr ""
+"O nameserver secundário %(ns)s não é válido (não resolve para um endereço"
+" IP)."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:598
+#, python-format
+msgid "Secondary nameserver %(ns)s resolved the domain correctly."
+msgstr "O nameserver secundário %(ns)s resolveu o domínio correctamente."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:600
+#, python-format
+msgid "Secondary nameserver %(ns)s is not configured to resolve this domain."
+msgstr ""
+"O nameserver secundário %(ns)s não está configurado para resolver este "
+"domínio."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:604
+#, python-format
+msgid "Secondary nameserver %(ns)s did not resolve this domain, result: %(ip)s"
+msgstr ""
+"O nameserver secundário %(ns)s não resolveu este domínio, resultado: "
+"%(ip)s"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:607
+#, python-format
+msgid ""
+"Secondary nameserver %(ns)s is not configured correctly. (It resolved "
+"this domain as %(ip)s. It should be %(correct)s.)"
+msgstr ""
+"O nameserver secundário %(ns)s não está configurado correctamente. "
+"(Resolveu este domínio como %(ip)s. Deveria ser %(correct)s.)"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:614
+#, python-format
+msgid "Secondary nameserver %(ns)s has consistent SOA record."
+msgstr "O nameserver secundário %(ns)s tem um registo SOA consistente."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:616
+#, python-format
+msgid "Secondary nameserver %(ns)s has no SOA record configured."
+msgstr "O nameserver secundário %(ns)s não tem um registo SOA configurado."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:618
+#, python-format
+msgid "Secondary nameserver %(ns)s timed out on checking SOA record."
+msgstr ""
+"Tempo limite esgotado no nameserver secundário %(ns)s ao verificar o "
+"registo SOA."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:620
+#, python-format
+msgid ""
+"Secondary nameserver %(ns)s has inconsistent SOA record (primary: "
+"%(primary)s versus secondary: %(secondary)s).\n"
+"\t\t\t\t\tCheck that synchronization between secondary and primary DNS "
+"servers is properly set-up."
+msgstr ""
+"O nameserver secundário %(ns)s tem um registo SOA inconsistente "
+"(primário: %(primary)s versus secundário: %(secondary)s).\n"
+"\t\t\t\t\tVerifique se a sincronização entre os servidores DNS "
+"secundários e primários está correctamente configurada."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:627
+msgid ""
+"Web has been disabled for this domain because you have set a custom DNS "
+"record."
+msgstr ""
+"A web foi desactivada para este domínio porque definiu um registo DNS "
+"personalizado."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:629
+#, python-format
+msgid ""
+"A redirect from 'www.%(domain)s' has been disabled for this domain "
+"because you have set a custom DNS record on the www subdomain."
+msgstr ""
+"Um redireccionamento de 'www.%(domain)s' foi desactivado para este "
+"domínio porque definiu um registo DNS personalizado no subdomínio www."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:683
+msgid ""
+"This domain's DNSSEC DS record is not set. The DS record is optional. The"
+" DS record activates DNSSEC. See below for instructions."
+msgstr ""
+"O registo DNSSEC DS deste domínio não está definido. O registo DS é "
+"opcional. O registo DS activa o DNSSEC. Consulte abaixo as instruções."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:693
+msgid "DNSSEC 'DS' record is set correctly at registrar."
+msgstr "O registo DNSSEC 'DS' está definido correctamente no registador."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:696
+msgid ""
+"DNSSEC 'DS' record is set correctly at registrar. (Records using "
+"algorithm other than ECDSAP256SHA256 and digest types other than "
+"SHA-256/384 should be removed.)"
+msgstr ""
+"O registo DNSSEC 'DS' está definido correctamente no registador. (Os "
+"registos que usem um algoritmo diferente de ECDSAP256SHA256 e tipos de "
+"digest diferentes de SHA-256/384 devem ser removidos.)"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:699
+msgid ""
+"DNSSEC 'DS' record set at registrar is valid but should be updated to "
+"ECDSAP256SHA256 and SHA-256 (see below).\n"
+"\t\t\t\tIMPORTANT: Do not delete existing DNSSEC 'DS' records for this "
+"domain until confirmation that the new DNSSEC 'DS' record\n"
+"\t\t\t\tfor this domain is valid."
+msgstr ""
+"O registo DNSSEC 'DS' definido no registador é válido mas deve ser "
+"actualizado para ECDSAP256SHA256 e SHA-256 (ver abaixo).\n"
+"\t\t\t\tIMPORTANTE: Não elimine os registos DNSSEC 'DS' existentes para "
+"este domínio até confirmação de que o novo registo DNSSEC 'DS'\n"
+"\t\t\t\tpara este domínio é válido."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:704
+#, python-format
+msgid ""
+"The DNSSEC 'DS' record for %(domain)s is incorrect. See further details "
+"below."
+msgstr ""
+"O registo DNSSEC 'DS' para %(domain)s está incorrecto. Consulte mais "
+"detalhes abaixo."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:706
+msgid ""
+"This domain's DNSSEC DS record is incorrect. The chain of trust is broken"
+" between the public DNS system\n"
+"\t\t\t\tand this machine's DNS server. It may take several hours for "
+"public DNS to update after a change. If you did not recently\n"
+"\t\t\t\tmake a change, you must resolve this immediately (see below)."
+msgstr ""
+"O registo DNSSEC DS deste domínio está incorrecto. A cadeia de confiança "
+"está quebrada entre o sistema DNS público\n"
+"\t\t\t\te o servidor DNS desta máquina. Pode demorar várias horas até o "
+"DNS público actualizar após uma alteração. Se não fez recentemente\n"
+"\t\t\t\tuma alteração, deve resolver isto imediatamente (ver abaixo)."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:710
+msgid ""
+"Follow the instructions provided by your domain name registrar to set a "
+"DS record.\n"
+"\t\tRegistrars support different sorts of DS records. Use the first "
+"option that works:"
+msgstr ""
+"Siga as instruções fornecidas pelo seu registador de nomes de domínio "
+"para definir um registo DS.\n"
+"\t\tOs registadores suportam diferentes tipos de registos DS. Use a "
+"primeira opção que funcionar:"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:723
+#, python-format
+msgid "Option %(n)s:"
+msgstr "Opção %(n)s:"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:724
+msgid "----------"
+msgstr "----------"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:725
+#, python-format
+msgid "Key Tag: %(tag)s"
+msgstr "Etiqueta da chave: %(tag)s"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:726
+msgid "Key Flags: KSK / 257"
+msgstr "Indicadores da chave: KSK / 257"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:727
+#, python-format
+msgid "Algorithm: %(alg)s / %(name)s"
+msgstr "Algoritmo: %(alg)s / %(name)s"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:728
+#, python-format
+msgid "Digest Type: %(type)s / %(name)s"
+msgstr "Tipo de digest: %(type)s / %(name)s"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:729
+#, python-format
+msgid "Digest: %(digest)s"
+msgstr "Digest: %(digest)s"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:730
+msgid "Public Key: "
+msgstr "Chave pública: "
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:733
+msgid "Bulk/Record Format:"
+msgstr "Formato bulk/registo:"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:737
+msgid "The DS record is currently set to:"
+msgstr "O registo DS está actualmente definido como:"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:739
+#, python-format
+msgid ""
+"Key Tag: %(tag)s, Algorithm: %(alg)s, Digest Type: %(dtype)s, Digest: "
+"%(digest)s"
+msgstr ""
+"Etiqueta da chave: %(tag)s, Algoritmo: %(alg)s, Tipo de digest: "
+"%(dtype)s, Digest: %(digest)s"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:759
+#, python-format
+msgid ""
+"Domain's email is directed to this domain. [%(domain)s has no MX record, "
+"which is ok]"
+msgstr ""
+"O correio do domínio é direcionado para este domínio. [%(domain)s não tem"
+" registo MX, o que está correcto]"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:768
+#, python-format
+msgid ""
+"Domain's email is directed to this domain. [%(domain)s has no MX record "
+"but its A record is OK]"
+msgstr ""
+"O correio do domínio é direcionado para este domínio. [%(domain)s não tem"
+" registo MX mas o seu registo A está correcto]"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:770
+#, python-format
+msgid ""
+"This domain's DNS MX record is not set. It should be '%(mx)s'. Mail will "
+"not\n"
+"\t\t\t\t\tbe delivered to this box. It may take several hours for public "
+"DNS to update after a\n"
+"\t\t\t\t\tchange. This problem may result from other issues listed here."
+msgstr ""
+"O registo DNS MX deste domínio não está definido. Deveria ser '%(mx)s'. O"
+" correio não\n"
+"\t\t\t\t\tserá entregue neste sistema. Pode demorar várias horas até o "
+"DNS público actualizar após uma\n"
+"\t\t\t\t\talteração. Este problema pode resultar de outros problemas "
+"listados aqui."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:775
+#, python-format
+msgid "Domain's email is directed to this domain. [%(domain)s ↦ %(mx)s]"
+msgstr ""
+"O correio do domínio é direcionado para este domínio. [%(domain)s ↦ "
+"%(mx)s]"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:777
+#, python-format
+msgid ""
+"  This configuration is non-standard.  The recommended configuration is "
+"'%(mx)s'."
+msgstr "  Esta configuração não é padrão.  A configuração recomendada é '%(mx)s'."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:786
+msgid "MTA-STS policy is present."
+msgstr "A política MTA-STS está presente."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:788
+#, python-format
+msgid "MTA-STS policy is present but has unexpected settings. [%(policy)s]"
+msgstr ""
+"A política MTA-STS está presente mas tem definições inesperadas. "
+"[%(policy)s]"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:790
+#, python-format
+msgid "MTA-STS policy is missing: %(valid)s"
+msgstr "A política MTA-STS está em falta: %(valid)s"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:793
+#, python-format
+msgid ""
+"This domain's DNS MX record is incorrect. It is currently set to '%(mx)s'"
+" but should be '%(recommended)s'. Mail will not\n"
+"\t\t\tbe delivered to this box. It may take several hours for public DNS "
+"to update after a change. This problem may result from\n"
+"\t\t\tother issues listed here."
+msgstr ""
+"O registo DNS MX deste domínio está incorrecto. Está actualmente definido"
+" como '%(mx)s' mas deveria ser '%(recommended)s'. O correio não\n"
+"\t\t\tserá entregue neste sistema. Pode demorar várias horas até o DNS "
+"público actualizar após uma alteração. Este problema pode resultar de\n"
+"\t\t\toutros problemas listados aqui."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:800
+msgid "Postmaster contact address"
+msgstr "Endereço de contacto do postmaster"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:810
+msgid "Domain is not blacklisted by dbl.spamhaus.org."
+msgstr "O domínio não está na lista negra do dbl.spamhaus.org."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:812
+#, python-format
+msgid ""
+"Connection to dbl.spamhaus.org timed out. Could not determine whether the"
+" domain %(domain)s is blacklisted. Please try again later."
+msgstr ""
+"Tempo limite da ligação a dbl.spamhaus.org esgotado. Não foi possível "
+"determinar se o domínio %(domain)s está na lista negra. Tente novamente "
+"mais tarde."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:814
+#, python-format
+msgid ""
+"Could not connect to dbl.spamhaus.org. Could not determine whether the "
+"domain %(domain)s is blacklisted. Please try again later."
+msgstr ""
+"Não foi possível ligar a dbl.spamhaus.org. Não foi possível determinar se"
+" o domínio %(domain)s está na lista negra. Tente novamente mais tarde."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:816
+#, python-format
+msgid ""
+"Incorrect spamhaus query: %(query)s. Could not determine whether the "
+"domain %(domain)s is blacklisted."
+msgstr ""
+"Consulta spamhaus incorrecta: %(query)s. Não foi possível determinar se o"
+" domínio %(domain)s está na lista negra."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:818
+#, python-format
+msgid ""
+"Trixie Mail is configured to use a public DNS server. This is not "
+"supported by spamhaus. Could not determine whether the domain %(domain)s "
+"is blacklisted."
+msgstr ""
+"O Trixie Mail está configurado para usar um servidor DNS público. Isto "
+"não é suportado pelo spamhaus. Não foi possível determinar se o domínio "
+"%(domain)s está na lista negra."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:820
+#, python-format
+msgid ""
+"Too many queries have been performed on the spamhaus server. Could not "
+"determine whether the domain %(domain)s is blacklisted."
+msgstr ""
+"Foram efectuadas demasiadas consultas ao servidor spamhaus. Não foi "
+"possível determinar se o domínio %(domain)s está na lista negra."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:822
+#, python-format
+msgid ""
+"This domain is listed in the Spamhaus Domain Block List (code %(code)s),\n"
+"\t\t\twhich may prevent recipients from receiving your mail.\n"
+"\t\t\tSee http://www.spamhaus.org/dbl/ and "
+"http://www.spamhaus.org/query/domain/%(domain)s."
+msgstr ""
+"Este domínio está listado na Spamhaus Domain Block List (código "
+"%(code)s),\n"
+"\t\t\to que pode impedir que os destinatários recebam o seu correio.\n"
+"\t\t\tConsulte http://www.spamhaus.org/dbl/ e "
+"http://www.spamhaus.org/query/domain/%(domain)s."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:838
+#, python-format
+msgid ""
+"This domain should resolve to this box's IP address (%(rtype)s "
+"%(expected)s) if you would like the box to serve\n"
+"\t\t\t\t\twebmail or a website on this domain. The domain currently "
+"resolves to %(value)s in public DNS. It may take several hours for\n"
+"\t\t\t\t\tpublic DNS to update after a change. This problem may result "
+"from other issues listed here."
+msgstr ""
+"Este domínio deve resolver para o endereço IP deste sistema (%(rtype)s "
+"%(expected)s) se pretender que o sistema sirva\n"
+"\t\t\t\t\twebmail ou um sítio web neste domínio. O domínio actualmente "
+"resolve para %(value)s no DNS público. Pode demorar várias horas até\n"
+"\t\t\t\t\to DNS público actualizar após uma alteração. Este problema pode"
+" resultar de outros problemas listados aqui."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:844
+#, python-format
+msgid "Domain resolves to this box's IP address. [%(domain)s ↦ %(ips)s]"
+msgstr "O domínio resolve para o endereço IP deste sistema. [%(domain)s ↦ %(ips)s]"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:912
+msgid ""
+"No TLS (SSL) certificate is installed for this domain. Visitors to a "
+"website on\n"
+"\t\t\tthis domain will get a security warning. If you are not serving a "
+"website on this domain, you do\n"
+"\t\t\tnot need to take any action. Use the TLS Certificates page in the "
+"control panel to install a\n"
+"\t\t\tTLS certificate."
+msgstr ""
+"Nenhum certificado TLS (SSL) está instalado para este domínio. Os "
+"visitantes de um sítio web neste\n"
+"\t\t\tdomínio receberão um aviso de segurança. Se não estiver a servir um"
+" sítio web neste domínio, não\n"
+"\t\t\tprecisa de tomar qualquer acção. Use a página Certificados TLS no "
+"painel de controlo para instalar um\n"
+"\t\t\tcertificado TLS."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:924
+#, python-format
+msgid "TLS (SSL) certificate is signed & valid. %(details)s"
+msgstr "O certificado TLS (SSL) está assinado e é válido. %(details)s"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:929
+msgid ""
+"The TLS (SSL) certificate for this domain is currently self-signed. You "
+"will get a security\n"
+"\t\t\twarning when you check or send email and when visiting this domain "
+"in a web browser (for webmail or\n"
+"\t\t\tstatic site hosting)."
+msgstr ""
+"O certificado TLS (SSL) para este domínio está actualmente autoassinado. "
+"Receberá um aviso de\n"
+"\t\t\tsegurança ao verificar ou enviar e-mail e ao visitar este domínio "
+"num navegador web (para webmail ou\n"
+"\t\t\talojamento de sítio estático)."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:933
+msgid "The TLS (SSL) certificate for this domain is self-signed."
+msgstr "O certificado TLS (SSL) para este domínio é autoassinado."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:936
+#, python-format
+msgid "The TLS (SSL) certificate has a problem: %(status)s"
+msgstr "O certificado TLS (SSL) tem um problema: %(status)s"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:1014
+#, python-format
+msgid ""
+"You are running version Trixie Mail %(ver)s. Trixie Mail version check "
+"disabled by privacy setting."
+msgstr ""
+"Está a executar a versão Trixie Mail %(ver)s. A verificação de versão do "
+"Trixie Mail está desactivada pela definição de privacidade."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:1019
+#, python-format
+msgid "Trixie Mail is up to date. You are running version %(ver)s."
+msgstr "O Trixie Mail está actualizado. Está a executar a versão %(ver)s."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:1021
+#, python-format
+msgid ""
+"Latest Trixie Mail version could not be determined. You are running "
+"version %(ver)s."
+msgstr ""
+"Não foi possível determinar a última versão do Trixie Mail. Está a "
+"executar a versão %(ver)s."
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:1023
+#, python-format
+msgid ""
+"A new version of Trixie Mail is available. You are running version "
+"%(ver)s. The latest version is %(latest)s. For upgrade instructions, see "
+"https://github.com/quantenland-ai/TrixieMail. "
+msgstr ""
+"Está disponível uma nova versão do Trixie Mail. Está a executar a versão "
+"%(ver)s. A última versão é %(latest)s. Para instruções de actualização, "
+"consulte https://github.com/quantenland-ai/TrixieMail. "
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:1049
+msgid "No Category"
+msgstr "Sem categoria"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:1064 status_checks.py:1083
+#, python-format
+msgid "%(category)s -- Added"
+msgstr "%(category)s -- Adicionado"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:1074
+#, python-format
+msgid "%(category)s -- Previously:"
+msgstr "%(category)s -- Anteriormente:"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:1076
+#, python-format
+msgid "%(category)s -- Removed"
+msgstr "%(category)s -- Removido"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:1081
+#, python-format
+msgid "%(category)s -- Currently:"
+msgstr "%(category)s -- Actualmente:"
+
+#. Status: mt
+#. Phase: 1
+#: status_checks.py:1090
+msgid "This section was removed."
+msgstr "Esta secção foi removida."
+
+#. Status: mt
+#. Phase: 1
+#: web_update.py:256
+msgid "No certificate installed."
+msgstr "Nenhum certificado instalado."
+
+#. Status: mt
+#. Phase: 1
+#: web_update.py:259
+#, python-format
+msgid "Signed & valid. %(details)s"
+msgstr "Assinado e válido. %(details)s"
+
+#. Status: mt
+#. Phase: 1
+#: web_update.py:261
+msgid "Self-signed. Get a signed certificate to stop warnings."
+msgstr "Autoassinado. Obtenha um certificado assinado para parar os avisos."
+
+#. Status: mt
+#. Phase: 1
+#: web_update.py:262
+#, python-format
+msgid "Certificate has a problem: %(status)s"
+msgstr "O certificado tem um problema: %(status)s"
 
 #. Status: mt
 #. Phase: 1
@@ -1699,12 +3497,6 @@ msgid ""
 msgstr ""
 "É necessário o Internet Explorer versão 8 ou qualquer navegador moderno "
 "para usar este site."
-
-#. Status: mt
-#. Phase: 1
-#: templates/index.html:113
-msgid "System"
-msgstr "Sistema"
 
 #. Status: mt
 #. Phase: 1
