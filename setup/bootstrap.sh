@@ -20,12 +20,13 @@ if [ -z "$TAG" ]; then
 	#
 	# Debian is identified from os-release because lsb_release is not
 	# installed on a minimal Debian image. The first TAG= line below must
-	# stay the latest supported release; status checks read it.
+	# stay the latest supported release (git tag; product version is in
+	# VERSION as YY.MM without the leading v).
 	# Ubuntu is not supported.
 	. /etc/os-release
 	if [ "${ID:-}" = "debian" ] && [ "${VERSION_ID:-}" = "13" ]; then
 		# Debian 13 (trixie).
-		TAG=v78
+		TAG=v26.11
 	else
 		echo "This installer only runs on Debian 13 (Trixie)."
 		echo "You are running: ${PRETTY_NAME:-${ID:-unknown} ${VERSION_ID:-}}"
@@ -49,7 +50,7 @@ if [ ! -d "$HOME/mailinabox" ]; then
 	fi
 
 	if [ "$SOURCE" == "" ]; then
-		SOURCE=https://github.com/mail-in-a-box/mailinabox
+		SOURCE=https://github.com/floriandewes/mailinabox
 	fi
 
 	echo "Downloading Mail-in-a-Box $TAG. . ."
