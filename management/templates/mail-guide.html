@@ -1,67 +1,67 @@
 <style>#panel_mail-guide table.table { width: auto; margin-left: .5em; }</style>
 
 <div>
-	<h2 style="margin-bottom: 0">Checking and Sending Mail</h2>
+	<h2 style="margin-bottom: 0">{% trans %}Checking and Sending Mail{% endtrans %}</h2>
 
 	<div class="row">
 		<div class="col-sm-7">
-			<h3>Webmail</h3>
+			<h3>{% trans %}Webmail{% endtrans %}</h3>
 
-			<p>Webmail lets you check your email from any web browser. Your webmail site is:</p>
+			<p>{% trans %}Webmail lets you check your email from any web browser. Your webmail site is:{% endtrans %}</p>
 			<p style="margin-left: 2em"><strong><a href="https://{{hostname}}/mail">https://{{hostname}}/mail</a></strong></p>
-			<p>Your username is your whole email address.</p>
+			<p>{% trans %}Your username is your whole email address.{% endtrans %}</p>
 
 
-			<h3>Mobile/desktop apps</h3>
+			<h3>{% trans %}Mobile/desktop apps{% endtrans %}</h3>
 
-				<h4>Automatic configuration</h4>
+				<h4>{% trans %}Automatic configuration{% endtrans %}</h4>
 
-					<p>iOS and macOS only: Open <a style="font-weight: bold" href="https://{{hostname}}/mailinabox.mobileconfig">this configuration link</a> on your iOS device or on your Mac desktop to easily set up mail (IMAP/SMTP), Contacts, and Calendar. Your username is your whole email address.</p>
+					<p>{% trans %}iOS and macOS only: Open <a style="font-weight: bold" href="https://{{hostname}}/mailinabox.mobileconfig">this configuration link</a> on your iOS device or on your Mac desktop to easily set up mail (IMAP/SMTP), Contacts, and Calendar. Your username is your whole email address.{% endtrans %}</p>
 	
-				<h4>Manual configuration</h4>
+				<h4>{% trans %}Manual configuration{% endtrans %}</h4>
 
-					<p>Use the following settings when you set up your email on your phone, desktop, or other device:</p>
+					<p>{% trans %}Use the following settings when you set up your email on your phone, desktop, or other device:{% endtrans %}</p>
 
 					<table class="table">
 					<thead>
-						<tr><th scope="col">Option</th> <th scope="col">Value</th></tr>
+						<tr><th scope="col">{% trans %}Option{% endtrans %}</th> <th scope="col">{% trans %}Value{% endtrans %}</th></tr>
 					</thead>
-					<tr><th scope="row">Protocol/Method</th> <td>IMAP</td></tr>
-					<tr><th scope="row">Mail server</th> <td>{{hostname}}</td>
-					<tr><th scope="row">IMAP Port</th> <td>993</td></tr>
-					<tr><th scope="row">IMAP Security</th> <td>SSL or TLS</td></tr>
-					<tr><th scope="row">SMTP Port</th> <td>465</td></tr>
-					<tr><th scope="row">SMTP Security</td> <td>SSL or TLS</td></tr>
-					<tr><th scope="row">Username:</th> <td>Your whole email address.</td></tr>
-					<tr><th scope="row">Password:</th> <td>Your mail password.</td></tr>
+					<tr><th scope="row">{% trans %}Protocol/Method{% endtrans %}</th> <td>IMAP</td></tr>
+					<tr><th scope="row">{% trans %}Mail server{% endtrans %}</th> <td>{{hostname}}</td>
+					<tr><th scope="row">{% trans %}IMAP Port{% endtrans %}</th> <td>993</td></tr>
+					<tr><th scope="row">{% trans %}IMAP Security{% endtrans %}</th> <td>{% trans %}SSL or TLS{% endtrans %}</td></tr>
+					<tr><th scope="row">{% trans %}SMTP Port{% endtrans %}</th> <td>465</td></tr>
+					<tr><th scope="row">{% trans %}SMTP Security{% endtrans %}</th> <td>{% trans %}SSL or TLS{% endtrans %}</td></tr>
+					<tr><th scope="row">{% trans %}Username:{% endtrans %}</th> <td>{% trans %}Your whole email address.{% endtrans %}</td></tr>
+					<tr><th scope="row">{% trans %}Password:{% endtrans %}</th> <td>{% trans %}Your mail password.{% endtrans %}</td></tr>
 					</table>
 
-					<p>In addition to setting up your email, you&rsquo;ll also need to set up <a href="#sync_guide">contacts and calendar synchronization</a> separately.</p>
+					<p>{% trans %}In addition to setting up your email, you&rsquo;ll also need to set up <a href="#sync_guide">contacts and calendar synchronization</a> separately.{% endtrans %}</p>
 
-					<p>As an alternative to IMAP you can also use the POP protocol: choose POP as the protocol, port 995, and SSL or TLS security in your mail client. The SMTP settings and usernames and passwords remain the same. However, we recommend you use IMAP instead.</p>
+					<p>{% trans %}As an alternative to IMAP you can also use the POP protocol: choose POP as the protocol, port 995, and SSL or TLS security in your mail client. The SMTP settings and usernames and passwords remain the same. However, we recommend you use IMAP instead.{% endtrans %}</p>
 
-				<h4>Exchange/ActiveSync settings</h4>
+				<h4>{% trans %}Exchange/ActiveSync settings{% endtrans %}</h4>
 
-					<p>On iOS devices, devices on this <a href="https://github.com/Z-Hub/Z-Push/wiki/Compatibility">compatibility list</a>, or using Outlook 2007 or later on Windows 7 and later, you may set up your mail as an Exchange or ActiveSync server. However, we&rsquo;ve found this to be more buggy than using IMAP as described above. If you encounter any problems, please use the manual settings above.</p>
+					<p>{% trans %}On iOS devices, devices on this <a href="https://github.com/Z-Hub/Z-Push/wiki/Compatibility">compatibility list</a>, or using Outlook 2007 or later on Windows 7 and later, you may set up your mail as an Exchange or ActiveSync server. However, we&rsquo;ve found this to be more buggy than using IMAP as described above. If you encounter any problems, please use the manual settings above.{% endtrans %}</p>
 
 					<table class="table">
-					<tr><th scope="row">Server</th> <td>{{hostname}}</td></tr>
-					<tr><th scope="row">Options</th> <td>Secure Connection</td></tr>
+					<tr><th scope="row">{% trans %}Server{% endtrans %}</th> <td>{{hostname}}</td></tr>
+					<tr><th scope="row">{% trans %}Options{% endtrans %}</th> <td>{% trans %}Secure Connection{% endtrans %}</td></tr>
 					</table>
 
-					<p>Your device should also provide a contacts list and calendar that syncs to this box when you use this method.</p>
+					<p>{% trans %}Your device should also provide a contacts list and calendar that syncs to this box when you use this method.{% endtrans %}</p>
 		</div>
 
 		<div class="col-sm-5">
 		<div class="panel panel-default">
 		<div class="panel-heading">
-			<h3>Other information about mail on your box</h3>
+			<h3>{% trans %}Other information about mail on your box{% endtrans %}</h3>
 		</div>
 		<div class="panel-body">
-			<h4>Greylisting</h4>
-			<p>Greylisting is off by default, so incoming mail is accepted on the first connection. An administrator can turn it on to cut down on spam. When greylisting is on, your box initially rejects mail from people you haven&rsquo;t received mail from before. Legitimate mail servers attempt redelivery shortly afterwards, but most spam does not. Mail from someone new, such as a confirmation while you are registering on a website, can then be delayed by at least 3 minutes, depending on when the remote server retries.</p>
+			<h4>{% trans %}Greylisting{% endtrans %}</h4>
+			<p>{% trans %}Greylisting is off by default, so incoming mail is accepted on the first connection. An administrator can turn it on to cut down on spam. When greylisting is on, your box initially rejects mail from people you haven&rsquo;t received mail from before. Legitimate mail servers attempt redelivery shortly afterwards, but most spam does not. Mail from someone new, such as a confirmation while you are registering on a website, can then be delayed by at least 3 minutes, depending on when the remote server retries.{% endtrans %}</p>
 			<p id="greylisting-control" class="if-logged-in-admin">
-				<span id="greylisting-state">Loading greylisting setting...</span>
+				<span id="greylisting-state">{% trans %}Loading greylisting setting...{% endtrans %}</span>
 				<a href="#" id="greylisting-toggle" onclick="return toggle_greylisting();"></a>
 			</p>
 			<script>
@@ -75,9 +75,9 @@
 				api("/mail/greylisting", "GET", {}, function(enabled) {
 					current_greylisting = !!enabled;
 					$("#greylisting-state").text(enabled
-						? "Greylisting is on. Mail from a new sender can be delayed by at least 3 minutes."
-						: "Greylisting is off. Incoming mail is accepted on the first connection.");
-					$("#greylisting-toggle").text(enabled ? "Turn off greylisting" : "Turn on greylisting");
+						? t("Greylisting is on. Mail from a new sender can be delayed by at least 3 minutes.")
+						: t("Greylisting is off. Incoming mail is accepted on the first connection."));
+					$("#greylisting-toggle").text(enabled ? t("Turn off greylisting") : t("Turn on greylisting"));
 				});
 			}
 			function toggle_greylisting() {
@@ -91,11 +91,11 @@
 			}
 			</script>
 
-			<h4>+tag addresses</h4>
-			<p>Every incoming email address also receives mail for <code>+tag</code> addresses. If your email address is <code>you@yourdomain.com</code>, you&rsquo;ll also automatically get mail sent to <code>you+anythinghere@yourdomain.com</code>. Use this as a fast way to segment incoming mail for your own filtering rules without having to create aliases in this control panel.</p>
+			<h4>{% trans %}+tag addresses{% endtrans %}</h4>
+			<p>{% trans %}Every incoming email address also receives mail for <code>+tag</code> addresses. If your email address is <code>you@yourdomain.com</code>, you&rsquo;ll also automatically get mail sent to <code>you+anythinghere@yourdomain.com</code>. Use this as a fast way to segment incoming mail for your own filtering rules without having to create aliases in this control panel.{% endtrans %}</p>
 
-			<h4>Use only this box to send as you</h4>
-			<p>Your box sets strict email sending policies for your domain names to make it harder for spam and other fraudulent mail to claim to be you. Only this machine is authorized to send email on behalf of your domain names. If you use any other service to send email as you, it will likely get spam filtered by recipients.</p>
+			<h4>{% trans %}Use only this box to send as you{% endtrans %}</h4>
+			<p>{% trans %}Your box sets strict email sending policies for your domain names to make it harder for spam and other fraudulent mail to claim to be you. Only this machine is authorized to send email on behalf of your domain names. If you use any other service to send email as you, it will likely get spam filtered by recipients.{% endtrans %}</p>
 		</div>
 		</div>
 		</div>

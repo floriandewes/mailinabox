@@ -3,52 +3,52 @@
 #alias_table .alias-auto .actions > * { display: none }
 </style>
 
-<h2>Aliases</h2>
+<h2>{% trans %}Aliases{% endtrans %}</h2>
 
-<h3>Add a mail alias</h3>
+<h3>{% trans %}Add a mail alias{% endtrans %}</h3>
 
-<p>Aliases are email forwarders. An alias can forward email to a <a href="#users">mail user</a> or to any email address.</p>
+<p>{% trans %}Aliases are email forwarders. An alias can forward email to a <a href="#users">mail user</a> or to any email address.{% endtrans %}</p>
 
-<p>To use an alias or any address besides your own login username in outbound mail, the sending user must be included as a permitted sender for the alias.</p>
+<p>{% trans %}To use an alias or any address besides your own login username in outbound mail, the sending user must be included as a permitted sender for the alias.{% endtrans %}</p>
 
 <form id="addalias-form" class="form-horizontal" role="form" onsubmit="do_add_alias(); return false;">
   <div class="form-group">
     <div class="col-sm-offset-1 col-sm-11">
       <div id="alias_type_buttons" class="btn-group btn-group-xs">
-        <button type="button" class="btn btn-default" data-mode="regular">Regular</button>
-        <button type="button" class="btn btn-default" data-mode="catchall">Catch-All</button>
-        <button type="button" class="btn btn-default" data-mode="domainalias">Domain Alias</button>
+        <button type="button" class="btn btn-default" data-mode="regular">{% trans %}Regular{% endtrans %}</button>
+        <button type="button" class="btn btn-default" data-mode="catchall">{% trans %}Catch-All{% endtrans %}</button>
+        <button type="button" class="btn btn-default" data-mode="domainalias">{% trans %}Domain Alias{% endtrans %}</button>
       </div>
       <div id="alias_mode_info" class="text-info small" style="display: none; margin: .5em 0 0 0;">
-        <span class="catchall hidden">A catch-all alias captures all otherwise unmatched email to a domain.</span>
-        <span class="domainalias hidden">A domain alias forwards all otherwise unmatched email from one domain to another domain, preserving the part before the @-sign.</span>
+        <span class="catchall hidden">{% trans %}A catch-all alias captures all otherwise unmatched email to a domain.{% endtrans %}</span>
+        <span class="domainalias hidden">{% trans %}A domain alias forwards all otherwise unmatched email from one domain to another domain, preserving the part before the @-sign.{% endtrans %}</span>
       </div>
     </div>
   </div>
   <div class="form-group">
-    <label for="addaliasAddress" class="col-sm-1 control-label">Alias</label>
+    <label for="addaliasAddress" class="col-sm-1 control-label">{% trans %}Alias{% endtrans %}</label>
     <div class="col-sm-10">
       <input type="email" class="form-control" id="addaliasAddress">
       <div style="margin-top: 3px; padding-left: 3px; font-size: 90%" class="text-muted">
-        <span class="catchall domainalias">Enter just the part of an email address starting with the @-sign.</span>
-        You may use international (non-ASCII) characters for the domain part of the email address only.
+        <span class="catchall domainalias">{% trans %}Enter just the part of an email address starting with the @-sign.{% endtrans %}</span>
+        {% trans %}You may use international (non-ASCII) characters for the domain part of the email address only.{% endtrans %}
       </div>
     </div>
   </div>
   <div class="form-group">
-    <label for="addaliasForwardsTo" class="col-sm-1 control-label">Forwards To</label>
+    <label for="addaliasForwardsTo" class="col-sm-1 control-label">{% trans %}Forwards To{% endtrans %}</label>
     <div class="col-sm-10">
       <textarea class="form-control" rows="3" id="addaliasForwardsTo"></textarea>
       <div style="margin-top: 3px; padding-left: 3px; font-size: 90%">
-        <span class="domainalias text-muted">Enter just the part of an email address starting with the @-sign.</span>
-        <span class="text-danger">Only forward mail to addresses handled by this Trixie Mail, since mail forwarded by aliases to other domains may be rejected or filtered by the receiver. To forward mail to other domains, create a mail user and then log into webmail for the user and create a filter rule to forward mail.</span>
+        <span class="domainalias text-muted">{% trans %}Enter just the part of an email address starting with the @-sign.{% endtrans %}</span>
+        <span class="text-danger">{% trans %}Only forward mail to addresses handled by this Trixie Mail, since mail forwarded by aliases to other domains may be rejected or filtered by the receiver. To forward mail to other domains, create a mail user and then log into webmail for the user and create a filter rule to forward mail.{% endtrans %}</span>
       </div>
     </div>
   </div>
   <div class="form-group">
     <fieldset>
       <legend>
-      <label for="addaliasSenders" class="col-sm-1 control-label">Permitted Senders</label>
+      <label for="addaliasSenders" class="col-sm-1 control-label">{% trans %}Permitted Senders{% endtrans %}</label>
       </legend>
 
       <div class="col-sm-10">
@@ -59,9 +59,9 @@
                   type="radio"
                   checked
                   onclick="$('#addaliasForwardsToDiv').toggle(false)">
-            Any mail user listed in the Forwards To box can send mail claiming to be from
+            {% trans %}Any mail user listed in the Forwards To box can send mail claiming to be from
             <span class="regularalias">the alias address</span>
-            <span class="catchall domainalias">any address on the alias domain</span>.
+            <span class="catchall domainalias">any address on the alias domain</span>.{% endtrans %}
           </label>
         </div>
 
@@ -71,49 +71,49 @@
                   name="addaliasForwardsToDivToggle"
                   type="radio"
                   onclick="$('#addaliasForwardsToDiv').toggle(true)">
-            I&rsquo;ll enter the mail users that can send mail claiming to be from
+            {% trans %}I&rsquo;ll enter the mail users that can send mail claiming to be from
             <span class="regularalias">the alias address</span>
-            <span class="catchall domainalias">any address on the alias domain</span>.
+            <span class="catchall domainalias">any address on the alias domain</span>.{% endtrans %}
           </label>
         </div>
       </div>
     </fieldset>
   </div>
   <div id="addaliasForwardsToDiv" style="margin-top: .5em; margin-left: 1.4em; display: none;">
-    <textarea class="form-control" rows="3" id="addaliasSenders" placeholder="one user per line or separated by commas"></textarea>
+    <textarea class="form-control" rows="3" id="addaliasSenders" placeholder="{{ _('one user per line or separated by commas') }}"></textarea>
   </div>
   <div class="form-group">
     <div class="col-sm-offset-1 col-sm-11">
-      <button id="add-alias-button" type="submit" class="btn btn-primary">Add Alias</button>
-      <button id="alias-cancel" class="btn btn-default hidden" onclick="aliases_reset_form(); return false;">Cancel</button>
+      <button id="add-alias-button" type="submit" class="btn btn-primary">{% trans %}Add Alias{% endtrans %}</button>
+      <button id="alias-cancel" class="btn btn-default hidden" onclick="aliases_reset_form(); return false;">{% trans %}Cancel{% endtrans %}</button>
     </div>
   </div>
 </form>
 
-<h3>Existing mail aliases</h3>
+<h3>{% trans %}Existing mail aliases{% endtrans %}</h3>
 <table id="alias_table" class="table" style="width: auto">
   <thead>
     <tr>
-      <th scope="col" aria-label="Actions"></th>
-      <th scope="col"> Alias<br></th>
-      <th scope="col"> Forwards To</th>
-      <th scope="col"> Permitted Senders</th>
+      <th scope="col" aria-label="{{ _('Actions') }}"></th>
+      <th scope="col"> {% trans %}Alias{% endtrans %}<br></th>
+      <th scope="col"> {% trans %}Forwards To{% endtrans %}</th>
+      <th scope="col"> {% trans %}Permitted Senders{% endtrans %}</th>
     </tr>
   </thead>
   <tbody>
   </tbody>
 </table>
 
-<p style="margin-top: 1.5em"><small>hostmaster@, postmaster@, admin@ and abuse@ email addresses are required on some domains.</small></p>
+<p style="margin-top: 1.5em"><small>{% trans %}hostmaster@, postmaster@, admin@ and abuse@ email addresses are required on some domains.{% endtrans %}</small></p>
 
 <div style="display: none">
   <table>
   <tr id="alias-template">
     <td class='actions'>
-        <a href="#" onclick="aliases_edit(this); scroll_top(); return false;" class='edit' title="Edit Alias">
+        <a href="#" onclick="aliases_edit(this); scroll_top(); return false;" class='edit' title="{{ _('Edit Alias') }}">
           <span class="glyphicon glyphicon-pencil"></span>
         </a>
-        <a href="#" onclick="aliases_remove(this); return false;" class='remove' title="Remove Alias">
+        <a href="#" onclick="aliases_remove(this); return false;" class='remove' title="{{ _('Remove Alias') }}">
           <span class="glyphicon glyphicon-trash"></span>
         </a>
     </td>
@@ -124,47 +124,47 @@
   </table>
 </div>
 
-<h3>Mail aliases API (advanced)</h3>
+<h3>{% trans %}Mail aliases API (advanced){% endtrans %}</h3>
 
-<p>Use your box&rsquo;s mail aliases API to add and remove mail aliases from the command-line or custom services you build.</p>
+<p>{% trans %}Use your box&rsquo;s mail aliases API to add and remove mail aliases from the command-line or custom services you build.{% endtrans %}</p>
 
-<p>Usage:</p>
+<p>{% trans %}Usage:{% endtrans %}</p>
 
 <pre>curl -X <b>VERB</b> [-d "<b>parameters</b>"] --user {email}:{password} https://{{hostname}}/admin/mail/aliases[<b>action</b>]</pre>
 
-<p>Brackets denote an optional argument. Please note that the POST body <code>parameters</code> must be URL-encoded.</p>
+<p>{% trans %}Brackets denote an optional argument. Please note that the POST body <code>parameters</code> must be URL-encoded.{% endtrans %}</p>
 
-<p>The email and password given to the <code>--user</code> option must be an administrative user on this system.</p>
+<p>{% trans %}The email and password given to the <code>--user</code> option must be an administrative user on this system.{% endtrans %}</p>
 
-<h4 style="margin-bottom: 0">Verbs</h4>
+<h4 style="margin-bottom: 0">{% trans %}Verbs{% endtrans %}</h4>
 
 <table class="table" style="margin-top: .5em">
 <thead><tr>
-<th scope="col"> Verb</th> <th scope="col"> Action</th><th scope="col"> </th>
+<th scope="col"> {% trans %}Verb{% endtrans %}</th> <th scope="col"> {% trans %}Action{% endtrans %}</th><th scope="col"> </th>
 </tr></thead>
-<tr><td>GET</td><td><i>(none)</i></td> <td>Returns a list of existing mail aliases. Adding <code>?format=json</code> to the URL will give JSON-encoded results.</td></tr>
-<tr><td>POST</td><td>/add</td> <td>Adds a new mail alias. Required POST-body parameters are <code>address</code> and <code>forwards_to</code>.</td></tr>
-<tr><td>POST</td><td>/remove</td> <td>Removes a mail alias. Required POST-body parameter is <code>address</code>.</td></tr>
+<tr><td>GET</td><td><i>{% trans %}(none){% endtrans %}</i></td> <td>{% trans %}Returns a list of existing mail aliases. Adding <code>?format=json</code> to the URL will give JSON-encoded results.{% endtrans %}</td></tr>
+<tr><td>POST</td><td>/add</td> <td>{% trans %}Adds a new mail alias. Required POST-body parameters are <code>address</code> and <code>forwards_to</code>.{% endtrans %}</td></tr>
+<tr><td>POST</td><td>/remove</td> <td>{% trans %}Removes a mail alias. Required POST-body parameter is <code>address</code>.{% endtrans %}</td></tr>
 </table>
 
-<h4>Examples:</h4>
+<h4>{% trans %}Examples:{% endtrans %}</h4>
 
-<p>Try these examples. For simplicity the examples omit the <code>--user me@mydomain.com:yourpassword</code> command line argument which you must fill in with your email address and password.</p>
+<p>{% trans %}Try these examples. For simplicity the examples omit the <code>--user me@mydomain.com:yourpassword</code> command line argument which you must fill in with your email address and password.{% endtrans %}</p>
 
-<pre># Gives a JSON-encoded list of all mail aliases
+<pre># {% trans %}Gives a JSON-encoded list of all mail aliases{% endtrans %}
 curl -X GET https://{{hostname}}/admin/mail/aliases?format=json
 
-# Adds a new alias
+# {% trans %}Adds a new alias{% endtrans %}
 curl -X POST -d "address=new_alias@mydomail.com" -d "forwards_to=my_email@mydomain.com" https://{{hostname}}/admin/mail/aliases/add
 
-# Removes an alias
+# {% trans %}Removes an alias{% endtrans %}
 curl -X POST -d "address=new_alias@mydomail.com" https://{{hostname}}/admin/mail/aliases/remove
 </pre>
 
 
 <script>
 function show_aliases() {
-  $('#alias_table tbody').html("<tr><td colspan='2' class='text-muted'>Loading...</td></tr>")
+  $('#alias_table tbody').html("<tr><td colspan='2' class='text-muted'>" + t("Loading...") + "</td></tr>")
   api(
     "/mail/aliases",
     "GET",
@@ -201,20 +201,20 @@ function show_aliases() {
       $('#addalias-form .regularalias, #addalias-form .catchall, #addalias-form .domainalias').addClass('hidden');
       if ($(this).attr('data-mode') == "regular") {
         $('#addaliasAddress').attr('type', 'email');
-        $('#addaliasAddress').attr('placeholder', 'you@yourdomain.com (incoming email address)');
-        $('#addaliasForwardsTo').attr('placeholder', 'one address per line or separated by commas');
+        $('#addaliasAddress').attr('placeholder', t('you@yourdomain.com (incoming email address)'));
+        $('#addaliasForwardsTo').attr('placeholder', t('one address per line or separated by commas'));
         $('#alias_mode_info').slideUp();
         $('#addalias-form .regularalias').removeClass('hidden');
       } else if ($(this).attr('data-mode') == "catchall") {
         $('#addaliasAddress').attr('type', 'text');
-        $('#addaliasAddress').attr('placeholder', '@yourdomain.com (incoming catch-all domain)');
-        $('#addaliasForwardsTo').attr('placeholder', 'one address per line or separated by commas');
+        $('#addaliasAddress').attr('placeholder', t('@yourdomain.com (incoming catch-all domain)'));
+        $('#addaliasForwardsTo').attr('placeholder', t('one address per line or separated by commas'));
         $('#alias_mode_info').slideDown();
         $('#addalias-form .catchall').removeClass('hidden');
       } else if ($(this).attr('data-mode') == "domainalias") {
         $('#addaliasAddress').attr('type', 'text');
-        $('#addaliasAddress').attr('placeholder', '@yourdomain.com (incoming catch-all domain)');
-        $('#addaliasForwardsTo').attr('placeholder', '@otherdomain.com (forward to other domain)');
+        $('#addaliasAddress').attr('placeholder', t('@yourdomain.com (incoming catch-all domain)'));
+        $('#addaliasForwardsTo').attr('placeholder', t('@otherdomain.com (forward to other domain)'));
         $('#alias_mode_info').slideDown();
         $('#addalias-form .domainalias').removeClass('hidden');
       }
@@ -225,12 +225,12 @@ function show_aliases() {
 
 var is_alias_add_update = false;
 function do_add_alias() {
-  var title = (!is_alias_add_update) ? "Add Alias" : "Update Alias";
+  var title = (!is_alias_add_update) ? t("Add Alias") : t("Update Alias");
   var form_address = $("#addaliasAddress").val();
   var form_forwardsto = $("#addaliasForwardsTo").val();
   var form_senders = ($('#addaliasForwardsToAdvanced').prop('checked') ? $("#addaliasSenders").val() : '');
   if ($('#addaliasForwardsToAdvanced').prop('checked') && !/\S/.exec($("#addaliasSenders").val())) {
-    show_modal_error(title, "You did not enter any permitted senders.");
+    show_modal_error(title, t("You did not enter any permitted senders."));
     return false;
   }
   api(
@@ -260,7 +260,7 @@ function aliases_reset_form() {
   $("#addaliasForwardsTo").val('')
   $("#addaliasSenders").val('')
   $('#alias-cancel').addClass('hidden');
-  $('#add-alias-button').text('Add Alias');
+  $('#add-alias-button').text(t('Add Alias'));
   is_alias_add_update = false;
 }
 
@@ -287,7 +287,7 @@ function aliases_edit(elem) {
   $('#addaliasForwardsToAdvanced').prop('checked', senders != "");
   $('#addaliasForwardsToNotAdvanced').prop('checked', senders == "");
   $("#addaliasSenders").val(senders);
-  $('#add-alias-button').text('Update');
+  $('#add-alias-button').text(t('Update'));
   $('body').animate({ scrollTop: 0 })
   is_alias_add_update = true;
 }
@@ -295,9 +295,9 @@ function aliases_edit(elem) {
 function aliases_remove(elem) {
   var row_address = $(elem).parents('tr').attr('data-address');
   show_modal_confirm(
-    "Remove Alias",
-    "Remove " + row_address + "?",
-    "Remove",
+    t("Remove Alias"),
+    t("Remove %(address)s?", {address: row_address}),
+    t("Remove"),
     function() {
       api(
         "/mail/aliases/remove",
@@ -307,7 +307,7 @@ function aliases_remove(elem) {
         },
         function(r) {
           // Responses are multiple lines of pre-formatted text.
-          show_modal_error("Remove Alias", $("<pre/>").text(r));
+          show_modal_error(t("Remove Alias"), $("<pre/>").text(r));
           show_aliases();
         });
     });

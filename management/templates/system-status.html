@@ -1,4 +1,4 @@
-<h2>System Status Checks</h2>
+<h2>{% trans %}System Status Checks{% endtrans %}</h2>
 
 <style>
 #system-checks .heading td {
@@ -40,13 +40,13 @@
 	<div class="col-md-push-9 col-md-3">
 
 <div id="system-reboot-required" style="display: none; margin-bottom: 1em;">
-	<button type="button" class="btn btn-danger" onclick="confirm_reboot(); return false;">Reboot Box</button>
-	<div>No reboot is necessary.</div>
+	<button type="button" class="btn btn-danger" onclick="confirm_reboot(); return false;">{% trans %}Reboot Box{% endtrans %}</button>
+	<div>{% trans %}No reboot is necessary.{% endtrans %}</div>
 </div>
 
 <div id="system-privacy-setting" style="display: none">
-	<div><a onclick="return enable_privacy(!current_privacy_setting)" href="#"><span>Enable/Disable</span> New-Version Check</a></div>
-	<p style="line-height: 125%"><small>(When enabled, status checks phone-home to check for a new release of Trixie Mail.)</small></p>
+	<div><a onclick="return enable_privacy(!current_privacy_setting)" href="#"><span>{% trans %}Enable/Disable{% endtrans %}</span> {% trans %}New-Version Check{% endtrans %}</a></div>
+	<p style="line-height: 125%"><small>{% trans %}(When enabled, status checks phone-home to check for a new release of Trixie Mail.){% endtrans %}</small></p>
 </div>
 
 	</div> <!-- /col -->
@@ -70,7 +70,7 @@ function show_system_status() {
   const summary = $('#system-checks-summary');
   summary.html("");
 
-  $('#system-checks tbody').html("<tr><td colspan='2' class='text-muted'>Loading...</td></tr>")
+  $('#system-checks tbody').html("<tr><td colspan='2' class='text-muted'>" + t("Loading...") + "</td></tr>")
 
   api(
     "/system/privacy",
@@ -79,7 +79,7 @@ function show_system_status() {
     function(r) {
       current_privacy_setting = r;
       $('#system-privacy-setting').show();
-      $('#system-privacy-setting a span').text(r ? "Enable" : "Disable");
+      $('#system-privacy-setting a span').text(r ? t("Enable") : t("Disable"));
       $('#system-privacy-setting p').toggle(r);
     });
 
@@ -122,7 +122,7 @@ function show_system_status() {
         $('#system-checks tbody').append(n);
 
         if (r[i].extra.length > 0) {
-          n.find('a.showhide').show().text("show more").click(function() {
+          n.find('a.showhide').show().text(t("show more")).click(function() {
             $(this).hide();
             $(this).parent().find('.extra').fadeIn();
             return false;
@@ -139,13 +139,21 @@ function show_system_status() {
       }
 
       // Summary counts
-      summary.html("Summary: ");
+      summary.html(t("Summary: "));
       if (count_by_status['error'] + count_by_status['warning'] == 0) {
-        summary.append($('<span class="summary-ok"/>').text(`All ${count_by_status['ok']} ${ok_symbol} OK`));
+        summary.append($('<span class="summary-ok"/>').text(
+          tn("All %(num)s %(symbol)s OK", "All %(num)s %(symbol)s OK", count_by_status['ok'],
+             {num: count_by_status['ok'], symbol: ok_symbol})));
       } else {
-        summary.append($('<span class="summary-ok"/>').text(`${count_by_status['ok']} ${ok_symbol} OK, `));
-        summary.append($('<span class="summary-error"/>').text(`${count_by_status['error']} ${error_symbol} Error, `));
-        summary.append($('<span class="summary-warning"/>').text(`${count_by_status['warning']} ${warning_symbol} Warning`));
+        summary.append($('<span class="summary-ok"/>').text(
+          tn("%(num)s %(symbol)s OK, ", "%(num)s %(symbol)s OK, ", count_by_status['ok'],
+             {num: count_by_status['ok'], symbol: ok_symbol})));
+        summary.append($('<span class="summary-error"/>').text(
+          tn("%(num)s %(symbol)s Error, ", "%(num)s %(symbol)s Error, ", count_by_status['error'],
+             {num: count_by_status['error'], symbol: error_symbol})));
+        summary.append($('<span class="summary-warning"/>').text(
+          tn("%(num)s %(symbol)s Warning", "%(num)s %(symbol)s Warning", count_by_status['warning'],
+             {num: count_by_status['warning'], symbol: warning_symbol})));
       }
     })
 }
@@ -165,19 +173,20 @@ function enable_privacy(status) {
 }
 
 function confirm_reboot() {
+  var hostname_esc = $("<div/>").text("{{hostname}}").html();
   show_modal_confirm(
-    "Reboot",
-    $("<p>This will reboot your Trixie Mail <code>{{hostname}}</code>.</p> <p>Until the machine is fully restarted, your users will not be able to send and receive email, and you will not be able to connect to this control panel or with SSH. The reboot cannot be cancelled.</p>"),
-    "Reboot Now",
+    t("Reboot"),
+    $("<p>" + t("This will reboot your Trixie Mail <code>%(hostname)s</code>.", {hostname: hostname_esc}) + "</p> <p>" + t("Until the machine is fully restarted, your users will not be able to send and receive email, and you will not be able to connect to this control panel or with SSH. The reboot cannot be cancelled.") + "</p>"),
+    t("Reboot Now"),
     function() {
       api(
         "/system/reboot",
         "POST",
         { },
         function(r) {
-          var msg = "<p>Please reload this page after a minute or so.</p>";
-          if (r) msg = "<p>The reboot command said:</p> <pre>" + $("<pre/>").text(r).html() + "</pre>"; // successful reboots don't produce any output; the output must be HTML-escaped
-          show_modal_error("Reboot", msg);
+          var msg = "<p>" + t("Please reload this page after a minute or so.") + "</p>";
+          if (r) msg = "<p>" + t("The reboot command said:") + "</p> <pre>" + $("<pre/>").text(r).html() + "</pre>"; // successful reboots don't produce any output; the output must be HTML-escaped
+          show_modal_error(t("Reboot"), msg);
         });
     });
 }

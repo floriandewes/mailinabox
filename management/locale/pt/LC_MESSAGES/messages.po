@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Trixie Mail VERSION\n"
 "Report-Msgid-Bugs-To: https://github.com/quantenland-ai/trixiemail\n"
-"POT-Creation-Date: 2026-11-26 15:16+0000\n"
-"PO-Revision-Date: 2026-11-26 14:00+0000\n"
+"POT-Creation-Date: 2026-11-26 14:04+0000\n"
+"PO-Revision-Date: 2026-11-26 15:00+0000\n"
 "Last-Translator: Trixie Mail MT bootstrap <noreply@localhost>\n"
 "Language: pt\n"
 "Language-Team: pt\n"
@@ -22,1829 +22,8 @@ msgstr ""
 
 #. Status: mt
 #. Phase: 1
-#: auth.py:53
-msgid "Authorization header invalid."
-msgstr "Cabeçalho de autorização inválido."
-
-#. Status: mt
-#. Phase: 1
-#: auth.py:57
-msgid "No email address, password, session key, or API key provided."
-msgstr ""
-"Nenhum endereço de e-mail, palavra-passe, chave de sessão ou chave API "
-"fornecido."
-
-#. Status: mt
-#. Phase: 1
-#: auth.py:78
-msgid "Enter a password."
-msgstr "Introduza uma palavra-passe."
-
-#. Status: mt
-#. Phase: 1
-#: auth.py:121
-msgid "Incorrect email address or password."
-msgstr "Endereço de e-mail ou palavra-passe incorrectos."
-
-#. Status: mt
-#. Phase: 1
-#: backup.py:501
-#, python-format
-msgid "Connection to rsync host failed: %(reason)s"
-msgstr "Falha na ligação ao anfitrião rsync: %(reason)s"
-
-#. Status: mt
-#. Phase: 1
-#: backup.py:515
-msgid "Enter an S3 bucket name."
-msgstr "Introduza um nome de bucket S3."
-
-#. Status: mt
-#. Phase: 1
-#: backup.py:548
-msgid "B2 Bucket does not exist. Please double check your information!"
-msgstr "O bucket B2 não existe. Verifique novamente as suas informações!"
-
-#. Status: mt
-#. Phase: 1
-#: daemon.py:108
-msgid "You are not an administrator."
-msgstr "Não é um administrador."
-
-#. Status: mt
-#. Phase: 1
-#: daemon.py:341
-msgid "Greylisting value must be 'on' or 'off'."
-msgstr "O valor de greylisting deve ser 'on' ou 'off'."
-
-#. Status: mt
-#. Phase: 1
-#: daemon.py:451
-msgid "No value for the record provided."
-msgstr "Nenhum valor fornecido para o registo."
-
-#. Status: mt
-#. Phase: 1
-#: daemon.py:540
-msgid "Invalid domain name."
-msgstr "Nome de domínio inválido."
-
-#. Status: mt
-#. Phase: 1
-#: daemon.py:581
-msgid "Bad Input"
-msgstr "Entrada incorrecta"
-
-#. Status: mt
-#. Phase: 1
-#: daemon.py:603
-msgid "Invalid user or MFA id."
-msgstr "Utilizador ou id MFA inválido."
-
-#. Status: mt
-#. Phase: 1
-#: daemon.py:696
-msgid "No reboot is required, so it is not allowed."
-msgstr "Não é necessário reiniciar, pelo que não é permitido."
-
-#. Status: mt
-#. Phase: 1
-#: daemon.py:802
-msgid "a path must be specified"
-msgstr "deve ser especificado um caminho"
-
-#. Status: mt
-#. Phase: 1
-#: daemon.py:817
-msgid "error processing graph image"
-msgstr "erro ao processar a imagem do gráfico"
-
-#. Status: mt
-#. Phase: 1
-#: dns_update.py:603
-#, python-format
-msgid "%(zone)s is not a domain name that corresponds to a zone."
-msgstr "%(zone)s não é um nome de domínio correspondente a uma zona."
-
-#. Status: mt
-#. Phase: 1
-#: dns_update.py:910
-#, python-format
-msgid ""
-"%(qname)s is not a domain name or a subdomain of a domain name managed by"
-" this box."
-msgstr ""
-"%(qname)s não é um nome de domínio nem um subdomínio de um nome de "
-"domínio gerido por este sistema."
-
-#. Status: mt
-#. Phase: 1
-#: dns_update.py:917
-msgid "Invalid name."
-msgstr "Nome inválido."
-
-#. Status: mt
-#. Phase: 1
-#: dns_update.py:923
-msgid "That's an IPv6 address."
-msgstr "Isso é um endereço IPv6."
-
-#. Status: mt
-#. Phase: 1
-#: dns_update.py:924
-msgid "That's an IPv4 address."
-msgstr "Isso é um endereço IPv4."
-
-#. Status: mt
-#. Phase: 1
-#: dns_update.py:927
-msgid "NS records can only be set for subdomains."
-msgstr "Os registos NS só podem ser definidos para subdomínios."
-
-#. Status: mt
-#. Phase: 1
-#: dns_update.py:935
-msgid "Invalid value."
-msgstr "Valor inválido."
-
-#. Status: mt
-#. Phase: 1
-#: dns_update.py:941
-#, python-format
-msgid "Unknown record type '%(rtype)s'."
-msgstr "Tipo de registo desconhecido '%(rtype)s'."
-
-#. Status: mt
-#. Phase: 1
-#: dns_update.py:976
-#, python-format
-msgid "Invalid action: %(action)s"
-msgstr "Acção inválida: %(action)s"
-
-#. Status: mt
-#. Phase: 1
-#: dns_update.py:1053
-#, python-format
-msgid "Could not resolve the IP address of %(item)s."
-msgstr "Não foi possível resolver o endereço IP de %(item)s."
-
-#. Status: mt
-#. Phase: 1
-#: dns_update.py:1063
-#, python-format
-msgid "'%(item)s' is not an IPv4 or IPv6 address or subnet."
-msgstr "'%(item)s' não é um endereço ou sub-rede IPv4 ou IPv6."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:317 mailconfig.py:522
-msgid "No email address provided."
-msgstr "Nenhum endereço de e-mail fornecido."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:319
-msgid "Invalid email address."
-msgstr "Endereço de e-mail inválido."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:321
-msgid ""
-"User account email addresses may only use the lowercase ASCII letters "
-"a-z, the digits 0-9, underscore (_), hyphen (-), and period (.)."
-msgstr ""
-"Os endereços de e-mail das contas de utilizador só podem usar as letras "
-"ASCII minúsculas a-z, os dígitos 0-9, o underscore (_), o hífen (-) e o "
-"ponto (.)."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:326
-msgid ""
-"You may not make a user account for that address because it is frequently"
-" used for domain control validation. Use an alias instead if necessary."
-msgstr ""
-"Não pode criar uma conta de utilizador para esse endereço porque é "
-"frequentemente usado para validação de controlo de domínio. Se "
-"necessário, use um alias."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:359
-msgid "User already exists."
-msgstr "O utilizador já existe."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:380 mailconfig.py:396 mailconfig.py:409 mailconfig.py:451
-#: mailconfig.py:460 mailconfig.py:476
-#, python-format
-msgid "That's not a user (%(email)s)."
-msgstr "Isso não é um utilizador (%(email)s)."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:431
-msgid "No quota provided."
-msgstr "Nenhuma quota fornecida."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:434
-msgid "Quotas cannot contain spaces, commas, or decimal points."
-msgstr "As quotas não podem conter espaços, vírgulas ou pontos decimais."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:437
-msgid "Invalid quota."
-msgstr "Quota inválida."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:481
-#, python-format
-msgid "That's not a valid privilege (%(priv)s)."
-msgstr "Isso não é um privilégio válido (%(priv)s)."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:500
-msgid "Invalid action."
-msgstr "Acção inválida."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:506
-msgid "Something went wrong."
-msgstr "Algo correu mal."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:524
-#, python-format
-msgid "Invalid email address (%(address)s)."
-msgstr "Endereço de e-mail inválido (%(address)s)."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:553
-#, python-format
-msgid "Invalid receiver email address (%(email)s)."
-msgstr "Endereço de e-mail do destinatário inválido (%(email)s)."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:558
-msgid ""
-"This alias can only have administrators of this system as destinations "
-"because the address is frequently used for domain control validation."
-msgstr ""
-"Este alias só pode ter administradores deste sistema como destinos porque"
-" o endereço é frequentemente usado para validação de controlo de domínio."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:573
-#, python-format
-msgid "Invalid permitted sender: %(login)s is not a user on this system."
-msgstr "Remetente permitido inválido: %(login)s não é um utilizador neste sistema."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:578
-msgid "The alias must either forward to an address or have a permitted sender."
-msgstr "O alias deve reencaminhar para um endereço ou ter um remetente permitido."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:592
-#, python-format
-msgid "Alias already exists (%(address)s)."
-msgstr "O alias já existe (%(address)s)."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:611
-#, python-format
-msgid "That's not an alias (%(address)s)."
-msgstr "Isso não é um alias (%(address)s)."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:713
-msgid "No password provided."
-msgstr "Nenhuma palavra-passe fornecida."
-
-#. Status: mt
-#. Phase: 1
-#: mailconfig.py:716
-msgid "Passwords must be at least eight characters."
-msgstr "As palavras-passe devem ter pelo menos oito caracteres."
-
-#. Status: mt
-#. Phase: 1
-#: mfa.py:14
-msgid "User does not exist."
-msgstr "O utilizador não existe."
-
-#. Status: mt
-#. Phase: 1
-#: mfa.py:45
-msgid "Invalid token."
-msgstr "Token inválido."
-
-#. Status: mt
-#. Phase: 1
-#: mfa.py:48
-msgid "Invalid MFA type."
-msgstr "Tipo MFA inválido."
-
-#. Status: mt
-#. Phase: 1
-#: mfa.py:73
-msgid "No secret provided."
-msgstr "Nenhum segredo fornecido."
-
-#. Status: mt
-#. Phase: 1
-#: mfa.py:76
-msgid "Secret should be a 32 characters base32 string"
-msgstr "O segredo deve ser uma cadeia base32 de 32 caracteres"
-
-#. Status: mt
-#. Phase: 1
-#: ssl_certificates.py:430
-msgid "This is a self-signed certificate. I can't install that."
-msgstr "Este é um certificado autoassinado. Não o posso instalar."
-
-#. Status: mt
-#. Phase: 1
-#: ssl_certificates.py:538
-msgid "This is not a certificate file."
-msgstr "Este não é um ficheiro de certificado."
-
-#. Status: mt
-#. Phase: 1
-#: ssl_certificates.py:540
-#, python-format
-msgid "There is a problem with the certificate file: %(err)s"
-msgstr "Há um problema com o ficheiro do certificado: %(err)s"
-
-#. Status: mt
-#. Phase: 1
-#: ssl_certificates.py:552
-#, python-format
-msgid "The certificate is for the wrong domain name. It is for %(names)s."
-msgstr "O certificado é para o nome de domínio incorrecto. É para %(names)s."
-
-#. Status: mt
-#. Phase: 1
-#: ssl_certificates.py:560
-#, python-format
-msgid "The private key file %(path)s is not a private key file: %(err)s"
-msgstr ""
-"O ficheiro de chave privada %(path)s não é um ficheiro de chave privada: "
-"%(err)s"
-
-#. Status: mt
-#. Phase: 1
-#: ssl_certificates.py:565
-#, python-format
-msgid "The private key file %(path)s is not a private key file."
-msgstr "O ficheiro de chave privada %(path)s não é um ficheiro de chave privada."
-
-#. Status: mt
-#. Phase: 1
-#: ssl_certificates.py:568
-#, python-format
-msgid "The certificate does not correspond to the private key at %(path)s."
-msgstr "O certificado não corresponde à chave privada em %(path)s."
-
-#. Status: mt
-#. Phase: 1
-#: ssl_certificates.py:590
-#, python-format
-msgid ""
-"The certificate has expired or is not yet valid. It is valid from "
-"%(start)s to %(end)s."
-msgstr ""
-"O certificado expirou ou ainda não é válido. É válido de %(start)s a "
-"%(end)s."
-
-#. Status: mt
-#. Phase: 1
-#: ssl_certificates.py:614
-#, python-format
-msgid ""
-"The certificate is missing an intermediate chain or the intermediate "
-"chain is incorrect or incomplete. (%(detail)s)"
-msgstr ""
-"Falta ao certificado uma cadeia intermédia ou a cadeia está incorrecta ou"
-" incompleta. (%(detail)s)"
-
-#. Status: mt
-#. Phase: 1
-#: ssl_certificates.py:617
-msgid "There is a problem with the certificate."
-msgstr "Há um problema com o certificado."
-
-#. Status: mt
-#. Phase: 1
-#: ssl_certificates.py:627
-#, python-format
-msgid "The certificate expires in %(days)d days on %(date)s."
-msgstr "O certificado expira em %(days)d dias a %(date)s."
-
-#. Status: mt
-#. Phase: 1
-#: ssl_certificates.py:630
-#, python-format
-msgid "The certificate expires on %(date)s."
-msgstr "O certificado expira a %(date)s."
-
-#. Status: mt
-#. Phase: 1
-#: ssl_certificates.py:635
-#, python-format
-msgid "The certificate is expiring soon: %(info)s"
-msgstr "O certificado expira em breve: %(info)s"
-
-#. Status: mt
-#. Phase: 1
-#: ssl_certificates.py:648
-msgid "File does not contain valid PEM data."
-msgstr "O ficheiro não contém dados PEM válidos."
-
-#. Status: mt
-#. Phase: 1
-#: ssl_certificates.py:659
-msgid "File is not a valid PEM-formatted file."
-msgstr "O ficheiro não é um ficheiro com formato PEM válido."
-
-#. Status: mt
-#. Phase: 1
-#: ssl_certificates.py:666
-#, python-format
-msgid "Unsupported PEM object type: %(type)s"
-msgstr "Tipo de objecto PEM não suportado: %(type)s"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:27
-msgid "Local DNS (bind9)"
-msgstr "DNS local (bind9)"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:29
-msgid "Local DNS Control (bind9/rndc)"
-msgstr "Controlo DNS local (bind9/rndc)"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:30
-msgid "Dovecot LMTP LDA"
-msgstr "Dovecot LMTP LDA"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:31
-msgid "Postgrey"
-msgstr "Postgrey"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:32
-msgid "Spamassassin"
-msgstr "Spamassassin"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:33
-msgid "OpenDKIM"
-msgstr "OpenDKIM"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:34
-msgid "OpenDMARC"
-msgstr "OpenDMARC"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:35
-msgid "Trixie Mail Management Daemon"
-msgstr "Daemon de gestão do Trixie Mail"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:36
-msgid "SSH Login (ssh)"
-msgstr "Início de sessão SSH (ssh)"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:37
-msgid "Public DNS (nsd4)"
-msgstr "DNS público (nsd4)"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:38
-msgid "Incoming Mail (SMTP/postfix)"
-msgstr "Correio de entrada (SMTP/postfix)"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:39
-msgid "Outgoing Mail (SMTP 465/postfix)"
-msgstr "Correio de saída (SMTP 465/postfix)"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:40
-msgid "Outgoing Mail (SMTP 587/postfix)"
-msgstr "Correio de saída (SMTP 587/postfix)"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:42
-msgid "IMAPS (dovecot)"
-msgstr "IMAPS (dovecot)"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:43
-msgid "Mail Filters (Sieve/dovecot)"
-msgstr "Filtros de correio (Sieve/dovecot)"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:44
-msgid "HTTP Web (nginx)"
-msgstr "Web HTTP (nginx)"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:45
-msgid "HTTPS Web (nginx)"
-msgstr "Web HTTPS (nginx)"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:50 templates/index.html:113
-msgid "System"
-msgstr "Sistema"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:85
-msgid "fail2ban is not running."
-msgstr "fail2ban não está em execução."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:89
-msgid "All system services are running."
-msgstr "Todos os serviços do sistema estão em execução."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:128
-#, python-format
-msgid ""
-"%(name)s is running (and available over IPv4 and the local IPv6 address),"
-" but it is not publicly accessible at %(ip)s:%(port)d."
-msgstr ""
-"%(name)s está em execução (e disponível via IPv4 e o endereço IPv6 "
-"local), mas não é acessível publicamente em %(ip)s:%(port)d."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:130
-#, python-format
-msgid ""
-"%(name)s is running and available over IPv4 but is not accessible over "
-"IPv6 at %(ip)s port %(port)d."
-msgstr ""
-"%(name)s está em execução e disponível via IPv4 mas não é acessível via "
-"IPv6 em %(ip)s porta %(port)d."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:134
-#, python-format
-msgid "%(name)s is running but is not publicly accessible at %(ip)s:%(port)d."
-msgstr ""
-"%(name)s está em execução mas não é acessível publicamente em "
-"%(ip)s:%(port)d."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:136 status_checks.py:146
-#, python-format
-msgid "%(name)s is not running (port %(port)d)."
-msgstr "%(name)s não está em execução (porta %(port)d)."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:165
-msgid ""
-"The ufw program was not installed. If your system is able to run "
-"iptables, rerun the setup."
-msgstr ""
-"O programa ufw não foi instalado. Se o seu sistema puder executar "
-"iptables, volte a executar a configuração."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:172
-msgid ""
-"The firewall is not working on this machine. An error was received\n"
-"\t\t\t\t\twhile trying to check the firewall. To investigate run 'sudo "
-"ufw status'."
-msgstr ""
-"A firewall não está a funcionar nesta máquina. Foi recebido um erro\n"
-"\t\t\t\t\tao tentar verificar a firewall. Para investigar, execute 'sudo "
-"ufw status'."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:182
-#, python-format
-msgid ""
-"Port %(port)s (%(name)s) should be allowed in the firewall, please re-run"
-" the setup."
-msgstr ""
-"A porta %(port)s (%(name)s) deve ser permitida na firewall; volte a "
-"executar a configuração."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:185
-msgid "Firewall is active."
-msgstr "A firewall está activa."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:187
-msgid ""
-"The firewall is disabled on this machine. This might be because the "
-"system\n"
-"\t\t\tis protected by an external firewall. We can't protect the system "
-"against bruteforce attacks\n"
-"\t\t\twithout the local firewall active. Connect to the system via ssh "
-"and try to run: ufw enable."
-msgstr ""
-"A firewall está desactivada nesta máquina. Isso pode dever-se ao sistema\n"
-"\t\t\testar protegido por uma firewall externa. Não podemos proteger o "
-"sistema contra ataques de força bruta\n"
-"\t\t\tsem a firewall local activa. Ligue-se ao sistema via ssh e tente "
-"executar: ufw enable."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:198
-msgid "SSH disallows password-based login."
-msgstr "O SSH não permite início de sessão com palavra-passe."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:200
-msgid ""
-"The SSH server on this machine permits password-based login. A more "
-"secure\n"
-"\t\t\t\tway to log in is using a public key. Add your SSH public key to "
-"$HOME/.ssh/authorized_keys, check\n"
-"\t\t\t\tthat you can log in without a password, set the option "
-"'PasswordAuthentication no' in\n"
-"\t\t\t\t/etc/ssh/sshd_config, and then restart the openssh via 'sudo "
-"service ssh restart'."
-msgstr ""
-"O servidor SSH nesta máquina permite início de sessão com palavra-passe. "
-"Uma forma mais segura\n"
-"\t\t\t\tde iniciar sessão é usar uma chave pública. Adicione a sua chave "
-"pública SSH a $HOME/.ssh/authorized_keys, verifique\n"
-"\t\t\t\tque consegue iniciar sessão sem palavra-passe, defina a opção "
-"'PasswordAuthentication no' em\n"
-"\t\t\t\t/etc/ssh/sshd_config e depois reinicie o openssh com 'sudo "
-"service ssh restart'."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:212
-msgid ""
-"System updates have been installed and a reboot of the machine is "
-"required."
-msgstr ""
-"Foram instaladas actualizações do sistema e é necessário reiniciar a "
-"máquina."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:214
-msgid "System software is up to date."
-msgstr "O software do sistema está actualizado."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:216
-#, python-format
-msgid "There are %d software packages that can be updated."
-msgstr "Há %d pacotes de software que podem ser actualizados."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:223
-msgid "System administrator address"
-msgstr "Endereço do administrador do sistema"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:230
-#, python-format
-msgid "The disk has %.2f GB space remaining."
-msgstr "O disco tem %.2f GB de espaço restante."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:232
-#, python-format
-msgid "The disk has more than %(pct)s%% free space."
-msgstr "O disco tem mais de %(pct)s%% de espaço livre."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:235 status_checks.py:238
-#, python-format
-msgid "The disk has less than %(pct)s%% free space."
-msgstr "O disco tem menos de %(pct)s%% de espaço livre."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:250
-#, python-format
-msgid ""
-"The backup cache directory %(path)s has more than one backup target "
-"cache. Consider clearing this directory to save disk space."
-msgstr ""
-"O directório de cache de cópia de segurança %(path)s tem mais do que uma "
-"cache de destino de cópia. Considere limpar este directório para poupar "
-"espaço em disco."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:255
-#, python-format
-msgid "System memory is %(pct)s%% free."
-msgstr "A memória do sistema está livre em %(pct)s%%."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:257
-#, python-format
-msgid "System free memory is at least %(pct)s%%."
-msgstr "A memória livre do sistema é de pelo menos %(pct)s%%."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:260 status_checks.py:263
-#, python-format
-msgid "System free memory is below %(pct)s%%."
-msgstr "A memória livre do sistema está abaixo de %(pct)s%%."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:273
-msgid "Backups are disabled. It is recommended to enable a backup for your box."
-msgstr ""
-"As cópias de segurança estão desactivadas. É recomendado activar uma "
-"cópia de segurança para o seu sistema."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:276
-msgid "Backups are enabled"
-msgstr "As cópias de segurança estão activadas"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:291
-msgid "Backup is more than a week old"
-msgstr "A cópia de segurança tem mais de uma semana"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:293
-msgid ""
-"Could not obtain backup status or no backup has been made (yet). This "
-"could happen if you have just enabled backups. In that case, check back "
-"tomorrow."
-msgstr ""
-"Não foi possível obter o estado da cópia de segurança ou ainda não foi "
-"feita nenhuma. Isto pode acontecer se acabou de activar as cópias. Nesse "
-"caso, volte amanhã."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:300
-msgid "Network"
-msgstr "Rede"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:309
-msgid "Outbound mail (SMTP port 25) is not blocked."
-msgstr "O correio de saída (porta SMTP 25) não está bloqueado."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:311
-msgid ""
-"Outbound mail (SMTP port 25) seems to be blocked by your network. You\n"
-"\t\t\twill not be able to send any mail. Many residential networks block "
-"port 25 to prevent hijacked\n"
-"\t\t\tmachines from being able to send spam. A quick connection test to "
-"Google's mail server on port 25\n"
-"\t\t\tfailed."
-msgstr ""
-"O correio de saída (porta SMTP 25) parece estar bloqueado pela sua rede. "
-"Não\n"
-"\t\t\tconseguirá enviar qualquer correio. Muitas redes residenciais "
-"bloqueiam a porta 25 para impedir que máquinas\n"
-"\t\t\tcomprometidas enviem spam. Um teste rápido de ligação ao servidor "
-"de correio da Google na porta 25\n"
-"\t\t\tfalhou."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:338
-#, python-format
-msgid "%(type)s address is not blacklisted by zen.spamhaus.org."
-msgstr "O endereço %(type)s não está na lista negra do zen.spamhaus.org."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:340
-#, python-format
-msgid ""
-"Connection to zen.spamhaus.org timed out. Could not determine whether "
-"this box's\n"
-"\t\t \t%(type)s address is blacklisted. Please try again later."
-msgstr ""
-"Tempo limite da ligação a zen.spamhaus.org esgotado. Não foi possível "
-"determinar se o endereço\n"
-"\t\t \t%(type)s deste sistema está na lista negra. Tente novamente mais "
-"tarde."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:343
-#, python-format
-msgid ""
-"Could not connect to zen.spamhaus.org. Could not determine whether this "
-"box's\n"
-"\t\t\t%(type)s address is blacklisted. Please try again later."
-msgstr ""
-"Não foi possível ligar a zen.spamhaus.org. Não foi possível determinar se"
-" o endereço\n"
-"\t\t\t%(type)s deste sistema está na lista negra. Tente novamente mais "
-"tarde."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:346
-#, python-format
-msgid ""
-"Incorrect spamhaus query: %(query)s. Could not determine whether\n"
-"\t\t \tthis box's %(type)s address is blacklisted."
-msgstr ""
-"Consulta spamhaus incorrecta: %(query)s. Não foi possível determinar se\n"
-"\t\t \to endereço %(type)s deste sistema está na lista negra."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:349
-#, python-format
-msgid ""
-"Trixie Mail is configured to use a public DNS server. This is not "
-"supported by\n"
-"\t\t\tspamhaus. Could not determine whether this box's %(type)s address "
-"is blacklisted."
-msgstr ""
-"O Trixie Mail está configurado para usar um servidor DNS público. Isto "
-"não é suportado pelo\n"
-"\t\t\tspamhaus. Não foi possível determinar se o endereço %(type)s deste "
-"sistema está na lista negra."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:352
-#, python-format
-msgid ""
-"Too many queries have been performed on the spamhaus server. Could not "
-"determine\n"
-"\t\t \twhether this box's %(type)s address is blacklisted."
-msgstr ""
-"Foram efectuadas demasiadas consultas ao servidor spamhaus. Não foi "
-"possível determinar\n"
-"\t\t \tse o endereço %(type)s deste sistema está na lista negra."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:355
-#, python-format
-msgid ""
-"The %(type)s address of this machine %(addr)s is listed in the Spamhaus "
-"Block\n"
-"\t\t \tList (code %(code)s), which may prevent recipients from receiving "
-"your email. See\n"
-"\t\t \thttp://www.spamhaus.org/query/ip/%(addr)s."
-msgstr ""
-"O endereço %(type)s desta máquina %(addr)s está listado na Spamhaus Block"
-"\n"
-"\t\t \tList (código %(code)s), o que pode impedir que os destinatários "
-"recebam o seu e-mail. Consulte\n"
-"\t\t \thttp://www.spamhaus.org/query/ip/%(addr)s."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:418
-#, python-format
-msgid "Domain name is invalid: %(err)s"
-msgstr "O nome de domínio é inválido: %(err)s"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:475
-#, python-format
-msgid ""
-"Nameserver glue records are correct at registrar. [ns1/ns2.%(host)s ↦ "
-"%(ip)s]"
-msgstr ""
-"Os registos glue dos nameservers estão correctos no registador. "
-"[ns1/ns2.%(host)s ↦ %(ip)s]"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:480
-#, python-format
-msgid ""
-"Nameserver glue records (ns1.%(host)s and ns2.%(host)s) should be "
-"configured at your domain name\n"
-"\t\t\tregistrar as having the IP address of this box (%(ip)s). They "
-"currently report addresses of %(ns_ips)s. If you have set up External "
-"DNS, this may be OK."
-msgstr ""
-"Os registos glue dos nameservers (ns1.%(host)s e ns2.%(host)s) devem ser "
-"configurados no seu registador\n"
-"\t\t\tde nomes de domínio como tendo o endereço IP deste sistema "
-"(%(ip)s). Actualmente reportam os endereços %(ns_ips)s. Se configurou DNS"
-" externo, isto pode estar correcto."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:484
-#, python-format
-msgid ""
-"Nameserver glue records are incorrect. The ns1.%(host)s and ns2.%(host)s "
-"nameservers must be configured at your domain name\n"
-"\t\t\tregistrar as having the IP address %(ip)s. They currently report "
-"addresses of %(ns_ips)s. It may take several hours for\n"
-"\t\t\tpublic DNS to update after a change."
-msgstr ""
-"Os registos glue dos nameservers estão incorrectos. Os nameservers "
-"ns1.%(host)s e ns2.%(host)s devem ser configurados no seu registador\n"
-"\t\t\tde nomes de domínio como tendo o endereço IP %(ip)s. Actualmente "
-"reportam os endereços %(ns_ips)s. Pode demorar várias horas até\n"
-"\t\t\to DNS público actualizar após uma alteração."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:491
-#, python-format
-msgid "Domain resolves to box's IP address. [%(host)s ↦ %(ips)s]"
-msgstr "O domínio resolve para o endereço IP do sistema. [%(host)s ↦ %(ips)s]"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:493
-#, python-format
-msgid ""
-"This domain must resolve to this box's IP address (%(ips)s) in public DNS"
-" but it currently resolves\n"
-"\t\t\tto %(resolved)s. It may take several hours for public DNS to update"
-" after a change. This problem may result from other\n"
-"\t\t\tissues listed above."
-msgstr ""
-"Este domínio deve resolver para o endereço IP deste sistema (%(ips)s) no "
-"DNS público mas actualmente resolve\n"
-"\t\t\tpara %(resolved)s. Pode demorar várias horas até o DNS público "
-"actualizar após uma alteração. Este problema pode resultar de outros\n"
-"\t\t\tproblemas listados acima."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:503
-#, python-format
-msgid "Reverse DNS is set correctly at ISP. [%(ips)s ↦ %(host)s]"
-msgstr "O DNS inverso está definido correctamente no ISP. [%(ips)s ↦ %(host)s]"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:505
-#, python-format
-msgid ""
-"This box's reverse DNS is currently %(rdns)s, but it should be "
-"%(domain)s. Your ISP or cloud provider will have instructions\n"
-"\t\t\ton setting up reverse DNS for this box."
-msgstr ""
-"O DNS inverso deste sistema é actualmente %(rdns)s, mas deveria ser "
-"%(domain)s. O seu ISP ou fornecedor de cloud terá instruções\n"
-"\t\t\tsobre como configurar o DNS inverso para este sistema."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:508
-#, python-format
-msgid ""
-"This box's reverse DNS is currently %(rdns4)s (IPv4) and %(rdns6)s "
-"(IPv6), but it should be %(domain)s. Your ISP or cloud provider will have"
-" instructions\n"
-"\t\t\ton setting up reverse DNS for this box."
-msgstr ""
-"O DNS inverso deste sistema é actualmente %(rdns4)s (IPv4) e %(rdns6)s "
-"(IPv6), mas deveria ser %(domain)s. O seu ISP ou fornecedor de cloud terá"
-" instruções\n"
-"\t\t\tsobre como configurar o DNS inverso para este sistema."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:516
-#, python-format
-msgid "The DANE TLSA record for incoming mail is correct (%(qname)s)."
-msgstr "O registo DANE TLSA para o correio de entrada está correcto (%(qname)s)."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:521
-msgid "The DANE TLSA record for incoming mail is not set. This is optional."
-msgstr ""
-"O registo DANE TLSA para o correio de entrada não está definido. Isto é "
-"opcional."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:523
-#, python-format
-msgid ""
-"The DANE TLSA record for incoming mail (%(qname)s) is not correct. It is "
-"'%(got)s' but it should be '%(expected)s'.\n"
-"\t\t\tIt may take several hours for public DNS to update after a change."
-msgstr ""
-"O registo DANE TLSA para o correio de entrada (%(qname)s) não está "
-"correcto. É '%(got)s' mas deveria ser '%(expected)s'.\n"
-"\t\t\tPode demorar várias horas até o DNS público actualizar após uma "
-"alteração."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:527
-msgid "Hostmaster contact address"
-msgstr "Endereço de contacto do hostmaster"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:533
-#, python-format
-msgid "%(name)s exists as a mail alias. [%(alias)s ↦ %(dest)s]"
-msgstr "%(name)s existe como alias de correio. [%(alias)s ↦ %(dest)s]"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:535
-#, python-format
-msgid ""
-"You must set the destination of the mail alias for %(alias)s to direct "
-"email to you or another administrator."
-msgstr ""
-"Deve definir o destino do alias de correio para %(alias)s de forma a "
-"direcionar o e-mail para si ou outro administrador."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:537
-#, python-format
-msgid ""
-"You must add a mail alias for %(alias)s which directs email to you or "
-"another administrator."
-msgstr ""
-"Deve adicionar um alias de correio para %(alias)s que direcione o e-mail "
-"para si ou outro administrador."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:565
-#, python-format
-msgid "Nameservers are set correctly at registrar. [%(ns)s]"
-msgstr "Os nameservers estão definidos correctamente no registador. [%(ns)s]"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:568
-#, python-format
-msgid ""
-"The nameservers set on this domain at your domain name registrar should "
-"be %(correct)s. They are currently %(existing)s.\n"
-"\t\t\tIf you are using External DNS, this may be OK."
-msgstr ""
-"Os nameservers definidos neste domínio no seu registador de nomes de "
-"domínio devem ser %(correct)s. Actualmente são %(existing)s.\n"
-"\t\t\tSe estiver a usar DNS externo, isto pode estar correcto."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:572
-#, python-format
-msgid ""
-"The nameservers set on this domain are incorrect. They are currently "
-"%(existing)s. Use your domain name registrar's\n"
-"\t\t\tcontrol panel to set the nameservers to %(correct)s."
-msgstr ""
-"Os nameservers definidos neste domínio estão incorrectos. Actualmente são"
-" %(existing)s. Use o\n"
-"\t\t\tpainel de controlo do seu registador de nomes de domínio para "
-"definir os nameservers para %(correct)s."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:584
-#, python-format
-msgid ""
-"Secondary nameserver %(ns)s is not valid (it doesn't resolve to an IP "
-"address)."
-msgstr ""
-"O nameserver secundário %(ns)s não é válido (não resolve para um endereço"
-" IP)."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:598
-#, python-format
-msgid "Secondary nameserver %(ns)s resolved the domain correctly."
-msgstr "O nameserver secundário %(ns)s resolveu o domínio correctamente."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:600
-#, python-format
-msgid "Secondary nameserver %(ns)s is not configured to resolve this domain."
-msgstr ""
-"O nameserver secundário %(ns)s não está configurado para resolver este "
-"domínio."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:604
-#, python-format
-msgid "Secondary nameserver %(ns)s did not resolve this domain, result: %(ip)s"
-msgstr ""
-"O nameserver secundário %(ns)s não resolveu este domínio, resultado: "
-"%(ip)s"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:607
-#, python-format
-msgid ""
-"Secondary nameserver %(ns)s is not configured correctly. (It resolved "
-"this domain as %(ip)s. It should be %(correct)s.)"
-msgstr ""
-"O nameserver secundário %(ns)s não está configurado correctamente. "
-"(Resolveu este domínio como %(ip)s. Deveria ser %(correct)s.)"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:614
-#, python-format
-msgid "Secondary nameserver %(ns)s has consistent SOA record."
-msgstr "O nameserver secundário %(ns)s tem um registo SOA consistente."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:616
-#, python-format
-msgid "Secondary nameserver %(ns)s has no SOA record configured."
-msgstr "O nameserver secundário %(ns)s não tem um registo SOA configurado."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:618
-#, python-format
-msgid "Secondary nameserver %(ns)s timed out on checking SOA record."
-msgstr ""
-"Tempo limite esgotado no nameserver secundário %(ns)s ao verificar o "
-"registo SOA."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:620
-#, python-format
-msgid ""
-"Secondary nameserver %(ns)s has inconsistent SOA record (primary: "
-"%(primary)s versus secondary: %(secondary)s).\n"
-"\t\t\t\t\tCheck that synchronization between secondary and primary DNS "
-"servers is properly set-up."
-msgstr ""
-"O nameserver secundário %(ns)s tem um registo SOA inconsistente "
-"(primário: %(primary)s versus secundário: %(secondary)s).\n"
-"\t\t\t\t\tVerifique se a sincronização entre os servidores DNS "
-"secundários e primários está correctamente configurada."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:627
-msgid ""
-"Web has been disabled for this domain because you have set a custom DNS "
-"record."
-msgstr ""
-"A web foi desactivada para este domínio porque definiu um registo DNS "
-"personalizado."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:629
-#, python-format
-msgid ""
-"A redirect from 'www.%(domain)s' has been disabled for this domain "
-"because you have set a custom DNS record on the www subdomain."
-msgstr ""
-"Um redireccionamento de 'www.%(domain)s' foi desactivado para este "
-"domínio porque definiu um registo DNS personalizado no subdomínio www."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:683
-msgid ""
-"This domain's DNSSEC DS record is not set. The DS record is optional. The"
-" DS record activates DNSSEC. See below for instructions."
-msgstr ""
-"O registo DNSSEC DS deste domínio não está definido. O registo DS é "
-"opcional. O registo DS activa o DNSSEC. Consulte abaixo as instruções."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:693
-msgid "DNSSEC 'DS' record is set correctly at registrar."
-msgstr "O registo DNSSEC 'DS' está definido correctamente no registador."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:696
-msgid ""
-"DNSSEC 'DS' record is set correctly at registrar. (Records using "
-"algorithm other than ECDSAP256SHA256 and digest types other than "
-"SHA-256/384 should be removed.)"
-msgstr ""
-"O registo DNSSEC 'DS' está definido correctamente no registador. (Os "
-"registos que usem um algoritmo diferente de ECDSAP256SHA256 e tipos de "
-"digest diferentes de SHA-256/384 devem ser removidos.)"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:699
-msgid ""
-"DNSSEC 'DS' record set at registrar is valid but should be updated to "
-"ECDSAP256SHA256 and SHA-256 (see below).\n"
-"\t\t\t\tIMPORTANT: Do not delete existing DNSSEC 'DS' records for this "
-"domain until confirmation that the new DNSSEC 'DS' record\n"
-"\t\t\t\tfor this domain is valid."
-msgstr ""
-"O registo DNSSEC 'DS' definido no registador é válido mas deve ser "
-"actualizado para ECDSAP256SHA256 e SHA-256 (ver abaixo).\n"
-"\t\t\t\tIMPORTANTE: Não elimine os registos DNSSEC 'DS' existentes para "
-"este domínio até confirmação de que o novo registo DNSSEC 'DS'\n"
-"\t\t\t\tpara este domínio é válido."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:704
-#, python-format
-msgid ""
-"The DNSSEC 'DS' record for %(domain)s is incorrect. See further details "
-"below."
-msgstr ""
-"O registo DNSSEC 'DS' para %(domain)s está incorrecto. Consulte mais "
-"detalhes abaixo."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:706
-msgid ""
-"This domain's DNSSEC DS record is incorrect. The chain of trust is broken"
-" between the public DNS system\n"
-"\t\t\t\tand this machine's DNS server. It may take several hours for "
-"public DNS to update after a change. If you did not recently\n"
-"\t\t\t\tmake a change, you must resolve this immediately (see below)."
-msgstr ""
-"O registo DNSSEC DS deste domínio está incorrecto. A cadeia de confiança "
-"está quebrada entre o sistema DNS público\n"
-"\t\t\t\te o servidor DNS desta máquina. Pode demorar várias horas até o "
-"DNS público actualizar após uma alteração. Se não fez recentemente\n"
-"\t\t\t\tuma alteração, deve resolver isto imediatamente (ver abaixo)."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:710
-msgid ""
-"Follow the instructions provided by your domain name registrar to set a "
-"DS record.\n"
-"\t\tRegistrars support different sorts of DS records. Use the first "
-"option that works:"
-msgstr ""
-"Siga as instruções fornecidas pelo seu registador de nomes de domínio "
-"para definir um registo DS.\n"
-"\t\tOs registadores suportam diferentes tipos de registos DS. Use a "
-"primeira opção que funcionar:"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:723
-#, python-format
-msgid "Option %(n)s:"
-msgstr "Opção %(n)s:"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:724
-msgid "----------"
-msgstr "----------"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:725
-#, python-format
-msgid "Key Tag: %(tag)s"
-msgstr "Etiqueta da chave: %(tag)s"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:726
-msgid "Key Flags: KSK / 257"
-msgstr "Indicadores da chave: KSK / 257"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:727
-#, python-format
-msgid "Algorithm: %(alg)s / %(name)s"
-msgstr "Algoritmo: %(alg)s / %(name)s"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:728
-#, python-format
-msgid "Digest Type: %(type)s / %(name)s"
-msgstr "Tipo de digest: %(type)s / %(name)s"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:729
-#, python-format
-msgid "Digest: %(digest)s"
-msgstr "Digest: %(digest)s"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:730
-msgid "Public Key: "
-msgstr "Chave pública: "
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:733
-msgid "Bulk/Record Format:"
-msgstr "Formato bulk/registo:"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:737
-msgid "The DS record is currently set to:"
-msgstr "O registo DS está actualmente definido como:"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:739
-#, python-format
-msgid ""
-"Key Tag: %(tag)s, Algorithm: %(alg)s, Digest Type: %(dtype)s, Digest: "
-"%(digest)s"
-msgstr ""
-"Etiqueta da chave: %(tag)s, Algoritmo: %(alg)s, Tipo de digest: "
-"%(dtype)s, Digest: %(digest)s"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:759
-#, python-format
-msgid ""
-"Domain's email is directed to this domain. [%(domain)s has no MX record, "
-"which is ok]"
-msgstr ""
-"O correio do domínio é direcionado para este domínio. [%(domain)s não tem"
-" registo MX, o que está correcto]"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:768
-#, python-format
-msgid ""
-"Domain's email is directed to this domain. [%(domain)s has no MX record "
-"but its A record is OK]"
-msgstr ""
-"O correio do domínio é direcionado para este domínio. [%(domain)s não tem"
-" registo MX mas o seu registo A está correcto]"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:770
-#, python-format
-msgid ""
-"This domain's DNS MX record is not set. It should be '%(mx)s'. Mail will "
-"not\n"
-"\t\t\t\t\tbe delivered to this box. It may take several hours for public "
-"DNS to update after a\n"
-"\t\t\t\t\tchange. This problem may result from other issues listed here."
-msgstr ""
-"O registo DNS MX deste domínio não está definido. Deveria ser '%(mx)s'. O"
-" correio não\n"
-"\t\t\t\t\tserá entregue neste sistema. Pode demorar várias horas até o "
-"DNS público actualizar após uma\n"
-"\t\t\t\t\talteração. Este problema pode resultar de outros problemas "
-"listados aqui."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:775
-#, python-format
-msgid "Domain's email is directed to this domain. [%(domain)s ↦ %(mx)s]"
-msgstr ""
-"O correio do domínio é direcionado para este domínio. [%(domain)s ↦ "
-"%(mx)s]"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:777
-#, python-format
-msgid ""
-"  This configuration is non-standard.  The recommended configuration is "
-"'%(mx)s'."
-msgstr "  Esta configuração não é padrão.  A configuração recomendada é '%(mx)s'."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:786
-msgid "MTA-STS policy is present."
-msgstr "A política MTA-STS está presente."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:788
-#, python-format
-msgid "MTA-STS policy is present but has unexpected settings. [%(policy)s]"
-msgstr ""
-"A política MTA-STS está presente mas tem definições inesperadas. "
-"[%(policy)s]"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:790
-#, python-format
-msgid "MTA-STS policy is missing: %(valid)s"
-msgstr "A política MTA-STS está em falta: %(valid)s"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:793
-#, python-format
-msgid ""
-"This domain's DNS MX record is incorrect. It is currently set to '%(mx)s'"
-" but should be '%(recommended)s'. Mail will not\n"
-"\t\t\tbe delivered to this box. It may take several hours for public DNS "
-"to update after a change. This problem may result from\n"
-"\t\t\tother issues listed here."
-msgstr ""
-"O registo DNS MX deste domínio está incorrecto. Está actualmente definido"
-" como '%(mx)s' mas deveria ser '%(recommended)s'. O correio não\n"
-"\t\t\tserá entregue neste sistema. Pode demorar várias horas até o DNS "
-"público actualizar após uma alteração. Este problema pode resultar de\n"
-"\t\t\toutros problemas listados aqui."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:800
-msgid "Postmaster contact address"
-msgstr "Endereço de contacto do postmaster"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:810
-msgid "Domain is not blacklisted by dbl.spamhaus.org."
-msgstr "O domínio não está na lista negra do dbl.spamhaus.org."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:812
-#, python-format
-msgid ""
-"Connection to dbl.spamhaus.org timed out. Could not determine whether the"
-" domain %(domain)s is blacklisted. Please try again later."
-msgstr ""
-"Tempo limite da ligação a dbl.spamhaus.org esgotado. Não foi possível "
-"determinar se o domínio %(domain)s está na lista negra. Tente novamente "
-"mais tarde."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:814
-#, python-format
-msgid ""
-"Could not connect to dbl.spamhaus.org. Could not determine whether the "
-"domain %(domain)s is blacklisted. Please try again later."
-msgstr ""
-"Não foi possível ligar a dbl.spamhaus.org. Não foi possível determinar se"
-" o domínio %(domain)s está na lista negra. Tente novamente mais tarde."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:816
-#, python-format
-msgid ""
-"Incorrect spamhaus query: %(query)s. Could not determine whether the "
-"domain %(domain)s is blacklisted."
-msgstr ""
-"Consulta spamhaus incorrecta: %(query)s. Não foi possível determinar se o"
-" domínio %(domain)s está na lista negra."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:818
-#, python-format
-msgid ""
-"Trixie Mail is configured to use a public DNS server. This is not "
-"supported by spamhaus. Could not determine whether the domain %(domain)s "
-"is blacklisted."
-msgstr ""
-"O Trixie Mail está configurado para usar um servidor DNS público. Isto "
-"não é suportado pelo spamhaus. Não foi possível determinar se o domínio "
-"%(domain)s está na lista negra."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:820
-#, python-format
-msgid ""
-"Too many queries have been performed on the spamhaus server. Could not "
-"determine whether the domain %(domain)s is blacklisted."
-msgstr ""
-"Foram efectuadas demasiadas consultas ao servidor spamhaus. Não foi "
-"possível determinar se o domínio %(domain)s está na lista negra."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:822
-#, python-format
-msgid ""
-"This domain is listed in the Spamhaus Domain Block List (code %(code)s),\n"
-"\t\t\twhich may prevent recipients from receiving your mail.\n"
-"\t\t\tSee http://www.spamhaus.org/dbl/ and "
-"http://www.spamhaus.org/query/domain/%(domain)s."
-msgstr ""
-"Este domínio está listado na Spamhaus Domain Block List (código "
-"%(code)s),\n"
-"\t\t\to que pode impedir que os destinatários recebam o seu correio.\n"
-"\t\t\tConsulte http://www.spamhaus.org/dbl/ e "
-"http://www.spamhaus.org/query/domain/%(domain)s."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:838
-#, python-format
-msgid ""
-"This domain should resolve to this box's IP address (%(rtype)s "
-"%(expected)s) if you would like the box to serve\n"
-"\t\t\t\t\twebmail or a website on this domain. The domain currently "
-"resolves to %(value)s in public DNS. It may take several hours for\n"
-"\t\t\t\t\tpublic DNS to update after a change. This problem may result "
-"from other issues listed here."
-msgstr ""
-"Este domínio deve resolver para o endereço IP deste sistema (%(rtype)s "
-"%(expected)s) se pretender que o sistema sirva\n"
-"\t\t\t\t\twebmail ou um sítio web neste domínio. O domínio actualmente "
-"resolve para %(value)s no DNS público. Pode demorar várias horas até\n"
-"\t\t\t\t\to DNS público actualizar após uma alteração. Este problema pode"
-" resultar de outros problemas listados aqui."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:844
-#, python-format
-msgid "Domain resolves to this box's IP address. [%(domain)s ↦ %(ips)s]"
-msgstr "O domínio resolve para o endereço IP deste sistema. [%(domain)s ↦ %(ips)s]"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:912
-msgid ""
-"No TLS (SSL) certificate is installed for this domain. Visitors to a "
-"website on\n"
-"\t\t\tthis domain will get a security warning. If you are not serving a "
-"website on this domain, you do\n"
-"\t\t\tnot need to take any action. Use the TLS Certificates page in the "
-"control panel to install a\n"
-"\t\t\tTLS certificate."
-msgstr ""
-"Nenhum certificado TLS (SSL) está instalado para este domínio. Os "
-"visitantes de um sítio web neste\n"
-"\t\t\tdomínio receberão um aviso de segurança. Se não estiver a servir um"
-" sítio web neste domínio, não\n"
-"\t\t\tprecisa de tomar qualquer acção. Use a página Certificados TLS no "
-"painel de controlo para instalar um\n"
-"\t\t\tcertificado TLS."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:924
-#, python-format
-msgid "TLS (SSL) certificate is signed & valid. %(details)s"
-msgstr "O certificado TLS (SSL) está assinado e é válido. %(details)s"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:929
-msgid ""
-"The TLS (SSL) certificate for this domain is currently self-signed. You "
-"will get a security\n"
-"\t\t\twarning when you check or send email and when visiting this domain "
-"in a web browser (for webmail or\n"
-"\t\t\tstatic site hosting)."
-msgstr ""
-"O certificado TLS (SSL) para este domínio está actualmente autoassinado. "
-"Receberá um aviso de\n"
-"\t\t\tsegurança ao verificar ou enviar e-mail e ao visitar este domínio "
-"num navegador web (para webmail ou\n"
-"\t\t\talojamento de sítio estático)."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:933
-msgid "The TLS (SSL) certificate for this domain is self-signed."
-msgstr "O certificado TLS (SSL) para este domínio é autoassinado."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:936
-#, python-format
-msgid "The TLS (SSL) certificate has a problem: %(status)s"
-msgstr "O certificado TLS (SSL) tem um problema: %(status)s"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:1014
-#, python-format
-msgid ""
-"You are running version Trixie Mail %(ver)s. Trixie Mail version check "
-"disabled by privacy setting."
-msgstr ""
-"Está a executar a versão Trixie Mail %(ver)s. A verificação de versão do "
-"Trixie Mail está desactivada pela definição de privacidade."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:1019
-#, python-format
-msgid "Trixie Mail is up to date. You are running version %(ver)s."
-msgstr "O Trixie Mail está actualizado. Está a executar a versão %(ver)s."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:1021
-#, python-format
-msgid ""
-"Latest Trixie Mail version could not be determined. You are running "
-"version %(ver)s."
-msgstr ""
-"Não foi possível determinar a última versão do Trixie Mail. Está a "
-"executar a versão %(ver)s."
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:1023
-#, python-format
-msgid ""
-"A new version of Trixie Mail is available. You are running version "
-"%(ver)s. The latest version is %(latest)s. For upgrade instructions, see "
-"https://github.com/quantenland-ai/TrixieMail. "
-msgstr ""
-"Está disponível uma nova versão do Trixie Mail. Está a executar a versão "
-"%(ver)s. A última versão é %(latest)s. Para instruções de actualização, "
-"consulte https://github.com/quantenland-ai/TrixieMail. "
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:1049
-msgid "No Category"
-msgstr "Sem categoria"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:1064 status_checks.py:1083
-#, python-format
-msgid "%(category)s -- Added"
-msgstr "%(category)s -- Adicionado"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:1074
-#, python-format
-msgid "%(category)s -- Previously:"
-msgstr "%(category)s -- Anteriormente:"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:1076
-#, python-format
-msgid "%(category)s -- Removed"
-msgstr "%(category)s -- Removido"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:1081
-#, python-format
-msgid "%(category)s -- Currently:"
-msgstr "%(category)s -- Actualmente:"
-
-#. Status: mt
-#. Phase: 1
-#: status_checks.py:1090
-msgid "This section was removed."
-msgstr "Esta secção foi removida."
-
-#. Status: mt
-#. Phase: 1
-#: web_update.py:256
-msgid "No certificate installed."
-msgstr "Nenhum certificado instalado."
-
-#. Status: mt
-#. Phase: 1
-#: web_update.py:259
-#, python-format
-msgid "Signed & valid. %(details)s"
-msgstr "Assinado e válido. %(details)s"
-
-#. Status: mt
-#. Phase: 1
-#: web_update.py:261
-msgid "Self-signed. Get a signed certificate to stop warnings."
-msgstr "Autoassinado. Obtenha um certificado assinado para parar os avisos."
-
-#. Status: mt
-#. Phase: 1
-#: web_update.py:262
-#, python-format
-msgid "Certificate has a problem: %(status)s"
-msgstr "O certificado tem um problema: %(status)s"
-
-#. Status: mt
-#. Phase: 1
-#: locale/email_messages.py:9
-msgid "Trixie Mail Usage Report"
-msgstr "Relatório de utilização do Trixie Mail"
-
-#. Status: mt
-#. Phase: 1
-#: locale/email_messages.py:10 templates/index.html:117
-msgid "Backup Status"
-msgstr "Estado da cópia de segurança"
-
-#. Status: mt
-#. Phase: 1
-#: locale/email_messages.py:11
-msgid "TLS Certificate Provisioning Result"
-msgstr "Resultado do aprovisionamento de certificados TLS"
-
-#. Status: mt
-#. Phase: 1
-#: locale/email_messages.py:12
-msgid "Status Checks Change Notice"
-msgstr "Aviso de alteração das verificações de estado"
-
-#. Status: mt
-#. Phase: 1
-#: locale/js_messages.py:10 templates/index.html:222
+#: locale/js_messages.py:10 templates/custom-dns.html:74
+#: templates/index.html:222 templates/mfa.html:54
 msgid "Loading..."
 msgstr "A carregar…"
 
@@ -1868,13 +47,14 @@ msgstr "OK"
 
 #. Status: mt
 #. Phase: 1
-#: locale/js_messages.py:14
+#: locale/js_messages.py:14 templates/aliases.html:88
 msgid "Cancel"
 msgstr "Cancelar"
 
 #. Status: mt
 #. Phase: 1
 #: locale/js_messages.py:15 templates/index.html:238
+#: templates/sync-guide.html:41
 msgid "Yes"
 msgstr "Sim"
 
@@ -1922,6 +102,1562 @@ msgstr "Não é administrador neste sistema."
 
 #. Status: mt
 #. Phase: 1
+#: locale/js_messages.py:27
+msgid "delete"
+msgstr "apagar"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:28
+msgid "Secondary DNS"
+msgstr "DNS secundário"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:29 templates/custom-dns.html:7
+#: templates/index.html:120
+msgid "Custom DNS"
+msgstr "DNS personalizado"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:30
+msgid "Custom DNS (Error)"
+msgstr "DNS Personalizado (Erro)"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:33
+msgid "Download Zonefile"
+msgstr "Baixar o Zonefile"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:34
+msgid "Download Zonefile (Error)"
+msgstr "Download Zonefile (Error)"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:37
+msgid "Change"
+msgstr "Alterar"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:38
+msgid "Nothing changed."
+msgstr "Nada mudou."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:39
+msgid "Web Update"
+msgstr "Actualização Web"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:40
+#, python-format
+msgid "Change Root Directory for %(domain)s"
+msgstr "Change Root Directory for %(domain)s"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:41
+#, python-format
+msgid "You can change the static directory for <tt>%(domain)s</tt> to:"
+msgstr "You can change the static directory for <tt>%(domain)s</tt> to:"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:42
+msgid ""
+"First create this directory on the server. Then click Update to scan for "
+"the directory and update web settings."
+msgstr ""
+"Primeiro crie este diretório no servidor. Em seguida, clique em Atualizar"
+" para verificar o diretório e atualizar configurações da web."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:43 locale/js_messages.py:133
+#: templates/custom-dns.html:92
+msgid "Update"
+msgstr "Atualizar"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:46
+msgid "QR code, scan this in your authenticator app"
+msgstr "Código QR, verifique isto no seu aplicativo autenticador"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:47
+#, python-format
+msgid "Secret: %(secret)s"
+msgstr "Secret: %(secret)s"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:48
+#, python-format
+msgid " on device '%(label)s'"
+msgstr " on device '%(label)s'"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:51
+msgid ""
+"Greylisting is on. Mail from a new sender can be delayed by at least 3 "
+"minutes."
+msgstr ""
+"A listagem está ligada. O correio de um novo remetente pode ser atrasado "
+"por pelo menos 3 minutos."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:52
+msgid "Greylisting is off. Incoming mail is accepted on the first connection."
+msgstr "A listagem está desligada. O e-mail recebido é aceito na primeira conexão."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:53
+msgid "Turn off greylisting"
+msgstr "Desligar a listagem em cinzento"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:54
+msgid "Turn on greylisting"
+msgstr "Activar a listagem em cinzento"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:57
+msgid "Enable"
+msgstr "Activar"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:58
+msgid "Disable"
+msgstr "Desactivar"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:59
+msgid "show more"
+msgstr "mostrar mais"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:60
+msgid "Summary: "
+msgstr "Resumo:"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:61
+#, python-format
+msgid "All %(num)s %(symbol)s OK"
+msgstr "All %(num)s %(symbol)s OK"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:62
+#, python-format
+msgid "%(num)s %(symbol)s OK, "
+msgstr "%(num)s %(symbol)s OK, "
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:63
+#, python-format
+msgid "%(num)s %(symbol)s Error, "
+msgstr "%(num)s %(symbol)s Error, "
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:64
+#, python-format
+msgid "%(num)s %(symbol)s Warning"
+msgstr "%(num)s %(symbol)s Warning"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:65
+msgid "Reboot"
+msgstr "Reiniciar"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:66
+#, python-format
+msgid "This will reboot your Trixie Mail <code>%(hostname)s</code>."
+msgstr "This will reboot your Trixie Mail <code>%(hostname)s</code>."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:67
+msgid ""
+"Until the machine is fully restarted, your users will not be able to send"
+" and receive email, and you will not be able to connect to this control "
+"panel or with SSH. The reboot cannot be cancelled."
+msgstr ""
+"Até que a máquina seja totalmente reiniciada, seus usuários não serão "
+"capazes de enviar e receber e-mail, e você não será capaz de se conectar "
+"a este painel de controle ou com SSH. A reinicialização não pode ser "
+"cancelada."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:68
+msgid "Reboot Now"
+msgstr "Reiniciar agora"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:69
+msgid "Please reload this page after a minute or so."
+msgstr "Por favor, recarregue esta página após um minuto ou mais."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:70
+msgid "The reboot command said:"
+msgstr "O comando de reinicialização disse:"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:73
+msgid "bytes"
+msgstr "bytes"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:74
+msgid "KB"
+msgstr "KB"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:75
+msgid "MB"
+msgstr "MB"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:76
+msgid "GB"
+msgstr "GB"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:77
+msgid "TB"
+msgstr "TB"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:78
+msgid "Backup Error"
+msgstr "Erro de Cópia de Segurança"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:79
+msgid "Backups are turned off."
+msgstr "Os reforços estão desligadoba."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:80
+msgid "No backups have been made yet."
+msgstr "Nenhum backup foi feito ainda."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:81
+#, python-format
+msgid "%(delta)s ago"
+msgstr "%(delta)s ago"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:82
+msgid "full"
+msgstr "cheio"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:83
+msgid "increment"
+msgstr "incremento"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:84
+msgid "unknown"
+msgstr "desconhecido"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:85
+msgid "Backup configuration"
+msgstr "Configuração da cópia de segurança"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:88
+msgid "(select)"
+msgstr "(selecionar)"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:89
+msgid "Install Certificate"
+msgstr "Instalar o Certificado"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:90
+msgid "Replace Certificate"
+msgstr "Substituir o Certificado"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:91
+msgid "TLS Certificate Installation"
+msgstr "Instalação do Certificado TLS"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:92
+msgid ""
+"Certificate has been installed. Check that you have no connection "
+"problems to the domain."
+msgstr ""
+"O certificado foi instalado. Verifique se você não tem problemas de "
+"conexão com o domínio."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:93
+msgid "TLS Certificate Provisioning"
+msgstr "Fornecimento do certificado TLS"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:94
+msgid "There were no domain names to provision certificates for."
+msgstr "Não havia nomes de domínio para os certificados de fornecimento."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:95
+msgid "The TLS certificate was provisioned and installed."
+msgstr "O certificado TLS foi fornecido e instalado."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:96
+msgid "Log:"
+msgstr "Registo:"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:99
+msgid "Mailbox size is unkown"
+msgstr "O tamanho da caixa de correio está desactivado"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:100
+msgid "unlimited"
+msgstr "ilimitado"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:101
+msgid "Remove Privilege"
+msgstr "Remover Privilégio"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:102
+msgid "remove privilege"
+msgstr "remover privilégio"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:103
+msgid "Add Privilege"
+msgstr "Adicionar Privilégio"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:104
+#, python-format
+msgid "make <span class='name'>%(privilege)s</span>"
+msgstr "make <span class='name'>%(privilege)s</span>"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:105 templates/users.html:35
+msgid "Add User"
+msgstr "Adicionar usuário"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:106 templates/users.html:81
+msgid "Set Password"
+msgstr "Definir senha"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:107
+msgid ""
+"<p class='text-danger'>If you change your own password, you will be "
+"logged out of this control panel and will need to log in again.</p>"
+msgstr ""
+"Se você mudar sua própria senha, você será desconectado deste painel de "
+"controle e precisará fazer login novamente."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:108
+#, python-format
+msgid ""
+"<p>Set a new password for <b>%(email)s</b>?</p> <p><label "
+"for='users_set_password_pw' style='display: block; font-weight: "
+"normal'>New Password:</label><input type='password' "
+"id='users_set_password_pw'></p><p><small>Passwords must be at least eight"
+" characters and may not contain spaces.</small>%(yourpw)s</p>"
+msgstr ""
+"<p>Set a new password for <b>%(email)s</b>?</p> <p><label "
+"for='users_set_password_pw' style='display: block; font-weight: "
+"normal'>New Password:</label><input type='password' "
+"id='users_set_password_pw'></p><p><small>Passwords must be at least eight"
+" characters and may not contain spaces.</small>%(yourpw)s</p>"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:109 templates/users.html:74
+msgid "Set Quota"
+msgstr "Definir a Quota"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:110
+#, python-format
+msgid ""
+"<p>Set quota for <b>%(email)s</b>?</p><p><label for='users_set_quota' "
+"style='display: block; font-weight: normal'>Quota:</label><input "
+"type='text' id='users_set_quota' value='%(quota)s'></p><p><small>Quotas "
+"may not contain any spaces or commas.  Suffixes of G (gigabytes) and M "
+"(megabytes) are allowed.</small></p><p><small>For unlimited storage enter"
+" 0 (zero)</small></p>"
+msgstr ""
+"<p>Set quota for <b>%(email)s</b>?</p><p><label for='users_set_quota' "
+"style='display: block; font-weight: normal'>Quota:</label><input "
+"type='text' id='users_set_quota' value='%(quota)s'></p><p><small>Quotas "
+"may not contain any spaces or commas.  Suffixes of G (gigabytes) and M "
+"(megabytes) are allowed.</small></p><p><small>For unlimited storage enter"
+" 0 (zero)</small></p>"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:111
+msgid "Archive User"
+msgstr "Usuário do Arquivo"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:112
+msgid "You cannot archive your own account."
+msgstr "Você não pode arquivar sua própria conta."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:113
+#, python-format
+msgid ""
+"<p>Are you sure you want to archive <b>%(email)s</b>?</p> <p>The user's "
+"mailboxes will not be deleted (you can do that later), but the user will "
+"no longer be able to log into any services on this machine.</p>"
+msgstr ""
+"<p>Are you sure you want to archive <b>%(email)s</b>?</p> <p>The user's "
+"mailboxes will not be deleted (you can do that later), but the user will "
+"no longer be able to log into any services on this machine.</p>"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:114
+msgid "Archive"
+msgstr "Arquivo"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:115
+msgid "Remove User"
+msgstr "Remover Usuário"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:116
+msgid "Modify Privileges"
+msgstr "Modificar os Privilégios"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:117
+msgid "You cannot remove the admin privilege from yourself."
+msgstr "Você não pode remover o privilégio de administração de si mesmo."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:118
+#, python-format
+msgid ""
+"<p>Are you sure you want to remove the %(privilege)s privilege for "
+"<b>%(email)s</b>?</p>"
+msgstr ""
+"<p>Are you sure you want to remove the %(privilege)s privilege for "
+"<b>%(email)s</b>?</p>"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:119
+msgid "Remove"
+msgstr "Remover"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:120
+#, python-format
+msgid ""
+"<p>Are you sure you want to add the %(privilege)s privilege for "
+"<b>%(email)s</b>?</p>"
+msgstr ""
+"<p>Are you sure you want to add the %(privilege)s privilege for "
+"<b>%(email)s</b>?</p>"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:121
+msgid "Add"
+msgstr "Adicionar"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:122
+msgid "Random Password"
+msgstr "Senha Aleatória"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:123
+#, python-format
+msgid ""
+"<p>Here, try this:</p> <p><code style='font-size: "
+"110%'>%(password)s</code></p>"
+msgstr ""
+"<p>Here, try this:</p> <p><code style='font-size: "
+"110%'>%(password)s</code></p>"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:126
+msgid "you@yourdomain.com (incoming email address)"
+msgstr "your@yourdomain.com (endereço de e-mail recebido)"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:127
+msgid "one address per line or separated by commas"
+msgstr "um endereço por linha ou separado por vírgulas"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:128
+msgid "@yourdomain.com (incoming catch-all domain)"
+msgstr "@yourdomain.com (incoming catch-all domain)"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:129
+msgid "@otherdomain.com (forward to other domain)"
+msgstr "@otherdomain.com (para outro domínio)"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:130 templates/aliases.html:87
+msgid "Add Alias"
+msgstr "Adicionar um Apelido"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:131
+msgid "Update Alias"
+msgstr "Atualizar apelido"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:132
+msgid "You did not enter any permitted senders."
+msgstr "Você não entrou em nenhum remetente permitido."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:134 templates/aliases.html:116
+msgid "Remove Alias"
+msgstr "Remover apelido"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:135
+#, python-format
+msgid "Remove %(address)s?"
+msgstr "Remove %(address)s?"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:6 templates/index.html:131
+msgid "Aliases"
+msgstr "Aliás"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:8
+msgid "Add a mail alias"
+msgstr "Adicionar um apelido de e- mail"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:10
+msgid ""
+"Aliases are email forwarders. An alias can forward email to a <a "
+"href=\"#users\">mail user</a> or to any email address."
+msgstr ""
+"Outros nomes são encaminhadores de email. Um alias pode encaminhar o "
+"e-mail para um usuário do ou para qualquer endereço de e-mail."
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:12
+msgid ""
+"To use an alias or any address besides your own login username in "
+"outbound mail, the sending user must be included as a permitted sender "
+"for the alias."
+msgstr ""
+"Para usar um pseudônimo ou qualquer endereço além de seu próprio nome de "
+"usuário de login no e-mail de saída, o usuário de envio deve ser incluído"
+" como um remetente permitido para o e-mail."
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:18
+msgid "Regular"
+msgstr "Regular"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:19
+msgid "Catch-All"
+msgstr "Captura-Tudo"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:20
+msgid "Domain Alias"
+msgstr "Apelido de Domínio"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:23
+msgid "A catch-all alias captures all otherwise unmatched email to a domain."
+msgstr "Um alias catch-all captura todos os emails incomparáveis para um domínio."
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:24
+msgid ""
+"A domain alias forwards all otherwise unmatched email from one domain to "
+"another domain, preserving the part before the @-sign."
+msgstr ""
+"Um codinome de domínio encaminha todos os outros e-mails inigualáveis de "
+"um domínio para outro domínio, preservando a parte antes do sinal @."
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:29 templates/aliases.html:98
+msgid "Alias"
+msgstr "Apeli Pulseira"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:33 templates/aliases.html:43
+msgid "Enter just the part of an email address starting with the @-sign."
+msgstr "Digite apenas a parte de um endereço de e-mail começando com o @-sign."
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:34
+msgid ""
+"You may use international (non-ASCII) characters for the domain part of "
+"the email address only."
+msgstr ""
+"Você pode usar caracteres internacionais (não ASCII) apenas para a parte "
+"de domínio do endereço de e-mail."
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:39 templates/aliases.html:99
+msgid "Forwards To"
+msgstr "Para a frente"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:44
+msgid ""
+"Only forward mail to addresses handled by this Trixie Mail, since mail "
+"forwarded by aliases to other domains may be rejected or filtered by the "
+"receiver. To forward mail to other domains, create a mail user and then "
+"log into webmail for the user and create a filter rule to forward mail."
+msgstr ""
+"Only forward mail to addresses handled by this Trixie Mail, since mail "
+"forwarded by aliases to other domains may be rejected or filtered by the "
+"receiver. To forward mail to other domains, create a mail user and then "
+"log into webmail for the user and create a filter rule to forward mail."
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:51 templates/aliases.html:100
+msgid "Permitted Senders"
+msgstr "Enviados Permitidos"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:62
+msgid ""
+"Any mail user listed in the Forwards To box can send mail claiming to be "
+"from\n"
+"            <span class=\"regularalias\">the alias address</span>\n"
+"            <span class=\"catchall domainalias\">any address on the alias"
+" domain</span>."
+msgstr ""
+"Qualquer usuário de e- mail listado nos E- mails Para caixa pode enviar "
+"e- mail alegando ser de\n"
+"O endereço de apelidos\n"
+"Qualquer endereço no domínio de alias."
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:74
+msgid ""
+"I&rsquo;ll enter the mail users that can send mail claiming to be from\n"
+"            <span class=\"regularalias\">the alias address</span>\n"
+"            <span class=\"catchall domainalias\">any address on the alias"
+" domain</span>."
+msgstr ""
+"Eu vou digitar os usuários de e-mail que podem enviar e- mail alegando "
+"ser de\n"
+"O endereço de apelidos\n"
+"Qualquer endereço no domínio de alias."
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:83
+msgid "one user per line or separated by commas"
+msgstr "um usuário por linhaânio ou separado por vírgulas"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:93
+msgid "Existing mail aliases"
+msgstr "Apelidos de correio existentes"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:97 templates/custom-dns.html:71 templates/ssl.html:33
+#: templates/users.html:53 templates/web.html:28
+msgid "Actions"
+msgstr "Acções"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:107
+msgid ""
+"hostmaster@, postmaster@, admin@ and abuse@ email addresses are required "
+"on some domains."
+msgstr ""
+"hostmaster@, postmaster@, admin@ e endereços de e-mail são necessários em"
+" alguns domínios."
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:113
+msgid "Edit Alias"
+msgstr "Editar Apelido"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:127
+msgid "Mail aliases API (advanced)"
+msgstr "Aliases sabotage API (avançado)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:129
+msgid ""
+"Use your box&rsquo;s mail aliases API to add and remove mail aliases from"
+" the command-line or custom services you build."
+msgstr ""
+"Use sua API de e-mail box apartamentos para adicionar e remover aliases "
+"de e-mail da linha de comando ou serviços personalizados que você "
+"constrói."
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:131 templates/custom-dns.html:113
+#: templates/users.html:107
+msgid "Usage:"
+msgstr "Uso:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:135 templates/users.html:111
+msgid ""
+"Brackets denote an optional argument. Please note that the POST body "
+"<code>parameters</code> must be URL-encoded."
+msgstr ""
+"Os braquetes denotam um argumento opcional. Por favor, note que o corpo "
+"POST deve ser codificado com URL."
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:137 templates/users.html:113
+msgid ""
+"The email and password given to the <code>--user</code> option must be an"
+" administrative user on this system."
+msgstr ""
+"O e-mail e a senha dados para a opção .T0...usuário deve ser um usuário "
+"administrativo neste sistema."
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:139 templates/custom-dns.html:119
+#: templates/users.html:115
+msgid "Verbs"
+msgstr "Verbos"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:143 templates/custom-dns.html:123
+#: templates/users.html:118
+msgid "Verb"
+msgstr "Verbo"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:143 templates/users.html:118
+msgid "Action"
+msgstr "Acção"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:145 templates/users.html:119
+msgid "(none)"
+msgstr "(Nenhuma)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:145
+msgid ""
+"Returns a list of existing mail aliases. Adding <code>?format=json</code>"
+" to the URL will give JSON-encoded results."
+msgstr ""
+"Devolve uma lista de apelidos de correio existentes. Adicionando o "
+"formato = json OhT1 para o URL dará resultados codificados pelo JSON."
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:146
+msgid ""
+"Adds a new mail alias. Required POST-body parameters are "
+"<code>address</code> and <code>forwards_to</code>."
+msgstr ""
+"Adiciona um novo apelido de e- mail. Os parâmetros requeridos do POST-"
+"body são o endereço do ."
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:147
+msgid ""
+"Removes a mail alias. Required POST-body parameter is "
+"<code>address</code>."
+msgstr ""
+"Remove um apelido de e- mail. O parâmetro PÓS-corpo exigido é o endereço "
+"do endereço do endereço."
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:150 templates/custom-dns.html:146
+#: templates/users.html:144
+msgid "Examples:"
+msgstr "Exemplos:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:152 templates/custom-dns.html:148
+msgid ""
+"Try these examples. For simplicity the examples omit the <code>--user "
+"me@mydomain.com:yourpassword</code> command line argument which you must "
+"fill in with your email address and password."
+msgstr ""
+"Experimente estes exemplos. Para simplicidade, os exemplos omitem o "
+"argumento de linha de comando □T0.-user me@mydomain.com:yourpassword®T1 "
+"que você deve preencher com seu endereço de e-mail e senha."
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:154
+msgid "Gives a JSON-encoded list of all mail aliases"
+msgstr "Dá uma lista codificada pelo JSON de todos os nomes falsos de correio"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:157
+msgid "Adds a new alias"
+msgstr "Adiciona um novo apelido"
+
+#. Status: mt
+#. Phase: 1
+#: templates/aliases.html:160
+msgid "Removes an alias"
+msgstr "Remove um apelido"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:9 templates/external-dns.html:31
+msgid "This is an advanced configuration page."
+msgstr "Esta é uma página de configuração avançada."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:11
+msgid "It is possible to set custom DNS records on domains hosted here."
+msgstr ""
+"É possível definir registros DNS personalizados em domínios hospedados "
+"aqui."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:13
+msgid "Set custom DNS records"
+msgstr "Definir os registos DNS personalizados"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:15
+msgid ""
+"You can set additional DNS records, such as if you have a website running"
+" on another server, to add DKIM records for external mail providers, or "
+"for various confirmation-of-ownership tests."
+msgstr ""
+"Você pode definir registros adicionais de DNS, como se você tivesse um "
+"site rodando em outro servidor, para adicionar registros DKIM para "
+"provedores de email externos, ou para vários testes de confirmação de "
+"propriedade."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:19
+msgid "Name"
+msgstr "Nome"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:23
+msgid "subdomain"
+msgstr "subdomínio"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:27
+msgid ""
+"Leave the left field blank to set a record on the chosen domain name, or "
+"enter a subdomain."
+msgstr ""
+"Deixe o campo esquerdo em branco para definir um registro no nome de "
+"domínio escolhido, ou digite um subdomínio."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:31 templates/external-dns.html:63
+#: templates/system-backup.html:175
+msgid "Type"
+msgstr "Tipo"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:34
+msgid ""
+"Enter an IPv4 address (i.e. a dotted quad, such as 123.456.789.012).  The"
+" 'local' alias sets the record to this box's public IPv4 address."
+msgstr ""
+"Digite um endereço IPv4 (ou seja, um quadrado pontilhado, como "
+"123.456.789.012). O apelido ' 'local' define o registro para o endereço "
+"IPv4 público desta caixa."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:34
+msgid "A (IPv4 address)"
+msgstr "A (endereço IPv toalhas)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:35
+msgid ""
+"Enter an IPv6 address.  The 'local' alias sets the record to this box's "
+"public IPv6 address."
+msgstr ""
+"Digite um endereço IPv6. O apelido 'local' define o registro para o "
+"endereço IPv6 público desta caixa."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:35
+msgid "AAAA (IPv6 address)"
+msgstr "AAAA (endereço IPv6)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:36
+msgid ""
+"Enter a CA that can issue certificates for this domain in the form of "
+"FLAG TAG VALUE. (0 issuewild \"letsencrypt.org\")"
+msgstr ""
+"Digite uma CA que possa emitir certificados para este domínio na forma de"
+" FLAG TAG VALUE. (0 issuewild \"letsencrypt.org\")"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:36
+msgid "CAA (Certificate Authority Authorization)"
+msgstr "CAA (autorização da autoridade de certificação)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:37
+msgid ""
+"Enter another domain name followed by a period at the end (e.g. "
+"mypage.github.io.)."
+msgstr ""
+"Digite outro nome de domínio seguido de um período no final (por exemplo,"
+" mypage.github.io)."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:37
+msgid "CNAME (DNS forwarding)"
+msgstr "CNAME (DNS)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:38
+msgid "Enter arbitrary text."
+msgstr "Digite o texto arbitrário."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:38
+msgid "TXT (text record)"
+msgstr "TXT (registro de texto)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:39
+msgid ""
+"Enter record in the form of PRIORITY DOMAIN., including trailing period "
+"(e.g. 20 mx.example.com.)."
+msgstr ""
+"Digite registro na forma de PRIORITY DOMAIN., incluindo período de "
+"acompanhamento (por exemplo, 20 mx.exemplo.com)."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:39
+msgid "MX (mail exchanger)"
+msgstr "MX (trocador de correio)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:40
+msgid ""
+"Enter record in the form of PRIORITY WEIGHT PORT TARGET., including "
+"trailing period (e.g. 10 10 5060 sip.example.com.)."
+msgstr ""
+"Introduza o registo sob a forma de PRIORIDADE PESO PORT TARGET., "
+"incluindo o período de acompanhamento (por exemplo, 10 10 5060 "
+"sip.example.com)."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:40
+msgid "SRV (service record)"
+msgstr "SRV (registro de serviço)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:41
+msgid "Enter record in the form of ALGORITHM TYPE FINGERPRINT."
+msgstr "Introduza o registo sob a forma de DENTRO DE TIPO ALGORITMO."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:41
+msgid "SSHFP (SSH fingerprint record)"
+msgstr "SSHFP (registro de impressões digitais SH)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:42
+msgid "Enter a hostname to which this subdomain should be delegated to"
+msgstr "Indique um nome de máquina para o qual este subdomínio deverá ser delegado"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:42
+msgid "NS (DNS subdomain delegation)"
+msgstr "NS (Delegação subdomínio DNS)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:47 templates/custom-dns.html:70
+#: templates/custom-dns.html:135 templates/external-dns.html:64
+#: templates/mail-guide.html:27
+msgid "Value"
+msgstr "Valor"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:55
+msgid "Set Record"
+msgstr "Definir registro"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:61
+msgid "sort by:"
+msgstr "ordenar por:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:62
+msgid "domain name"
+msgstr "nome do domínio"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:64
+msgid "created"
+msgstr "criado"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:68
+msgid "Domain Name"
+msgstr "Nome do Domínio"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:69
+msgid "Record Type"
+msgstr "Tipo de Registo"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:78
+msgid "Using a secondary nameserver"
+msgstr "Usando um servidor de nomes secundário"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:80
+msgid ""
+"If your TLD requires you to have two separate nameservers, you can either"
+" set up <a href=\"#external_dns\">external DNS</a> and ignore the DNS "
+"server on this box entirely, or use the DNS server on this box but add a "
+"secondary (aka &ldquo;slave&rdquo;) nameserver."
+msgstr ""
+"Se o seu TLD exigir que você tenha dois servidores de nomes separados, "
+"você pode configurar o DNS1 externo e ignorar o servidor de DNS nesta "
+"caixa completamente, ou usar o servidor de DNS nesta caixa, mas adicionar"
+" um servidor de nomes secundário (também conhecido como servidor de nomes"
+" ."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:81
+msgid ""
+"If you choose to use a secondary nameserver, you must find a secondary "
+"nameserver service provider. Your domain name registrar or virtual cloud "
+"provider may provide this service for you. Once you set up the secondary "
+"nameserver service, enter the hostname (not the IP address) of "
+"<em>their</em> secondary nameserver in the box below."
+msgstr ""
+"Se você optar por usar um servidor de nome secundário, você deve "
+"encontrar um provedor de serviço de nome secundário. Seu registro de nome"
+" de domínio ou provedor de nuvem virtual podem fornecer este serviço para"
+" você. Depois de configurar o serviço de servidor de nomes secundário, "
+"digite o nome da máquina (não o endereço IP) do servidor de nomes "
+"secundário ."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:85 templates/system-backup.html:45
+msgid "Hostname"
+msgstr "Nome da máquina"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:98
+msgid ""
+"Multiple secondary servers can be separated with commas or spaces (i.e., "
+"<code>ns2.hostingcompany.com ns3.hostingcompany.com</code>).\n"
+"        To enable zone transfers to additional servers without listing "
+"them as secondary nameservers, prefix a hostname, IP address, or subnet "
+"with <code>xfr:</code>, e.g. <code>xfr:10.20.30.40</code> or "
+"<code>xfr:10.0.0.0/8</code>."
+msgstr ""
+"- Não.\n"
+"Para habilitar transferências de zona para servidores adicionais sem "
+"listar como servidores secundários, prefixo um hostname, endereço IP ou "
+"sub-rede com .T couvexxfr:.T3, por exemplo .T4 xfr:10.20.30.40 .T5 ou .T6"
+" .xfr:10.0.0.0/8 ."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:102
+msgid ""
+"Clear the input field above and click Update to use this machine itself "
+"as secondary DNS, which is the default/normal setup."
+msgstr ""
+"Limpar o campo de entrada acima e clique em Atualizar para usar esta "
+"máquina como DNS secundário, que é a configuração padrão/normal."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:109
+msgid "Custom DNS API"
+msgstr "API DNS personalizada"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:111
+msgid ""
+"Use your box&rsquo;s DNS API to set custom DNS records on domains hosted "
+"here. For instance, you can create your own dynamic DNS service."
+msgstr ""
+"Use a API DNS do seu box para definir registros DNS personalizados em "
+"domínios hospedados aqui. Por exemplo, você pode criar seu próprio "
+"serviço DNS dinâmico."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:117
+msgid "(Brackets denote an optional argument.)"
+msgstr "(Brachets denotam um argumento opcional.)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:123
+msgid "Usage"
+msgstr "Utilização"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:125
+msgid ""
+"Returns matching custom DNS records as a JSON array of objects. Each "
+"object has the keys <code>qname</code>, <code>rtype</code>, and "
+"<code>value</code>. The optional <code>qname</code> and "
+"<code>rtype</code> parameters in the request URL filter the records "
+"returned in the response. The request body (<code>-d \"...\"</code>) must"
+" be omitted."
+msgstr ""
+"Retorna correspondentes registros DNS personalizados como uma matriz JSON"
+" de objetos. Cada objeto tem as chaves , T0 , T1 , T2 , T3 , e , T4 , "
+"valor , T5 . Os parâmetros opcionais do URL da requisição são os "
+"registros retornados na resposta. O corpo de solicitação "
+"(\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\""
+" "
+"portos\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"just\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\""
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:126
+msgid ""
+"Sets a custom DNS record replacing any existing records with the same "
+"<code>qname</code> and <code>rtype</code>. Use PUT (instead of POST) when"
+" you only have one value for a <code>qname</code> and <code>rtype</code>,"
+" such as typical <code>A</code> records (without round-robin)."
+msgstr ""
+"Define um registro DNS personalizado que substitui todos os registros "
+"existentes com o mesmo . Use PUT (em vez de POST) quando você só tem um "
+"valor para um registro de um T4T5 e T6Rtype T7, tais como registros "
+"típicos de T8AT9 (sem round-robin)."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:127
+msgid ""
+"Adds a new custom DNS record. Use POST when you have multiple "
+"<code>TXT</code> records or round-robin <code>A</code> records. (PUT "
+"would delete previously added records.)"
+msgstr ""
+"Adiciona um novo registro DNS personalizado. Use POST quando você tiver "
+"vários registros .T0 .TXT .T1 . (PUT apagaria registros adicionados "
+"anteriormente.)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:128
+msgid ""
+"Deletes custom DNS records. If the request body (<code>-d \"...\"</code>)"
+" is empty or omitted, deletes all records matching the <code>qname</code>"
+" and <code>rtype</code>. If the request body is present, deletes only the"
+" record matching the <code>qname</code>, <code>rtype</code> and value."
+msgstr ""
+"Exclui registros DNS personalizados. Se o corpo da solicitação "
+"(\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\""
+" Se o corpo da solicitação estiver presente, apaga apenas o registro que "
+"corresponde ao valor e valor do ."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:131
+msgid "Parameters"
+msgstr "Parâmetros"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:135
+msgid "Parameter"
+msgstr "Parâmetro"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:137
+msgid "The email address of any administrative user here."
+msgstr "O endereço de e-mail de qualquer usuário administrativo aqui."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:138
+msgid "That user&rsquo;s password."
+msgstr "Essa senha do usuário."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:139
+msgid ""
+"The fully qualified domain name for the record you are trying to set. It "
+"must be one of the domain names or a subdomain of one of the domain names"
+" hosted on this box. (Add mail users or aliases to add new domains.)"
+msgstr ""
+"O nome de domínio totalmente qualificado para o registro que você está "
+"tentando definir. Deve ser um dos nomes de domínio ou um subdomínio de um"
+" dos nomes de domínio hospedados nesta caixa. (Adicionar usuários de "
+"e-mail ou aliases para adicionar novos domínios.)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:140
+msgid ""
+"The resource type. Defaults to <code>A</code> if omitted. Possible "
+"values: <code>A</code> (an IPv4 address), <code>AAAA</code> (an IPv6 "
+"address), <code>TXT</code> (a text string), <code>CNAME</code> (an alias,"
+" which is a fully qualified domain name &mdash; don&rsquo;t forget the "
+"final period), <code>MX</code>, <code>SRV</code>, <code>SSHFP</code>, "
+"<code>CAA</code> or <code>NS</code>."
+msgstr ""
+"O tipo de recurso. Predefinições para Tarefa A1 se omitido. Possíveis "
+"valores: (um endereço IPv4) (um endereço IPv4) (um endereço IPv6) (um "
+"endereço IPv6), (um texto de texto), (um nome de domínio totalmente "
+"qualificado, (um nome de domínio, que é um nome de domínio totalmente "
+"qualificado, donT10T11, esqueça o período final), (T12, MX, T13, .T14, "
+"SRV, T15, .T16, SSHFP, T17, .T18, CAA, T19, ou .T20, Copa do Mundo."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:141
+msgid ""
+"For PUT, POST, and DELETE, the record&rsquo;s value. If the "
+"<code>rtype</code> is <code>A</code> or <code>AAAA</code> and "
+"<code>value</code> is empty or omitted, the IPv4 or IPv6 address of the "
+"remote host is used (be sure to use the <code>-4</code> or "
+"<code>-6</code> options to curl). This is handy for dynamic DNS!"
+msgstr ""
+"Para PUT, POST, e DELETE, o valor recorde. Se o valor de \"t1\" T2 é "
+"\"t3\" A4\" ou \"t5\" AAA e \"t7\" T8\" está vazio ou omitido, o endereço"
+" IPv4 ou IPv6 da máquina remota é usado (seja certo de usar as opções de "
+"\"t9\" ou \"t11\"-6\" T12\". Isto é útil para DNS dinâmico!"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:144
+msgid ""
+"Strict <a href=\"http://tools.ietf.org/html/rfc4408\">SPF</a> and <a "
+"href=\"https://datatracker.ietf.org/doc/draft-kucherawy-dmarc-"
+"base/?include_text=1\">DMARC</a> records will be added to all custom "
+"domains unless you override them."
+msgstr "Registros rigorosos do .T0 .SPF .T1 e .T2 .DMARC .T3 ."
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:150
+msgid ""
+"sets laptop.mydomain.com to point to the IP address of the machine you "
+"are executing curl on"
+msgstr ""
+"define laptop.mydomain.com para apontar para o endereço IP da máquina que"
+" você está executando curl em"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:153
+msgid "deletes that record and all A records for that domain name"
+msgstr "apaga esse registro e todos os registros A para esse nome de domínio"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:156
+msgid "sets a CNAME alias"
+msgstr "define um apelido CNAME"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:159
+msgid "deletes that CNAME and all CNAME records for that domain name"
+msgstr "exclui que CNAME e todos os registros CNAME para esse nome de domínio"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:162
+msgid "adds a TXT record using POST to preserve any previous TXT records"
+msgstr ""
+"adiciona um registro TXT usando POST para preservar quaisquer registros "
+"TXT anteriores"
+
+#. Status: mt
+#. Phase: 1
+#: templates/custom-dns.html:165
+msgid "deletes that one TXT record while preserving other TXT records"
+msgstr "apaga que um registro TXT enquanto preserva outros registros TXT"
+
+#. Status: mt
+#. Phase: 1
+#: templates/external-dns.html:29 templates/index.html:121
+msgid "External DNS"
+msgstr "DNS externo"
+
+#. Status: mt
+#. Phase: 1
+#: templates/external-dns.html:33
+msgid ""
+"Although your box is configured to serve its own DNS, it is possible to "
+"host your DNS elsewhere &mdash; such as in the DNS control panel provided"
+" by your domain name registrar or virtual cloud provider &mdash; by "
+"copying the DNS zone information shown in the table below into your "
+"external DNS server&rsquo;s control panel."
+msgstr ""
+"Embora a sua caixa esteja configurada para servir o seu próprio DNS, é "
+"possível hospedar o seu DNS em qualquer outro lugar, como no painel de "
+"controle DNS fornecido pelo seu nome de domínio registrador ou provedor "
+"de nuvem virtual, copiando as informações da zona DNS mostradas na tabela"
+" abaixo em seu servidor DNS externo Painel de controle T2."
+
+#. Status: mt
+#. Phase: 1
+#: templates/external-dns.html:35
+msgid ""
+"If you do so, you are responsible for keeping your DNS entries up to "
+"date! If you previously enabled DNSSEC on your domain name by setting a "
+"DS record at your registrar, you will likely have to turn it off before "
+"changing nameservers."
+msgstr ""
+"Se você fizer isso, você é responsável por manter suas entradas DNS "
+"UNIÃO! Se você habilitou anteriormente o DNSSEC para o seu nome de "
+"domínio, definindo um registro DS no seu registrador, provavelmente terá "
+"que desligá-lo antes de mudar os servidores de nomes."
+
+#. Status: mt
+#. Phase: 1
+#: templates/external-dns.html:40
+msgid ""
+"You may encounter zone file errors when attempting to create a TXT record"
+" with a long string.\n"
+"\t<a href=\"https://tools.ietf.org/html/rfc4408#section-3.1.3\">RFC "
+"4408</a> states a TXT record is allowed to contain multiple strings, and "
+"this technique can be used to construct records that would exceed the "
+"255-byte maximum length.\n"
+"\tYou may need to adopt this technique when adding DomainKeys. Use a tool"
+" like <code>named-checkzone</code> to validate your zone file."
+msgstr ""
+"Você pode encontrar erros de arquivo zona ao tentar criar um registro TXT"
+" com uma string longa.\n"
+"O .T032/RFC 4408/T1 é um registro TXT autorizado a conter múltiplas "
+"cordas, e esta técnica pode ser usada para construir registros que "
+"excederiam o comprimento máximo de 255-byte.\n"
+"Você pode precisar adotar esta técnica ao adicionar DomainKeys. Use uma "
+"ferramenta como o nome da área para validar seu arquivo de zona."
+
+#. Status: mt
+#. Phase: 1
+#: templates/external-dns.html:45
+msgid "Download zonefile"
+msgstr "Arquivo de zona de download"
+
+#. Status: mt
+#. Phase: 1
+#: templates/external-dns.html:46
+msgid "You can download your zonefiles here or use the table of records below."
+msgstr ""
+"Você pode baixar seus arquivos de zona aqui ou usar a tabela de registros"
+" abaixo."
+
+#. Status: mt
+#. Phase: 1
+#: templates/external-dns.html:50
+msgid "Zone"
+msgstr "Zona"
+
+#. Status: mt
+#. Phase: 1
+#: templates/external-dns.html:53
+msgid "Download"
+msgstr "Baixar"
+
+#. Status: mt
+#. Phase: 1
+#: templates/external-dns.html:57
+msgid "Records"
+msgstr "Registos"
+
+#. Status: mt
+#. Phase: 1
+#: templates/external-dns.html:62
+msgid "QName"
+msgstr "QName"
+
+#. Status: mt
+#. Phase: 1
 #: templates/index.html:8
 msgid "Trixie Mail Control Panel"
 msgstr "Painel de controlo Trixie Mail"
@@ -1938,15 +1674,27 @@ msgstr ""
 
 #. Status: mt
 #. Phase: 1
+#: templates/index.html:113
+msgid "System"
+msgstr "Sistema"
+
+#. Status: mt
+#. Phase: 1
 #: templates/index.html:115
 msgid "Status Checks"
 msgstr "Verificações de estado"
 
 #. Status: mt
 #. Phase: 1
-#: templates/index.html:116
+#: templates/index.html:116 templates/ssl.html:4
 msgid "TLS (SSL) Certificates"
 msgstr "Certificados TLS (SSL)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:117 templates/system-backup.html:6
+msgid "Backup Status"
+msgstr "Estado da cópia de segurança"
 
 #. Status: mt
 #. Phase: 1
@@ -1956,19 +1704,7 @@ msgstr "Páginas avançadas"
 
 #. Status: mt
 #. Phase: 1
-#: templates/index.html:120
-msgid "Custom DNS"
-msgstr "DNS personalizado"
-
-#. Status: mt
-#. Phase: 1
-#: templates/index.html:121
-msgid "External DNS"
-msgstr "DNS externo"
-
-#. Status: mt
-#. Phase: 1
-#: templates/index.html:122
+#: templates/index.html:122 templates/munin.html:1
 msgid "Munin Monitoring"
 msgstr "Monitorização Munin"
 
@@ -1992,15 +1728,9 @@ msgstr "Instruções"
 
 #. Status: mt
 #. Phase: 1
-#: templates/index.html:130
+#: templates/index.html:130 templates/users.html:1
 msgid "Users"
 msgstr "Utilizadores"
-
-#. Status: mt
-#. Phase: 1
-#: templates/index.html:131
-msgid "Aliases"
-msgstr "Aliás"
 
 #. Status: mt
 #. Phase: 1
@@ -2010,7 +1740,7 @@ msgstr "A sua conta"
 
 #. Status: mt
 #. Phase: 1
-#: templates/index.html:134
+#: templates/index.html:134 templates/mfa.html:34
 msgid "Two-Factor Authentication"
 msgstr "Autenticação de dois fatores"
 
@@ -2045,7 +1775,7 @@ msgid ""
 "This is <a href=\"https://github.com/quantenland-ai/TrixieMail\">Trixie "
 "Mail</a> (agentic fork of Mail-in-a-Box)."
 msgstr ""
-"Isto é <a href=\"https://github.com/quantenland-ai/TrixieMail\">Trixie "
+"Isto é <a href=\"https://github.com/quantenland-ai/Trixie Mail\">Trixie "
 "Mail</a> (fork agentico do Mail-in-a-Box)."
 
 #. Status: mt
@@ -2063,8 +1793,8 @@ msgstr ""
 #: templates/login.html:33 templates/login.html:38
 msgid "from your Trixie Mail install directory (e.g. TrixieMail or mailinabox)"
 msgstr ""
-"a partir do diretório de instalação do Trixie Mail (p. ex. TrixieMail ou "
-"mailinabox)"
+"a partir do diretório de instalação do Trixie Mail (p. ex. Trixie Mail ou"
+" mailinabox)"
 
 #. Status: mt
 #. Phase: 1
@@ -2091,7 +1821,8 @@ msgstr "E-mail"
 
 #. Status: mt
 #. Phase: 1
-#: templates/login.html:57 templates/login.html:59
+#: templates/login.html:57 templates/login.html:59 templates/sync-guide.html:43
+#: templates/users.html:22 templates/users.html:23
 msgid "Password"
 msgstr "Palavra-passe"
 
@@ -2103,7 +1834,7 @@ msgstr "Código"
 
 #. Status: mt
 #. Phase: 1
-#: templates/login.html:65
+#: templates/login.html:65 templates/mfa.html:76
 msgid "6-digit code"
 msgstr "Código de 6 dígitos"
 
@@ -2126,6 +1857,1572 @@ msgstr "Lembrar-me"
 #: templates/login.html:80
 msgid "Sign in"
 msgstr "Iniciar sessão"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:4
+msgid "Checking and Sending Mail"
+msgstr "Verificação e Envio de E- mail"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:8
+msgid "Webmail"
+msgstr "Correio Web"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:10
+msgid ""
+"Webmail lets you check your email from any web browser. Your webmail site"
+" is:"
+msgstr ""
+"Webmail permite que você verifique seu e-mail de qualquer navegador da "
+"web. Seu site de email é:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:12
+msgid "Your username is your whole email address."
+msgstr "Seu nome de usuário é todo seu endereço de e-mail."
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:15
+msgid "Mobile/desktop apps"
+msgstr "Aplicações móveis/desktop"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:17
+msgid "Automatic configuration"
+msgstr "Configuração automática"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:19
+#, python-format
+msgid ""
+"iOS and macOS only: Open <a style=\"font-weight: bold\" "
+"href=\"https://%(hostname)s/mailinabox.mobileconfig\">this configuration "
+"link</a> on your iOS device or on your Mac desktop to easily set up mail "
+"(IMAP/SMTP), Contacts, and Calendar. Your username is your whole email "
+"address."
+msgstr ""
+"iOS and macOS only: Open <a style=\"font-weight: bold\" "
+"href=\"https://%(hostname)s/mailinabox.mobileconfig\">this configuration "
+"link</a> on your iOS device or on your Mac desktop to easily set up mail "
+"(IMAP/SMTP), Contacts, and Calendar. Your username is your whole email "
+"address."
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:21
+msgid "Manual configuration"
+msgstr "Configuração manual"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:23
+msgid ""
+"Use the following settings when you set up your email on your phone, "
+"desktop, or other device:"
+msgstr ""
+"Use as seguintes configurações quando configurar seu e-mail em seu "
+"telefone, desktop ou outro dispositivo:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:27
+msgid "Option"
+msgstr "Opção"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:29
+msgid "Protocol/Method"
+msgstr "Protocolo/Método"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:30
+msgid "Mail server"
+msgstr "Servidor de mensagens"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:31
+msgid "IMAP Port"
+msgstr "Porta IMAP"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:32
+msgid "IMAP Security"
+msgstr "Segurança do IMAP"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:32 templates/mail-guide.html:34
+msgid "SSL or TLS"
+msgstr "SSL ou TLS"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:33
+msgid "SMTP Port"
+msgstr "Porta SMTP"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:34
+msgid "SMTP Security"
+msgstr "Segurança SMTP"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:35
+msgid "Username:"
+msgstr "Utilizador:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:35
+msgid "Your whole email address."
+msgstr "O teu endereço de e-mail todo."
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:36
+msgid "Password:"
+msgstr "Senha:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:36 templates/sync-guide.html:43
+msgid "Your mail password."
+msgstr "A tua senha de correio."
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:39
+msgid ""
+"In addition to setting up your email, you&rsquo;ll also need to set up <a"
+" href=\"#sync_guide\">contacts and calendar synchronization</a> "
+"separately."
+msgstr ""
+"Além de configurar seu email, você também precisa configurar contatos e "
+"sincronização de calendários T2; separadamente."
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:41
+msgid ""
+"As an alternative to IMAP you can also use the POP protocol: choose POP "
+"as the protocol, port 995, and SSL or TLS security in your mail client. "
+"The SMTP settings and usernames and passwords remain the same. However, "
+"we recommend you use IMAP instead."
+msgstr ""
+"Como alternativa para IMAP, você também pode usar o protocolo POP: "
+"escolha POP como protocolo, porta 995, e segurança SSL ou TLS em seu "
+"cliente de e-mail. As configurações de SMTP e os 350 nomes de usuário e "
+"senhas permanecem as mesmas. No entanto, recomendamos que você use 350."
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:43
+msgid "Exchange/ActiveSync settings"
+msgstr "Configurações do Exchange/ActiveSync"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:45
+msgid ""
+"On iOS devices, devices on this <a "
+"href=\"https://github.com/Z-Hub/Z-Push/wiki/Compatibility\">compatibility"
+" list</a>, or using Outlook 2007 or later on Windows 7 and later, you may"
+" set up your mail as an Exchange or ActiveSync server. However, "
+"we&rsquo;ve found this to be more buggy than using IMAP as described "
+"above. If you encounter any problems, please use the manual settings "
+"above."
+msgstr ""
+"Nos dispositivos iOS, os dispositivos nesta lista de compatibilidade do "
+".T0.T1., ou usando o Outlook 2007 ou posterior no Windows 7 e posterior, "
+"você pode configurar seu e-mail como um servidor Exchange ou ActiveSync. "
+"No entanto, o We'T2've JUVEN descobriu que isso é mais buggy do que usar "
+"IMAP como descrito acima. Se você encontrar algum problema, use as "
+"configurações manuais acima."
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:48
+msgid "Server"
+msgstr "Servidor"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:49
+msgid "Options"
+msgstr "Opções"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:49
+msgid "Secure Connection"
+msgstr "Ligação Segura"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:52
+msgid ""
+"Your device should also provide a contacts list and calendar that syncs "
+"to this box when you use this method."
+msgstr ""
+"Seu dispositivo também deve fornecer uma lista de contatos e calendário "
+"que sincroniza com esta caixa quando você usa este método."
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:58
+msgid "Other information about mail on your box"
+msgstr "Outras informações sobre o correio na sua caixa"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:61
+msgid "Greylisting"
+msgstr "Lista de Cinzentos"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:62
+msgid ""
+"Greylisting is off by default, so incoming mail is accepted on the first "
+"connection. An administrator can turn it on to cut down on spam. When "
+"greylisting is on, your box initially rejects mail from people you "
+"haven&rsquo;t received mail from before. Legitimate mail servers attempt "
+"redelivery shortly afterwards, but most spam does not. Mail from someone "
+"new, such as a confirmation while you are registering on a website, can "
+"then be delayed by at least 3 minutes, depending on when the remote "
+"server retries."
+msgstr ""
+"Greylisting está desligado por padrão, então o e-mail recebido é aceito "
+"na primeira conexão. Um administrador pode ligá-lo para reduzir o spam. "
+"Quando a lista cinzenta está ligada, a sua caixa inicialmente rejeita o "
+"e- mail de pessoas que você tem T0 ot recebeu o correio de antes. "
+"Servidores de email legítimos tentam redelivery pouco depois, mas a "
+"maioria do spam não. O correio de alguém novo, como uma confirmação "
+"enquanto você está se registrando em um site, pode então ser atrasado em "
+"pelo menos 3 minutos, dependendo de quando o servidor remoto voltar."
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:64
+msgid "Loading greylisting setting..."
+msgstr "A carregar a configuração da lista cinzenta..."
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:94
+msgid "+tag addresses"
+msgstr "+endereços de etiqueta"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:95
+msgid ""
+"Every incoming email address also receives mail for <code>+tag</code> "
+"addresses. If your email address is <code>you@yourdomain.com</code>, "
+"you&rsquo;ll also automatically get mail sent to "
+"<code>you+anythinghere@yourdomain.com</code>. Use this as a fast way to "
+"segment incoming mail for your own filtering rules without having to "
+"create aliases in this control panel."
+msgstr ""
+"Cada endereço de e-mail recebido também recebe e-mail para endereços de ."
+" Se o seu endereço de e-mail for .T2'you@yourdomain.com .T3', você também"
+" receberá automaticamente o e-mail enviado para .T5'you+qualquer coisa "
+"aqui@seu domínio.com .T6'. Use isso como uma maneira rápida de segmentar "
+"o e- mail de entrada para suas próprias regras de filtragem sem ter que "
+"criar pseudônimos neste painel de controle."
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:97
+msgid "Use only this box to send as you"
+msgstr "Usar apenas esta caixa para enviar como você"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mail-guide.html:98
+msgid ""
+"Your box sets strict email sending policies for your domain names to make"
+" it harder for spam and other fraudulent mail to claim to be you. Only "
+"this machine is authorized to send email on behalf of your domain names. "
+"If you use any other service to send email as you, it will likely get "
+"spam filtered by recipients."
+msgstr ""
+"Sua caixa define políticas de envio de email estritas para seus nomes de "
+"domínio para tornar mais difícil para spam e outras mensagens "
+"fraudulentas alegarem ser você. Apenas esta Lisboa está autorizada a "
+"enviar e-mails em nome dos seus nomes de domínio. Se você usar qualquer "
+"outro serviço para enviar e-mail como você, ele provavelmente vai obter "
+"spam filtrado pelos destinatários."
+
+#. Status: mt
+#. Phase: 1
+#: templates/mfa.html:36
+msgid ""
+"When two-factor authentication is enabled, you will be prompted to enter "
+"a six digit code from an\n"
+"authenticator app (usually on your phone) when you log into this control "
+"panel."
+msgstr ""
+"Quando a autenticação de dois fatores estiver habilitada, você será "
+"solicitado a inserir um código de seis dígitos de uma\n"
+"aplicativo autenticador (geralmente no telefone) quando você entrar neste"
+" painel de controle."
+
+#. Status: mt
+#. Phase: 1
+#: templates/mfa.html:41
+msgid "Enabling two-factor authentication does not protect access to your email"
+msgstr "Habilitar a autenticação de dois fatores não protege o acesso ao seu email"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mfa.html:44
+msgid ""
+"Enabling two-factor authentication on this page only limits access to "
+"this control panel. Remember that most websites allow you to\n"
+"reset your password by checking your email, so anyone with access to your"
+" email can typically take over\n"
+"your other accounts. Additionally, if your email address or any alias "
+"that forwards to your email\n"
+"address is a typical domain control validation address (e.g admin@, "
+"administrator@, postmaster@, hostmaster@,\n"
+"webmaster@, abuse@), extra care should be taken to protect the account. "
+"<strong>Always use a strong password,\n"
+"and ensure every administrator account for this control panel does the "
+"same.</strong>"
+msgstr ""
+"Habilitar a autenticação de dois fatores nesta página limita apenas o "
+"acesso a este painel de controle. Lembre-se que a maioria dos sites "
+"permitem que você\n"
+"redefinir sua senha verificando seu e-mail, parafrican qualquer um com "
+"acesso ao seu e-mail pode tipicamente assumir\n"
+"As suas outras contas. Além disso, se o seu endereço de e-mail ou "
+"qualquer alias que remete para o seu email\n"
+"endereço é um endereço típico de validação de controlo de domínio (por "
+"exemplo, admin@, administrador@, postmaster@, hostmaster@,\n"
+"webmaster@, abuse@), cuidado extra deve ser tomado para proteger a conta."
+" Sempre use uma senha forte,\n"
+"e garantir que cada conta de administrador para este painel de controle "
+"faça o mesmo."
+
+#. Status: mt
+#. Phase: 1
+#: templates/mfa.html:57
+msgid "Setup Instructions"
+msgstr "Instruções de configuração"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mfa.html:60
+msgid ""
+"1. Install <a href=\"https://freeotp.github.io/\">FreeOTP</a> or <a "
+"href=\"https://www.pcworld.com/article/3225913/what-is-two-factor-"
+"authentication-and-which-2fa-apps-are-best.html\">any\n"
+"            other two-factor authentication app</a> that supports TOTP."
+msgstr ""
+"1. Instale o FreeOTP1 ou o T2\n"
+"outro aplicativo de autenticação de dois fatores que suporta TOTP."
+
+#. Status: mt
+#. Phase: 1
+#: templates/mfa.html:65
+msgid "2. Scan the QR code in the app or directly enter the secret into the app:"
+msgstr ""
+"2. Examine o código QR no aplicativo ou digite diretamente o segredo no "
+"aplicativo:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mfa.html:70
+msgid ""
+"3. Optionally, give your device a label so that you can remember what "
+"device you set it up on:"
+msgstr ""
+"3. Opcionalmente, dê ao seu dispositivo uma etiqueta para que você possa "
+"lembrar em que dispositivo você configurá-lo:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mfa.html:71
+msgid "my phone"
+msgstr "meu telefone"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mfa.html:75
+msgid "4. Use the app to generate your first six-digit code and enter it here:"
+msgstr ""
+"4. Use o aplicativo para gerar Valid seu primeiro código de seis dígitos "
+"e digite-o aqui:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mfa.html:82
+msgid ""
+"When you click Enable Two-Factor Authentication, you will be logged out "
+"of the control panel and will have to log in\n"
+"            again, now using your two-factor authentication app."
+msgstr ""
+"Quando você clicar em Ativar autenticação de dois fatores, você será "
+"logado para fora do painel de controle e terá que entrar\n"
+"novamente, agora usando seu aplicativo de autenticação de dois fatores."
+
+#. Status: mt
+#. Phase: 1
+#: templates/mfa.html:84
+msgid "Enable Two-Factor Authentication"
+msgstr "HabilitarcoagulAutenticação de Dois Fatores"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mfa.html:90
+msgid "Two-factor authentication is active for your account"
+msgstr "A autenticação de dois fatores está ativa para sua conta"
+
+#. Status: mt
+#. Phase: 1
+#: templates/mfa.html:91
+msgid ""
+"You will have to log into the admin panel again after disabling two-"
+"factor authentication."
+msgstr ""
+"Você terá que entrar no painel de administração novamente após desativar "
+"a autenticação de dois fatores."
+
+#. Status: mt
+#. Phase: 1
+#: templates/mfa.html:94
+msgid "Disable Two-Factor Authentication"
+msgstr "Desactivar a Autenticação de Dois Factores"
+
+#. Status: mt
+#. Phase: 1
+#: templates/munin.html:6
+msgid "Opening munin in a new tab... You may need to allow pop-ups for this site."
+msgstr ""
+"Abrindo munindestruct em uma nova aba... Você pode precisar "
+"permitirdestructes pop-ups para este site."
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:6
+msgid ""
+"A TLS (formerly called SSL) certificate is a cryptographic file that "
+"proves to anyone connecting to a web address that the connection is "
+"secure between you and the owner of that address."
+msgstr ""
+"Um certificado TLS (anteriormente chamado SSL) é um arquivo criptográfico"
+" que provaarmazenamento para qualquer pessoa que se conecta a um endereço"
+" web que a conexão79 é segura entre você e o proprietário desse endereço."
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:8
+#, python-format
+msgid ""
+"You need a TLS certificate for this box&rsquo;s hostname (%(hostname)s) "
+"and every other domain name and subdomain that this box is hosting a "
+"website for (see the list below)."
+msgstr ""
+"You need a TLS certificate for this box&rsquo;s hostname (%(hostname)s) "
+"and every other domain name and subdomain that this box is hosting a "
+"website for (see the list below)."
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:11
+msgid "Provision certificates"
+msgstr "Certificados de provisões"
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:14
+msgid "Provision"
+msgstr "Disposição"
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:15
+msgid ""
+"A TLS certificate can be automatically provisioned from <a "
+"href=\"https://letsencrypt.org/\" target=\"_blank\">Let&rsquo;s "
+"Encrypt</a>, a free TLS certificate provider, for:"
+msgstr "Um certificado TLS pode ser automaticamente fornecido a partir de:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:24
+msgid "Certificate status"
+msgstr "Estado do certificado"
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:26
+msgid ""
+"Certificates expire after a period of time. All certificates will be "
+"automatically renewed through <a href=\"https://letsencrypt.org/\" "
+"target=\"_blank\">Let&rsquo;s Encrypt</a> 14 days prior to expiration."
+msgstr ""
+"Os certificados expiram após um período de tempo. Todos os certificados "
+"serão automaticamente renovados através do .T0 .Let .T1 ."
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:31
+msgid "Domain"
+msgstr "Domínio"
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:32
+msgid "Certificate Status"
+msgstr "Estado do Certificado"
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:41
+msgid "Install certificate"
+msgstr "Instalar certificado"
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:43
+msgid ""
+"If you don't want to use our automatic Let's Encrypt integration, you can"
+" give any other certificate provider a try. You can generate the needed "
+"CSR below."
+msgstr ""
+"Se você não quiser usar nossa integração automática Let's Encrypt, você "
+"pode tentar qualquer outro provedor de certificados. Você pode gerar a "
+"RSE necessária abaixo."
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:45
+msgid "Which domain are you getting a certificate for?"
+msgstr "Para que domínio você está recebendo um certificado?"
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:49
+msgid ""
+"(A multi-domain or wildcard certificate will be automatically applied to "
+"any domains it is valid for besides the one you choose above.)"
+msgstr ""
+"(Um certificado multidomínio ou wildcard será automaticamente aplicado em"
+" quaisquer domínios para os quais é válido, além do que você escolher "
+"acima.)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:51
+msgid ""
+"What country are you in? This is required by some TLS certificate "
+"providers. You may leave this blank if you know your TLS certificate "
+"provider doesn't require it."
+msgstr ""
+"Em que país estás? Isto é exigido por alguns fornecedores de certificados"
+" TLS. Você pode deixar isso em branco se souber que seu provedor de "
+"certificado TLS não o requer."
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:54
+msgid "(Select)"
+msgstr "(Selecionar)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:61
+msgid ""
+"You will need to provide the certificate provider this Certificate "
+"Signing Request (CSR):"
+msgstr ""
+"Você precisará fornecer ao fornecedor do certificado o pedido de "
+"assinatura do certificado (CSR):"
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:65
+msgid ""
+"The CSR is safe to share. It can only be used in combination with a "
+"secret key stored on this machine."
+msgstr ""
+"A RSE é segura de partilhar. Só pode ser usado em combinação com uma "
+"chave secreta armazenada nesta máquina."
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:67
+msgid ""
+"The certificate provider will then provide you with a TLS/SSL "
+"certificate. They may also provide you with an intermediate chain. Paste "
+"each separately into the boxes below:"
+msgstr ""
+"O fornecedor do certificado irá então fornecer-lhe um certificado "
+"TLS/SSL. Eles também podem fornecer-lhe uma cadeia intermediária. Colar "
+"cada um separadamente nas caixas abaixo:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:69
+msgid "TLS/SSL certificate:"
+msgstr "Certificado TLS/SSL:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:72
+msgid "TLS/SSL intermediate chain (if provided):"
+msgstr "Corrente intermédia TLS/SSL (se fornecida):"
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:75
+msgid "After you paste in the information, click the install button."
+msgstr "Depois de colar as informações, clique no botão instalar."
+
+#. Status: mt
+#. Phase: 1
+#: templates/ssl.html:77
+msgid "Install"
+msgstr "Instalar"
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:2
+msgid "Contacts &amp; Calendar Synchronization"
+msgstr "Contactos Sincronização de Calendários"
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:4
+msgid ""
+"This box can hold your contacts and calendar, just like it holds your "
+"email."
+msgstr ""
+"Esta caixa pode segurar seus contatos e calendário, assim como ele mantém"
+" seu e-mail."
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:10
+msgid "In your browser"
+msgstr "No seu navegador"
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:12
+msgid "You can edit your contacts and calendar from your web browser."
+msgstr "Você pode editar seus contatos e calendário do seu navegador da web."
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:15
+msgid "For..."
+msgstr "Por..."
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:15
+msgid "Visit this URL"
+msgstr "Visitar este URL"
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:16
+msgid "Contacts"
+msgstr "Contactos"
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:17
+msgid "Calendar"
+msgstr "Calendário"
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:20
+msgid ""
+"Log in settings are the same as with <a href=\"#mail-guide\">mail</a>: "
+"your\n"
+"\t\t\tcomplete email address and your mail password."
+msgstr ""
+"As configurações de login são as mesmas que com o 't0': seu\n"
+"- Não."
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:25
+msgid "On your mobile device"
+msgstr "No seu dispositivo móvel"
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:27
+msgid ""
+"If you set up your <a href=\"#mail-guide\">mail</a> using "
+"Exchange/ActiveSync,\n"
+"\t\t\tyour contacts and calendar may already appear on your device."
+msgstr ""
+"Se você configurar o seu 'T0'mail 'T1' usando Exchange/ActiveSync,\n"
+"seus contatos e calendário já podem aparecer em seu dispositivo."
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:29
+msgid ""
+"Otherwise, the app below can synchronize your contacts and calendar to "
+"your Android phone."
+msgstr ""
+"Caso contrário, o aplicativo abaixo pode sincronizar seus contatos e "
+"calendário com seu telefone Android."
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:32
+msgid "Google Play"
+msgstr "Google Play"
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:32
+msgid "F-Droid"
+msgstr "F-Droid"
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:33
+msgid "(paid)"
+msgstr "(pago)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:33
+msgid "(free)"
+msgstr "(gratuito)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:36
+msgid "Use the following settings:"
+msgstr "Use as seguintes configurações:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:39
+msgid "Account Type"
+msgstr "Tipo de Conta"
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:39
+msgid "CardDAV or CalDAV"
+msgstr "CardDAV ou CalDAV"
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:40
+msgid "Server Name"
+msgstr "Nome do Servidor"
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:41
+msgid "Use SSL"
+msgstr "Usar SSL"
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:42 templates/system-backup.html:61
+msgid "Username"
+msgstr "Utilizador"
+
+#. Status: mt
+#. Phase: 1
+#: templates/sync-guide.html:42
+msgid "Your complete email address."
+msgstr "O seu endereço de e-mail completo."
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:8
+msgid ""
+"The box makes an incremental backup each night. You can store the backup "
+"on any Amazon Web Services S3-compatible service, or other options."
+msgstr ""
+"A caixa faz um backup incremental todas as noites. Você pode armazenar o "
+"backup em qualquer serviço compatível com Amazon Web Services S3 ou "
+"outras opções."
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:10
+msgid "Configuration"
+msgstr "Configuração"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:14
+msgid "Backup to:"
+msgstr "Cópia de segurança para:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:17
+msgid "Nowhere (Disable Backups)"
+msgstr "Nenhum lugar (Desativar cópias de segurança)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:20
+msgid "S3 (Amazon or compatible)"
+msgstr "S3 (Amazon ou compatível)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:28
+msgid ""
+"Backups are stored on this machine&rsquo;s own hard disk. You are "
+"responsible for periodically using SFTP (FTP over SSH) to copy the backup"
+" files from <tt class=\"backup-location\"></tt> to a safe location. These"
+" files are encrypted, so they are safe to store anywhere."
+msgstr ""
+"Os backups são armazenados nesta máquina próprio disco rígido. Você é "
+"responsável por usar periodicamente o SFTP (FTP sobre o SSH) para copiar "
+"os arquivos de backup do .T1 o T2 para um local seguro. Estes arquivos "
+"são criptografados, então eles são seguros para armazenar em qualquer "
+"lugar."
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:29
+msgid ""
+"Separately copy the encryption password from <tt class=\"backup-"
+"encpassword-file\"></tt> to a safe and secure location. You will need "
+"this file to decrypt backup files."
+msgstr ""
+"Copie separadamente a senha de encriptação de \"T0\" T1 para um local "
+"seguro. Você precisará deste arquivo para descriptografar arquivos de "
+"backup."
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:36
+msgid ""
+"Backups synced to a remote machine using rsync over SSH, with local\n"
+"      copies in <tt class=\"backup-location\"></tt>. These files are "
+"encrypted, so\n"
+"      they are safe to store anywhere."
+msgstr ""
+"Backups sincronizados com uma máquina remota usando rsync sobre SSH, com "
+"local\n"
+"cópias em . Estes arquivos estão criptografados, então\n"
+"Eles são seguros para armazenar em qualquer lugar."
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:38
+msgid ""
+"Separately copy the encryption\n"
+"      password from <tt class=\"backup-encpassword-file\"></tt> to a safe"
+" and\n"
+"      secure location. You will need this file to decrypt backup files."
+msgstr ""
+"Copiar separadamente a criptografia\n"
+"password a partir de um cofre e\n"
+"Localização segura. Você precisará deste arquivo para descriptografar "
+"arquivos de backup."
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:47
+msgid "hostname.local"
+msgstr "bem.local"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:49
+msgid ""
+"The hostname at your rsync provider, e.g. <tt>da2327.rsync.net</tt>.  "
+"Optionally includes a colon\n"
+"\tand the provider's non-standard ssh port number, e.g. <tt>u215843.your-"
+"storagebox.de:23</tt>."
+msgstr ""
+"O nome de host no seu provedor rsync, por exemplo . .T0 .da2327.rsync.net"
+" .T1 . Opcionalmente inclui um cólon\n"
+"e o número de porta não-padrão do provedor ssh, por exemplo, ."
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:55
+msgid "Path"
+msgstr "Localização"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:67
+msgid "Public SSH Key"
+msgstr "Chave SSH pública"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:71
+msgid ""
+"Copy the Public SSH Key above, and paste it within the "
+"<tt>~/.ssh/authorized_keys</tt>\n"
+"        of target user on the backup server specified above. That way "
+"you'll enable secure and\n"
+"        passwordless authentication from your Trixie Mail server and your"
+" backup server."
+msgstr ""
+"Copy the Public SSH Key above, and paste it within the "
+"<tt>~/.ssh/authorized_keys</tt>\n"
+"        of target user on the backup server specified above. That way "
+"you'll enable secure and\n"
+"        passwordless authentication from your Trixie Mail server and your"
+" backup server."
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:77
+msgid "Copy"
+msgstr "Copiar"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:83
+msgid ""
+"Backups are stored in an S3-compatible bucket. You must have an AWS or "
+"other S3 service account already."
+msgstr ""
+"Os backups são armazenados em um balde compatível com S3. Você já deve "
+"ter uma conta de serviço AWS ou outra S3."
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:84
+msgid ""
+"You MUST manually copy the encryption password from <tt class=\"backup-"
+"encpassword-file\"></tt> to a safe and secure location. You will need "
+"this file to decrypt backup files. It is <b>NOT</b> stored in your S3 "
+"bucket."
+msgstr ""
+"Você DEVE copiar manualmente a senha de encriptação de .T0 .T1 . Você "
+"precisará deste arquivo para descriptografar arquivos de backup. É um "
+".T2.T3."
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:88
+msgid "S3 Region"
+msgstr "Região S3"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:94
+msgid "Other (non AWS)"
+msgstr "Outros (não AWS)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:99
+msgid "S3 Host / Endpoint"
+msgstr "S3 Máquina / Ponto Final"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:105
+msgid "S3 Region Name"
+msgstr "Nome da Região S3"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:105
+msgid "(if required)"
+msgstr "(se necessário)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:111
+msgid "S3 Bucket &amp; Path"
+msgstr "S3 Balde"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:117
+msgid "S3 Access Key"
+msgstr "Chave de acesso S3"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:123
+msgid "S3 Secret Access Key"
+msgstr "Chave de acesso secreta S3"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:131
+msgid ""
+"Backups are stored in a <a href=\"https://www.backblaze.com/\" "
+"target=\"_blank\" rel=\"noreferrer\">Backblaze</a> B2 bucket. You must "
+"have a Backblaze account already."
+msgstr ""
+"Cópias de segurança são armazenadas em um balde de B2. Já deves ter uma "
+"conta do Backblaze."
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:132
+msgid ""
+"You MUST manually copy the encryption password from <tt class=\"backup-"
+"encpassword-file\"></tt> to a safe and secure location. You will need "
+"this file to decrypt backup files. It is NOT stored in your Backblaze B2 "
+"bucket."
+msgstr ""
+"Você DEVE copiar manualmente a senha de encriptação de .T0 .T1 . Você "
+"precisará deste arquivo para descriptografar arquivos de backup. NÃO é "
+"armazenado no seu balde Backblaze B2."
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:136
+msgid "B2 Application KeyID"
+msgstr "B2big KeyID"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:142
+msgid "B2 Application Key"
+msgstr "Chave de Aplicação B2"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:148
+msgid "B2 Bucket"
+msgstr "B2 Balde"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:155
+msgid "Retention Days:"
+msgstr "Dias de retenção:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:158
+msgid ""
+"This is the minimum time backup data is kept for. The box makes an "
+"incremental backup most nights, which requires that previous backups back"
+" to the most recent full backup be preserved, so backup data is often "
+"kept much longer than this setting. Full backups are made periodically "
+"when the incremental backup data size exceeds a limit."
+msgstr ""
+"Este é o tempo mínimo de dados de backup é mantido para. A caixa faz um "
+"backup incremental na maioria das noites, o que requer que backups "
+"anteriores para o backup completo mais recente sejam preservados, então "
+"os dados de backup são frequentemente mantidos muito mais tempo do que "
+"esta configuração. Os backups completos são feitos periodicamente quando "
+"o tamanho incremental dos dados de backup excede um limite."
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:163
+msgid "Save"
+msgstr "Gravar"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:168
+msgid "Available backups"
+msgstr "Cópias de segurança disponíveis"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:170
+msgid ""
+"The backup location currently contains the backups listed below. The "
+"total size of the backups is currently <span id=\"backup-total-"
+"size\"></span>."
+msgstr ""
+"carregador de backup contém os backups listados abaixo. O tamanho total "
+"dos backups é atualmente ."
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:174
+msgid "When"
+msgstr "Quando"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:176 templates/users.html:50
+msgid "Size"
+msgstr "Tamanho"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-backup.html:177
+msgid "Deleted in..."
+msgstr "Apagado em..."
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-status.html:1
+msgid "System Status Checks"
+msgstr "Verificação do estado do sistema"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-status.html:43
+msgid "Reboot Box"
+msgstr "Reiniciar a Caixa"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-status.html:44
+msgid "No reboot is necessary."
+msgstr "Nenhuma reinicialização é necessária."
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-status.html:48
+msgid "Enable/Disable"
+msgstr "Activar/Desactivar"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-status.html:48
+msgid "New-Version Check"
+msgstr "Verificação de Nova Versão"
+
+#. Status: mt
+#. Phase: 1
+#: templates/system-status.html:49
+msgid ""
+"(When enabled, status checks phone-home to check for a new release of "
+"Trixie Mail.)"
+msgstr ""
+"(When enabled, status checks phone-home to check for a new release of "
+"Trixie Mail.)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:12
+msgid "Add a mail user"
+msgstr "Adicionar um usuário de e- mail"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:14
+msgid ""
+"Add an email address to this system. This will create a new login "
+"username/password."
+msgstr ""
+"Adicionar um endereço de e- mail a este sistema. Isso criará um novo nome"
+" de usuário/senha de login."
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:18
+msgid "Email address"
+msgstr "Endereço de e- mail"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:19 templates/users.html:49
+msgid "Email Address"
+msgstr "Endereço de E- mail"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:27
+msgid "Normal User"
+msgstr "Usuário Normal"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:28
+msgid "Administrator"
+msgstr "Administrador"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:32 templates/users.html:33 templates/users.html:52
+msgid "Quota"
+msgstr "Contingente"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:38
+msgid ""
+"Passwords must be at least eight characters consisting of English letters"
+" and numbers only. For best results, <a href=\"#\" onclick=\"return "
+"generate_random_password()\">generate a random password</a>."
+msgstr ""
+"As senhas devem ser pelo menos oito caracteres, consistindo apenas em "
+"letras e números em inglês. Para melhores resultados, Gere uma senha "
+"aleatória."
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:39
+msgid ""
+"Use <a href=\"#aliases\">aliases</a> to create email addresses that "
+"forward to existing accounts."
+msgstr "- Não."
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:40
+msgid "Administrators get access to this control panel."
+msgstr "Osfuncionários têm acesso a este painel de controle."
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:41
+msgid ""
+"User accounts cannot contain any international (non-ASCII) characters, "
+"but <a href=\"#aliases\">aliases</a> can."
+msgstr ""
+"As contas de usuário não podem conter nenhum caractere internacional "
+"(não-ASCII), mas o 't0' pode."
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:42
+msgid ""
+"Quotas may not contain any spaces, commas or decimal points. Suffixes of "
+"G (gigabytes) and M (megabytes) are allowed.  For unlimited storage enter"
+" 0 (zero)"
+msgstr ""
+"As quotas não podem conter espaços, vírgulas ou pontos decimais. São "
+"permitidos sufixos de G (gigabytes) e M (megabytes). Para armazenamento "
+"ilimitado, indicar 0 (zero)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:45
+msgid "Existing mail users"
+msgstr "Utilizadores de correio existentes"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:51
+msgid "Used"
+msgstr "Usado"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:75
+msgid "set quota"
+msgstr "fixar o contingente"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:82
+msgid "set password"
+msgstr "definir senha"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:90
+msgid "Archive Account"
+msgstr "Conta de Arquivo"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:91
+msgid "archive account"
+msgstr ""
+".nao, .nao, .se, se, .nao, . . . . . . . . . . . . . . . . . . . . . .  "
+"EU . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . . . "
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:97
+msgid ""
+"To restore account, create a new account with this email address. Or to "
+"permanently delete the mailbox, delete the directory <tt></tt> on the "
+"machine."
+msgstr ""
+"Para restaurar a conta, crie uma nova conta com este endereço de e-mail. "
+"- O quê?"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:103
+msgid "Mail user API (advanced)"
+msgstr "API do usuário de e- mail (avançada)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:105
+msgid ""
+"Use your box&rsquo;s mail user API to add/change/remove users from the "
+"command-line or custom services you build."
+msgstr ""
+"Use sua API de usuário de e-mail do box para adicionar/alterar/remover "
+"usuários da linha de comando Ordinary ou serviços personalizados que você"
+" constrói."
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:119
+msgid ""
+"Returns a list of existing mail users. Adding <code>?format=json</code> "
+"to the URL will give JSON-encoded results."
+msgstr ""
+"Retorna uma lista de usuários de e- mail existentes. Adicionar o "
+"formato=json o T1 ao URL dará resultados codificados Arquivos do JSON."
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:123
+msgid ""
+"Adds a new mail user. Required POST-body parameters are "
+"<code>email</code> and <code>password</code>. Optional parameters: "
+"<code>privilege=admin</code> and <code>quota</code>"
+msgstr ""
+"Adiciona um novo usuário de e- mail. Os parâmetros requeridos do POST-"
+"body são: \"T0\" e \"T1\" e \"T2\" password. Parâmetros "
+"opcionaiscircuitos:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:128
+msgid "Removes a mail user. Required POST-by parameter is <code>email</code>."
+msgstr ""
+"Remove um usuário de e- maillling. O parâmetro PÓS-por-requerido é o "
+"\"T0\"email."
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:130
+msgid ""
+"Used to make a mail user an admin. Required POST-body parameters are "
+"<code>email</code> and <code>privilege=admin</code>."
+msgstr ""
+"Usado para tornar um usuário de e- mail um administrador. Os parâmetros "
+"requeridos do POST-body são: \"T0'email\" T1\" e \"T2'privilégio\" = "
+"\"admin\" T3'."
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:131
+msgid ""
+"Used to remove the admin privilege from a mail user. Required POST-body "
+"parameter is <code>email</code>."
+msgstr ""
+"Usado para remover o privilégio de administrador de um usuário de e- "
+"mail. O parâmetro PÓS-corpo necessário é ."
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:135
+msgid ""
+"Get the quota for a mail user. Required POST-body parameters are "
+"<code>email</code> and will return JSON result"
+msgstr ""
+"Obter a quota para um usuário de e- mail. Os parâmetros requeridos do "
+"POST-body são o E-mail do E-T1 e retornarão o resultado do JSON"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:140
+msgid ""
+"Set the quota for a mail user. Required POST-body parameters are "
+"<code>email</code> and <code>quota</code>."
+msgstr ""
+"Defina a quota para um usuário de e- mail. Os parâmetros necessários do "
+"POST-body são: \"T0\" e \"T1\" e \"T2\" e \"T3\"."
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:146
+msgid ""
+"Try these examples. For simplicity the examples omit the <code>--user "
+"me@mydomain.com:yourpassword</code> command line argument which you must "
+"fill in with your administrative email address and password."
+msgstr ""
+"Experimente estes exemplos. Para simplicidade, os exemplos omitem o "
+"argumento de linha de comando □T0 ‐-user me@mydomain.com:yourpassword®T1 "
+"que você deve preencher com seu endereço de e-mail administrativo e "
+"senha."
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:148
+msgid "Gives a JSON-encoded list of all mail users"
+msgstr "Dá uma lista de todos os usuários de e-mail em SON"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:151
+msgid "Adds a new email user"
+msgstr "patas"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:154
+msgid "Removes a email user"
+msgstr "Remove um usuário de e- mail"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:157
+msgid "Adds admin privilege to an email user"
+msgstr "Adiciona privilégio de administrador a um usuário de email"
+
+#. Status: mt
+#. Phase: 1
+#: templates/users.html:160
+msgid "Removes admin privilege from an email user"
+msgstr "Remove o privilégio de administrador de um usuário de e- mail"
+
+#. Status: mt
+#. Phase: 1
+#: templates/web.html:4
+msgid "Static Web Hosting"
+msgstr "Hospedagem na Web Estática"
+
+#. Status: mt
+#. Phase: 1
+#: templates/web.html:6
+#, python-format
+msgid ""
+"This machine is serving a simple, static website at <a "
+"href=\"https://%(hostname)s\">https://%(hostname)s</a> and at all domain "
+"names that you set up an email user or alias for."
+msgstr ""
+"This machine is serving a simple, static website at <a "
+"href=\"https://%(hostname)s\">https://%(hostname)s</a> and at all domain "
+"names that you set up an email user or alias for."
+
+#. Status: mt
+#. Phase: 1
+#: templates/web.html:8
+msgid "Uploading web files"
+msgstr "A enviar ficheiros Web"
+
+#. Status: mt
+#. Phase: 1
+#: templates/web.html:10
+msgid ""
+"You can replace the default website with your own HTML pages and other "
+"static files. This control panel won&rsquo;t help you design a website, "
+"but once you have <tt>.html</tt> files you can upload them following "
+"these instructions:"
+msgstr ""
+"Você pode substituir o site padrão por suas próprias páginas HTML e "
+"outros arquivos estáticos. Este painel de controle não o ajudou a "
+"projetar um site, mas uma vez que você tem arquivos .html .html .T2Ž você"
+" pode enviá-los seguindo estas instruções:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/web.html:13
+msgid ""
+"Ensure that any domains you are publishing a website for have no problems"
+" on the <a href=\"#system_status\">Status Checks</a> page."
+msgstr ""
+"Assegure-se de que quaisquer domínios que você está publicando um site "
+"para não ter problemas na página de verificação de status."
+
+#. Status: mt
+#. Phase: 1
+#: templates/web.html:15
+msgid ""
+"On your personal computer, install an SSH file transfer program such as "
+"<a href=\"https://filezilla-project.org/\">FileZilla</a> or <a "
+"href=\"https://man.openbsd.org/scp.1\">scp</a>."
+msgstr ""
+"Em seu computador pessoal, instale um programa de transferência de "
+"arquivos SSH, como o ."
+
+#. Status: mt
+#. Phase: 1
+#: templates/web.html:17
+#, python-format
+msgid ""
+"Log in to this machine with the file transfer program. The server is "
+"<strong>%(hostname)s</strong>, the protocol is SSH or SFTP, and use the "
+"<strong>SSH login credentials</strong> that you used when you originally "
+"created this machine at your cloud host provider. This is "
+"<strong>not</strong> what you use to log in either for email or this "
+"control panel. Your SSH credentials probably involves a private key file."
+msgstr ""
+"Log in to this machine with the file transfer program. The server is "
+"<strong>%(hostname)s</strong>, the protocol is SSH or SFTP, and use the "
+"<strong>SSH login credentials</strong> that you used when you originally "
+"created this machine at your cloud host provider. This is "
+"<strong>not</strong> what you use to log in either for email or this "
+"control panel. Your SSH credentials probably involves a private key file."
+
+#. Status: mt
+#. Phase: 1
+#: templates/web.html:19
+#, python-format
+msgid ""
+"Upload your <tt>.html</tt> or other files to the directory "
+"<tt>%(storage_root)s/www/default</tt> on this machine. They will appear "
+"directly and immediately on the web."
+msgstr ""
+"Upload your <tt>.html</tt> or other files to the directory "
+"<tt>%(storage_root)s/www/default</tt> on this machine. They will appear "
+"directly and immediately on the web."
+
+#. Status: mt
+#. Phase: 1
+#: templates/web.html:21
+msgid ""
+"The websites set up on this machine are listed in the table below with "
+"where to put the files for each website."
+msgstr ""
+"Os sites configurados nesta máquina estão listados na tabela abaixo com "
+"onde colocar os arquivos para cada site."
+
+#. Status: mt
+#. Phase: 1
+#: templates/web.html:26
+msgid "Site"
+msgstr "Local"
+
+#. Status: mt
+#. Phase: 1
+#: templates/web.html:27
+msgid "Directory for Files"
+msgstr "Pasta de Ficheiros"
+
+#. Status: mt
+#. Phase: 1
+#: templates/web.html:35
+msgid ""
+"To add a domain to this table, create a dummy <a href=\"#users\">mail "
+"user</a> or <a href=\"#aliases\">alias</a> on the domain first and see "
+"the <a href=\"https://mailinabox.email/guide.html#domain-name-"
+"configuration\">setup guide</a> for adding nameserver records to the new "
+"domain at your registrar (but <i>not</i> glue records)."
+msgstr ""
+"Para adicionar um domínio a esta tabela, crie um manequim (ou usuário de "
+"email) ou (ou (ou T2) no domínio (ou T3) no primeiro domínio e veja o "
+"guia de configuração (ou T4) para adicionar registros de servidor de "
+"nomes ao novo domínio em seu registrador (mas registros de cola)."
 
 #. Status: mt
 #. Phase: 1

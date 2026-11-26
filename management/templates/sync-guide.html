@@ -1,46 +1,46 @@
 <div>
-	<h2>Contacts &amp; Calendar Synchronization</h2>
+	<h2>{% trans %}Contacts &amp; Calendar Synchronization{% endtrans %}</h2>
 
-	<p>This box can hold your contacts and calendar, just like it holds your email.</p>
+	<p>{% trans %}This box can hold your contacts and calendar, just like it holds your email.{% endtrans %}</p>
 
 	<hr>
 
 	<div class="row">
 		<div class="col-sm-6">
-			<h4>In your browser</h4>
+			<h4>{% trans %}In your browser{% endtrans %}</h4>
 
-			<p>You can edit your contacts and calendar from your web browser.</p>
+			<p>{% trans %}You can edit your contacts and calendar from your web browser.{% endtrans %}</p>
 
 			<table class="table">
-			<thead><tr><th scope="col">For...</th> <th scope="col">Visit this URL</th></tr></thead>
-			<tr><td>Contacts</td> <td><a href="https://{{hostname}}/cloud/contacts">https://{{hostname}}/cloud/contacts</a></td></tr>
-			<tr><td>Calendar</td> <td><a href="https://{{hostname}}/cloud/calendar">https://{{hostname}}/cloud/calendar</a></td></tr>
+			<thead><tr><th scope="col">{% trans %}For...{% endtrans %}</th> <th scope="col">{% trans %}Visit this URL{% endtrans %}</th></tr></thead>
+			<tr><td>{% trans %}Contacts{% endtrans %}</td> <td><a href="https://{{hostname}}/cloud/contacts">https://{{hostname}}/cloud/contacts</a></td></tr>
+			<tr><td>{% trans %}Calendar{% endtrans %}</td> <td><a href="https://{{hostname}}/cloud/calendar">https://{{hostname}}/cloud/calendar</a></td></tr>
 			</table>
 
-			<p>Log in settings are the same as with <a href="#mail-guide">mail</a>: your
-			complete email address and your mail password.</p>
+			<p>{% trans %}Log in settings are the same as with <a href="#mail-guide">mail</a>: your
+			complete email address and your mail password.{% endtrans %}</p>
 		</div>
 
 		<div class="col-sm-6">
-			<h4>On your mobile device</h4>
+			<h4>{% trans %}On your mobile device{% endtrans %}</h4>
 
-			<p>If you set up your <a href="#mail-guide">mail</a> using Exchange/ActiveSync,
-			your contacts and calendar may already appear on your device.</p>
-			<p>Otherwise, the app below can synchronize your contacts and calendar to your Android phone.</p>
+			<p>{% trans %}If you set up your <a href="#mail-guide">mail</a> using Exchange/ActiveSync,
+			your contacts and calendar may already appear on your device.{% endtrans %}</p>
+			<p>{% trans %}Otherwise, the app below can synchronize your contacts and calendar to your Android phone.{% endtrans %}</p>
 
 			<table class="table">
-			<thead><tr><th scope="col">Google Play</th> <th scope="col">F-Droid</th></tr></thead>
-			<tr><td><a href="https://play.google.com/store/apps/details?id=at.bitfire.davdroid">DAVx⁵</a> (paid)</td> <td><a href="https://f-droid.org/packages/at.bitfire.davdroid/">DAVx⁵</a> (free)</td></tr>
+			<thead><tr><th scope="col">{% trans %}Google Play{% endtrans %}</th> <th scope="col">{% trans %}F-Droid{% endtrans %}</th></tr></thead>
+			<tr><td><a href="https://play.google.com/store/apps/details?id=at.bitfire.davdroid">DAVx⁵</a> {% trans %}(paid){% endtrans %}</td> <td><a href="https://f-droid.org/packages/at.bitfire.davdroid/">DAVx⁵</a> {% trans %}(free){% endtrans %}</td></tr>
 			</table>
 
-			<p>Use the following settings:</p>
+			<p>{% trans %}Use the following settings:{% endtrans %}</p>
 
 			<table class="table">
-			<tr><td>Account Type</td> <td>CardDAV or CalDAV</td></tr>
-			<tr><td>Server Name</td> <td>{{hostname}}</td></tr>
-			<tr><td>Use SSL</td> <td>Yes</td></tr>
-			<tr><td>Username</td> <td>Your complete email address.</td></tr>
-			<tr><td>Password</td> <td>Your mail password.</td></tr>
+			<tr><td>{% trans %}Account Type{% endtrans %}</td> <td>{% trans %}CardDAV or CalDAV{% endtrans %}</td></tr>
+			<tr><td>{% trans %}Server Name{% endtrans %}</td> <td>{{hostname}}</td></tr>
+			<tr><td>{% trans %}Use SSL{% endtrans %}</td> <td>{% trans %}Yes{% endtrans %}</td></tr>
+			<tr><td>{% trans %}Username{% endtrans %}</td> <td>{% trans %}Your complete email address.{% endtrans %}</td></tr>
+			<tr><td>{% trans %}Password{% endtrans %}</td> <td>{% trans %}Your mail password.{% endtrans %}</td></tr>
 			</table>
 		</div>
 	</div>
