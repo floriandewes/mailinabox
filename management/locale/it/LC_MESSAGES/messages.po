@@ -1,0 +1,327 @@
+# Italian translations for Trixie Mail.
+# Copyright (C) 2026 Trixie Mail
+# This file is distributed under the same license as the Trixie Mail
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Trixie Mail VERSION\n"
+"Report-Msgid-Bugs-To: https://github.com/quantenland-ai/trixiemail\n"
+"POT-Creation-Date: 2026-11-26 13:40+0000\n"
+"PO-Revision-Date: 2026-11-26 13:40+0000\n"
+"Last-Translator: Trixie Mail MT bootstrap <noreply@localhost>\n"
+"Language: it\n"
+"Language-Team: it\n"
+"Plural-Forms: nplurals=3; plural=(n == 1 ? 0 : n != 0 && n % 1000000 == 0"
+" ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:10 templates/index.html:222
+msgid "Loading..."
+msgstr "Caricamento…"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:11
+msgid "Error"
+msgstr "Errore"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:12
+msgid "Something went wrong, sorry."
+msgstr "Qualcosa è andato storto, ci dispiace."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:13 templates/index.html:237
+msgid "OK"
+msgstr "OK"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:14
+msgid "Cancel"
+msgstr "Annulla"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:15 templates/index.html:238
+msgid "Yes"
+msgstr "Sì"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:16 templates/index.html:230
+msgid "Close Dialog"
+msgstr "Chiudi finestra"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:17 templates/index.html:103
+msgid "Toggle navigation"
+msgstr "Attiva/disattiva navigazione"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:20
+msgid "Login Failed"
+msgstr "Accesso non riuscito"
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:21
+msgid "Enter your email address."
+msgstr "Inserisci il tuo indirizzo e-mail."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:22
+msgid "Enter your email password."
+msgstr "Inserisci la password della tua e-mail."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:23
+msgid "Incorrect two factor authentication token."
+msgstr "Codice di autenticazione a due fattori non corretto."
+
+#. Status: mt
+#. Phase: 1
+#: locale/js_messages.py:24
+msgid "You are not an administrator on this system."
+msgstr "Non sei un amministratore di questo sistema."
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:8
+msgid "Trixie Mail Control Panel"
+msgstr "Pannello di controllo Trixie Mail"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:96
+msgid ""
+"Internet Explorer version 8 or any modern web browser is required to use "
+"this website, sorry."
+msgstr ""
+"Per usare questo sito è necessario Internet Explorer versione 8 o un "
+"browser moderno."
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:113
+msgid "System"
+msgstr "Sistema"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:115
+msgid "Status Checks"
+msgstr "Controlli di stato"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:116
+msgid "TLS (SSL) Certificates"
+msgstr "Certificati TLS (SSL)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:117
+msgid "Backup Status"
+msgstr "Stato del backup"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:119
+msgid "Advanced Pages"
+msgstr "Pagine avanzate"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:120
+msgid "Custom DNS"
+msgstr "DNS personalizzato"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:121
+msgid "External DNS"
+msgstr "DNS esterno"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:122
+msgid "Munin Monitoring"
+msgstr "Monitoraggio Munin"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:125
+msgid "Mail"
+msgstr "Posta"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:127
+msgid "Mail & Users"
+msgstr "Posta e utenti"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:129
+msgid "Instructions"
+msgstr "Istruzioni"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:130
+msgid "Users"
+msgstr "Utenti"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:131
+msgid "Aliases"
+msgstr "Alias"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:133
+msgid "Your Account"
+msgstr "Il tuo account"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:134
+msgid "Two-Factor Authentication"
+msgstr "Autenticazione a due fattori"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:137
+msgid "Contacts/Calendar"
+msgstr "Contatti/Calendario"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:138
+msgid "Web"
+msgstr "Web"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:142
+msgid "Language"
+msgstr "Lingua"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:149
+msgid "Log out"
+msgstr "Esci"
+
+#. Status: mt
+#. Phase: 1
+#: templates/index.html:215
+msgid ""
+"This is <a href=\"https://github.com/quantenland-ai/TrixieMail\">Trixie "
+"Mail</a> (agentic fork of Mail-in-a-Box)."
+msgstr ""
+"Questo è <a href=\"https://github.com/quantenland-ai/TrixieMail\">Trixie "
+"Mail</a> (fork agentico di Mail-in-a-Box)."
+
+#. Status: mt
+#. Phase: 1
+#: templates/login.html:32
+msgid ""
+"There are no users on this system! To make an administrative user, log "
+"into this machine using SSH (like when you first set it up) and run:"
+msgstr ""
+"Non ci sono utenti su questo sistema! Per creare un amministratore, "
+"accedi a questa macchina via SSH (come durante l’installazione) ed "
+"esegui:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/login.html:33 templates/login.html:38
+msgid "from your Trixie Mail install directory (e.g. TrixieMail or mailinabox)"
+msgstr ""
+"dalla directory di installazione di Trixie Mail (ad es. TrixieMail o "
+"mailinabox)"
+
+#. Status: mt
+#. Phase: 1
+#: templates/login.html:37
+msgid ""
+"There are no administrative users on this system! To make an "
+"administrative user, log into this machine using SSH (like when you first"
+" set it up) and run:"
+msgstr ""
+"Non ci sono utenti amministratori su questo sistema! Per crearne uno, "
+"accedi a questa macchina via SSH (come durante l’installazione) ed "
+"esegui:"
+
+#. Status: mt
+#. Phase: 1
+#: templates/login.html:46
+msgid "Log in here for your Trixie Mail control panel."
+msgstr "Accedi qui al pannello di controllo Trixie Mail."
+
+#. Status: mt
+#. Phase: 1
+#: templates/login.html:51 templates/login.html:53
+msgid "Email"
+msgstr "E-mail"
+
+#. Status: mt
+#. Phase: 1
+#: templates/login.html:57 templates/login.html:59
+msgid "Password"
+msgstr "Password"
+
+#. Status: mt
+#. Phase: 1
+#: templates/login.html:63
+msgid "Code"
+msgstr "Codice"
+
+#. Status: mt
+#. Phase: 1
+#: templates/login.html:65
+msgid "6-digit code"
+msgstr "Codice a 6 cifre"
+
+#. Status: mt
+#. Phase: 1
+#: templates/login.html:66
+msgid "Enter the six-digit code generated by your two factor authentication app."
+msgstr ""
+"Inserisci il codice a sei cifre generato dalla tua app di autenticazione "
+"a due fattori."
+
+#. Status: mt
+#. Phase: 1
+#: templates/login.html:73
+msgid "Remember me"
+msgstr "Ricordami"
+
+#. Status: mt
+#. Phase: 1
+#: templates/login.html:80
+msgid "Sign in"
+msgstr "Accedi"
+
+#. Status: mt
+#. Phase: 1
+#: templates/welcome.html:15
+msgid "Welcome to your Trixie Mail control panel."
+msgstr "Benvenuto nel pannello di controllo Trixie Mail."
+

@@ -50,10 +50,15 @@ hide_output $venv/bin/pip install --upgrade pip
 # NOTE: email_validator is repeated in setup/questions.sh, so please keep the versions synced.
 hide_output $venv/bin/pip install --upgrade \
 	rtyaml "email_validator>=1.0.0" "exclusiveprocess" \
-	flask dnspython python-dateutil expiringdict gunicorn \
+	flask "Flask-Babel>=4.0" Babel dnspython python-dateutil expiringdict gunicorn \
 	qrcode[pil] pyotp \
 	"idna>=2.0.0" "cryptography==50.0.2" psutil postfix-mta-sts-resolver \
 	b2sdk boto3
+
+# Compile control-panel gettext catalogs (.mo) and browser JSON catalogs.
+if [ -x management/locale/compile.sh ]; then
+	hide_output env PYBABEL=$venv/bin/pybabel management/locale/compile.sh || true
+fi
 
 # CONFIGURATION
 
