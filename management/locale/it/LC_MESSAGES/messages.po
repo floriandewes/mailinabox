@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Trixie Mail VERSION\n"
 "Report-Msgid-Bugs-To: https://github.com/quantenland-ai/trixiemail\n"
-"POT-Creation-Date: 2026-11-26 14:04+0000\n"
-"PO-Revision-Date: 2026-11-26 15:00+0000\n"
-"Last-Translator: Trixie Mail MT bootstrap <noreply@localhost>\n"
+"POT-Creation-Date: 2026-11-26 15:16+0000\n"
+"PO-Revision-Date: 2026-11-26 15:20+0000\n"
+"Last-Translator: Trixie Mail i18n <noreply@localhost>\n"
 "Language: it\n"
 "Language-Team: it\n"
 "Plural-Forms: nplurals=3; plural=(n == 1 ? 0 : n != 0 && n % 1000000 == 0"
@@ -19,6 +19,31 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.19.0\n"
+
+#. Status: mt
+#. Phase: 1
+#: locale/email_messages.py:9
+msgid "Trixie Mail Usage Report"
+msgstr "Rapporto di utilizzo di Trixie Mail"
+
+#. Status: mt
+#. Phase: 1
+#: locale/email_messages.py:10 templates/index.html:117
+#: templates/system-backup.html:6
+msgid "Backup Status"
+msgstr "Stato del backup"
+
+#. Status: mt
+#. Phase: 1
+#: locale/email_messages.py:11
+msgid "TLS Certificate Provisioning Result"
+msgstr "Esito del provisioning dei certificati TLS"
+
+#. Status: mt
+#. Phase: 1
+#: locale/email_messages.py:12
+msgid "Status Checks Change Notice"
+msgstr "Avviso di modifica dei controlli di stato"
 
 #. Status: mt
 #. Phase: 1
@@ -1705,12 +1730,6 @@ msgstr "Controlli di stato"
 #: templates/index.html:116 templates/ssl.html:4
 msgid "TLS (SSL) Certificates"
 msgstr "Certificati TLS (SSL)"
-
-#. Status: mt
-#. Phase: 1
-#: templates/index.html:117 templates/system-backup.html:6
-msgid "Backup Status"
-msgstr "Stato del backup"
 
 #. Status: mt
 #. Phase: 1

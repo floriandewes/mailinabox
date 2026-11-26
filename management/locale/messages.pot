@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Trixie Mail VERSION\n"
 "Report-Msgid-Bugs-To: https://github.com/quantenland-ai/trixiemail\n"
-"POT-Creation-Date: 2026-11-26 14:04+0000\n"
+"POT-Creation-Date: 2026-11-26 15:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,23 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.19.0\n"
+
+#: locale/email_messages.py:9
+msgid "Trixie Mail Usage Report"
+msgstr ""
+
+#: locale/email_messages.py:10 templates/index.html:117
+#: templates/system-backup.html:6
+msgid "Backup Status"
+msgstr ""
+
+#: locale/email_messages.py:11
+msgid "TLS Certificate Provisioning Result"
+msgstr ""
+
+#: locale/email_messages.py:12
+msgid "Status Checks Change Notice"
+msgstr ""
 
 #: locale/js_messages.py:10 templates/custom-dns.html:74
 #: templates/index.html:222 templates/mfa.html:54
@@ -1080,10 +1097,6 @@ msgstr ""
 
 #: templates/index.html:116 templates/ssl.html:4
 msgid "TLS (SSL) Certificates"
-msgstr ""
-
-#: templates/index.html:117 templates/system-backup.html:6
-msgid "Backup Status"
 msgstr ""
 
 #: templates/index.html:119
