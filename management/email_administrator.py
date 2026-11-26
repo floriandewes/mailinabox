@@ -1,6 +1,8 @@
 #!/usr/local/lib/mailinabox/env/bin/python
 
 # Reads in STDIN. If the stream is not empty, mail it to the system administrator.
+# Subject lines (argv) are English gettext msgids; translated via the box-wide
+# UI locale ($STORAGE_ROOT/ui_locale). Brand name "Trixie Mail" stays untranslated.
 
 import sys
 
@@ -14,12 +16,15 @@ from email.mime.text import MIMEText
 #from email.message import Message
 
 from utils import load_environment
+import i18n
 
 # Load system environment info.
 env = load_environment()
 
-# Process command line args.
-subject = sys.argv[1]
+# Process command line args. Subject is an English msgid (see daily_tasks.sh).
+subject_msgid = sys.argv[1]
+_ = i18n.gettext_for_locale(i18n.get_system_locale(env))
+subject = _(subject_msgid)
 
 # Administrator's email address.
 admin_addr = "administrator@" + env['PRIMARY_HOSTNAME']

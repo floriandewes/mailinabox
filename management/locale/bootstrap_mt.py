@@ -443,6 +443,43 @@ MT = {
 		"nl": "Welkom bij uw Trixie Mail-beheerpaneel.",
 		"pl": "Witamy w panelu sterowania Trixie Mail.",
 	},
+	# Admin notification email subjects (email_messages.py / daily_tasks.sh)
+	"Trixie Mail Usage Report": {
+		"de": "Trixie Mail Nutzungsbericht",
+		"fr": "Rapport d’utilisation Trixie Mail",
+		"es": "Informe de uso de Trixie Mail",
+		"it": "Rapporto di utilizzo di Trixie Mail",
+		"pt": "Relatório de utilização do Trixie Mail",
+		"nl": "Trixie Mail gebruiksrapport",
+		"pl": "Raport użycia Trixie Mail",
+	},
+	"Backup Status": {
+		"de": "Backup-Status",
+		"fr": "État de la sauvegarde",
+		"es": "Estado de la copia de seguridad",
+		"it": "Stato del backup",
+		"pt": "Estado da cópia de segurança",
+		"nl": "Back-upstatus",
+		"pl": "Status kopii zapasowej",
+	},
+	"TLS Certificate Provisioning Result": {
+		"de": "Ergebnis der TLS-Zertifikatsbereitstellung",
+		"fr": "Résultat du provisionnement des certificats TLS",
+		"es": "Resultado del aprovisionamiento de certificados TLS",
+		"it": "Esito del provisioning dei certificati TLS",
+		"pt": "Resultado do aprovisionamento de certificados TLS",
+		"nl": "Resultaat van TLS-certificaatvoorziening",
+		"pl": "Wynik provisioningu certyfikatów TLS",
+	},
+	"Status Checks Change Notice": {
+		"de": "Hinweis zu Änderungen bei Statusprüfungen",
+		"fr": "Avis de changement des contrôles d’état",
+		"es": "Aviso de cambio en las comprobaciones de estado",
+		"it": "Avviso di modifica dei controlli di stato",
+		"pt": "Aviso de alteração das verificações de estado",
+		"nl": "Melding over wijzigingen in statuscontroles",
+		"pl": "Powiadomienie o zmianach kontroli stanu",
+	},
 }
 
 PLURAL_FORMS = {

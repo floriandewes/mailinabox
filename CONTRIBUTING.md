@@ -38,7 +38,7 @@ And for testing:
 
 ### Control panel UI strings (i18n)
 
-User-visible control-panel text must go through gettext: `_()` / `{% trans %}` in Jinja/Python, and `t()` / `tn()` in inline JS (seed new JS msgids in `management/locale/js_messages.py`). Keep the product name **Trixie Mail** untranslated. After adding strings, run `management/locale/extract.sh`, update `.po` files, then `management/locale/compile.sh`. Locale preference is cookie `trixiemail_lang` + `localStorage` only (fork-only; not for upstream Mail-in-a-Box).
+User-visible control-panel text must go through gettext: `_()` / `{% trans %}` in Jinja/Python, and `t()` / `tn()` in inline JS (seed new JS msgids in `management/locale/js_messages.py`). Admin email subjects: seed in `management/locale/email_messages.py`. Keep the product name **Trixie Mail** untranslated. After adding strings, run `management/locale/extract.sh`, update `.po` files, then `management/locale/compile.sh`. Locale preference is cookie `trixiemail_lang` + `localStorage`, mirrored to `$STORAGE_ROOT/ui_locale` for cron emails and Roundcube/Nextcloud defaults (fork-only; not for upstream Mail-in-a-Box).
 
 Please see the [Code of Conduct](CODE_OF_CONDUCT.md).
 

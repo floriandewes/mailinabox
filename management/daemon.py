@@ -171,7 +171,13 @@ def locale_catalog(lang):
 @app.route('/locale/set', methods=["POST"])
 def locale_set():
 	# Persist language choice in cookie (JS also mirrors to localStorage).
+	# Also write $STORAGE_ROOT/ui_locale so cron admin emails and (on next
+	# setup re-run) Roundcube/Nextcloud defaults follow the same preference.
 	lang = i18n.normalize_locale(request.form.get("lang") or (request.get_json(silent=True) or {}).get("lang")) or "en"
+	try:
+		i18n.set_system_locale(lang, env)
+	except OSError:
+		pass
 	resp = jsonify({"status": "ok", "lang": lang})
 	return i18n.apply_locale_cookie(resp, lang)
 
