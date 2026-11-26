@@ -4,6 +4,7 @@ from datetime import timedelta
 from expiringdict import ExpiringDict
 
 import utils
+from i18n import _
 from mailconfig import get_mail_password, get_mail_user_privileges
 from mfa import get_hash_mfa_state, validate_auth_mfa
 
@@ -49,11 +50,11 @@ class AuthService:
 
 		username, password = parse_http_authorization_basic(request.headers.get('Authorization', ''))
 		if username in {None, ""}:
-			msg = "Authorization header invalid."
+			msg = _("Authorization header invalid.")
 			raise ValueError(msg)
 
 		if username.strip() == "" and password.strip() == "":
-			msg = "No email address, password, session key, or API key provided."
+			msg = _("No email address, password, session key, or API key provided.")
 			raise ValueError(msg)
 
 		# If user passed the system API key, grant administrative privs. This key
@@ -74,7 +75,7 @@ class AuthService:
 
 		# If no password was given, but a username was given, we're missing some information.
 		elif password.strip() == "":
-			msg = "Enter a password."
+			msg = _("Enter a password.")
 			raise ValueError(msg)
 
 		else:
@@ -117,7 +118,7 @@ class AuthService:
 				])
 		except:
 			# Login failed.
-			msg = "Incorrect email address or password."
+			msg = _("Incorrect email address or password.")
 			raise ValueError(msg)
 
 		# If MFA is enabled, check that MFA passes.

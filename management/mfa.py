@@ -6,11 +6,12 @@ import pyotp
 import qrcode
 
 from mailconfig import open_database
+from i18n import _
 
 def get_user_id(email, c):
 	c.execute('SELECT id FROM users WHERE email=?', (email,))
 	r = c.fetchone()
-	if not r: raise ValueError("User does not exist.")
+	if not r: raise ValueError(_("User does not exist."))
 	return r[0]
 
 def get_mfa_state(email, env):
@@ -41,10 +42,10 @@ def enable_mfa(email, type, secret, token, label, env):
 		# Sanity check with the provide current token.
 		totp = pyotp.TOTP(secret)
 		if not totp.verify(token, valid_window=1):
-			msg = "Invalid token."
+			msg = _("Invalid token.")
 			raise ValueError(msg)
 	else:
-		msg = "Invalid MFA type."
+		msg = _("Invalid MFA type.")
 		raise ValueError(msg)
 
 	conn, c = open_database(env, with_connection=True)
@@ -69,10 +70,10 @@ def disable_mfa(email, mfa_id, env):
 
 def validate_totp_secret(secret):
 	if not isinstance(secret, str) or secret.strip() == "":
-		msg = "No secret provided."
+		msg = _("No secret provided.")
 		raise ValueError(msg)
 	if len(secret) != 32:
-		msg = "Secret should be a 32 characters base32 string"
+		msg = _("Secret should be a 32 characters base32 string")
 		raise ValueError(msg)
 
 def provision_totp(email, env):
