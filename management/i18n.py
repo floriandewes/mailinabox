@@ -8,7 +8,7 @@
 # workers (status checks): call activate_locale() before Pool creation so
 # forked children inherit the Translations object.
 
-import gettext
+import gettext as gettext_mod
 import json
 import os
 import re
@@ -156,7 +156,7 @@ def gettext_for_locale(lang):
 	"""Return a gettext.gettext bound to lang (stdlib; works outside Flask)."""
 	lang = normalize_locale(lang) or "en"
 	try:
-		trans = gettext.translation(
+		trans = gettext_mod.translation(
 			"messages",
 			localedir=_LOCALE_DIR,
 			languages=[lang],
