@@ -5,6 +5,11 @@ This is a fork of [Mail-in-a-Box](https://github.com/mail-in-a-box/mailinabox) b
 
 **The original project website and setup guide are at [https://mailinabox.email](https://mailinabox.email).**
 
+Versioning
+----------
+
+This fork versions as **YY.MM** (see the top-level `VERSION` file; current release **26.11**), targeting a release about every 1–2 months. Release history is in `CHANGELOG.md`. The control panel, `/admin/system/version` API, and setup banner read `VERSION`.
+
 
 Requirements
 ------------

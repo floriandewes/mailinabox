@@ -15,7 +15,7 @@ info:
   license:
     name: CC0 1.0 Universal
     url: https://creativecommons.org/publicdomain/zero/1.0/legalcode
-  version: 0.51.0
+  version: "26.11"
   x-logo:
     url: https://mailinabox.email/static/logo.png
     altText: Mail-in-a-Box logo
@@ -166,7 +166,7 @@ paths:
             text/html:
               schema:
                 $ref: '#/components/schemas/SystemVersionResponse'
-              example: v0.46
+              example: "26.11"
         403:
           description: Forbidden
           content:
@@ -192,7 +192,7 @@ paths:
             text/html:
               schema:
                 $ref: '#/components/schemas/SystemVersionUpstreamResponse'
-              example: v0.47
+              example: "26.11"
         403:
           description: Forbidden
           content:
@@ -2456,11 +2456,11 @@ components:
     SystemVersionResponse:
       type: string
       description: System version response.
-      example: v0.46
+      example: "26.11"
     SystemVersionUpstreamResponse:
       type: string
       description: System version upstream response.
-      example: v0.47
+      example: "26.11"
     SystemUpdatesResponse:
       type: string
       description: System updates response.

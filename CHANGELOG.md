@@ -1,6 +1,24 @@
 CHANGELOG
 =========
 
+Versioning
+----------
+
+This Debian 13 fork uses **YY.MM** version numbers (for example **26.11**) and
+aims to cut a release about every 1–2 months. The product version shown in the
+control panel status checks, `/admin/system/version` API, and setup banner is
+the contents of the top-level `VERSION` file. Git tags and `TAG=` in
+`setup/bootstrap.sh` use a leading `v` (for example `v26.11`).
+
+Version 26.11 (November 26, 2026)
+---------------------------------
+
+* First YY.MM release of this Debian 13 (Trixie) fork.
+* Product version is stored in `VERSION` and surfaced by status checks, the
+  management API, and the setup banner (no longer relying only on `git describe`).
+* New-version checks phone home to this fork’s `VERSION` on GitHub instead of
+  upstream mailinabox.email.
+
 Version 78 (October 22, 2026)
 -----------------------------
 
