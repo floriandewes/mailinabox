@@ -160,14 +160,14 @@ msgstr "Actualização Web"
 #: locale/js_messages.py:40
 #, python-format
 msgid "Change Root Directory for %(domain)s"
-msgstr "Change Root Directory for %(domain)s"
+msgstr "Alterar diretório raiz de %(domain)s"
 
 #. Status: mt
 #. Phase: 1
 #: locale/js_messages.py:41
 #, python-format
 msgid "You can change the static directory for <tt>%(domain)s</tt> to:"
-msgstr "You can change the static directory for <tt>%(domain)s</tt> to:"
+msgstr "Pode alterar o diretório estático de <tt>%(domain)s</tt> para:"
 
 #. Status: mt
 #. Phase: 1
@@ -197,14 +197,14 @@ msgstr "Código QR, verifique isto no seu aplicativo autenticador"
 #: locale/js_messages.py:47
 #, python-format
 msgid "Secret: %(secret)s"
-msgstr "Secret: %(secret)s"
+msgstr "Segredo: %(secret)s"
 
 #. Status: mt
 #. Phase: 1
 #: locale/js_messages.py:48
 #, python-format
 msgid " on device '%(label)s'"
-msgstr " on device '%(label)s'"
+msgstr " no dispositivo «%(label)s»"
 
 #. Status: mt
 #. Phase: 1
@@ -263,7 +263,7 @@ msgstr "Resumo:"
 #: locale/js_messages.py:61
 #, python-format
 msgid "All %(num)s %(symbol)s OK"
-msgstr "All %(num)s %(symbol)s OK"
+msgstr "Todos os %(num)s %(symbol)s OK"
 
 #. Status: mt
 #. Phase: 1
@@ -277,14 +277,14 @@ msgstr "%(num)s %(symbol)s OK, "
 #: locale/js_messages.py:63
 #, python-format
 msgid "%(num)s %(symbol)s Error, "
-msgstr "%(num)s %(symbol)s Error, "
+msgstr "%(num)s %(symbol)s Erro, "
 
 #. Status: mt
 #. Phase: 1
 #: locale/js_messages.py:64
 #, python-format
 msgid "%(num)s %(symbol)s Warning"
-msgstr "%(num)s %(symbol)s Warning"
+msgstr "%(num)s %(symbol)s Aviso"
 
 #. Status: mt
 #. Phase: 1
@@ -297,7 +297,7 @@ msgstr "Reiniciar"
 #: locale/js_messages.py:66
 #, python-format
 msgid "This will reboot your Trixie Mail <code>%(hostname)s</code>."
-msgstr "This will reboot your Trixie Mail <code>%(hostname)s</code>."
+msgstr "Isto irá reiniciar o seu Trixie Mail <code>%(hostname)s</code>."
 
 #. Status: mt
 #. Phase: 1
@@ -383,7 +383,7 @@ msgstr "Nenhum backup foi feito ainda."
 #: locale/js_messages.py:81
 #, python-format
 msgid "%(delta)s ago"
-msgstr "%(delta)s ago"
+msgstr "há %(delta)s"
 
 #. Status: mt
 #. Phase: 1
@@ -502,7 +502,7 @@ msgstr "Adicionar Privilégio"
 #: locale/js_messages.py:104
 #, python-format
 msgid "make <span class='name'>%(privilege)s</span>"
-msgstr "make <span class='name'>%(privilege)s</span>"
+msgstr "tornar <span class='name'>%(privilege)s</span>"
 
 #. Status: mt
 #. Phase: 1
@@ -537,11 +537,11 @@ msgid ""
 "id='users_set_password_pw'></p><p><small>Passwords must be at least eight"
 " characters and may not contain spaces.</small>%(yourpw)s</p>"
 msgstr ""
-"<p>Set a new password for <b>%(email)s</b>?</p> <p><label "
+"<p>Definir uma nova palavra-passe para <b>%(email)s</b>?</p> <p><label "
 "for='users_set_password_pw' style='display: block; font-weight: "
-"normal'>New Password:</label><input type='password' "
-"id='users_set_password_pw'></p><p><small>Passwords must be at least eight"
-" characters and may not contain spaces.</small>%(yourpw)s</p>"
+"normal'>Nova palavra-passe:</label><input type='password' "
+"id='users_set_password_pw'></p><p><small>As palavras-passe devem ter pelo"
+" menos oito caracteres e não podem conter espaços.</small>%(yourpw)s</p>"
 
 #. Status: mt
 #. Phase: 1
@@ -561,12 +561,13 @@ msgid ""
 "(megabytes) are allowed.</small></p><p><small>For unlimited storage enter"
 " 0 (zero)</small></p>"
 msgstr ""
-"<p>Set quota for <b>%(email)s</b>?</p><p><label for='users_set_quota' "
-"style='display: block; font-weight: normal'>Quota:</label><input "
-"type='text' id='users_set_quota' value='%(quota)s'></p><p><small>Quotas "
-"may not contain any spaces or commas.  Suffixes of G (gigabytes) and M "
-"(megabytes) are allowed.</small></p><p><small>For unlimited storage enter"
-" 0 (zero)</small></p>"
+"<p>Definir quota para <b>%(email)s</b>?</p><p><label "
+"for='users_set_quota' style='display: block; font-weight: "
+"normal'>Quota:</label><input type='text' id='users_set_quota' "
+"value='%(quota)s'></p><p><small>As quotas não podem conter espaços nem "
+"vírgulas. São permitidos os sufixos G (gigabytes) e M "
+"(megabytes).</small></p><p><small>Para armazenamento ilimitado introduza "
+"0 (zero)</small></p>"
 
 #. Status: mt
 #. Phase: 1
@@ -589,9 +590,10 @@ msgid ""
 "mailboxes will not be deleted (you can do that later), but the user will "
 "no longer be able to log into any services on this machine.</p>"
 msgstr ""
-"<p>Are you sure you want to archive <b>%(email)s</b>?</p> <p>The user's "
-"mailboxes will not be deleted (you can do that later), but the user will "
-"no longer be able to log into any services on this machine.</p>"
+"<p>Tem a certeza de que pretende arquivar <b>%(email)s</b>?</p> <p>As "
+"caixas de correio do utilizador não serão eliminadas (pode fazê-lo mais "
+"tarde), mas o utilizador deixará de poder iniciar sessão em qualquer "
+"serviço nesta máquina.</p>"
 
 #. Status: mt
 #. Phase: 1
@@ -625,7 +627,7 @@ msgid ""
 "<p>Are you sure you want to remove the %(privilege)s privilege for "
 "<b>%(email)s</b>?</p>"
 msgstr ""
-"<p>Are you sure you want to remove the %(privilege)s privilege for "
+"<p>Tem a certeza de que pretende remover o privilégio %(privilege)s de "
 "<b>%(email)s</b>?</p>"
 
 #. Status: mt
@@ -642,7 +644,7 @@ msgid ""
 "<p>Are you sure you want to add the %(privilege)s privilege for "
 "<b>%(email)s</b>?</p>"
 msgstr ""
-"<p>Are you sure you want to add the %(privilege)s privilege for "
+"<p>Tem a certeza de que pretende adicionar o privilégio %(privilege)s a "
 "<b>%(email)s</b>?</p>"
 
 #. Status: mt
@@ -665,7 +667,7 @@ msgid ""
 "<p>Here, try this:</p> <p><code style='font-size: "
 "110%'>%(password)s</code></p>"
 msgstr ""
-"<p>Here, try this:</p> <p><code style='font-size: "
+"<p>Experimente isto:</p> <p><code style='font-size: "
 "110%'>%(password)s</code></p>"
 
 #. Status: mt
@@ -721,7 +723,7 @@ msgstr "Remover apelido"
 #: locale/js_messages.py:135
 #, python-format
 msgid "Remove %(address)s?"
-msgstr "Remove %(address)s?"
+msgstr "Remover %(address)s?"
 
 #. Status: mt
 #. Phase: 1
@@ -828,10 +830,11 @@ msgid ""
 "receiver. To forward mail to other domains, create a mail user and then "
 "log into webmail for the user and create a filter rule to forward mail."
 msgstr ""
-"Only forward mail to addresses handled by this Trixie Mail, since mail "
-"forwarded by aliases to other domains may be rejected or filtered by the "
-"receiver. To forward mail to other domains, create a mail user and then "
-"log into webmail for the user and create a filter rule to forward mail."
+"Reencaminhe correio apenas para endereços tratados por este Trixie Mail, "
+"pois o correio reencaminhado por aliás para outros domínios pode ser "
+"rejeitado ou filtrado pelo destinatário. Para reencaminhar para outros "
+"domínios, crie um utilizador de correio, inicie sessão no webmail desse "
+"utilizador e crie uma regra de filtro de reencaminhamento."
 
 #. Status: mt
 #. Phase: 1
@@ -1909,11 +1912,11 @@ msgid ""
 "(IMAP/SMTP), Contacts, and Calendar. Your username is your whole email "
 "address."
 msgstr ""
-"iOS and macOS only: Open <a style=\"font-weight: bold\" "
-"href=\"https://%(hostname)s/mailinabox.mobileconfig\">this configuration "
-"link</a> on your iOS device or on your Mac desktop to easily set up mail "
-"(IMAP/SMTP), Contacts, and Calendar. Your username is your whole email "
-"address."
+"Apenas iOS e macOS: abra <a style=\"font-weight: bold\" "
+"href=\"https://%(hostname)s/mailinabox.mobileconfig\">esta ligação de "
+"configuração</a> no seu dispositivo iOS ou no Mac para configurar "
+"facilmente o correio (IMAP/SMTP), Contactos e Calendário. O seu nome de "
+"utilizador é o endereço de e-mail completo."
 
 #. Status: mt
 #. Phase: 1
@@ -2338,9 +2341,9 @@ msgid ""
 "and every other domain name and subdomain that this box is hosting a "
 "website for (see the list below)."
 msgstr ""
-"You need a TLS certificate for this box&rsquo;s hostname (%(hostname)s) "
-"and every other domain name and subdomain that this box is hosting a "
-"website for (see the list below)."
+"Precisa de um certificado TLS para o nome de anfitrião desta máquina "
+"(%(hostname)s) e para cada outro nome de domínio e subdomínio para o qual"
+" esta máquina aloja um sítio web (veja a lista abaixo)."
 
 #. Status: mt
 #. Phase: 1
@@ -2789,12 +2792,12 @@ msgid ""
 "        passwordless authentication from your Trixie Mail server and your"
 " backup server."
 msgstr ""
-"Copy the Public SSH Key above, and paste it within the "
+"Copie a chave SSH pública acima e cole-a em "
 "<tt>~/.ssh/authorized_keys</tt>\n"
-"        of target user on the backup server specified above. That way "
-"you'll enable secure and\n"
-"        passwordless authentication from your Trixie Mail server and your"
-" backup server."
+"        do utilizador de destino no servidor de cópia de segurança "
+"indicado acima. Assim ativa autenticação segura e\n"
+"        sem palavra-passe entre o seu servidor Trixie Mail e o servidor "
+"de cópia de segurança."
 
 #. Status: mt
 #. Phase: 1
@@ -3016,8 +3019,8 @@ msgid ""
 "(When enabled, status checks phone-home to check for a new release of "
 "Trixie Mail.)"
 msgstr ""
-"(When enabled, status checks phone-home to check for a new release of "
-"Trixie Mail.)"
+"(Quando ativado, as verificações de estado consultam se existe uma nova "
+"versão do Trixie Mail.)"
 
 #. Status: mt
 #. Phase: 1
@@ -3310,9 +3313,10 @@ msgid ""
 "href=\"https://%(hostname)s\">https://%(hostname)s</a> and at all domain "
 "names that you set up an email user or alias for."
 msgstr ""
-"This machine is serving a simple, static website at <a "
-"href=\"https://%(hostname)s\">https://%(hostname)s</a> and at all domain "
-"names that you set up an email user or alias for."
+"Esta máquina serve um sítio web estático simples em <a "
+"href=\"https://%(hostname)s\">https://%(hostname)s</a> e em todos os "
+"nomes de domínio para os quais configurou um utilizador ou aliás de "
+"correio."
 
 #. Status: mt
 #. Phase: 1
@@ -3367,12 +3371,13 @@ msgid ""
 "<strong>not</strong> what you use to log in either for email or this "
 "control panel. Your SSH credentials probably involves a private key file."
 msgstr ""
-"Log in to this machine with the file transfer program. The server is "
-"<strong>%(hostname)s</strong>, the protocol is SSH or SFTP, and use the "
-"<strong>SSH login credentials</strong> that you used when you originally "
-"created this machine at your cloud host provider. This is "
-"<strong>not</strong> what you use to log in either for email or this "
-"control panel. Your SSH credentials probably involves a private key file."
+"Inicie sessão nesta máquina com o programa de transferência de ficheiros."
+" O servidor é <strong>%(hostname)s</strong>, o protocolo é SSH ou SFTP, e"
+" use as <strong>credenciais de início de sessão SSH</strong> que usou "
+"quando criou originalmente esta máquina no seu fornecedor cloud. Isto "
+"<strong>não</strong> é o que usa para iniciar sessão no correio nem neste"
+" painel de controlo. As suas credenciais SSH provavelmente envolvem um "
+"ficheiro de chave privada."
 
 #. Status: mt
 #. Phase: 1
@@ -3383,9 +3388,9 @@ msgid ""
 "<tt>%(storage_root)s/www/default</tt> on this machine. They will appear "
 "directly and immediately on the web."
 msgstr ""
-"Upload your <tt>.html</tt> or other files to the directory "
-"<tt>%(storage_root)s/www/default</tt> on this machine. They will appear "
-"directly and immediately on the web."
+"Carregue os seus ficheiros <tt>.html</tt> ou outros para o diretório "
+"<tt>%(storage_root)s/www/default</tt> nesta máquina. Aparecerão direta e "
+"imediatamente na web."
 
 #. Status: mt
 #. Phase: 1

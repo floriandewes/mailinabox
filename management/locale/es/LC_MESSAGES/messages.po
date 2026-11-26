@@ -123,7 +123,7 @@ msgstr "DNS personalizado"
 #. Phase: 1
 #: locale/js_messages.py:30
 msgid "Custom DNS (Error)"
-msgstr "Custom DNS (Error)"
+msgstr "DNS personalizado (Error)"
 
 #. Status: mt
 #. Phase: 1
@@ -160,14 +160,14 @@ msgstr "Actualización web"
 #: locale/js_messages.py:40
 #, python-format
 msgid "Change Root Directory for %(domain)s"
-msgstr "Change Root Directory for %(domain)s"
+msgstr "Cambiar el directorio raíz de %(domain)s"
 
 #. Status: mt
 #. Phase: 1
 #: locale/js_messages.py:41
 #, python-format
 msgid "You can change the static directory for <tt>%(domain)s</tt> to:"
-msgstr "You can change the static directory for <tt>%(domain)s</tt> to:"
+msgstr "Puede cambiar el directorio estático de <tt>%(domain)s</tt> a:"
 
 #. Status: mt
 #. Phase: 1
@@ -204,14 +204,14 @@ msgstr "Código QR, escanea esto en tu app de autenticador"
 #: locale/js_messages.py:47
 #, python-format
 msgid "Secret: %(secret)s"
-msgstr "Secret: %(secret)s"
+msgstr "Secreto: %(secret)s"
 
 #. Status: mt
 #. Phase: 1
 #: locale/js_messages.py:48
 #, python-format
 msgid " on device '%(label)s'"
-msgstr "en el dispositivo '%(label)s'"
+msgstr " en el dispositivo «%(label)s»"
 
 #. Status: mt
 #. Phase: 1
@@ -272,7 +272,7 @@ msgstr "Resumen:"
 #: locale/js_messages.py:61
 #, python-format
 msgid "All %(num)s %(symbol)s OK"
-msgstr "All %(num)s %(symbol)s OK"
+msgstr "Los %(num)s %(symbol)s OK"
 
 #. Status: mt
 #. Phase: 1
@@ -293,20 +293,20 @@ msgstr "%(num)s %(symbol)s Error, "
 #: locale/js_messages.py:64
 #, python-format
 msgid "%(num)s %(symbol)s Warning"
-msgstr "%(num)s %(symbol)s Warning"
+msgstr "%(num)s %(symbol)s Advertencia"
 
 #. Status: mt
 #. Phase: 1
 #: locale/js_messages.py:65
 msgid "Reboot"
-msgstr "Reboot"
+msgstr "Reiniciar"
 
 #. Status: mt
 #. Phase: 1
 #: locale/js_messages.py:66
 #, python-format
 msgid "This will reboot your Trixie Mail <code>%(hostname)s</code>."
-msgstr "This will reboot your Trixie Mail <code>%(hostname)s</code>."
+msgstr "Esto reiniciará su Trixie Mail <code>%(hostname)s</code>."
 
 #. Status: mt
 #. Phase: 1
@@ -324,7 +324,7 @@ msgstr ""
 #. Phase: 1
 #: locale/js_messages.py:68
 msgid "Reboot Now"
-msgstr "Reboot Now"
+msgstr "Reiniciar ahora"
 
 #. Status: mt
 #. Phase: 1
@@ -391,7 +391,7 @@ msgstr "Todavía no se han hecho copias de seguridad."
 #: locale/js_messages.py:81
 #, python-format
 msgid "%(delta)s ago"
-msgstr "%(delta)s ago"
+msgstr "hace %(delta)s"
 
 #. Status: mt
 #. Phase: 1
@@ -455,7 +455,7 @@ msgstr ""
 #. Phase: 1
 #: locale/js_messages.py:93
 msgid "TLS Certificate Provisioning"
-msgstr "TLS Certificate Provisioning"
+msgstr "Aprovisionamiento de certificado TLS"
 
 #. Status: mt
 #. Phase: 1
@@ -473,7 +473,7 @@ msgstr "El certificado TLS fue suministrado e instalado."
 #. Phase: 1
 #: locale/js_messages.py:96
 msgid "Log:"
-msgstr "Log:"
+msgstr "Registro:"
 
 #. Status: mt
 #. Phase: 1
@@ -510,7 +510,7 @@ msgstr "Añadir Privilege"
 #: locale/js_messages.py:104
 #, python-format
 msgid "make <span class='name'>%(privilege)s</span>"
-msgstr "make <span class='name'>%(privilege)s</span>"
+msgstr "hacer <span class='name'>%(privilege)s</span>"
 
 #. Status: mt
 #. Phase: 1
@@ -545,17 +545,18 @@ msgid ""
 "id='users_set_password_pw'></p><p><small>Passwords must be at least eight"
 " characters and may not contain spaces.</small>%(yourpw)s</p>"
 msgstr ""
-"<p>Set a new password for <b>%(email)s</b>?</p> <p><label "
+"<p>¿Establecer una nueva contraseña para <b>%(email)s</b>?</p> <p><label "
 "for='users_set_password_pw' style='display: block; font-weight: "
-"normal'>New Password:</label><input type='password' "
-"id='users_set_password_pw'></p><p><small>Passwords must be at least eight"
-" characters and may not contain spaces.</small>%(yourpw)s</p>"
+"normal'>Nueva contraseña:</label><input type='password' "
+"id='users_set_password_pw'></p><p><small>Las contraseñas deben tener al "
+"menos ocho caracteres y no pueden contener "
+"espacios.</small>%(yourpw)s</p>"
 
 #. Status: mt
 #. Phase: 1
 #: locale/js_messages.py:109 templates/users.html:74
 msgid "Set Quota"
-msgstr "Set Quota"
+msgstr "Establecer cuota"
 
 #. Status: mt
 #. Phase: 1
@@ -569,12 +570,13 @@ msgid ""
 "(megabytes) are allowed.</small></p><p><small>For unlimited storage enter"
 " 0 (zero)</small></p>"
 msgstr ""
-"<p>Set quota for <b>%(email)s</b>?</p><p><label for='users_set_quota' "
-"style='display: block; font-weight: normal'>Quota:</label><input "
-"type='text' id='users_set_quota' value='%(quota)s'></p><p><small>Quotas "
-"may not contain any spaces or commas.  Suffixes of G (gigabytes) and M "
-"(megabytes) are allowed.</small></p><p><small>For unlimited storage enter"
-" 0 (zero)</small></p>"
+"<p>¿Establecer la cuota de <b>%(email)s</b>?</p><p><label "
+"for='users_set_quota' style='display: block; font-weight: "
+"normal'>Cuota:</label><input type='text' id='users_set_quota' "
+"value='%(quota)s'></p><p><small>Las cuotas no pueden contener espacios ni"
+" comas. Se permiten los sufijos G (gigabytes) y M "
+"(megabytes).</small></p><p><small>Para almacenamiento ilimitado "
+"introduzca 0 (cero)</small></p>"
 
 #. Status: mt
 #. Phase: 1
@@ -597,9 +599,9 @@ msgid ""
 "mailboxes will not be deleted (you can do that later), but the user will "
 "no longer be able to log into any services on this machine.</p>"
 msgstr ""
-"<p>Are you sure you want to archive <b>%(email)s</b>?</p> <p>The user's "
-"mailboxes will not be deleted (you can do that later), but the user will "
-"no longer be able to log into any services on this machine.</p>"
+"<p>¿Seguro que desea archivar <b>%(email)s</b>?</p> <p>Los buzones del "
+"usuario no se eliminarán (puede hacerlo más tarde), pero el usuario ya no"
+" podrá iniciar sesión en ningún servicio de esta máquina.</p>"
 
 #. Status: mt
 #. Phase: 1
@@ -633,7 +635,7 @@ msgid ""
 "<p>Are you sure you want to remove the %(privilege)s privilege for "
 "<b>%(email)s</b>?</p>"
 msgstr ""
-"<p>Are you sure you want to remove the %(privilege)s privilege for "
+"<p>¿Seguro que desea quitar el privilegio %(privilege)s de "
 "<b>%(email)s</b>?</p>"
 
 #. Status: mt
@@ -650,7 +652,7 @@ msgid ""
 "<p>Are you sure you want to add the %(privilege)s privilege for "
 "<b>%(email)s</b>?</p>"
 msgstr ""
-"<p>Are you sure you want to add the %(privilege)s privilege for "
+"<p>¿Seguro que desea añadir el privilegio %(privilege)s a "
 "<b>%(email)s</b>?</p>"
 
 #. Status: mt
@@ -673,7 +675,7 @@ msgid ""
 "<p>Here, try this:</p> <p><code style='font-size: "
 "110%'>%(password)s</code></p>"
 msgstr ""
-"<p>Here, try this:</p> <p><code style='font-size: "
+"<p>Pruebe esto:</p> <p><code style='font-size: "
 "110%'>%(password)s</code></p>"
 
 #. Status: mt
@@ -729,7 +731,7 @@ msgstr "Quitar Alias"
 #: locale/js_messages.py:135
 #, python-format
 msgid "Remove %(address)s?"
-msgstr "Remove %(address)s?"
+msgstr "¿Eliminar %(address)s?"
 
 #. Status: mt
 #. Phase: 1
@@ -782,7 +784,7 @@ msgstr "Catch-All"
 #. Phase: 1
 #: templates/aliases.html:20
 msgid "Domain Alias"
-msgstr "Domain Alias"
+msgstr "Alias de dominio"
 
 #. Status: mt
 #. Phase: 1
@@ -841,11 +843,11 @@ msgid ""
 "receiver. To forward mail to other domains, create a mail user and then "
 "log into webmail for the user and create a filter rule to forward mail."
 msgstr ""
-"Sólo enviar correo a direcciones manejadas por este Trixie Mail, ya que "
-"el correo enviado por alias a otros dominios puede ser rechazado o "
-"filtrado por el receptor. Para enviar correo a otros dominios, crear un "
-"usuario de correo y luego iniciar sesión en el correo web para el usuario"
-" y crear una regla de filtro para enviar correo."
+"Reenvíe correo solo a direcciones gestionadas por este Trixie Mail, ya "
+"que el correo reenviado por alias a otros dominios puede ser rechazado o "
+"filtrado por el destinatario. Para reenviar a otros dominios, cree un "
+"usuario de correo, inicie sesión en su webmail y cree una regla de filtro"
+" de reenvío."
 
 #. Status: mt
 #. Phase: 1
@@ -893,7 +895,7 @@ msgstr "un usuario por línea o separado por coma"
 #. Phase: 1
 #: templates/aliases.html:93
 msgid "Existing mail aliases"
-msgstr "Existing mail aliases"
+msgstr "Alias de correo existentes"
 
 #. Status: mt
 #. Phase: 1
@@ -922,7 +924,7 @@ msgstr "Editar Alias"
 #. Phase: 1
 #: templates/aliases.html:127
 msgid "Mail aliases API (advanced)"
-msgstr "Mail aliases API (advanced)"
+msgstr "API de alias de correo (avanzado)"
 
 #. Status: mt
 #. Phase: 1
@@ -940,7 +942,7 @@ msgstr ""
 #: templates/aliases.html:131 templates/custom-dns.html:113
 #: templates/users.html:107
 msgid "Usage:"
-msgstr "Usage:"
+msgstr "Uso:"
 
 #. Status: mt
 #. Phase: 1
@@ -1180,7 +1182,7 @@ msgstr ""
 #. Phase: 1
 #: templates/custom-dns.html:37
 msgid "CNAME (DNS forwarding)"
-msgstr "CNAME (DNS forwarding)"
+msgstr "CNAME (reenvío DNS)"
 
 #. Status: mt
 #. Phase: 1
@@ -1192,7 +1194,7 @@ msgstr "Introduzca texto arbitrario."
 #. Phase: 1
 #: templates/custom-dns.html:38
 msgid "TXT (text record)"
-msgstr "TXT (text record)"
+msgstr "TXT (registro de texto)"
 
 #. Status: mt
 #. Phase: 1
@@ -1248,7 +1250,7 @@ msgstr "Ingrese un nombre de host al que se debe delegar este subdominio"
 #. Phase: 1
 #: templates/custom-dns.html:42
 msgid "NS (DNS subdomain delegation)"
-msgstr "NS (DNS subdomain delegation)"
+msgstr "NS (delegación de subdominio DNS)"
 
 #. Status: mt
 #. Phase: 1
@@ -1262,7 +1264,7 @@ msgstr "Valor"
 #. Phase: 1
 #: templates/custom-dns.html:55
 msgid "Set Record"
-msgstr "Set Record"
+msgstr "Establecer registro"
 
 #. Status: mt
 #. Phase: 1
@@ -1393,7 +1395,7 @@ msgstr "(Brackets denota un argumento opcional.)"
 #. Phase: 1
 #: templates/custom-dns.html:123
 msgid "Usage"
-msgstr "Usage"
+msgstr "Uso"
 
 #. Status: mt
 #. Phase: 1
@@ -1929,11 +1931,11 @@ msgid ""
 "(IMAP/SMTP), Contacts, and Calendar. Your username is your whole email "
 "address."
 msgstr ""
-"iOS and macOS only: Open <a style=\"font-weight: bold\" "
-"href=\"https://%(hostname)s/mailinabox.mobileconfig\">this configuration "
-"link</a> on your iOS device or on your Mac desktop to easily set up mail "
-"(IMAP/SMTP), Contacts, and Calendar. Your username is your whole email "
-"address."
+"Solo iOS y macOS: abra <a style=\"font-weight: bold\" "
+"href=\"https://%(hostname)s/mailinabox.mobileconfig\">este enlace de "
+"configuración</a> en su dispositivo iOS o en su Mac para configurar "
+"fácilmente el correo (IMAP/SMTP), contactos y calendario. Su nombre de "
+"usuario es su dirección de correo completa."
 
 #. Status: mt
 #. Phase: 1
@@ -1979,7 +1981,7 @@ msgstr "IMAP Port"
 #. Phase: 1
 #: templates/mail-guide.html:32
 msgid "IMAP Security"
-msgstr "IMAP Security"
+msgstr "Seguridad IMAP"
 
 #. Status: mt
 #. Phase: 1
@@ -1997,7 +1999,7 @@ msgstr "SMTP Port"
 #. Phase: 1
 #: templates/mail-guide.html:34
 msgid "SMTP Security"
-msgstr "SMTP Security"
+msgstr "Seguridad SMTP"
 
 #. Status: mt
 #. Phase: 1
@@ -2365,9 +2367,9 @@ msgid ""
 "and every other domain name and subdomain that this box is hosting a "
 "website for (see the list below)."
 msgstr ""
-"Usted necesita un certificado TLS para este cuadroTT0⟧s nombre de host "
-"(%(hostname)s) y cada otro nombre de dominio y subdominio que esta caja "
-"está hospedando un sitio web para (ver la lista abajo)."
+"Necesita un certificado TLS para el nombre de host de este servidor "
+"(%(hostname)s) y para cada otro nombre de dominio y subdominio para el "
+"que este servidor aloje un sitio web (vea la lista abajo)."
 
 #. Status: mt
 #. Phase: 1
@@ -2512,7 +2514,7 @@ msgstr ""
 #. Phase: 1
 #: templates/ssl.html:69
 msgid "TLS/SSL certificate:"
-msgstr "TLS/SSL certificate:"
+msgstr "Certificado TLS/SSL:"
 
 #. Status: mt
 #. Phase: 1
@@ -2676,7 +2678,7 @@ msgstr "Nombre del servidor"
 #. Phase: 1
 #: templates/sync-guide.html:41
 msgid "Use SSL"
-msgstr "Use SSL"
+msgstr "Usar SSL"
 
 #. Status: mt
 #. Phase: 1
@@ -2824,12 +2826,12 @@ msgid ""
 "        passwordless authentication from your Trixie Mail server and your"
 " backup server."
 msgstr ""
-"Copy the Public SSH Key above, and paste it within the "
+"Copie la clave SSH pública de arriba y péguela en "
 "<tt>~/.ssh/authorized_keys</tt>\n"
-"        of target user on the backup server specified above. That way "
-"you'll enable secure and\n"
-"        passwordless authentication from your Trixie Mail server and your"
-" backup server."
+"        del usuario de destino en el servidor de copia indicado arriba. "
+"Así habilitará autenticación segura y\n"
+"        sin contraseña entre su servidor Trixie Mail y su servidor de "
+"copia."
 
 #. Status: mt
 #. Phase: 1
@@ -2865,25 +2867,25 @@ msgstr ""
 #. Phase: 1
 #: templates/system-backup.html:88
 msgid "S3 Region"
-msgstr "S3 Region"
+msgstr "Región S3"
 
 #. Status: mt
 #. Phase: 1
 #: templates/system-backup.html:94
 msgid "Other (non AWS)"
-msgstr "Other (non AWS)"
+msgstr "Otro (no AWS)"
 
 #. Status: mt
 #. Phase: 1
 #: templates/system-backup.html:99
 msgid "S3 Host / Endpoint"
-msgstr "S3 Host / Endpoint"
+msgstr "Host / endpoint S3"
 
 #. Status: mt
 #. Phase: 1
 #: templates/system-backup.html:105
 msgid "S3 Region Name"
-msgstr "S3 Region Name"
+msgstr "Nombre de región S3"
 
 #. Status: mt
 #. Phase: 1
@@ -3030,7 +3032,7 @@ msgstr "Controles de estado del sistema"
 #. Phase: 1
 #: templates/system-status.html:43
 msgid "Reboot Box"
-msgstr "Reboot Box"
+msgstr "Reiniciar la box"
 
 #. Status: mt
 #. Phase: 1
@@ -3057,8 +3059,8 @@ msgid ""
 "(When enabled, status checks phone-home to check for a new release of "
 "Trixie Mail.)"
 msgstr ""
-"(When enabled, status checks phone-home to check for a new release of "
-"Trixie Mail.)"
+"(Si está activado, las comprobaciones de estado consultan si hay una "
+"nueva versión de Trixie Mail.)"
 
 #. Status: mt
 #. Phase: 1
@@ -3104,7 +3106,7 @@ msgstr "Administrador"
 #. Phase: 1
 #: templates/users.html:32 templates/users.html:33 templates/users.html:52
 msgid "Quota"
-msgstr "Quota"
+msgstr "Cuota"
 
 #. Status: mt
 #. Phase: 1
@@ -3353,9 +3355,9 @@ msgid ""
 "href=\"https://%(hostname)s\">https://%(hostname)s</a> and at all domain "
 "names that you set up an email user or alias for."
 msgstr ""
-"This machine is serving a simple, static website at <a "
-"href=\"https://%(hostname)s\">https://%(hostname)s</a> and at all domain "
-"names that you set up an email user or alias for."
+"Esta máquina sirve un sitio web estático sencillo en <a "
+"href=\"https://%(hostname)s\">https://%(hostname)s</a> y en todos los "
+"nombres de dominio para los que haya creado un usuario o alias de correo."
 
 #. Status: mt
 #. Phase: 1
@@ -3414,12 +3416,12 @@ msgid ""
 "control panel. Your SSH credentials probably involves a private key file."
 msgstr ""
 "Inicie sesión en esta máquina con el programa de transferencia de "
-"archivos. El servidor es <strong>%(hostname)sT1⟧, el protocolo es SSH o "
-"SFTP y utiliza las credenciales de inicio de sesión ⟦T2SHSSH T3⟧ que "
-"utilizó cuando creó originalmente esta máquina en su proveedor de "
-"hospedaje en la nube. Esto es ⟦T4notnotTT5⟧ lo que utiliza para iniciar "
-"sesión ya sea para el correo electrónico o este panel de control. Sus "
-"credenciales de SSH probablemente implican un archivo de clave privado."
+"archivos. El servidor es <strong>%(hostname)s</strong>, el protocolo es "
+"SSH o SFTP, y use las <strong>credenciales de inicio de sesión "
+"SSH</strong> con las que creó originalmente esta máquina en su proveedor "
+"cloud. Esto <strong>no</strong> es lo que usa para iniciar sesión en el "
+"correo ni en este panel de control. Sus credenciales SSH probablemente "
+"implican un archivo de clave privada."
 
 #. Status: mt
 #. Phase: 1
@@ -3430,9 +3432,9 @@ msgid ""
 "<tt>%(storage_root)s/www/default</tt> on this machine. They will appear "
 "directly and immediately on the web."
 msgstr ""
-"Cargue su <tt>.html</tt> u otros archivos al directorio "
-"<tt>%(storage_root)s/www/default</tt> en esta máquina. Ellos aparecerán "
-"directamente e inmediatamente en la web."
+"Suba sus archivos <tt>.html</tt> u otros al directorio "
+"<tt>%(storage_root)s/www/default</tt> de esta máquina. Aparecerán directa"
+" e inmediatamente en la web."
 
 #. Status: mt
 #. Phase: 1
