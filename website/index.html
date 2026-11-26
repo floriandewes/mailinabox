@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TrixieMail — Your mail server on Debian 13</title>
+  <meta name="description" content="TrixieMail is an agentic fork of Mail-in-a-Box: a one-click mail server on Debian 13 with internationalized control panel and first-class human and agent installs.">
+  <link rel="canonical" href="https://github.com/quantenland-ai/trixiemail">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-brand" href="#top">TrixieMail</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span aria-hidden="true"></span>
+      </button>
+      <ul id="nav-menu" class="nav-links">
+        <li><a href="#what">What</a></li>
+        <li><a href="#different">Different</a></li>
+        <li><a href="#inside">Inside</a></li>
+        <li><a href="#install">Install</a></li>
+        <li><a href="#help">Help</a></li>
+        <li><a class="nav-cta" href="https://github.com/quantenland-ai/trixiemail">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero" aria-labelledby="brand">
+      <div class="hero-plane" aria-hidden="true">
+        <svg class="hero-art" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" role="img">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#9ec9d4"/>
+              <stop offset="45%" stop-color="#d5e8ee"/>
+              <stop offset="100%" stop-color="#eef5f7"/>
+            </linearGradient>
+            <linearGradient id="horizon" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#0b3d4a" stop-opacity="0"/>
+              <stop offset="55%" stop-color="#0b3d4a" stop-opacity="0.08"/>
+              <stop offset="100%" stop-color="#0b3d4a" stop-opacity="0.22"/>
+            </linearGradient>
+            <radialGradient id="glow" cx="72%" cy="38%" r="42%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="1440" height="900" fill="url(#sky)"/>
+          <rect width="1440" height="900" fill="url(#glow)"/>
+          <rect width="1440" height="900" fill="url(#horizon)"/>
+          <!-- Desktop route mesh (right side; clear of copy) -->
+          <g class="routes routes-desktop" fill="none" stroke="#0b3d4a" stroke-opacity="0.22" stroke-width="1.4">
+            <path class="route r1" d="M720 520 C 860 440, 940 360, 1080 300 S 1280 240, 1400 280"/>
+            <path class="route r2" d="M780 200 C 900 160, 1020 220, 1160 180 S 1320 120, 1420 150"/>
+            <path class="route r3" d="M700 680 C 860 620, 980 560, 1140 520 S 1300 500, 1420 540"/>
+          </g>
+          <g class="nodes nodes-desktop" fill="#0b3d4a">
+            <circle class="node n1" cx="1080" cy="300" r="5" opacity="0.4"/>
+            <circle class="node n2" cx="1400" cy="280" r="6" opacity="0.45"/>
+            <circle class="node n3" cx="1160" cy="180" r="4.5" opacity="0.38"/>
+            <circle class="node n4" cx="1420" cy="150" r="5.5" opacity="0.42"/>
+            <circle class="node n5" cx="1140" cy="520" r="5" opacity="0.4"/>
+            <circle class="node n6" cx="1420" cy="540" r="6" opacity="0.45"/>
+          </g>
+          <!-- Mobile routes sit in the upper band of the tall viewport crop -->
+          <g class="routes routes-mobile" fill="none" stroke="#0b3d4a" stroke-opacity="0.2" stroke-width="1.4">
+            <path class="route r1" d="M540 160 C 620 120, 700 180, 780 140 S 900 90, 980 130"/>
+            <path class="route r2" d="M520 260 C 640 230, 720 290, 820 250 S 940 210, 1020 240"/>
+          </g>
+          <g class="nodes nodes-mobile" fill="#0b3d4a">
+            <circle class="node n1" cx="780" cy="140" r="4.5" opacity="0.4"/>
+            <circle class="node n2" cx="980" cy="130" r="5" opacity="0.45"/>
+            <circle class="node n3" cx="820" cy="250" r="4.5" opacity="0.38"/>
+          </g>
+          <!-- Soft terrain band suggesting a machine horizon -->
+          <path fill="#0b3d4a" fill-opacity="0.1" d="M0 710 C 180 680, 320 740, 480 720 S 780 660, 960 700 S 1240 760, 1440 730 L 1440 900 L 0 900 Z"/>
+          <path fill="#0b3d4a" fill-opacity="0.16" d="M0 780 C 220 750, 400 800, 600 775 S 980 730, 1180 770 S 1360 810, 1440 790 L 1440 900 L 0 900 Z"/>
+        </svg>
+      </div>
+
+      <div class="hero-copy">
+        <p id="brand" class="brand">TrixieMail</p>
+        <h1>Take back control of your email on Debian&nbsp;13.</h1>
+        <p class="lede">A one-click mail server—SMTP, IMAP, webmail, contacts, calendar, and DNS—with installs built for humans and AI agents.</p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#install">Install TrixieMail</a>
+          <a class="btn btn-ghost" href="https://github.com/quantenland-ai/trixiemail">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="what" class="section section-what">
+      <div class="wrap narrow">
+        <p class="eyebrow">What it is</p>
+        <h2>Your own mail service provider, in a few easy steps.</h2>
+        <p>
+          <strong>Trixie Mail</strong> (software id <strong>TrixieMail</strong>) is an agentic fork of
+          <a href="https://github.com/mail-in-a-box/mailinabox">Mail-in-a-Box</a>.
+          It turns a fresh Debian&nbsp;13 (Trixie) machine into a working mail appliance—
+          sort of like making your own Gmail, but one you control from top to bottom.
+        </p>
+        <p>
+          You don’t need to be a systems expert. There are no user-configurable setup options
+          beyond a few install questions (or an <code>install.conf</code>). It just works.
+        </p>
+      </div>
+    </section>
+
+    <section id="different" class="section section-diff">
+      <div class="wrap">
+        <p class="eyebrow">Why this fork</p>
+        <h2>Built for Debian, languages, and agents.</h2>
+        <p class="section-intro">Three first-class differences from upstream Mail-in-a-Box—grounded in this repository.</p>
+
+        <div class="diff-grid">
+          <article class="diff-item">
+            <h3>Debian&nbsp;13 for security</h3>
+            <p>
+              TrixieMail installs <strong>only on Debian&nbsp;13 (Trixie)</strong>. The installer aborts on other systems.
+              Upstream Mail-in-a-Box tracks Ubuntu&nbsp;22.04; this fork deliberately moves the stack to Debian packages—
+              including Dovecot&nbsp;2.4, PHP&nbsp;8.4, and current Nextcloud—so you stay on a modern, security-focused base.
+            </p>
+            <p class="note">Do not use the upstream one-line installer at mailinabox.email; that tracks the Ubuntu release.</p>
+          </article>
+
+          <article class="diff-item">
+            <h3>Internationalization</h3>
+            <p>
+              The control panel ships with <strong>i18n</strong>: gettext / Flask-Babel catalogs and a language switcher
+              for English, German, French, Spanish, Italian, Portuguese, Dutch, and Polish.
+              Internationalized domain names (IDNs) are supported for mail domains; SMTPUTF8 is not.
+            </p>
+          </article>
+
+          <article class="diff-item">
+            <h3>Human &amp; agentic installs</h3>
+            <p>
+              Interactive setup still asks for timezone, admin email, hostname, IP, and password.
+              Agents write <code>install.conf</code> and run <code>setup/start.sh --noninteractive</code>—
+              no TTY, no hanging prompts, missing keys abort immediately. Consent for identity and secrets stays explicit.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="section section-stack">
+      <div class="wrap">
+        <p class="eyebrow">Compared with upstream</p>
+        <h2>Same idea. Newer stack.</h2>
+        <div class="compare" role="table" aria-label="Software comparison">
+          <div class="compare-row compare-head" role="row">
+            <span role="columnheader">Component</span>
+            <span role="columnheader">Mail-in-a-Box</span>
+            <span role="columnheader">TrixieMail</span>
+          </div>
+          <div class="compare-row" role="row"><span>OS</span><span>Ubuntu 22.04 LTS</span><span>Debian 13 only</span></div>
+          <div class="compare-row" role="row"><span>PHP</span><span>8.0</span><span>8.4</span></div>
+          <div class="compare-row" role="row"><span>Nextcloud</span><span>27.1.11</span><span>35.0.2</span></div>
+          <div class="compare-row" role="row"><span>Dovecot</span><span>2.3 (Ubuntu)</span><span>2.4 (Debian)</span></div>
+          <div class="compare-row" role="row"><span>Install mode</span><span>Interactive</span><span>Interactive + agentic</span></div>
+          <div class="compare-row" role="row"><span>Control panel</span><span>English UI</span><span>i18n (8 locales)</span></div>
+        </div>
+        <p class="fineprint">Figures from this repository’s README comparison table. Roundcube and Z-Push pins match upstream where noted there.</p>
+      </div>
+    </section>
+
+    <section id="inside" class="section section-inside">
+      <div class="wrap">
+        <p class="eyebrow">In the box</p>
+        <h2>A complete mail appliance.</h2>
+        <p class="section-intro">TrixieMail installs and configures the pieces you need—and no more.</p>
+        <ul class="feature-list">
+          <li><strong>Mail</strong> — SMTP (Postfix), IMAP (Dovecot), webmail (Roundcube), Exchange ActiveSync (Z-Push)</li>
+          <li><strong>Contacts &amp; calendar</strong> — CardDAV / CalDAV via Nextcloud</li>
+          <li><strong>Protection</strong> — SpamAssassin; optional greylisting (off by default); fail2ban; ufw</li>
+          <li><strong>DNS</strong> — nsd with SPF, DKIM, DMARC, DNSSEC, DANE TLSA, MTA-STS, and SSHFP records</li>
+          <li><strong>TLS</strong> — Let’s Encrypt certificates for HTTPS and mail services</li>
+          <li><strong>Ops</strong> — duplicity backups, munin monitoring, daily health checks, control panel + REST API</li>
+        </ul>
+        <p>
+          Your box can host mail for multiple users and domains, and can serve simple static websites over HTTPS—
+          or point domains elsewhere with custom DNS in the control panel.
+          See the <a href="https://github.com/quantenland-ai/trixiemail/blob/main/security.md">security guide</a> for the threat model.
+        </p>
+      </div>
+    </section>
+
+    <section id="install" class="section section-install">
+      <div class="wrap">
+        <p class="eyebrow">Get it</p>
+        <h2>Install on a fresh Debian&nbsp;13 machine.</h2>
+        <p class="section-intro">
+          Requirements: dedicated Debian&nbsp;13, x86_64/i686, ≥512&nbsp;MB RAM (768&nbsp;MB+ recommended),
+          public IPv4, outbound TCP&nbsp;25, and a domain you control. Suggested hostname: <code>box.&lt;your-domain&gt;</code>.
+        </p>
+
+        <div class="install-switch" data-install-switch>
+          <div class="install-tabs" role="tablist" aria-label="Install method">
+            <button type="button" role="tab" id="tab-human" aria-controls="panel-human" aria-selected="true" data-tab="human">Human install</button>
+            <button type="button" role="tab" id="tab-agent" aria-controls="panel-agent" aria-selected="false" data-tab="agent">Agentic install</button>
+          </div>
+
+          <div class="install-panels">
+            <div class="install-panel" role="tabpanel" id="panel-human" aria-labelledby="tab-human" data-panel="human">
+              <p>On the machine:</p>
+              <pre class="code-block"><code>sudo apt update
+sudo apt install -y git
+git clone https://github.com/quantenland-ai/trixiemail
+cd trixiemail
+sudo setup/start.sh</code></pre>
+              <p>
+                Setup asks for timezone, admin email, hostname, public IP (if needed), and the first account password.
+                When it finishes it prints <em>Your Trixie Mail is running.</em> and the control panel URL
+                (<code>https://box.example.com/admin</code>).
+              </p>
+              <p class="note">
+                This port sets up a new box; it does not upgrade an older Mail-in-a-Box Ubuntu data directory.
+                To change answers later: <code>sudo trixiemail</code> or <code>sudo mailinabox</code>.
+              </p>
+            </div>
+
+            <div class="install-panel" role="tabpanel" id="panel-agent" aria-labelledby="tab-agent" hidden data-panel="agent">
+              <p>Agents install without a TTY: collect answers, write config, then run noninteractive setup.</p>
+              <ol class="steps">
+                <li><strong>Ask the user</strong> for <code>PRIMARY_HOSTNAME</code>, <code>EMAIL_ADDR</code>, <code>EMAIL_PW</code>, <code>TIMEZONE</code>, and confirm <code>PUBLIC_IP</code> (or <code>auto</code>). Never invent an admin address from the hostname.</li>
+                <li><strong>Write</strong> <code>install.conf</code> from <code>conf/install.conf.example</code> (gitignored; holds the password).</li>
+                <li><strong>Run</strong> <code>sudo setup/start.sh --noninteractive</code>.</li>
+                <li><strong>Report</strong> admin email, password (once, if generated), control panel URL, and that DNS still needs setting.</li>
+              </ol>
+              <pre class="code-block"><code>cp conf/install.conf.example install.conf
+# edit install.conf — never commit it
+sudo setup/start.sh --noninteractive</code></pre>
+              <p class="note">
+                Hostname need not resolve before install. Incomplete config with <code>--noninteractive</code> exits with an error instead of hanging.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p class="legal">
+          TrixieMail is open source under the project <a href="https://github.com/quantenland-ai/trixiemail/blob/main/LICENSE">LICENSE</a>.
+          Setup uses Let’s Encrypt; accept the Let’s Encrypt Subscriber Agreement before you begin.
+        </p>
+      </div>
+    </section>
+
+    <section id="status" class="section section-status">
+      <div class="wrap narrow">
+        <p class="eyebrow">Status</p>
+        <h2>Current release <span class="version">26.11.1</span></h2>
+        <p>
+          Versioning is <strong>YY.MM[.N]</strong>, aiming for a release about every 1–2 months.
+          Release history lives in <a href="https://github.com/quantenland-ai/trixiemail/blob/main/CHANGELOG.md">CHANGELOG.md</a>.
+          An experimental uninstaller (<code>setup/uninstall.sh</code>) can reverse install side effects; mail data is kept by default.
+        </p>
+      </div>
+    </section>
+
+    <section id="why" class="section section-why">
+      <div class="wrap narrow">
+        <p class="eyebrow">Why build this</p>
+        <h2>Decentralize mail. Keep it honest.</h2>
+        <ul class="goals">
+          <li>Make deploying a good mail server easy.</li>
+          <li>Promote decentralization, innovation, and privacy on the web.</li>
+          <li>Have automated, auditable, and idempotent configuration.</li>
+          <li>Support headless / agent-driven installs without sacrificing explicit user consent for identity and secrets.</li>
+          <li><em>Not</em> make a totally unhackable, NSA-proof server.</li>
+          <li><em>Not</em> make something customizable by power users.</li>
+        </ul>
+        <p>
+          The <a href="https://github.com/quantenland-ai/trixiemail/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a>
+          supersedes the goals above.
+        </p>
+      </div>
+    </section>
+
+    <section id="help" class="section section-help">
+      <div class="wrap narrow">
+        <p class="eyebrow">Help</p>
+        <h2>Need a hand?</h2>
+        <ol class="help-list">
+          <li>Read the <a href="https://github.com/quantenland-ai/trixiemail/blob/main/README.md">README</a> and <a href="https://github.com/quantenland-ai/trixiemail/blob/main/security.md">security guide</a>.</li>
+          <li>For this fork, <a href="https://github.com/quantenland-ai/trixiemail/issues">open an issue</a> on GitHub.</li>
+          <li>For upstream Ubuntu Mail-in-a-Box, use the <a href="https://discourse.mailinabox.email/">discussion forum</a>.</li>
+        </ol>
+        <p>
+          Other mail services may block or spam-filter mail from your box—a challenge for everyone who runs their own server.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-brand">TrixieMail</p>
+      <p>
+        An agentic fork of Mail-in-a-Box, maintained under Quantenland AI.
+        Runtime paths stay compatible with Mail-in-a-Box; the display name is Trixie Mail.
+      </p>
+      <p class="footer-links">
+        <a href="https://github.com/quantenland-ai/trixiemail">GitHub</a>
+        <a href="https://github.com/quantenland-ai/trixiemail/blob/main/LICENSE">License</a>
+        <a href="https://github.com/mail-in-a-box/mailinabox">Upstream</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
