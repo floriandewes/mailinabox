@@ -3,7 +3,7 @@
 # The API can be accessed on the command line, e.g. use `curl` like so:
 #    curl --user $(</var/lib/mailinabox/api.key): http://localhost:10222/mail/users
 #
-# During development, you can start the Mail-in-a-Box control panel
+# During development, you can start the Trixie Mail control panel
 # by running this script, e.g.:
 #
 # service mailinabox stop # stop the system process
@@ -789,7 +789,7 @@ def log_failed_login(request):
 
 	# We need to add a timestamp to the log message, otherwise /dev/log will eat the "duplicate"
 	# message.
-	app.logger.warning("Mail-in-a-Box Management Daemon: Failed login attempt from ip %s - timestamp %s", ip, time.time())
+	app.logger.warning("Trixie Mail Management Daemon: Failed login attempt from ip %s - timestamp %s", ip, time.time())
 
 
 # APP

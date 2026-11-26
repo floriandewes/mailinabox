@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 #
 # This is a tool Josh uses on his box serving mailinabox.email to parse the nginx
-# access log to see how many people are installing Mail-in-a-Box each day, by
+# access log to see how many people are installing Trixie Mail each day, by
 # looking at accesses to the bootstrap.sh script (which is currently at the URL
 # .../setup.sh).
 

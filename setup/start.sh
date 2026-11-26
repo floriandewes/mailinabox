@@ -55,15 +55,17 @@ else
 	FIRST_TIME_SETUP=1
 fi
 
-# Put a start script in a global location. We tell the user to run 'mailinabox'
-# in the first dialog prompt, so we should do this before that starts.
-# Pass through CLI args so `mailinabox --noninteractive` keeps working.
+# Put a start script in a global location. We tell the user to run 'trixiemail'
+# (or legacy 'mailinabox') in the first dialog prompt, so we should do this
+# before that starts. Pass through CLI args so `--noninteractive` keeps working.
 cat > /usr/local/bin/mailinabox << EOF;
 #!/bin/bash
 cd $PWD
 source setup/start.sh "\$@"
 EOF
 chmod +x /usr/local/bin/mailinabox
+# Product CLI name (same installer); keep mailinabox for compatibility.
+ln -sf mailinabox /usr/local/bin/trixiemail
 
 # Ask the user for the PRIMARY_HOSTNAME, PUBLIC_IP, and PUBLIC_IPV6,
 # if values have not already been set in environment variables. When running
@@ -88,7 +90,7 @@ fi
 # If the STORAGE_ROOT is missing the mailinabox.version file that lists a
 # migration (schema) number for the files stored there, assume this is a fresh
 # installation to that directory and write the file to contain the current
-# migration number for this version of Mail-in-a-Box.
+# migration number for this version of Trixie Mail.
 if ! id -u "$STORAGE_USER" >/dev/null 2>&1; then
 	useradd -m "$STORAGE_USER"
 fi
@@ -120,7 +122,7 @@ EOF
 # Capture installed packages before setup starts installing the mail
 # stack. The uninstaller diffs against this file to decide what apt
 # packages to purge. Only do this on first-time setup: capturing on a
-# later re-run would snapshot Mail-in-a-Box packages as the baseline and
+# later re-run would snapshot Trixie Mail packages as the baseline and
 # make uninstall via diff a no-op. Existing baselines are never
 # overwritten. questions.sh may already have pulled in dialog/python;
 # those stay in the baseline and are kept. Boxes installed before this
@@ -130,7 +132,7 @@ if [ -n "${FIRST_TIME_SETUP:-}" ]; then
 	capture_package_baseline "$STORAGE_ROOT"
 elif [ ! -f "$(package_baseline_path "$STORAGE_ROOT")" ]; then
 	echo "Note: no package baseline at $STORAGE_ROOT/installer/dpkg-selections-baseline.txt"
-	echo "Uninstall will use the curated Mail-in-a-Box package list (see setup/uninstall.sh)."
+	echo "Uninstall will use the curated Trixie Mail package list (see setup/uninstall.sh)."
 fi
 
 # Start service configuration.
@@ -152,7 +154,7 @@ source setup/munin.sh
 # Wait for the management daemon to start...
 until nc -z -w 4 127.0.0.1 10222
 do
-	echo "Waiting for the Mail-in-a-Box management daemon to start..."
+	echo "Waiting for the Trixie Mail management daemon to start..."
 	sleep 2
 done
 
@@ -175,7 +177,7 @@ source setup/firstuser.sh
 if [ ! -d "$STORAGE_ROOT/ssl/lets_encrypt/accounts/acme-v02.api.letsencrypt.org/" ]; then
 echo
 echo "-----------------------------------------------"
-echo "Mail-in-a-Box uses Let's Encrypt to provision free SSL/TLS certificates"
+echo "Trixie Mail uses Let's Encrypt to provision free SSL/TLS certificates"
 echo "to enable HTTPS connections to your box. We're automatically"
 echo "agreeing you to their subscriber agreement. See https://letsencrypt.org."
 echo
@@ -186,7 +188,7 @@ fi
 echo
 echo "-----------------------------------------------"
 echo
-echo "Your Mail-in-a-Box is running."
+echo "Your Trixie Mail is running."
 echo
 echo "Please log in to the control panel for further instructions at:"
 echo

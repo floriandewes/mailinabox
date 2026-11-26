@@ -1,8 +1,8 @@
 openapi: 3.0.3
 info:
-  title: Mail-in-a-Box
+  title: Trixie Mail
   description: |
-    Mail-in-a-Box API HTTP specification.
+    Trixie Mail API HTTP specification.
 
     # Introduction
     This API is documented in [**OpenAPI format**](http://spec.openapis.org/oas/v3.0.3).
@@ -10,18 +10,18 @@ info:
 
     All endpoints are relative to `https://{host}/admin` and are secured with [`Basic Access` authentication](https://en.wikipedia.org/wiki/Basic_access_authentication). If you have multi-factor authentication enabled, authentication with a `user:password` combination will fail unless a valid OTP is supplied via the `x-auth-token` header. Authentication via a `user:user_key` pair is possible without the header being present.
   contact:
-    name: Mail-in-a-Box support
-    url: https://mailinabox.email/
+    name: Trixie Mail
+    url: https://github.com/quantenland-ai/TrixieMail
   license:
     name: CC0 1.0 Universal
     url: https://creativecommons.org/publicdomain/zero/1.0/legalcode
-  version: "26.11"
+  version: "26.11.1"
   x-logo:
     url: https://mailinabox.email/static/logo.png
-    altText: Mail-in-a-Box logo
+    altText: Trixie Mail (fork of Mail-in-a-Box)
 externalDocs:
-  description: Find out more about Mail-in-a-box.
-  url: https://mailinabox.email/
+  description: Trixie Mail repository (agentic fork of Mail-in-a-Box).
+  url: https://github.com/quantenland-ai/TrixieMail
 servers:
   - url: https://{host}/admin
     variables:
@@ -152,7 +152,7 @@ paths:
       tags:
         - System
       summary: Get system version
-      description: Returns installed Mail-in-a-Box version.
+      description: Returns installed Trixie Mail version.
       operationId: getSystemVersion
       x-codeSamples:
         - lang: curl
@@ -166,7 +166,7 @@ paths:
             text/html:
               schema:
                 $ref: '#/components/schemas/SystemVersionResponse'
-              example: "26.11"
+              example: "26.11.1"
         403:
           description: Forbidden
           content:
@@ -178,7 +178,7 @@ paths:
       tags:
         - System
       summary: Get system upstream version
-      description: Returns Mail-in-a-Box upstream version.
+      description: Returns Trixie Mail upstream version.
       operationId: getSystemUpstreamVersion
       x-codeSamples:
         - lang: curl
@@ -192,7 +192,7 @@ paths:
             text/html:
               schema:
                 $ref: '#/components/schemas/SystemVersionUpstreamResponse'
-              example: "26.11"
+              example: "26.11.1"
         403:
           description: Forbidden
           content:
@@ -2456,11 +2456,11 @@ components:
     SystemVersionResponse:
       type: string
       description: System version response.
-      example: "26.11"
+      example: "26.11.1"
     SystemVersionUpstreamResponse:
       type: string
       description: System version upstream response.
-      example: "26.11"
+      example: "26.11.1"
     SystemUpdatesResponse:
       type: string
       description: System updates response.

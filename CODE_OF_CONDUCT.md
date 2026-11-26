@@ -1,16 +1,16 @@
-# Mail-in-a-Box Code of Conduct
+# Trixie Mail Code of Conduct
 
-Mail-in-a-Box is an open source community project about working, as a group, to empower ourselves and others to have control over our own digital communications. Just as we hope to increase technological diversity on the Internet through decentralization, we also believe that diverse viewpoints and voices among our community members foster innovation and creative solutions to the challenges we face.
+Trixie Mail is an open source community project about working, as a group, to empower ourselves and others to have control over our own digital communications. Just as we hope to increase technological diversity on the Internet through decentralization, we also believe that diverse viewpoints and voices among our community members foster innovation and creative solutions to the challenges we face.
 
 We are committed to providing a safe, welcoming, and harassment-free space for collaboration, for everyone, without regard to age, disability, economic situation, ethnicity, gender identity and expression, language fluency, level of knowledge or experience, nationality, personal appearance, race, religion, sexual identity and orientation, or any other attribute. Community comes first. This policy supersedes all other project goals.
 
-The maintainers of Mail-in-a-Box share the dual responsibility of leading by example and enforcing these policies as necessary to maintain an open and welcoming environment. All community members should be excellent to each other.
+The maintainers of Trixie Mail share the dual responsibility of leading by example and enforcing these policies as necessary to maintain an open and welcoming environment. All community members should be excellent to each other.
 
 ## Scope
 
-This Code of Conduct applies to all places where Mail-in-a-Box community activity is occurring, including on GitHub, in discussion forums, on Slack, on social media, and in real life. The Code of Conduct applies not only on websites/at events run by the Mail-in-a-Box community (e.g. our GitHub organization, our Slack team) but also at any other location where the Mail-in-a-Box community is present (e.g. in issues of other GitHub organizations where Mail-in-a-Box community members are discussing problems related to Mail-in-a-Box, or real-life professional conferences), or whenever a Mail-in-a-Box community member is representing Mail-in-a-Box to the public at large or acting on behalf of Mail-in-a-Box.
+This Code of Conduct applies to all places where Trixie Mail community activity is occurring, including on GitHub, in discussion forums, on Slack, on social media, and in real life. The Code of Conduct applies not only on websites/at events run by the Trixie Mail community (e.g. our GitHub organization, our Slack team) but also at any other location where the Trixie Mail community is present (e.g. in issues of other GitHub organizations where Trixie Mail community members are discussing problems related to Trixie Mail, or real-life professional conferences), or whenever a Trixie Mail community member is representing Trixie Mail to the public at large or acting on behalf of Trixie Mail.
 
-This code does not apply to activity on a server running Mail-in-a-Box software, unless your server is hosting a service for the Mail-in-a-Box community at large.
+This code does not apply to activity on a server running Trixie Mail software, unless your server is hosting a service for the Trixie Mail community at large.
 
 ## Our Standards
 
@@ -40,7 +40,7 @@ We will remove, edit, or reject comments, commits, code, wiki edits, issues, and
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project lead, [Joshua Tauberer](https://razor.occams.info/). All reports will be treated confidentially, impartially, consistently, and swiftly.
 
-Because the need for confidentiality for all parties involved in an enforcement action outweighs the goals of openness, limited information will be shared with the Mail-in-a-Box community regarding enforcement actions that have taken place.
+Because the need for confidentiality for all parties involved in an enforcement action outweighs the goals of openness, limited information will be shared with the Trixie Mail community regarding enforcement actions that have taken place.
 
 ## Attribution
 

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 #
 # This is a command-line script for calling management APIs
-# on the Mail-in-a-Box control panel backend. The script
+# on the Trixie Mail control panel backend. The script
 # reads /var/lib/mailinabox/api.key for the backend's
 # root API key. This file is readable only by root, so this
 # tool can only be used as root.
@@ -51,7 +51,7 @@ def setup_key_auth(mgmt_uri):
 
 	auth_handler = urllib.request.HTTPBasicAuthHandler()
 	auth_handler.add_password(
-		realm='Mail-in-a-Box Management Server',
+		realm='Trixie Mail Management Server',
 		uri=mgmt_uri,
 		user=key,
 		passwd='')

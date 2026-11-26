@@ -19,7 +19,7 @@ echo "Installing Nextcloud (contacts/calendar)..."
 #   for whether it supports the version of PHP available on this machine.
 # * This port installs this release directly. A later release of this port
 #   moves an existing database forward with occ upgrade. There is no path
-#   from older Mail-in-a-Box Nextcloud releases.
+#   from older Trixie Mail Nextcloud releases.
 # * The hash is the SHA1 hash of the ZIP package, which you can find by just running this script and
 #   copying it from the error message when it doesn't match what is below.
 nextcloud_ver=35.0.2
@@ -246,7 +246,7 @@ fi
 # * trusted_domains is reset to localhost by autoconfig starting with ownCloud 8.1.1,
 #   so set it here. It also can change if the box's PRIMARY_HOSTNAME changes, so
 #   this will make sure it has the right value.
-# * Some settings weren't included in previous versions of Mail-in-a-Box.
+# * Some settings weren't included in previous versions of Trixie Mail.
 # * We need to set the timezone to the system timezone to allow fail2ban to ban
 #   users within the proper timeframe
 # * We need to set the logdateformat to something that will work correctly with fail2ban
@@ -346,7 +346,7 @@ tools/editconf.py /etc/php/"$PHP_VER"/cli/conf.d/10-opcache.ini -c ';' \
 # https://docs.nextcloud.com/server/24/admin_manual/groupware/calendar.html#background-jobs
 cat > /etc/cron.d/mailinabox-nextcloud << EOF;
 #!/bin/bash
-# Mail-in-a-Box
+# Trixie Mail
 */5 * * * *	www-data	php$PHP_VER -f /usr/local/lib/owncloud/cron.php
 */5 * * * *	www-data	php$PHP_VER -f /usr/local/lib/owncloud/occ dav:send-event-reminders
 EOF

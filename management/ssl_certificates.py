@@ -339,7 +339,7 @@ def provision_certificates(env, limit_domains):
 						"certbot",
 						"certonly",
 						#"-v", # just enough to see ACME errors
-						"--non-interactive", # will fail if user hasn't registered during Mail-in-a-Box setup
+						"--non-interactive", # will fail if user hasn't registered during Trixie Mail setup
 
 						"-d", ",".join(domain_list), # first will be main domain
 

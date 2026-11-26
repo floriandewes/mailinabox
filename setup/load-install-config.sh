@@ -15,7 +15,7 @@
 
 show_install_usage() {
 	cat <<'EOF'
-Mail-in-a-Box setup
+Trixie Mail setup
 
 Usage:
   sudo setup/start.sh

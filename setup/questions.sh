@@ -24,11 +24,11 @@ if [ -z "${NONINTERACTIVE:-}" ]; then
 		hide_output pip3 install "email_validator>=1.0.0" || exit 1
 	fi
 
-	message_box "Mail-in-a-Box Installation" \
-		"Hello and thanks for deploying a Mail-in-a-Box!
+	message_box "Trixie Mail Installation" \
+		"Hello and thanks for deploying Trixie Mail!
 		\n\nI'm going to ask you a few questions.
-		\n\nTo change your answers later, just run 'sudo mailinabox' from the command line.
-		\n\nNOTE: You should only install this on a brand new Debian 13 (Trixie) installation 100% dedicated to Mail-in-a-Box. Mail-in-a-Box will, for example, remove apache2."
+		\n\nTo change your answers later, just run 'sudo trixiemail' (or 'sudo mailinabox') from the command line.
+		\n\nNOTE: You should only install this on a brand new Debian 13 (Trixie) installation 100% dedicated to Trixie Mail. Trixie Mail will, for example, remove apache2."
 fi
 
 # Fail closed in headless mode instead of calling dialog/getpass with no TTY.
@@ -234,8 +234,8 @@ if [ "$PRIVATE_IPV6" != "$PUBLIC_IPV6" ]; then
 	echo "Private IPv6 Address: $PRIVATE_IPV6"
 fi
 if [ -f VERSION ]; then
-	echo "Mail-in-a-Box Version: $(tr -d '[:space:]' < VERSION)"
+	echo "Trixie Mail Version: $(tr -d '[:space:]' < VERSION)"
 elif [ -f /usr/bin/git ] && [ -d .git ]; then
-	echo "Mail-in-a-Box Version: $(git describe --always)"
+	echo "Trixie Mail Version: $(git describe --always)"
 fi
 echo

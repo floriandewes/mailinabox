@@ -3,7 +3,7 @@
 # Schema changes for later releases of this Debian 13 port.
 #
 # The setup scripts create the current storage layout themselves. Migrations
-# numbered 15 and below belonged to older Mail-in-a-Box releases and are not
+# numbered 15 and below belonged to older Trixie Mail releases and are not
 # part of this port. Add migration_16, migration_17, and so on when a later
 # release of this port changes data that is already stored.
 
@@ -13,7 +13,7 @@ import sys
 sys.path.insert(0, 'management')
 from utils import load_environment
 
-# Highest migration number of the old Mail-in-a-Box series. Fresh installs
+# Highest migration number of the old Trixie Mail series. Fresh installs
 # record this number. Later releases of this port start at 16.
 BASELINE = 15
 
@@ -57,7 +57,7 @@ def run_migrations():
 			break
 
 		print()
-		print("Running migration to Mail-in-a-Box #%d..." % next_ver)
+		print("Running migration to Trixie Mail #%d..." % next_ver)
 
 		try:
 			migration_func(env)

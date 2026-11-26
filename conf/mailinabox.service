@@ -1,5 +1,5 @@
 [Unit]
-Description=Mail-in-a-Box System Management Service
+Description=Trixie Mail System Management Service
 After=multi-user.target
 
 [Service]
