@@ -10,6 +10,7 @@ import rtyaml
 import dns.resolver
 
 from utils import shell, load_env_vars_from_file, safe_domain_name, sort_domains, get_ssh_port
+from i18n import _
 from ssl_certificates import get_ssl_certificates, check_certificate
 
 # From https://stackoverflow.com/questions/3026957/how-to-validate-a-domain-name-using-regex-php/16491074#16491074
@@ -599,7 +600,7 @@ def get_dns_zonefile(zone, env):
 		if zone == domain:
 			break
 	else:
-		msg = f"{zone} is not a domain name that corresponds to a zone."
+		msg = _("%(zone)s is not a domain name that corresponds to a zone.") % {"zone": zone}
 		raise ValueError(msg)
 
 	nsd_zonefile = "/etc/nsd/zones/" + fn
@@ -906,24 +907,24 @@ def set_custom_dns_record(qname, rtype, value, action, env):
 	else:
 		# No match.
 		if qname != "_secondary_nameserver":
-			msg = f"{qname} is not a domain name or a subdomain of a domain name managed by this box."
+			msg = _("%(qname)s is not a domain name or a subdomain of a domain name managed by this box.") % {"qname": qname}
 			raise ValueError(msg)
 
 	# validate rtype
 	rtype = rtype.upper()
 	if value is not None and qname != "_secondary_nameserver":
 		if not re.search(DOMAIN_RE, qname):
-			msg = "Invalid name."
+			msg = _("Invalid name.")
 			raise ValueError(msg)
 
 		if rtype in {"A", "AAAA"}:
 			if value != "local": # "local" is a special flag for us
 				v = ipaddress.ip_address(value) # raises a ValueError if there's a problem
-				if rtype == "A" and not isinstance(v, ipaddress.IPv4Address): raise ValueError("That's an IPv6 address.")
-				if rtype == "AAAA" and not isinstance(v, ipaddress.IPv6Address): raise ValueError("That's an IPv4 address.")
+				if rtype == "A" and not isinstance(v, ipaddress.IPv4Address): raise ValueError(_("That's an IPv6 address."))
+				if rtype == "AAAA" and not isinstance(v, ipaddress.IPv6Address): raise ValueError(_("That's an IPv4 address."))
 		elif rtype in {"CNAME", "NS"}:
 			if rtype == "NS" and qname == zone:
-				msg = "NS records can only be set for subdomains."
+				msg = _("NS records can only be set for subdomains.")
 				raise ValueError(msg)
 
 			# ensure value has a trailing dot
@@ -931,13 +932,13 @@ def set_custom_dns_record(qname, rtype, value, action, env):
 				value += "."
 
 			if not re.search(DOMAIN_RE, value):
-				msg = "Invalid value."
+				msg = _("Invalid value.")
 				raise ValueError(msg)
 		elif rtype in {"CNAME", "TXT", "SRV", "MX", "SSHFP", "CAA"}:
 			# anything goes
 			pass
 		else:
-			msg = f"Unknown record type '{rtype}'."
+			msg = _("Unknown record type '%(rtype)s'.") % {"rtype": rtype}
 			raise ValueError(msg)
 
 	# load existing config
@@ -972,7 +973,7 @@ def set_custom_dns_record(qname, rtype, value, action, env):
 				made_change = True
 				continue
 		else:
-			raise ValueError("Invalid action: " + action)
+			raise ValueError(_("Invalid action: %(action)s") % {"action": action})
 
 		# Preserve this record.
 		newconfig.append((_qname, _rtype, _value))
@@ -1049,7 +1050,7 @@ def set_secondary_dns(hostnames, env):
 					try:
 						resolver.resolve(item, "AAAA")
 					except (dns.resolver.NoNameservers, dns.resolver.NXDOMAIN, dns.resolver.NoAnswer, dns.resolver.Timeout):
-						msg = f"Could not resolve the IP address of {item}."
+						msg = _("Could not resolve the IP address of %(item)s.") % {"item": item}
 						raise ValueError(msg)
 			else:
 				# Validate IP address.
@@ -1059,7 +1060,7 @@ def set_secondary_dns(hostnames, env):
 					else:
 						ipaddress.ip_address(item[4:]) # raises a ValueError if there's a problem
 				except ValueError:
-					msg = f"'{item[4:]}' is not an IPv4 or IPv6 address or subnet."
+					msg = _("'%(item)s' is not an IPv4 or IPv6 address or subnet.") % {"item": item[4:]}
 					raise ValueError(msg)
 
 		# Set.

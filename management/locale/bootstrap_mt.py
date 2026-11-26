@@ -4,9 +4,13 @@
 Keeps the product name \"Trixie Mail\" untranslated. Run after extract.sh:
   python3 locale/bootstrap_mt.py
 Then: ./locale/compile.sh
+
+Inline MT covers chrome strings; management/locale/mt_extra.json holds
+Status Checks + auth/API error follow-up translations (merged at runtime).
 """
 from __future__ import annotations
 
+import json
 import os
 from pathlib import Path
 
@@ -15,6 +19,7 @@ from babel.messages.pofile import read_po, write_po
 
 LOCALE_DIR = Path(__file__).resolve().parent
 POT_PATH = LOCALE_DIR / "messages.pot"
+MT_EXTRA_PATH = LOCALE_DIR / "mt_extra.json"
 LANGS = ("en", "de", "fr", "es", "it", "pt", "nl", "pl")
 
 # msgid (English) → {lang: msgstr}. Empty = leave English / identity.
@@ -494,9 +499,26 @@ PLURAL_FORMS = {
 }
 
 
+def load_mt_table():
+	"""Merge inline MT dict with optional mt_extra.json (status/API follow-up)."""
+	table = {k: dict(v) for k, v in MT.items()}
+	if MT_EXTRA_PATH.is_file():
+		extra = json.loads(MT_EXTRA_PATH.read_text(encoding="utf-8"))
+		for msgid, langs in extra.items():
+			if not isinstance(langs, dict):
+				continue
+			slot = table.setdefault(msgid, {})
+			for lang, msgstr in langs.items():
+				if msgstr:
+					slot[lang] = msgstr
+	return table
+
+
 def main():
 	with POT_PATH.open(encoding="utf-8") as f:
 		pot = read_po(f)
+
+	mt_table = load_mt_table()
 
 	for lang in LANGS:
 		cat = Catalog(
@@ -508,7 +530,7 @@ def main():
 			copyright_holder=pot.copyright_holder,
 			msgid_bugs_address=pot.msgid_bugs_address,
 			creation_date=pot.creation_date,
-			revision_date="2026-11-26 13:40+0000",
+			revision_date="2026-11-26 14:00+0000",
 			last_translator="Trixie Mail MT bootstrap <noreply@localhost>",
 			language_team=f"{lang}",
 			fuzzy=False,
@@ -521,7 +543,7 @@ def main():
 				msgstr = msgid if isinstance(msgid, str) else msgid
 			else:
 				key = msgid if isinstance(msgid, str) else msgid[0]
-				msgstr = MT.get(key, {}).get(lang, "")
+				msgstr = mt_table.get(key, {}).get(lang, "")
 			cat.add(
 				msgid,
 				string=msgstr,

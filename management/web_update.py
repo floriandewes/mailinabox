@@ -1,3 +1,4 @@
+from i18n import _
 # Creates an nginx configuration file so we serve HTTP/HTTPS on all
 # domains for which a mail account has been set up.
 ########################################################################
@@ -252,13 +253,13 @@ def get_web_domains_info(env):
 			tls_cert = get_domain_ssl_files(domain, ssl_certificates, env, allow_missing_cert=True)
 		except OSError: # PRIMARY_HOSTNAME cert is missing
 			tls_cert = None
-		if tls_cert is None: return ("danger", "No certificate installed.")
+		if tls_cert is None: return ("danger", _("No certificate installed."))
 		cert_status, cert_status_details = check_certificate(domain, tls_cert["certificate"], tls_cert["private-key"])
 		if cert_status == "OK":
-			return ("success", "Signed & valid. " + cert_status_details)
+			return ("success", _("Signed & valid. %(details)s") % {"details": cert_status_details})
 		if cert_status == "SELF-SIGNED":
-			return ("warning", "Self-signed. Get a signed certificate to stop warnings.")
-		return ("danger", "Certificate has a problem: " + cert_status)
+			return ("warning", _("Self-signed. Get a signed certificate to stop warnings."))
+		return ("danger", _("Certificate has a problem: %(status)s") % {"status": cert_status})
 
 	return [
 		{

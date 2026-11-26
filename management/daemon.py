@@ -19,6 +19,7 @@ from flask import Flask, request, render_template, Response, send_from_directory
 from flask_babel import Babel
 
 import auth, utils, i18n
+from i18n import _
 from mailconfig import get_mail_users, get_mail_users_ex, get_admins, add_mail_user, set_mail_password, remove_mail_user
 from mailconfig import get_mail_user_privileges, add_remove_mail_user_privilege
 from mailconfig import get_mail_aliases, get_mail_aliases_ex, get_mail_domains, add_mail_alias, remove_mail_alias
@@ -59,6 +60,8 @@ babel.init_app(
 @app.before_request
 def _i18n_before_request():
 	g.locale = i18n.get_locale()
+	# Also activate module-level catalog so pool workers (status checks) inherit it.
+	i18n.activate_locale(g.locale)
 
 @app.context_processor
 def _i18n_template_context():
@@ -102,7 +105,7 @@ def authorized_personnel_only(viewfunc):
 			return viewfunc(*args, **kwargs)
 
 		if not error:
-			error = "You are not an administrator."
+			error = _("You are not an administrator.")
 
 		# Not authorized. Return a 401 (send auth) and a prompt to authorize by default.
 		status = 401
@@ -335,7 +338,7 @@ def mail_greylisting_set():
 	# Same shape as the privacy toggle: a form field named "value".
 	value = request.form.get('value', '')
 	if value not in ('on', 'off'):
-		return ("Greylisting value must be 'on' or 'off'.\n", 400)
+		return (_("Greylisting value must be 'on' or 'off'.") + "\n", 400)
 	try:
 		return set_greylisting(value == 'on', env)
 	except (ValueError, OSError) as e:
@@ -445,7 +448,7 @@ def dns_set_record(qname, rtype="A"):
 
 			# Cannot add empty records.
 			if value == '':
-				return ("No value for the record provided.", 400)
+				return (_("No value for the record provided."), 400)
 
 			if request.method == "POST":
 				# Add a new record (in addition to any existing records
@@ -534,7 +537,7 @@ def ssl_install_cert():
 	ssl_cert = request.form.get('cert')
 	ssl_chain = request.form.get('chain')
 	if domain not in get_web_domains(env):
-		return "Invalid domain name."
+		return _("Invalid domain name.")
 	return install_cert(domain, ssl_cert, ssl_chain, env)
 
 @app.route('/ssl/provision', methods=['POST'])
@@ -575,7 +578,7 @@ def totp_post_enable():
 	token = request.form.get('token')
 	label = request.form.get('label')
 	if not isinstance(token, str):
-		return ("Bad Input", 400)
+		return (_("Bad Input"), 400)
 	try:
 		validate_totp_secret(secret)
 		enable_mfa(request.user_email, "totp", secret, token, label, env)
@@ -597,7 +600,7 @@ def totp_post_disable():
 	if result: # success
 		return "OK"
 	# error
-	return ("Invalid user or MFA id.", 400)
+	return (_("Invalid user or MFA id."), 400)
 
 # WEB
 
@@ -690,7 +693,7 @@ def do_reboot():
 	from status_checks import is_reboot_needed_due_to_package_installation
 	if is_reboot_needed_due_to_package_installation():
 		return utils.shell("check_output", ["/sbin/shutdown", "-r", "now"], capture_stderr=True)
-	return "No reboot is required, so it is not allowed."
+	return _("No reboot is required, so it is not allowed.")
 
 
 @app.route('/system/backup/status')
@@ -796,7 +799,7 @@ def munin_cgi(filename):
 	# "%s" is a placeholder for where the request's querystring will be added
 
 	if filename == "":
-		return ("a path must be specified", 404)
+		return (_("a path must be specified"), 404)
 
 	query_str = request.query_string.decode("utf-8", 'ignore')
 
@@ -811,7 +814,7 @@ def munin_cgi(filename):
 	if code != 0:
 		# nonzero returncode indicates error
 		app.logger.error("munin_cgi: munin-cgi-graph returned nonzero exit code, %s", code)
-		return ("error processing graph image", 500)
+		return (_("error processing graph image"), 500)
 
 	# /usr/lib/munin/cgi/munin-cgi-graph returns both headers and binary png when successful.
 	# A double-Windows-style-newline always indicates the end of HTTP headers.

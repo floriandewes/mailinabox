@@ -3,8 +3,12 @@
 # Client mirror: localStorage key trixiemail-cp-lang.
 # System preference (admin emails / Roundcube / Nextcloud defaults):
 #   $STORAGE_ROOT/ui_locale — written when the CP language is changed.
+#
+# gettext/_ work both in Flask request context and in multiprocessing pool
+# workers (status checks): call activate_locale() before Pool creation so
+# forked children inherit the Translations object.
 
-import gettext
+import gettext as gettext_mod
 import json
 import os
 import re
@@ -16,6 +20,11 @@ try:
 except ImportError:  # pragma: no cover - management venv always has Flask
 	request = None
 	g = None
+
+try:
+	from babel.support import Translations
+except ImportError:  # pragma: no cover - Babel is a management dependency
+	Translations = None
 
 # Phase 1 shipped languages (ISO 639-1). English is the source locale.
 SUPPORTED_LOCALES = ("en", "de", "fr", "es", "it", "pt", "nl", "pl")
@@ -65,6 +74,10 @@ _LOCALE_DIR = os.path.join(os.path.dirname(__file__), "locale")
 _JSON_DIR = os.path.join(_LOCALE_DIR, "json")
 
 _LOCALE_RE = re.compile(r"^[a-z]{2}(?:-[A-Za-z0-9]+)?$")
+
+# Module-level active catalog for pool workers / non-request code paths.
+_active_locale = "en"
+_active_translations = None
 
 
 def locale_dir():
@@ -143,7 +156,7 @@ def gettext_for_locale(lang):
 	"""Return a gettext.gettext bound to lang (stdlib; works outside Flask)."""
 	lang = normalize_locale(lang) or "en"
 	try:
-		trans = gettext.translation(
+		trans = gettext_mod.translation(
 			"messages",
 			localedir=_LOCALE_DIR,
 			languages=[lang],
@@ -163,6 +176,65 @@ def nextcloud_language(lang):
 	"""Nextcloud default_language value for a Phase 1 locale."""
 	lang = normalize_locale(lang) or "en"
 	return NEXTCLOUD_LOCALES.get(lang, "en")
+
+
+def activate_locale(lang):
+	"""Load gettext Translations for lang into module state (fork-friendly).
+
+	Call this before creating a multiprocessing.Pool so workers inherit the
+	active catalog. English keeps translations as None (identity).
+	"""
+	global _active_locale, _active_translations
+	lang = normalize_locale(lang) or "en"
+	_active_locale = lang
+	if lang == "en" or Translations is None:
+		_active_translations = None
+		return
+	# Babel expects the parent locale/ dir (…/locale/<lang>/LC_MESSAGES/messages.mo).
+	try:
+		_active_translations = Translations.load(_LOCALE_DIR, locales=[lang], domain="messages")
+	except Exception:
+		_active_translations = None
+
+
+def get_active_locale():
+	return _active_locale
+
+
+def gettext(message):
+	"""Translate message using request locale, or activated module locale."""
+	if not message:
+		return message
+	# Prefer Flask-Babel when a request context is active (main daemon thread).
+	try:
+		from flask import has_request_context
+		if has_request_context():
+			from flask_babel import gettext as flask_gettext
+			return flask_gettext(message)
+	except Exception:
+		pass
+	# Pool workers / CLI: use Translations loaded by activate_locale().
+	if _active_translations is not None:
+		return _active_translations.gettext(message)
+	return message
+
+
+def ngettext(singular, plural, n):
+	"""Plural-aware gettext; same fallback chain as gettext()."""
+	try:
+		from flask import has_request_context
+		if has_request_context():
+			from flask_babel import ngettext as flask_ngettext
+			return flask_ngettext(singular, plural, n)
+	except Exception:
+		pass
+	if _active_translations is not None:
+		return _active_translations.ngettext(singular, plural, n)
+	return singular if n == 1 else plural
+
+
+# Conventional alias used throughout management/*.py
+_ = gettext
 
 
 def load_json_catalog(lang):

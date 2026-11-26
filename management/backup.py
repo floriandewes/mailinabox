@@ -1,3 +1,4 @@
+from i18n import _
 #!/usr/local/lib/mailinabox/env/bin/python
 
 # This script performs a backup of all user data:
@@ -497,7 +498,7 @@ def list_target_files(config):
 			reason = ("Unknown error."
 					"Please check running 'management/backup.py --verify'"
 					"from mailinabox sources to debug the issue.")
-		msg = f"Connection to rsync host failed: {reason}"
+		msg = _("Connection to rsync host failed: %(reason)s") % {"reason": reason}
 		raise ValueError(msg)
 
 	if target.scheme == "s3":
@@ -511,7 +512,7 @@ def list_target_files(config):
 			path += '/'
 
 		if bucket == "":
-			msg = "Enter an S3 bucket name."
+			msg = _("Enter an S3 bucket name.")
 			raise ValueError(msg)
 
 		# connect to the region & bucket
@@ -544,7 +545,7 @@ def list_target_files(config):
 			b2_api.authorize_account("production", b2_application_keyid, b2_application_key)
 			bucket = b2_api.get_bucket_by_name(b2_bucket)
 		except NonExistentBucket:
-			msg = "B2 Bucket does not exist. Please double check your information!"
+			msg = _("B2 Bucket does not exist. Please double check your information!")
 			raise ValueError(msg)
 		return [(key.file_name, key.size) for key, _ in bucket.ls()]
 

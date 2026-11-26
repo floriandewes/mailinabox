@@ -1,0 +1,1892 @@
+{
+  "Authorization header invalid.": {
+    "de": "Autorisierungsheader ungültig.",
+    "fr": "En-tête d'autorisation invalide.",
+    "es": "Cabecera de autorización no válida.",
+    "it": "Intestazione di autorizzazione non valida.",
+    "pt": "Cabeçalho de autorização inválido.",
+    "nl": "Autorisatieheader ongeldig.",
+    "pl": "Nieprawidłowy nagłówek autoryzacji."
+  },
+  "No email address, password, session key, or API key provided.": {
+    "de": "Keine E-Mail-Adresse, kein Passwort, kein Sitzungsschlüssel und kein API-Schlüssel angegeben.",
+    "fr": "Aucune adresse e-mail, mot de passe, clé de session ou clé API fourni.",
+    "es": "No se ha proporcionado dirección de correo, contraseña, clave de sesión ni clave API.",
+    "it": "Nessun indirizzo e-mail, password, chiave di sessione o chiave API forniti.",
+    "pt": "Nenhum endereço de e-mail, palavra-passe, chave de sessão ou chave API fornecido.",
+    "nl": "Geen e-mailadres, wachtwoord, sessiesleutel of API-sleutel opgegeven.",
+    "pl": "Nie podano adresu e-mail, hasła, klucza sesji ani klucza API."
+  },
+  "Enter a password.": {
+    "de": "Geben Sie ein Passwort ein.",
+    "fr": "Entrez un mot de passe.",
+    "es": "Introduzca una contraseña.",
+    "it": "Inserire una password.",
+    "pt": "Introduza uma palavra-passe.",
+    "nl": "Voer een wachtwoord in.",
+    "pl": "Wprowadź hasło."
+  },
+  "Incorrect email address or password.": {
+    "de": "Falsche E-Mail-Adresse oder falsches Passwort.",
+    "fr": "Adresse e-mail ou mot de passe incorrect.",
+    "es": "Dirección de correo o contraseña incorrecta.",
+    "it": "Indirizzo e-mail o password non corretti.",
+    "pt": "Endereço de e-mail ou palavra-passe incorrectos.",
+    "nl": "Onjuist e-mailadres of wachtwoord.",
+    "pl": "Nieprawidłowy adres e-mail lub hasło."
+  },
+  "Connection to rsync host failed: %(reason)s": {
+    "de": "Verbindung zum rsync-Host fehlgeschlagen: %(reason)s",
+    "fr": "Échec de la connexion à l'hôte rsync : %(reason)s",
+    "es": "Error de conexión con el host rsync: %(reason)s",
+    "it": "Connessione all'host rsync non riuscita: %(reason)s",
+    "pt": "Falha na ligação ao anfitrião rsync: %(reason)s",
+    "nl": "Verbinding met rsync-host mislukt: %(reason)s",
+    "pl": "Połączenie z hostem rsync nie powiodło się: %(reason)s"
+  },
+  "Enter an S3 bucket name.": {
+    "de": "Geben Sie einen S3-Bucket-Namen ein.",
+    "fr": "Entrez un nom de bucket S3.",
+    "es": "Introduzca un nombre de bucket S3.",
+    "it": "Inserire un nome di bucket S3.",
+    "pt": "Introduza um nome de bucket S3.",
+    "nl": "Voer een S3-bucketnaam in.",
+    "pl": "Wprowadź nazwę bucketu S3."
+  },
+  "B2 Bucket does not exist. Please double check your information!": {
+    "de": "B2-Bucket existiert nicht. Bitte überprüfen Sie Ihre Angaben!",
+    "fr": "Le bucket B2 n'existe pas. Veuillez vérifier vos informations !",
+    "es": "El bucket B2 no existe. ¡Compruebe de nuevo su información!",
+    "it": "Il bucket B2 non esiste. Controllare di nuovo le informazioni!",
+    "pt": "O bucket B2 não existe. Verifique novamente as suas informações!",
+    "nl": "B2-bucket bestaat niet. Controleer uw gegevens nogmaals!",
+    "pl": "Bucket B2 nie istnieje. Sprawdź ponownie swoje dane!"
+  },
+  "You are not an administrator.": {
+    "de": "Sie sind kein Administrator.",
+    "fr": "Vous n'êtes pas un administrateur.",
+    "es": "Usted no es un administrador.",
+    "it": "Non sei un amministratore.",
+    "pt": "Não é um administrador.",
+    "nl": "U bent geen beheerder.",
+    "pl": "Nie jesteś administratorem."
+  },
+  "Greylisting value must be 'on' or 'off'.": {
+    "de": "Der Greylisting-Wert muss 'on' oder 'off' sein.",
+    "fr": "La valeur de greylisting doit être 'on' ou 'off'.",
+    "es": "El valor de greylisting debe ser 'on' u 'off'.",
+    "it": "Il valore di greylisting deve essere 'on' o 'off'.",
+    "pt": "O valor de greylisting deve ser 'on' ou 'off'.",
+    "nl": "De greylisting-waarde moet 'on' of 'off' zijn.",
+    "pl": "Wartość greylistingu musi wynosić 'on' lub 'off'."
+  },
+  "No value for the record provided.": {
+    "de": "Kein Wert für den Datensatz angegeben.",
+    "fr": "Aucune valeur fournie pour l'enregistrement.",
+    "es": "No se ha proporcionado valor para el registro.",
+    "it": "Nessun valore fornito per il record.",
+    "pt": "Nenhum valor fornecido para o registo.",
+    "nl": "Geen waarde voor het record opgegeven.",
+    "pl": "Nie podano wartości dla rekordu."
+  },
+  "Invalid domain name.": {
+    "de": "Ungültiger Domänenname.",
+    "fr": "Nom de domaine invalide.",
+    "es": "Nombre de dominio no válido.",
+    "it": "Nome di dominio non valido.",
+    "pt": "Nome de domínio inválido.",
+    "nl": "Ongeldige domeinnaam.",
+    "pl": "Nieprawidłowa nazwa domeny."
+  },
+  "Bad Input": {
+    "de": "Ungültige Eingabe",
+    "fr": "Entrée incorrecte",
+    "es": "Entrada incorrecta",
+    "it": "Input non valido",
+    "pt": "Entrada incorrecta",
+    "nl": "Ongeldige invoer",
+    "pl": "Nieprawidłowe dane wejściowe"
+  },
+  "Invalid user or MFA id.": {
+    "de": "Ungültiger Benutzer oder MFA-ID.",
+    "fr": "Utilisateur ou identifiant MFA invalide.",
+    "es": "Usuario o id de MFA no válido.",
+    "it": "Utente o id MFA non valido.",
+    "pt": "Utilizador ou id MFA inválido.",
+    "nl": "Ongeldige gebruiker of MFA-id.",
+    "pl": "Nieprawidłowy użytkownik lub id MFA."
+  },
+  "No reboot is required, so it is not allowed.": {
+    "de": "Kein Neustart erforderlich, daher nicht erlaubt.",
+    "fr": "Aucun redémarrage n'est requis, il n'est donc pas autorisé.",
+    "es": "No se requiere reinicio, por lo que no está permitido.",
+    "it": "Non è richiesto alcun riavvio, quindi non è consentito.",
+    "pt": "Não é necessário reiniciar, pelo que não é permitido.",
+    "nl": "Er is geen herstart nodig, dus dit is niet toegestaan.",
+    "pl": "Ponowne uruchomienie nie jest wymagane, więc nie jest dozwolone."
+  },
+  "a path must be specified": {
+    "de": "ein Pfad muss angegeben werden",
+    "fr": "un chemin doit être spécifié",
+    "es": "se debe especificar una ruta",
+    "it": "è necessario specificare un percorso",
+    "pt": "deve ser especificado um caminho",
+    "nl": "er moet een pad worden opgegeven",
+    "pl": "należy podać ścieżkę"
+  },
+  "error processing graph image": {
+    "de": "Fehler bei der Verarbeitung des Diagrammbildes",
+    "fr": "erreur lors du traitement de l'image du graphique",
+    "es": "error al procesar la imagen del gráfico",
+    "it": "errore durante l'elaborazione dell'immagine del grafico",
+    "pt": "erro ao processar a imagem do gráfico",
+    "nl": "fout bij verwerken van grafiekafbeelding",
+    "pl": "błąd przetwarzania obrazu wykresu"
+  },
+  "%(zone)s is not a domain name that corresponds to a zone.": {
+    "de": "%(zone)s ist kein Domänenname, der einer Zone entspricht.",
+    "fr": "%(zone)s n'est pas un nom de domaine correspondant à une zone.",
+    "es": "%(zone)s no es un nombre de dominio que corresponda a una zona.",
+    "it": "%(zone)s non è un nome di dominio corrispondente a una zona.",
+    "pt": "%(zone)s não é um nome de domínio correspondente a uma zona.",
+    "nl": "%(zone)s is geen domeinnaam die bij een zone hoort.",
+    "pl": "%(zone)s nie jest nazwą domeny odpowiadającą strefie."
+  },
+  "%(qname)s is not a domain name or a subdomain of a domain name managed by this box.": {
+    "de": "%(qname)s ist kein Domänenname und keine Subdomäne eines von diesem System verwalteten Domänennamens.",
+    "fr": "%(qname)s n'est pas un nom de domaine ni un sous-domaine d'un nom de domaine géré par cette box.",
+    "es": "%(qname)s no es un nombre de dominio ni un subdominio de un nombre de dominio gestionado por este sistema.",
+    "it": "%(qname)s non è un nome di dominio né un sottodominio di un nome di dominio gestito da questo box.",
+    "pt": "%(qname)s não é um nome de domínio nem um subdomínio de um nome de domínio gerido por este sistema.",
+    "nl": "%(qname)s is geen domeinnaam of een subdomein van een door dit systeem beheerde domeinnaam.",
+    "pl": "%(qname)s nie jest nazwą domeny ani subdomeną nazwy domeny zarządzanej przez ten system."
+  },
+  "Invalid name.": {
+    "de": "Ungültiger Name.",
+    "fr": "Nom invalide.",
+    "es": "Nombre no válido.",
+    "it": "Nome non valido.",
+    "pt": "Nome inválido.",
+    "nl": "Ongeldige naam.",
+    "pl": "Nieprawidłowa nazwa."
+  },
+  "That's an IPv6 address.": {
+    "de": "Das ist eine IPv6-Adresse.",
+    "fr": "C'est une adresse IPv6.",
+    "es": "Esa es una dirección IPv6.",
+    "it": "Questo è un indirizzo IPv6.",
+    "pt": "Isso é um endereço IPv6.",
+    "nl": "Dat is een IPv6-adres.",
+    "pl": "To jest adres IPv6."
+  },
+  "That's an IPv4 address.": {
+    "de": "Das ist eine IPv4-Adresse.",
+    "fr": "C'est une adresse IPv4.",
+    "es": "Esa es una dirección IPv4.",
+    "it": "Questo è un indirizzo IPv4.",
+    "pt": "Isso é um endereço IPv4.",
+    "nl": "Dat is een IPv4-adres.",
+    "pl": "To jest adres IPv4."
+  },
+  "NS records can only be set for subdomains.": {
+    "de": "NS-Einträge können nur für Subdomänen gesetzt werden.",
+    "fr": "Les enregistrements NS ne peuvent être définis que pour les sous-domaines.",
+    "es": "Los registros NS solo se pueden establecer para subdominios.",
+    "it": "I record NS possono essere impostati solo per i sottodomini.",
+    "pt": "Os registos NS só podem ser definidos para subdomínios.",
+    "nl": "NS-records kunnen alleen voor subdomeinen worden ingesteld.",
+    "pl": "Rekordy NS można ustawiać tylko dla subdomen."
+  },
+  "Invalid value.": {
+    "de": "Ungültiger Wert.",
+    "fr": "Valeur invalide.",
+    "es": "Valor no válido.",
+    "it": "Valore non valido.",
+    "pt": "Valor inválido.",
+    "nl": "Ongeldige waarde.",
+    "pl": "Nieprawidłowa wartość."
+  },
+  "Unknown record type '%(rtype)s'.": {
+    "de": "Unbekannter Datensatztyp '%(rtype)s'.",
+    "fr": "Type d'enregistrement inconnu '%(rtype)s'.",
+    "es": "Tipo de registro desconocido '%(rtype)s'.",
+    "it": "Tipo di record sconosciuto '%(rtype)s'.",
+    "pt": "Tipo de registo desconhecido '%(rtype)s'.",
+    "nl": "Onbekend recordtype '%(rtype)s'.",
+    "pl": "Nieznany typ rekordu '%(rtype)s'."
+  },
+  "Invalid action: %(action)s": {
+    "de": "Ungültige Aktion: %(action)s",
+    "fr": "Action invalide : %(action)s",
+    "es": "Acción no válida: %(action)s",
+    "it": "Azione non valida: %(action)s",
+    "pt": "Acção inválida: %(action)s",
+    "nl": "Ongeldige actie: %(action)s",
+    "pl": "Nieprawidłowa akcja: %(action)s"
+  },
+  "Could not resolve the IP address of %(item)s.": {
+    "de": "Die IP-Adresse von %(item)s konnte nicht aufgelöst werden.",
+    "fr": "Impossible de résoudre l'adresse IP de %(item)s.",
+    "es": "No se pudo resolver la dirección IP de %(item)s.",
+    "it": "Impossibile risolvere l'indirizzo IP di %(item)s.",
+    "pt": "Não foi possível resolver o endereço IP de %(item)s.",
+    "nl": "Kon het IP-adres van %(item)s niet oplossen.",
+    "pl": "Nie udało się rozwiązać adresu IP %(item)s."
+  },
+  "'%(item)s' is not an IPv4 or IPv6 address or subnet.": {
+    "de": "'%(item)s' ist keine IPv4- oder IPv6-Adresse und kein Subnetz.",
+    "fr": "'%(item)s' n'est pas une adresse ou un sous-réseau IPv4 ou IPv6.",
+    "es": "'%(item)s' no es una dirección o subred IPv4 o IPv6.",
+    "it": "'%(item)s' non è un indirizzo o una sottorete IPv4 o IPv6.",
+    "pt": "'%(item)s' não é um endereço ou sub-rede IPv4 ou IPv6.",
+    "nl": "'%(item)s' is geen IPv4- of IPv6-adres of subnet.",
+    "pl": "'%(item)s' nie jest adresem ani podsiecią IPv4 lub IPv6."
+  },
+  "No email address provided.": {
+    "de": "Keine E-Mail-Adresse angegeben.",
+    "fr": "Aucune adresse e-mail fournie.",
+    "es": "No se ha proporcionado dirección de correo.",
+    "it": "Nessun indirizzo e-mail fornito.",
+    "pt": "Nenhum endereço de e-mail fornecido.",
+    "nl": "Geen e-mailadres opgegeven.",
+    "pl": "Nie podano adresu e-mail."
+  },
+  "Invalid email address.": {
+    "de": "Ungültige E-Mail-Adresse.",
+    "fr": "Adresse e-mail invalide.",
+    "es": "Dirección de correo no válida.",
+    "it": "Indirizzo e-mail non valido.",
+    "pt": "Endereço de e-mail inválido.",
+    "nl": "Ongeldig e-mailadres.",
+    "pl": "Nieprawidłowy adres e-mail."
+  },
+  "User account email addresses may only use the lowercase ASCII letters a-z, the digits 0-9, underscore (_), hyphen (-), and period (.).": {
+    "de": "E-Mail-Adressen von Benutzerkonten dürfen nur die Kleinbuchstaben a-z (ASCII), die Ziffern 0-9, Unterstrich (_), Bindestrich (-) und Punkt (.) verwenden.",
+    "fr": "Les adresses e-mail des comptes utilisateurs ne peuvent utiliser que les lettres ASCII minuscules a-z, les chiffres 0-9, le tiret bas (_), le tiret (-) et le point (.).",
+    "es": "Las direcciones de correo de las cuentas de usuario solo pueden usar las letras ASCII minúsculas a-z, los dígitos 0-9, el guion bajo (_), el guion (-) y el punto (.).",
+    "it": "Gli indirizzi e-mail degli account utente possono usare solo le lettere ASCII minuscole a-z, le cifre 0-9, il trattino basso (_), il trattino (-) e il punto (.).",
+    "pt": "Os endereços de e-mail das contas de utilizador só podem usar as letras ASCII minúsculas a-z, os dígitos 0-9, o underscore (_), o hífen (-) e o ponto (.).",
+    "nl": "E-mailadressen van gebruikersaccounts mogen alleen de kleine ASCII-letters a-z, de cijfers 0-9, underscore (_), koppelteken (-) en punt (.) gebruiken.",
+    "pl": "Adresy e-mail kont użytkowników mogą używać tylko małych liter ASCII a-z, cyfr 0-9, podkreślenia (_), łącznika (-) i kropki (.)."
+  },
+  "You may not make a user account for that address because it is frequently used for domain control validation. Use an alias instead if necessary.": {
+    "de": "Sie dürfen für diese Adresse kein Benutzerkonto anlegen, da sie häufig für die Domänenkontrollvalidierung verwendet wird. Verwenden Sie bei Bedarf stattdessen einen Alias.",
+    "fr": "Vous ne pouvez pas créer de compte utilisateur pour cette adresse car elle est fréquemment utilisée pour la validation de contrôle de domaine. Utilisez plutôt un alias si nécessaire.",
+    "es": "No puede crear una cuenta de usuario para esa dirección porque se usa con frecuencia para la validación de control de dominio. Use un alias si es necesario.",
+    "it": "Non è possibile creare un account utente per questo indirizzo perché è spesso usato per la convalida del controllo del dominio. Se necessario, usare invece un alias.",
+    "pt": "Não pode criar uma conta de utilizador para esse endereço porque é frequentemente usado para validação de controlo de domínio. Se necessário, use um alias.",
+    "nl": "U mag geen gebruikersaccount voor dat adres aanmaken omdat het vaak wordt gebruikt voor domeincontrolevalidatie. Gebruik indien nodig in plaats daarvan een alias.",
+    "pl": "Nie możesz utworzyć konta użytkownika dla tego adresu, ponieważ jest on często używany do weryfikacji kontroli domeny. W razie potrzeby użyj aliasu."
+  },
+  "User already exists.": {
+    "de": "Benutzer existiert bereits.",
+    "fr": "L'utilisateur existe déjà.",
+    "es": "El usuario ya existe.",
+    "it": "L'utente esiste già.",
+    "pt": "O utilizador já existe.",
+    "nl": "Gebruiker bestaat al.",
+    "pl": "Użytkownik już istnieje."
+  },
+  "That's not a user (%(email)s).": {
+    "de": "Das ist kein Benutzer (%(email)s).",
+    "fr": "Ce n'est pas un utilisateur (%(email)s).",
+    "es": "Eso no es un usuario (%(email)s).",
+    "it": "Questo non è un utente (%(email)s).",
+    "pt": "Isso não é um utilizador (%(email)s).",
+    "nl": "Dat is geen gebruiker (%(email)s).",
+    "pl": "To nie jest użytkownik (%(email)s)."
+  },
+  "No quota provided.": {
+    "de": "Kein Kontingent angegeben.",
+    "fr": "Aucun quota fourni.",
+    "es": "No se ha proporcionado cuota.",
+    "it": "Nessuna quota fornita.",
+    "pt": "Nenhuma quota fornecida.",
+    "nl": "Geen quotum opgegeven.",
+    "pl": "Nie podano limitu."
+  },
+  "Quotas cannot contain spaces, commas, or decimal points.": {
+    "de": "Kontingente dürfen keine Leerzeichen, Kommas oder Dezimalpunkte enthalten.",
+    "fr": "Les quotas ne peuvent pas contenir d'espaces, de virgules ou de points décimaux.",
+    "es": "Las cuotas no pueden contener espacios, comas ni puntos decimales.",
+    "it": "Le quote non possono contenere spazi, virgole o punti decimali.",
+    "pt": "As quotas não podem conter espaços, vírgulas ou pontos decimais.",
+    "nl": "Quota's mogen geen spaties, komma's of decimale punten bevatten.",
+    "pl": "Limity nie mogą zawierać spacji, przecinków ani kropek dziesiętnych."
+  },
+  "Invalid quota.": {
+    "de": "Ungültiges Kontingent.",
+    "fr": "Quota invalide.",
+    "es": "Cuota no válida.",
+    "it": "Quota non valida.",
+    "pt": "Quota inválida.",
+    "nl": "Ongeldig quotum.",
+    "pl": "Nieprawidłowy limit."
+  },
+  "That's not a valid privilege (%(priv)s).": {
+    "de": "Das ist kein gültiges Recht (%(priv)s).",
+    "fr": "Ce n'est pas un privilège valide (%(priv)s).",
+    "es": "Eso no es un privilegio válido (%(priv)s).",
+    "it": "Questo non è un privilegio valido (%(priv)s).",
+    "pt": "Isso não é um privilégio válido (%(priv)s).",
+    "nl": "Dat is geen geldig privilege (%(priv)s).",
+    "pl": "To nie jest prawidłowe uprawnienie (%(priv)s)."
+  },
+  "Invalid action.": {
+    "de": "Ungültige Aktion.",
+    "fr": "Action invalide.",
+    "es": "Acción no válida.",
+    "it": "Azione non valida.",
+    "pt": "Acção inválida.",
+    "nl": "Ongeldige actie.",
+    "pl": "Nieprawidłowa akcja."
+  },
+  "Something went wrong.": {
+    "de": "Etwas ist schiefgelaufen.",
+    "fr": "Une erreur s'est produite.",
+    "es": "Algo salió mal.",
+    "it": "Qualcosa è andato storto.",
+    "pt": "Algo correu mal.",
+    "nl": "Er is iets misgegaan.",
+    "pl": "Coś poszło nie tak."
+  },
+  "Invalid email address (%(address)s).": {
+    "de": "Ungültige E-Mail-Adresse (%(address)s).",
+    "fr": "Adresse e-mail invalide (%(address)s).",
+    "es": "Dirección de correo no válida (%(address)s).",
+    "it": "Indirizzo e-mail non valido (%(address)s).",
+    "pt": "Endereço de e-mail inválido (%(address)s).",
+    "nl": "Ongeldig e-mailadres (%(address)s).",
+    "pl": "Nieprawidłowy adres e-mail (%(address)s)."
+  },
+  "Invalid receiver email address (%(email)s).": {
+    "de": "Ungültige Empfänger-E-Mail-Adresse (%(email)s).",
+    "fr": "Adresse e-mail du destinataire invalide (%(email)s).",
+    "es": "Dirección de correo del destinatario no válida (%(email)s).",
+    "it": "Indirizzo e-mail del destinatario non valido (%(email)s).",
+    "pt": "Endereço de e-mail do destinatário inválido (%(email)s).",
+    "nl": "Ongeldig e-mailadres van ontvanger (%(email)s).",
+    "pl": "Nieprawidłowy adres e-mail odbiorcy (%(email)s)."
+  },
+  "This alias can only have administrators of this system as destinations because the address is frequently used for domain control validation.": {
+    "de": "Dieser Alias darf nur Administratoren dieses Systems als Ziele haben, da die Adresse häufig für die Domänenkontrollvalidierung verwendet wird.",
+    "fr": "Cet alias ne peut avoir que des administrateurs de ce système comme destinations car l'adresse est fréquemment utilisée pour la validation de contrôle de domaine.",
+    "es": "Este alias solo puede tener administradores de este sistema como destinos porque la dirección se usa con frecuencia para la validación de control de dominio.",
+    "it": "Questo alias può avere come destinazioni solo gli amministratori di questo sistema perché l'indirizzo è spesso usato per la convalida del controllo del dominio.",
+    "pt": "Este alias só pode ter administradores deste sistema como destinos porque o endereço é frequentemente usado para validação de controlo de domínio.",
+    "nl": "Dit alias mag alleen beheerders van dit systeem als bestemmingen hebben omdat het adres vaak wordt gebruikt voor domeincontrolevalidatie.",
+    "pl": "Ten alias może mieć jako cele tylko administratorów tego systemu, ponieważ adres jest często używany do weryfikacji kontroli domeny."
+  },
+  "Invalid permitted sender: %(login)s is not a user on this system.": {
+    "de": "Ungültiger zulässiger Absender: %(login)s ist kein Benutzer auf diesem System.",
+    "fr": "Expéditeur autorisé invalide : %(login)s n'est pas un utilisateur de ce système.",
+    "es": "Remitente permitido no válido: %(login)s no es un usuario de este sistema.",
+    "it": "Mittente consentito non valido: %(login)s non è un utente di questo sistema.",
+    "pt": "Remetente permitido inválido: %(login)s não é um utilizador neste sistema.",
+    "nl": "Ongeldige toegestane afzender: %(login)s is geen gebruiker op dit systeem.",
+    "pl": "Nieprawidłowy dozwolony nadawca: %(login)s nie jest użytkownikiem tego systemu."
+  },
+  "The alias must either forward to an address or have a permitted sender.": {
+    "de": "Der Alias muss entweder an eine Adresse weiterleiten oder einen zulässigen Absender haben.",
+    "fr": "L'alias doit soit transférer vers une adresse, soit avoir un expéditeur autorisé.",
+    "es": "El alias debe reenviar a una dirección o tener un remitente permitido.",
+    "it": "L'alias deve inoltrare a un indirizzo oppure avere un mittente consentito.",
+    "pt": "O alias deve reencaminhar para um endereço ou ter um remetente permitido.",
+    "nl": "Het alias moet doorsturen naar een adres of een toegestane afzender hebben.",
+    "pl": "Alias musi przekazywać na adres lub mieć dozwolonego nadawcę."
+  },
+  "Alias already exists (%(address)s).": {
+    "de": "Alias existiert bereits (%(address)s).",
+    "fr": "L'alias existe déjà (%(address)s).",
+    "es": "El alias ya existe (%(address)s).",
+    "it": "L'alias esiste già (%(address)s).",
+    "pt": "O alias já existe (%(address)s).",
+    "nl": "Alias bestaat al (%(address)s).",
+    "pl": "Alias już istnieje (%(address)s)."
+  },
+  "That's not an alias (%(address)s).": {
+    "de": "Das ist kein Alias (%(address)s).",
+    "fr": "Ce n'est pas un alias (%(address)s).",
+    "es": "Eso no es un alias (%(address)s).",
+    "it": "Questo non è un alias (%(address)s).",
+    "pt": "Isso não é um alias (%(address)s).",
+    "nl": "Dat is geen alias (%(address)s).",
+    "pl": "To nie jest alias (%(address)s)."
+  },
+  "No password provided.": {
+    "de": "Kein Passwort angegeben.",
+    "fr": "Aucun mot de passe fourni.",
+    "es": "No se ha proporcionado contraseña.",
+    "it": "Nessuna password fornita.",
+    "pt": "Nenhuma palavra-passe fornecida.",
+    "nl": "Geen wachtwoord opgegeven.",
+    "pl": "Nie podano hasła."
+  },
+  "Passwords must be at least eight characters.": {
+    "de": "Passwörter müssen mindestens acht Zeichen lang sein.",
+    "fr": "Les mots de passe doivent comporter au moins huit caractères.",
+    "es": "Las contraseñas deben tener al menos ocho caracteres.",
+    "it": "Le password devono avere almeno otto caratteri.",
+    "pt": "As palavras-passe devem ter pelo menos oito caracteres.",
+    "nl": "Wachtwoorden moeten minstens acht tekens bevatten.",
+    "pl": "Hasła muszą mieć co najmniej osiem znaków."
+  },
+  "User does not exist.": {
+    "de": "Benutzer existiert nicht.",
+    "fr": "L'utilisateur n'existe pas.",
+    "es": "El usuario no existe.",
+    "it": "L'utente non esiste.",
+    "pt": "O utilizador não existe.",
+    "nl": "Gebruiker bestaat niet.",
+    "pl": "Użytkownik nie istnieje."
+  },
+  "Invalid token.": {
+    "de": "Ungültiges Token.",
+    "fr": "Jeton invalide.",
+    "es": "Token no válido.",
+    "it": "Token non valido.",
+    "pt": "Token inválido.",
+    "nl": "Ongeldig token.",
+    "pl": "Nieprawidłowy token."
+  },
+  "Invalid MFA type.": {
+    "de": "Ungültiger MFA-Typ.",
+    "fr": "Type MFA invalide.",
+    "es": "Tipo de MFA no válido.",
+    "it": "Tipo MFA non valido.",
+    "pt": "Tipo MFA inválido.",
+    "nl": "Ongeldig MFA-type.",
+    "pl": "Nieprawidłowy typ MFA."
+  },
+  "No secret provided.": {
+    "de": "Kein Geheimnis angegeben.",
+    "fr": "Aucun secret fourni.",
+    "es": "No se ha proporcionado secreto.",
+    "it": "Nessun segreto fornito.",
+    "pt": "Nenhum segredo fornecido.",
+    "nl": "Geen geheim opgegeven.",
+    "pl": "Nie podano sekretu."
+  },
+  "Secret should be a 32 characters base32 string": {
+    "de": "Das Geheimnis sollte eine 32 Zeichen lange Base32-Zeichenkette sein",
+    "fr": "Le secret doit être une chaîne base32 de 32 caractères",
+    "es": "El secreto debe ser una cadena base32 de 32 caracteres",
+    "it": "Il segreto deve essere una stringa base32 di 32 caratteri",
+    "pt": "O segredo deve ser uma cadeia base32 de 32 caracteres",
+    "nl": "Geheim moet een base32-tekenreeks van 32 tekens zijn",
+    "pl": "Sekret powinien być ciągiem base32 o długości 32 znaków"
+  },
+  "This is not a certificate file.": {
+    "de": "Dies ist keine Zertifikatsdatei.",
+    "fr": "Ce n'est pas un fichier de certificat.",
+    "es": "Este no es un archivo de certificado.",
+    "it": "Questo non è un file di certificato.",
+    "pt": "Este não é um ficheiro de certificado.",
+    "nl": "Dit is geen certificaatbestand.",
+    "pl": "To nie jest plik certyfikatu."
+  },
+  "The certificate is for the wrong domain name. It is for %(names)s.": {
+    "de": "Das Zertifikat ist für den falschen Domänennamen. Es gilt für %(names)s.",
+    "fr": "Le certificat est pour le mauvais nom de domaine. Il est pour %(names)s.",
+    "es": "El certificado es para el nombre de dominio incorrecto. Es para %(names)s.",
+    "it": "Il certificato è per il nome di dominio sbagliato. È per %(names)s.",
+    "pt": "O certificado é para o nome de domínio incorrecto. É para %(names)s.",
+    "nl": "Het certificaat is voor de verkeerde domeinnaam. Het is voor %(names)s.",
+    "pl": "Certyfikat jest dla niewłaściwej nazwy domeny. Jest dla %(names)s."
+  },
+  "There is a problem with the certificate.": {
+    "de": "Es gibt ein Problem mit dem Zertifikat.",
+    "fr": "Il y a un problème avec le certificat.",
+    "es": "Hay un problema con el certificado.",
+    "it": "C'è un problema con il certificato.",
+    "pt": "Há um problema com o certificado.",
+    "nl": "Er is een probleem met het certificaat.",
+    "pl": "Wystąpił problem z certyfikatem."
+  },
+  "The certificate is expiring soon: %(info)s": {
+    "de": "Das Zertifikat läuft bald ab: %(info)s",
+    "fr": "Le certificat expire bientôt : %(info)s",
+    "es": "El certificado caduca pronto: %(info)s",
+    "it": "Il certificato scade a breve: %(info)s",
+    "pt": "O certificado expira em breve: %(info)s",
+    "nl": "Het certificaat verloopt binnenkort: %(info)s",
+    "pl": "Certyfikat wkrótce wygaśnie: %(info)s"
+  },
+  "File does not contain valid PEM data.": {
+    "de": "Die Datei enthält keine gültigen PEM-Daten.",
+    "fr": "Le fichier ne contient pas de données PEM valides.",
+    "es": "El archivo no contiene datos PEM válidos.",
+    "it": "Il file non contiene dati PEM validi.",
+    "pt": "O ficheiro não contém dados PEM válidos.",
+    "nl": "Bestand bevat geen geldige PEM-gegevens.",
+    "pl": "Plik nie zawiera prawidłowych danych PEM."
+  },
+  "File is not a valid PEM-formatted file.": {
+    "de": "Die Datei ist keine gültige PEM-formatierte Datei.",
+    "fr": "Le fichier n'est pas un fichier au format PEM valide.",
+    "es": "El archivo no es un archivo con formato PEM válido.",
+    "it": "Il file non è un file in formato PEM valido.",
+    "pt": "O ficheiro não é um ficheiro com formato PEM válido.",
+    "nl": "Bestand is geen geldig PEM-geformatteerd bestand.",
+    "pl": "Plik nie jest prawidłowym plikiem w formacie PEM."
+  },
+  "Unsupported PEM object type: %(type)s": {
+    "de": "Nicht unterstützter PEM-Objekttyp: %(type)s",
+    "fr": "Type d'objet PEM non pris en charge : %(type)s",
+    "es": "Tipo de objeto PEM no admitido: %(type)s",
+    "it": "Tipo di oggetto PEM non supportato: %(type)s",
+    "pt": "Tipo de objecto PEM não suportado: %(type)s",
+    "nl": "Niet-ondersteund PEM-objecttype: %(type)s",
+    "pl": "Nieobsługiwany typ obiektu PEM: %(type)s"
+  },
+  "Local DNS (bind9)": {
+    "de": "Lokales DNS (bind9)",
+    "fr": "DNS local (bind9)",
+    "es": "DNS local (bind9)",
+    "it": "DNS locale (bind9)",
+    "pt": "DNS local (bind9)",
+    "nl": "Lokale DNS (bind9)",
+    "pl": "Lokalny DNS (bind9)"
+  },
+  "Local DNS Control (bind9/rndc)": {
+    "de": "Lokale DNS-Steuerung (bind9/rndc)",
+    "fr": "Contrôle DNS local (bind9/rndc)",
+    "es": "Control DNS local (bind9/rndc)",
+    "it": "Controllo DNS locale (bind9/rndc)",
+    "pt": "Controlo DNS local (bind9/rndc)",
+    "nl": "Lokale DNS-besturing (bind9/rndc)",
+    "pl": "Lokalne sterowanie DNS (bind9/rndc)"
+  },
+  "Dovecot LMTP LDA": {
+    "de": "Dovecot LMTP LDA",
+    "fr": "Dovecot LMTP LDA",
+    "es": "Dovecot LMTP LDA",
+    "it": "Dovecot LMTP LDA",
+    "pt": "Dovecot LMTP LDA",
+    "nl": "Dovecot LMTP LDA",
+    "pl": "Dovecot LMTP LDA"
+  },
+  "Postgrey": {
+    "de": "Postgrey",
+    "fr": "Postgrey",
+    "es": "Postgrey",
+    "it": "Postgrey",
+    "pt": "Postgrey",
+    "nl": "Postgrey",
+    "pl": "Postgrey"
+  },
+  "Spamassassin": {
+    "de": "Spamassassin",
+    "fr": "Spamassassin",
+    "es": "Spamassassin",
+    "it": "Spamassassin",
+    "pt": "Spamassassin",
+    "nl": "Spamassassin",
+    "pl": "Spamassassin"
+  },
+  "OpenDKIM": {
+    "de": "OpenDKIM",
+    "fr": "OpenDKIM",
+    "es": "OpenDKIM",
+    "it": "OpenDKIM",
+    "pt": "OpenDKIM",
+    "nl": "OpenDKIM",
+    "pl": "OpenDKIM"
+  },
+  "OpenDMARC": {
+    "de": "OpenDMARC",
+    "fr": "OpenDMARC",
+    "es": "OpenDMARC",
+    "it": "OpenDMARC",
+    "pt": "OpenDMARC",
+    "nl": "OpenDMARC",
+    "pl": "OpenDMARC"
+  },
+  "Trixie Mail Management Daemon": {
+    "de": "Trixie Mail Verwaltungsdaemon",
+    "fr": "Démon de gestion Trixie Mail",
+    "es": "Daemon de gestión de Trixie Mail",
+    "it": "Demone di gestione Trixie Mail",
+    "pt": "Daemon de gestão do Trixie Mail",
+    "nl": "Trixie Mail-beheerdaemon",
+    "pl": "Demon zarządzania Trixie Mail"
+  },
+  "SSH Login (ssh)": {
+    "de": "SSH-Anmeldung (ssh)",
+    "fr": "Connexion SSH (ssh)",
+    "es": "Inicio de sesión SSH (ssh)",
+    "it": "Accesso SSH (ssh)",
+    "pt": "Início de sessão SSH (ssh)",
+    "nl": "SSH-aanmelding (ssh)",
+    "pl": "Logowanie SSH (ssh)"
+  },
+  "Public DNS (nsd4)": {
+    "de": "Öffentliches DNS (nsd4)",
+    "fr": "DNS public (nsd4)",
+    "es": "DNS público (nsd4)",
+    "it": "DNS pubblico (nsd4)",
+    "pt": "DNS público (nsd4)",
+    "nl": "Openbare DNS (nsd4)",
+    "pl": "Publiczny DNS (nsd4)"
+  },
+  "Incoming Mail (SMTP/postfix)": {
+    "de": "Eingehende E-Mail (SMTP/postfix)",
+    "fr": "Courrier entrant (SMTP/postfix)",
+    "es": "Correo entrante (SMTP/postfix)",
+    "it": "Posta in arrivo (SMTP/postfix)",
+    "pt": "Correio de entrada (SMTP/postfix)",
+    "nl": "Inkomende e-mail (SMTP/postfix)",
+    "pl": "Poczta przychodząca (SMTP/postfix)"
+  },
+  "Outgoing Mail (SMTP 465/postfix)": {
+    "de": "Ausgehende E-Mail (SMTP 465/postfix)",
+    "fr": "Courrier sortant (SMTP 465/postfix)",
+    "es": "Correo saliente (SMTP 465/postfix)",
+    "it": "Posta in uscita (SMTP 465/postfix)",
+    "pt": "Correio de saída (SMTP 465/postfix)",
+    "nl": "Uitgaande e-mail (SMTP 465/postfix)",
+    "pl": "Poczta wychodząca (SMTP 465/postfix)"
+  },
+  "Outgoing Mail (SMTP 587/postfix)": {
+    "de": "Ausgehende E-Mail (SMTP 587/postfix)",
+    "fr": "Courrier sortant (SMTP 587/postfix)",
+    "es": "Correo saliente (SMTP 587/postfix)",
+    "it": "Posta in uscita (SMTP 587/postfix)",
+    "pt": "Correio de saída (SMTP 587/postfix)",
+    "nl": "Uitgaande e-mail (SMTP 587/postfix)",
+    "pl": "Poczta wychodząca (SMTP 587/postfix)"
+  },
+  "IMAPS (dovecot)": {
+    "de": "IMAPS (dovecot)",
+    "fr": "IMAPS (dovecot)",
+    "es": "IMAPS (dovecot)",
+    "it": "IMAPS (dovecot)",
+    "pt": "IMAPS (dovecot)",
+    "nl": "IMAPS (dovecot)",
+    "pl": "IMAPS (dovecot)"
+  },
+  "Mail Filters (Sieve/dovecot)": {
+    "de": "E-Mail-Filter (Sieve/dovecot)",
+    "fr": "Filtres de courrier (Sieve/dovecot)",
+    "es": "Filtros de correo (Sieve/dovecot)",
+    "it": "Filtri di posta (Sieve/dovecot)",
+    "pt": "Filtros de correio (Sieve/dovecot)",
+    "nl": "E-mailfilters (Sieve/dovecot)",
+    "pl": "Filtry poczty (Sieve/dovecot)"
+  },
+  "HTTP Web (nginx)": {
+    "de": "HTTP-Web (nginx)",
+    "fr": "Web HTTP (nginx)",
+    "es": "Web HTTP (nginx)",
+    "it": "Web HTTP (nginx)",
+    "pt": "Web HTTP (nginx)",
+    "nl": "HTTP-web (nginx)",
+    "pl": "WWW HTTP (nginx)"
+  },
+  "HTTPS Web (nginx)": {
+    "de": "HTTPS-Web (nginx)",
+    "fr": "Web HTTPS (nginx)",
+    "es": "Web HTTPS (nginx)",
+    "it": "Web HTTPS (nginx)",
+    "pt": "Web HTTPS (nginx)",
+    "nl": "HTTPS-web (nginx)",
+    "pl": "WWW HTTPS (nginx)"
+  },
+  "fail2ban is not running.": {
+    "de": "fail2ban läuft nicht.",
+    "fr": "fail2ban n'est pas en cours d'exécution.",
+    "es": "fail2ban no está en ejecución.",
+    "it": "fail2ban non è in esecuzione.",
+    "pt": "fail2ban não está em execução.",
+    "nl": "fail2ban draait niet.",
+    "pl": "fail2ban nie jest uruchomiony."
+  },
+  "All system services are running.": {
+    "de": "Alle Systemdienste laufen.",
+    "fr": "Tous les services système sont en cours d'exécution.",
+    "es": "Todos los servicios del sistema están en ejecución.",
+    "it": "Tutti i servizi di sistema sono in esecuzione.",
+    "pt": "Todos os serviços do sistema estão em execução.",
+    "nl": "Alle systeemservices draaien.",
+    "pl": "Wszystkie usługi systemowe są uruchomione."
+  },
+  "%(name)s is running (and available over IPv4 and the local IPv6 address), but it is not publicly accessible at %(ip)s:%(port)d.": {
+    "de": "%(name)s läuft (und ist über IPv4 und die lokale IPv6-Adresse verfügbar), ist aber unter %(ip)s:%(port)d nicht öffentlich erreichbar.",
+    "fr": "%(name)s est en cours d'exécution (et disponible via IPv4 et l'adresse IPv6 locale), mais n'est pas accessible publiquement à %(ip)s:%(port)d.",
+    "es": "%(name)s está en ejecución (y disponible por IPv4 y la dirección IPv6 local), pero no es accesible públicamente en %(ip)s:%(port)d.",
+    "it": "%(name)s è in esecuzione (e disponibile via IPv4 e l'indirizzo IPv6 locale), ma non è accessibile pubblicamente a %(ip)s:%(port)d.",
+    "pt": "%(name)s está em execução (e disponível via IPv4 e o endereço IPv6 local), mas não é acessível publicamente em %(ip)s:%(port)d.",
+    "nl": "%(name)s draait (en is beschikbaar via IPv4 en het lokale IPv6-adres), maar is niet openbaar bereikbaar op %(ip)s:%(port)d.",
+    "pl": "%(name)s działa (i jest dostępny przez IPv4 oraz lokalny adres IPv6), ale nie jest publicznie dostępny pod %(ip)s:%(port)d."
+  },
+  "%(name)s is running and available over IPv4 but is not accessible over IPv6 at %(ip)s port %(port)d.": {
+    "de": "%(name)s läuft und ist über IPv4 verfügbar, ist aber über IPv6 unter %(ip)s Port %(port)d nicht erreichbar.",
+    "fr": "%(name)s est en cours d'exécution et disponible via IPv4 mais n'est pas accessible via IPv6 à %(ip)s port %(port)d.",
+    "es": "%(name)s está en ejecución y disponible por IPv4 pero no es accesible por IPv6 en %(ip)s puerto %(port)d.",
+    "it": "%(name)s è in esecuzione e disponibile via IPv4 ma non è accessibile via IPv6 a %(ip)s porta %(port)d.",
+    "pt": "%(name)s está em execução e disponível via IPv4 mas não é acessível via IPv6 em %(ip)s porta %(port)d.",
+    "nl": "%(name)s draait en is beschikbaar via IPv4 maar is niet bereikbaar via IPv6 op %(ip)s poort %(port)d.",
+    "pl": "%(name)s działa i jest dostępny przez IPv4, ale nie jest dostępny przez IPv6 pod %(ip)s port %(port)d."
+  },
+  "%(name)s is running but is not publicly accessible at %(ip)s:%(port)d.": {
+    "de": "%(name)s läuft, ist aber unter %(ip)s:%(port)d nicht öffentlich erreichbar.",
+    "fr": "%(name)s est en cours d'exécution mais n'est pas accessible publiquement à %(ip)s:%(port)d.",
+    "es": "%(name)s está en ejecución pero no es accesible públicamente en %(ip)s:%(port)d.",
+    "it": "%(name)s è in esecuzione ma non è accessibile pubblicamente a %(ip)s:%(port)d.",
+    "pt": "%(name)s está em execução mas não é acessível publicamente em %(ip)s:%(port)d.",
+    "nl": "%(name)s draait maar is niet openbaar bereikbaar op %(ip)s:%(port)d.",
+    "pl": "%(name)s działa, ale nie jest publicznie dostępny pod %(ip)s:%(port)d."
+  },
+  "%(name)s is not running (port %(port)d).": {
+    "de": "%(name)s läuft nicht (Port %(port)d).",
+    "fr": "%(name)s n'est pas en cours d'exécution (port %(port)d).",
+    "es": "%(name)s no está en ejecución (puerto %(port)d).",
+    "it": "%(name)s non è in esecuzione (porta %(port)d).",
+    "pt": "%(name)s não está em execução (porta %(port)d).",
+    "nl": "%(name)s draait niet (poort %(port)d).",
+    "pl": "%(name)s nie jest uruchomiony (port %(port)d)."
+  },
+  "The ufw program was not installed. If your system is able to run iptables, rerun the setup.": {
+    "de": "Das Programm ufw wurde nicht installiert. Wenn Ihr System iptables ausführen kann, führen Sie die Einrichtung erneut aus.",
+    "fr": "Le programme ufw n'a pas été installé. Si votre système peut exécuter iptables, relancez l'installation.",
+    "es": "El programa ufw no se instaló. Si su sistema puede ejecutar iptables, vuelva a ejecutar la configuración.",
+    "it": "Il programma ufw non è stato installato. Se il sistema può eseguire iptables, rieseguire la configurazione.",
+    "pt": "O programa ufw não foi instalado. Se o seu sistema puder executar iptables, volte a executar a configuração.",
+    "nl": "Het programma ufw is niet geïnstalleerd. Als uw systeem iptables kan uitvoeren, voer de installatie opnieuw uit.",
+    "pl": "Program ufw nie został zainstalowany. Jeśli system może uruchamiać iptables, uruchom ponownie instalację."
+  },
+  "The firewall is not working on this machine. An error was received\n\t\t\t\t\twhile trying to check the firewall. To investigate run 'sudo ufw status'.": {
+    "de": "Die Firewall funktioniert auf diesem Rechner nicht. Beim Versuch,\n\t\t\t\t\tdie Firewall zu prüfen, trat ein Fehler auf. Zur Untersuchung führen Sie 'sudo ufw status' aus.",
+    "fr": "Le pare-feu ne fonctionne pas sur cette machine. Une erreur a été reçue\n\t\t\t\t\tlors de la vérification du pare-feu. Pour enquêter, exécutez 'sudo ufw status'.",
+    "es": "El cortafuegos no funciona en esta máquina. Se recibió un error\n\t\t\t\t\tal intentar comprobar el cortafuegos. Para investigar, ejecute 'sudo ufw status'.",
+    "it": "Il firewall non funziona su questa macchina. È stato ricevuto un errore\n\t\t\t\t\tdurante il controllo del firewall. Per indagare eseguire 'sudo ufw status'.",
+    "pt": "A firewall não está a funcionar nesta máquina. Foi recebido um erro\n\t\t\t\t\tao tentar verificar a firewall. Para investigar, execute 'sudo ufw status'.",
+    "nl": "De firewall werkt niet op deze machine. Er is een fout ontvangen\n\t\t\t\t\tijdens het controleren van de firewall. Onderzoek met 'sudo ufw status'.",
+    "pl": "Zapora nie działa na tej maszynie. Otrzymano błąd\n\t\t\t\t\tpodczas próby sprawdzenia zapory. Aby zbadać, uruchom 'sudo ufw status'."
+  },
+  "Port %(port)s (%(name)s) should be allowed in the firewall, please re-run the setup.": {
+    "de": "Port %(port)s (%(name)s) sollte in der Firewall erlaubt sein; bitte führen Sie die Einrichtung erneut aus.",
+    "fr": "Le port %(port)s (%(name)s) devrait être autorisé dans le pare-feu, veuillez relancer l'installation.",
+    "es": "El puerto %(port)s (%(name)s) debería estar permitido en el cortafuegos; vuelva a ejecutar la configuración.",
+    "it": "La porta %(port)s (%(name)s) dovrebbe essere consentita nel firewall; rieseguire la configurazione.",
+    "pt": "A porta %(port)s (%(name)s) deve ser permitida na firewall; volte a executar a configuração.",
+    "nl": "Poort %(port)s (%(name)s) moet in de firewall zijn toegestaan; voer de installatie opnieuw uit.",
+    "pl": "Port %(port)s (%(name)s) powinien być dozwolony w zaporze; uruchom ponownie instalację."
+  },
+  "Firewall is active.": {
+    "de": "Firewall ist aktiv.",
+    "fr": "Le pare-feu est actif.",
+    "es": "El cortafuegos está activo.",
+    "it": "Il firewall è attivo.",
+    "pt": "A firewall está activa.",
+    "nl": "Firewall is actief.",
+    "pl": "Zapora jest aktywna."
+  },
+  "The firewall is disabled on this machine. This might be because the system\n\t\t\tis protected by an external firewall. We can't protect the system against bruteforce attacks\n\t\t\twithout the local firewall active. Connect to the system via ssh and try to run: ufw enable.": {
+    "de": "Die Firewall ist auf diesem Rechner deaktiviert. Das kann daran liegen, dass das System\n\t\t\tdurch eine externe Firewall geschützt ist. Ohne aktive lokale Firewall können wir das System nicht\n\t\t\tvor Brute-Force-Angriffen schützen. Verbinden Sie sich per ssh und führen Sie aus: ufw enable.",
+    "fr": "Le pare-feu est désactivé sur cette machine. Cela peut être dû au fait que le système\n\t\t\test protégé par un pare-feu externe. Nous ne pouvons pas protéger le système contre les attaques par force brute\n\t\t\tsans le pare-feu local actif. Connectez-vous au système via ssh et essayez d'exécuter : ufw enable.",
+    "es": "El cortafuegos está desactivado en esta máquina. Puede deberse a que el sistema\n\t\t\testá protegido por un cortafuegos externo. No podemos proteger el sistema contra ataques de fuerza bruta\n\t\t\tsin el cortafuegos local activo. Conéctese al sistema vía ssh e intente ejecutar: ufw enable.",
+    "it": "Il firewall è disabilitato su questa macchina. Potrebbe essere perché il sistema\n\t\t\tè protetto da un firewall esterno. Non possiamo proteggere il sistema dagli attacchi brute-force\n\t\t\tsenza il firewall locale attivo. Collegarsi al sistema via ssh e provare a eseguire: ufw enable.",
+    "pt": "A firewall está desactivada nesta máquina. Isso pode dever-se ao sistema\n\t\t\testar protegido por uma firewall externa. Não podemos proteger o sistema contra ataques de força bruta\n\t\t\tsem a firewall local activa. Ligue-se ao sistema via ssh e tente executar: ufw enable.",
+    "nl": "De firewall is uitgeschakeld op deze machine. Dit kan komen omdat het systeem\n\t\t\twordt beschermd door een externe firewall. We kunnen het systeem niet beschermen tegen brute-force-aanvallen\n\t\t\tzonder de lokale firewall actief. Maak via ssh verbinding en probeer: ufw enable.",
+    "pl": "Zapora jest wyłączona na tej maszynie. Może to wynikać z tego, że system\n\t\t\tjest chroniony przez zewnętrzną zaporę. Nie możemy chronić systemu przed atakami brute-force\n\t\t\tbez aktywnej lokalnej zapory. Połącz się z systemem przez ssh i spróbuj uruchomić: ufw enable."
+  },
+  "SSH disallows password-based login.": {
+    "de": "SSH lässt keine passwortbasierte Anmeldung zu.",
+    "fr": "SSH n'autorise pas la connexion par mot de passe.",
+    "es": "SSH no permite el inicio de sesión con contraseña.",
+    "it": "SSH non consente l'accesso basato su password.",
+    "pt": "O SSH não permite início de sessão com palavra-passe.",
+    "nl": "SSH staat geen wachtwoordgebaseerde aanmelding toe.",
+    "pl": "SSH nie zezwala na logowanie hasłem."
+  },
+  "The SSH server on this machine permits password-based login. A more secure\n\t\t\t\tway to log in is using a public key. Add your SSH public key to $HOME/.ssh/authorized_keys, check\n\t\t\t\tthat you can log in without a password, set the option 'PasswordAuthentication no' in\n\t\t\t\t/etc/ssh/sshd_config, and then restart the openssh via 'sudo service ssh restart'.": {
+    "de": "Der SSH-Server auf diesem Rechner erlaubt die Anmeldung mit Passwort. Eine sicherere\n\t\t\t\tAnmeldemethode ist die Verwendung eines öffentlichen Schlüssels. Fügen Sie Ihren öffentlichen SSH-Schlüssel zu $HOME/.ssh/authorized_keys hinzu, prüfen Sie,\n\t\t\t\tdass Sie sich ohne Passwort anmelden können, setzen Sie die Option 'PasswordAuthentication no' in\n\t\t\t\t/etc/ssh/sshd_config und starten Sie openssh dann neu mit 'sudo service ssh restart'.",
+    "fr": "Le serveur SSH de cette machine autorise la connexion par mot de passe. Une méthode plus sûre\n\t\t\t\tde connexion consiste à utiliser une clé publique. Ajoutez votre clé publique SSH à $HOME/.ssh/authorized_keys, vérifiez\n\t\t\t\tque vous pouvez vous connecter sans mot de passe, définissez l'option 'PasswordAuthentication no' dans\n\t\t\t\t/etc/ssh/sshd_config, puis redémarrez openssh via 'sudo service ssh restart'.",
+    "es": "El servidor SSH de esta máquina permite el inicio de sesión con contraseña. Una forma más segura\n\t\t\t\tde iniciar sesión es usar una clave pública. Añada su clave pública SSH a $HOME/.ssh/authorized_keys, compruebe\n\t\t\t\tque puede iniciar sesión sin contraseña, establezca la opción 'PasswordAuthentication no' en\n\t\t\t\t/etc/ssh/sshd_config y luego reinicie openssh con 'sudo service ssh restart'.",
+    "it": "Il server SSH su questa macchina consente l'accesso basato su password. Un modo più sicuro\n\t\t\t\tper accedere è usare una chiave pubblica. Aggiungere la chiave pubblica SSH a $HOME/.ssh/authorized_keys, verificare\n\t\t\t\tdi poter accedere senza password, impostare l'opzione 'PasswordAuthentication no' in\n\t\t\t\t/etc/ssh/sshd_config e quindi riavviare openssh con 'sudo service ssh restart'.",
+    "pt": "O servidor SSH nesta máquina permite início de sessão com palavra-passe. Uma forma mais segura\n\t\t\t\tde iniciar sessão é usar uma chave pública. Adicione a sua chave pública SSH a $HOME/.ssh/authorized_keys, verifique\n\t\t\t\tque consegue iniciar sessão sem palavra-passe, defina a opção 'PasswordAuthentication no' em\n\t\t\t\t/etc/ssh/sshd_config e depois reinicie o openssh com 'sudo service ssh restart'.",
+    "nl": "De SSH-server op deze machine staat wachtwoordgebaseerde aanmelding toe. Een veiligere\n\t\t\t\tmanier om in te loggen is met een openbare sleutel. Voeg uw openbare SSH-sleutel toe aan $HOME/.ssh/authorized_keys, controleer\n\t\t\t\tdat u zonder wachtwoord kunt inloggen, stel de optie 'PasswordAuthentication no' in in\n\t\t\t\t/etc/ssh/sshd_config en herstart daarna openssh met 'sudo service ssh restart'.",
+    "pl": "Serwer SSH na tej maszynie zezwala na logowanie hasłem. Bezpieczniejszy\n\t\t\t\tsposób logowania to użycie klucza publicznego. Dodaj swój publiczny klucz SSH do $HOME/.ssh/authorized_keys, sprawdź,\n\t\t\t\tże możesz się zalogować bez hasła, ustaw opcję 'PasswordAuthentication no' w\n\t\t\t\t/etc/ssh/sshd_config, a następnie zrestartuj openssh przez 'sudo service ssh restart'."
+  },
+  "System updates have been installed and a reboot of the machine is required.": {
+    "de": "Systemaktualisierungen wurden installiert und ein Neustart des Rechners ist erforderlich.",
+    "fr": "Des mises à jour système ont été installées et un redémarrage de la machine est requis.",
+    "es": "Se han instalado actualizaciones del sistema y se requiere un reinicio de la máquina.",
+    "it": "Sono stati installati aggiornamenti di sistema ed è richiesto un riavvio della macchina.",
+    "pt": "Foram instaladas actualizações do sistema e é necessário reiniciar a máquina.",
+    "nl": "Systeemupdates zijn geïnstalleerd en een herstart van de machine is vereist.",
+    "pl": "Zainstalowano aktualizacje systemu i wymagane jest ponowne uruchomienie maszyny."
+  },
+  "System software is up to date.": {
+    "de": "Die Systemsoftware ist auf dem neuesten Stand.",
+    "fr": "Les logiciels système sont à jour.",
+    "es": "El software del sistema está actualizado.",
+    "it": "Il software di sistema è aggiornato.",
+    "pt": "O software do sistema está actualizado.",
+    "nl": "Systeemsoftware is up-to-date.",
+    "pl": "Oprogramowanie systemowe jest aktualne."
+  },
+  "There are %d software packages that can be updated.": {
+    "de": "Es gibt %d Softwarepakete, die aktualisiert werden können.",
+    "fr": "Il y a %d paquets logiciels pouvant être mis à jour.",
+    "es": "Hay %d paquetes de software que se pueden actualizar.",
+    "it": "Ci sono %d pacchetti software che possono essere aggiornati.",
+    "pt": "Há %d pacotes de software que podem ser actualizados.",
+    "nl": "Er zijn %d softwarepakketten die bijgewerkt kunnen worden.",
+    "pl": "Jest %d pakietów oprogramowania, które można zaktualizować."
+  },
+  "System administrator address": {
+    "de": "Adresse des Systemadministrators",
+    "fr": "Adresse de l'administrateur système",
+    "es": "Dirección del administrador del sistema",
+    "it": "Indirizzo dell'amministratore di sistema",
+    "pt": "Endereço do administrador do sistema",
+    "nl": "Adres van de systeembeheerder",
+    "pl": "Adres administratora systemu"
+  },
+  "The disk has %.2f GB space remaining.": {
+    "de": "Auf dem Datenträger sind noch %.2f GB Speicherplatz frei.",
+    "fr": "Le disque a %.2f Go d'espace restant.",
+    "es": "El disco tiene %.2f GB de espacio restante.",
+    "it": "Il disco ha %.2f GB di spazio rimanente.",
+    "pt": "O disco tem %.2f GB de espaço restante.",
+    "nl": "De schijf heeft %.2f GB ruimte over.",
+    "pl": "Na dysku pozostało %.2f GB wolnego miejsca."
+  },
+  "The backup cache directory %(path)s has more than one backup target cache. Consider clearing this directory to save disk space.": {
+    "de": "Das Backup-Cache-Verzeichnis %(path)s enthält mehr als einen Backup-Ziel-Cache. Erwägen Sie, dieses Verzeichnis zu leeren, um Speicherplatz zu sparen.",
+    "fr": "Le répertoire de cache de sauvegarde %(path)s contient plus d'un cache de cible de sauvegarde. Envisagez de vider ce répertoire pour économiser de l'espace disque.",
+    "es": "El directorio de caché de copia de seguridad %(path)s tiene más de una caché de destino de copia. Considere vaciar este directorio para ahorrar espacio en disco.",
+    "it": "La directory della cache di backup %(path)s ha più di una cache di destinazione di backup. Considerare di svuotare questa directory per risparmiare spazio su disco.",
+    "pt": "O directório de cache de cópia de segurança %(path)s tem mais do que uma cache de destino de cópia. Considere limpar este directório para poupar espaço em disco.",
+    "nl": "De back-upcachedirectory %(path)s heeft meer dan één back-updoelcache. Overweeg deze directory leeg te maken om schijfruimte te besparen.",
+    "pl": "Katalog pamięci podręcznej kopii zapasowych %(path)s ma więcej niż jedną pamięć podręczną celu kopii. Rozważ wyczyszczenie tego katalogu, aby zaoszczędzić miejsce na dysku."
+  },
+  "System memory is %(pct)s%% free.": {
+    "de": "Der Systemspeicher ist zu %(pct)s%% frei.",
+    "fr": "La mémoire système est libre à %(pct)s%%.",
+    "es": "La memoria del sistema está libre en un %(pct)s%%.",
+    "it": "La memoria di sistema è libera al %(pct)s%%.",
+    "pt": "A memória do sistema está livre em %(pct)s%%.",
+    "nl": "Systeemgeheugen is %(pct)s%% vrij.",
+    "pl": "Pamięć systemowa jest wolna w %(pct)s%%."
+  },
+  "Backups are disabled. It is recommended to enable a backup for your box.": {
+    "de": "Backups sind deaktiviert. Es wird empfohlen, ein Backup für Ihr System zu aktivieren.",
+    "fr": "Les sauvegardes sont désactivées. Il est recommandé d'activer une sauvegarde pour votre box.",
+    "es": "Las copias de seguridad están desactivadas. Se recomienda activar una copia de seguridad para su sistema.",
+    "it": "I backup sono disabilitati. Si consiglia di abilitare un backup per il box.",
+    "pt": "As cópias de segurança estão desactivadas. É recomendado activar uma cópia de segurança para o seu sistema.",
+    "nl": "Back-ups zijn uitgeschakeld. Het wordt aanbevolen een back-up voor uw systeem in te schakelen.",
+    "pl": "Kopie zapasowe są wyłączone. Zaleca się włączenie kopii zapasowej dla systemu."
+  },
+  "Backups are enabled": {
+    "de": "Backups sind aktiviert",
+    "fr": "Les sauvegardes sont activées",
+    "es": "Las copias de seguridad están activadas",
+    "it": "I backup sono abilitati",
+    "pt": "As cópias de segurança estão activadas",
+    "nl": "Back-ups zijn ingeschakeld",
+    "pl": "Kopie zapasowe są włączone"
+  },
+  "Backup is more than a week old": {
+    "de": "Backup ist älter als eine Woche",
+    "fr": "La sauvegarde date de plus d'une semaine",
+    "es": "La copia de seguridad tiene más de una semana",
+    "it": "Il backup ha più di una settimana",
+    "pt": "A cópia de segurança tem mais de uma semana",
+    "nl": "Back-up is ouder dan een week",
+    "pl": "Kopia zapasowa ma więcej niż tydzień"
+  },
+  "Could not obtain backup status or no backup has been made (yet). This could happen if you have just enabled backups. In that case, check back tomorrow.": {
+    "de": "Backup-Status konnte nicht ermittelt werden oder es wurde (noch) kein Backup erstellt. Das kann vorkommen, wenn Sie Backups gerade erst aktiviert haben. Schauen Sie in dem Fall morgen wieder nach.",
+    "fr": "Impossible d'obtenir l'état de la sauvegarde ou aucune sauvegarde n'a (encore) été effectuée. Cela peut arriver si vous venez d'activer les sauvegardes. Dans ce cas, revenez demain.",
+    "es": "No se pudo obtener el estado de la copia de seguridad o aún no se ha realizado ninguna. Esto puede ocurrir si acaba de activar las copias. En ese caso, vuelva mañana.",
+    "it": "Impossibile ottenere lo stato del backup oppure non è ancora stato eseguito alcun backup. Può succedere se avete appena abilitato i backup. In tal caso, ricontrollare domani.",
+    "pt": "Não foi possível obter o estado da cópia de segurança ou ainda não foi feita nenhuma. Isto pode acontecer se acabou de activar as cópias. Nesse caso, volte amanhã.",
+    "nl": "Kon back-upstatus niet ophalen of er is (nog) geen back-up gemaakt. Dit kan gebeuren als u back-ups zojuist hebt ingeschakeld. Kijk in dat geval morgen opnieuw.",
+    "pl": "Nie udało się uzyskać statusu kopii zapasowej lub kopia (jeszcze) nie została utworzona. Może się tak zdarzyć, jeśli właśnie włączyłeś kopie. W takim przypadku sprawdź jutro."
+  },
+  "Network": {
+    "de": "Netzwerk",
+    "fr": "Réseau",
+    "es": "Red",
+    "it": "Rete",
+    "pt": "Rede",
+    "nl": "Netwerk",
+    "pl": "Sieć"
+  },
+  "Outbound mail (SMTP port 25) is not blocked.": {
+    "de": "Ausgehende E-Mail (SMTP-Port 25) ist nicht blockiert.",
+    "fr": "Le courrier sortant (port SMTP 25) n'est pas bloqué.",
+    "es": "El correo saliente (puerto SMTP 25) no está bloqueado.",
+    "it": "La posta in uscita (porta SMTP 25) non è bloccata.",
+    "pt": "O correio de saída (porta SMTP 25) não está bloqueado.",
+    "nl": "Uitgaande e-mail (SMTP-poort 25) is niet geblokkeerd.",
+    "pl": "Poczta wychodząca (port SMTP 25) nie jest zablokowana."
+  },
+  "Outbound mail (SMTP port 25) seems to be blocked by your network. You\n\t\t\twill not be able to send any mail. Many residential networks block port 25 to prevent hijacked\n\t\t\tmachines from being able to send spam. A quick connection test to Google's mail server on port 25\n\t\t\tfailed.": {
+    "de": "Ausgehende E-Mail (SMTP-Port 25) scheint von Ihrem Netzwerk blockiert zu werden. Sie\n\t\t\tkönnen keine E-Mails senden. Viele Wohnnetzwerke blockieren Port 25, um zu verhindern, dass übernommene\n\t\t\tRechner Spam senden. Ein schneller Verbindungstest zum Mailserver von Google auf Port 25\n\t\t\tist fehlgeschlagen.",
+    "fr": "Le courrier sortant (port SMTP 25) semble bloqué par votre réseau. Vous\n\t\t\tne pourrez envoyer aucun courrier. De nombreux réseaux résidentiels bloquent le port 25 pour empêcher les machines\n\t\t\tcompromises d'envoyer du spam. Un test de connexion rapide au serveur de messagerie de Google sur le port 25\n\t\t\ta échoué.",
+    "es": "El correo saliente (puerto SMTP 25) parece estar bloqueado por su red. No\n\t\t\tpodrá enviar ningún correo. Muchas redes residenciales bloquean el puerto 25 para impedir que máquinas\n\t\t\tcomprometidas envíen spam. Una prueba rápida de conexión al servidor de correo de Google en el puerto 25\n\t\t\tfalló.",
+    "it": "La posta in uscita (porta SMTP 25) sembra bloccata dalla rete. Non\n\t\t\tpotrete inviare alcuna posta. Molte reti residenziali bloccano la porta 25 per impedire alle macchine\n\t\t\tcompromesse di inviare spam. Un test rapido di connessione al server di posta di Google sulla porta 25\n\t\t\tnon è riuscito.",
+    "pt": "O correio de saída (porta SMTP 25) parece estar bloqueado pela sua rede. Não\n\t\t\tconseguirá enviar qualquer correio. Muitas redes residenciais bloqueiam a porta 25 para impedir que máquinas\n\t\t\tcomprometidas enviem spam. Um teste rápido de ligação ao servidor de correio da Google na porta 25\n\t\t\tfalhou.",
+    "nl": "Uitgaande e-mail (SMTP-poort 25) lijkt door uw netwerk geblokkeerd. U\n\t\t\tkunt geen e-mail verzenden. Veel woonnetwerken blokkeren poort 25 om te voorkomen dat gekaapte\n\t\t\tmachines spam kunnen versturen. Een snelle verbindingstest met de mailserver van Google op poort 25\n\t\t\tis mislukt.",
+    "pl": "Poczta wychodząca (port SMTP 25) wydaje się blokowana przez sieć. Nie\n\t\t\tbędziesz mógł wysyłać żadnej poczty. Wiele sieci domowych blokuje port 25, aby uniemożliwić przejętym\n\t\t\tmaszynom wysyłanie spamu. Szybki test połączenia z serwerem poczty Google na porcie 25\n\t\t\tnie powiódł się."
+  },
+  "%(type)s address is not blacklisted by zen.spamhaus.org.": {
+    "de": "%(type)s-Adresse ist bei zen.spamhaus.org nicht auf der schwarzen Liste.",
+    "fr": "L'adresse %(type)s n'est pas sur liste noire chez zen.spamhaus.org.",
+    "es": "La dirección %(type)s no está en la lista negra de zen.spamhaus.org.",
+    "it": "L'indirizzo %(type)s non è in blacklist su zen.spamhaus.org.",
+    "pt": "O endereço %(type)s não está na lista negra do zen.spamhaus.org.",
+    "nl": "%(type)s-adres staat niet op de zwarte lijst van zen.spamhaus.org.",
+    "pl": "Adres %(type)s nie jest na czarnej liście zen.spamhaus.org."
+  },
+  "Connection to zen.spamhaus.org timed out. Could not determine whether this box's\n\t\t \t%(type)s address is blacklisted. Please try again later.": {
+    "de": "Zeitüberschreitung bei der Verbindung zu zen.spamhaus.org. Es konnte nicht ermittelt werden, ob die\n\t\t \t%(type)s-Adresse dieses Systems auf der schwarzen Liste steht. Bitte versuchen Sie es später erneut.",
+    "fr": "Délai d'attente de la connexion à zen.spamhaus.org dépassé. Impossible de déterminer si l'adresse\n\t\t \t%(type)s de cette box est sur liste noire. Veuillez réessayer plus tard.",
+    "es": "Tiempo de espera agotado al conectar con zen.spamhaus.org. No se pudo determinar si la dirección\n\t\t \t%(type)s de este sistema está en la lista negra. Inténtelo de nuevo más tarde.",
+    "it": "Timeout della connessione a zen.spamhaus.org. Impossibile determinare se l'indirizzo\n\t\t \t%(type)s di questo box è in blacklist. Riprovare più tardi.",
+    "pt": "Tempo limite da ligação a zen.spamhaus.org esgotado. Não foi possível determinar se o endereço\n\t\t \t%(type)s deste sistema está na lista negra. Tente novamente mais tarde.",
+    "nl": "Time-out bij verbinding met zen.spamhaus.org. Kon niet bepalen of het\n\t\t \t%(type)s-adres van dit systeem op de zwarte lijst staat. Probeer het later opnieuw.",
+    "pl": "Przekroczono limit czasu połączenia z zen.spamhaus.org. Nie udało się ustalić, czy adres\n\t\t \t%(type)s tego systemu jest na czarnej liście. Spróbuj ponownie później."
+  },
+  "Could not connect to zen.spamhaus.org. Could not determine whether this box's\n\t\t\t%(type)s address is blacklisted. Please try again later.": {
+    "de": "Verbindung zu zen.spamhaus.org fehlgeschlagen. Es konnte nicht ermittelt werden, ob die\n\t\t\t%(type)s-Adresse dieses Systems auf der schwarzen Liste steht. Bitte versuchen Sie es später erneut.",
+    "fr": "Impossible de se connecter à zen.spamhaus.org. Impossible de déterminer si l'adresse\n\t\t\t%(type)s de cette box est sur liste noire. Veuillez réessayer plus tard.",
+    "es": "No se pudo conectar con zen.spamhaus.org. No se pudo determinar si la dirección\n\t\t\t%(type)s de este sistema está en la lista negra. Inténtelo de nuevo más tarde.",
+    "it": "Impossibile connettersi a zen.spamhaus.org. Impossibile determinare se l'indirizzo\n\t\t\t%(type)s di questo box è in blacklist. Riprovare più tardi.",
+    "pt": "Não foi possível ligar a zen.spamhaus.org. Não foi possível determinar se o endereço\n\t\t\t%(type)s deste sistema está na lista negra. Tente novamente mais tarde.",
+    "nl": "Kon geen verbinding maken met zen.spamhaus.org. Kon niet bepalen of het\n\t\t\t%(type)s-adres van dit systeem op de zwarte lijst staat. Probeer het later opnieuw.",
+    "pl": "Nie udało się połączyć z zen.spamhaus.org. Nie udało się ustalić, czy adres\n\t\t\t%(type)s tego systemu jest na czarnej liście. Spróbuj ponownie później."
+  },
+  "Incorrect spamhaus query: %(query)s. Could not determine whether\n\t\t \tthis box's %(type)s address is blacklisted.": {
+    "de": "Falsche spamhaus-Abfrage: %(query)s. Es konnte nicht ermittelt werden, ob die\n\t\t \t%(type)s-Adresse dieses Systems auf der schwarzen Liste steht.",
+    "fr": "Requête spamhaus incorrecte : %(query)s. Impossible de déterminer si\n\t\t \tl'adresse %(type)s de cette box est sur liste noire.",
+    "es": "Consulta spamhaus incorrecta: %(query)s. No se pudo determinar si\n\t\t \tla dirección %(type)s de este sistema está en la lista negra.",
+    "it": "Query spamhaus non corretta: %(query)s. Impossibile determinare se\n\t\t \tl'indirizzo %(type)s di questo box è in blacklist.",
+    "pt": "Consulta spamhaus incorrecta: %(query)s. Não foi possível determinar se\n\t\t \to endereço %(type)s deste sistema está na lista negra.",
+    "nl": "Onjuiste spamhaus-query: %(query)s. Kon niet bepalen of\n\t\t \thet %(type)s-adres van dit systeem op de zwarte lijst staat.",
+    "pl": "Nieprawidłowe zapytanie spamhaus: %(query)s. Nie udało się ustalić, czy\n\t\t \tadres %(type)s tego systemu jest na czarnej liście."
+  },
+  "Trixie Mail is configured to use a public DNS server. This is not supported by\n\t\t\tspamhaus. Could not determine whether this box's %(type)s address is blacklisted.": {
+    "de": "Trixie Mail ist so konfiguriert, dass ein öffentlicher DNS-Server verwendet wird. Das wird von\n\t\t\tspamhaus nicht unterstützt. Es konnte nicht ermittelt werden, ob die %(type)s-Adresse dieses Systems auf der schwarzen Liste steht.",
+    "fr": "Trixie Mail est configuré pour utiliser un serveur DNS public. Cela n'est pas pris en charge par\n\t\t\tspamhaus. Impossible de déterminer si l'adresse %(type)s de cette box est sur liste noire.",
+    "es": "Trixie Mail está configurado para usar un servidor DNS público. Esto no es compatible con\n\t\t\tspamhaus. No se pudo determinar si la dirección %(type)s de este sistema está en la lista negra.",
+    "it": "Trixie Mail è configurato per usare un server DNS pubblico. Ciò non è supportato da\n\t\t\tspamhaus. Impossibile determinare se l'indirizzo %(type)s di questo box è in blacklist.",
+    "pt": "O Trixie Mail está configurado para usar um servidor DNS público. Isto não é suportado pelo\n\t\t\tspamhaus. Não foi possível determinar se o endereço %(type)s deste sistema está na lista negra.",
+    "nl": "Trixie Mail is geconfigureerd om een openbare DNS-server te gebruiken. Dit wordt niet ondersteund door\n\t\t\tspamhaus. Kon niet bepalen of het %(type)s-adres van dit systeem op de zwarte lijst staat.",
+    "pl": "Trixie Mail jest skonfigurowany do używania publicznego serwera DNS. Nie jest to obsługiwane przez\n\t\t\tspamhaus. Nie udało się ustalić, czy adres %(type)s tego systemu jest na czarnej liście."
+  },
+  "Too many queries have been performed on the spamhaus server. Could not determine\n\t\t \twhether this box's %(type)s address is blacklisted.": {
+    "de": "Zu viele Abfragen wurden an den spamhaus-Server gesendet. Es konnte nicht ermittelt werden,\n\t\t \tob die %(type)s-Adresse dieses Systems auf der schwarzen Liste steht.",
+    "fr": "Trop de requêtes ont été effectuées sur le serveur spamhaus. Impossible de déterminer\n\t\t \tsi l'adresse %(type)s de cette box est sur liste noire.",
+    "es": "Se han realizado demasiadas consultas al servidor spamhaus. No se pudo determinar\n\t\t \tsi la dirección %(type)s de este sistema está en la lista negra.",
+    "it": "Sono state eseguite troppe query sul server spamhaus. Impossibile determinare\n\t\t \tse l'indirizzo %(type)s di questo box è in blacklist.",
+    "pt": "Foram efectuadas demasiadas consultas ao servidor spamhaus. Não foi possível determinar\n\t\t \tse o endereço %(type)s deste sistema está na lista negra.",
+    "nl": "Er zijn te veel query's uitgevoerd op de spamhaus-server. Kon niet bepalen\n\t\t \tof het %(type)s-adres van dit systeem op de zwarte lijst staat.",
+    "pl": "Wykonano zbyt wiele zapytań do serwera spamhaus. Nie udało się ustalić,\n\t\t \tczy adres %(type)s tego systemu jest na czarnej liście."
+  },
+  "The %(type)s address of this machine %(addr)s is listed in the Spamhaus Block\n\t\t \tList (code %(code)s), which may prevent recipients from receiving your email. See\n\t\t \thttp://www.spamhaus.org/query/ip/%(addr)s.": {
+    "de": "Die %(type)s-Adresse dieses Rechners %(addr)s steht auf der Spamhaus Block\n\t\t \tList (Code %(code)s), was Empfänger daran hindern kann, Ihre E-Mail zu erhalten. Siehe\n\t\t \thttp://www.spamhaus.org/query/ip/%(addr)s.",
+    "fr": "L'adresse %(type)s de cette machine %(addr)s figure dans la Spamhaus Block\n\t\t \tList (code %(code)s), ce qui peut empêcher les destinataires de recevoir votre e-mail. Voir\n\t\t \thttp://www.spamhaus.org/query/ip/%(addr)s.",
+    "es": "La dirección %(type)s de esta máquina %(addr)s figura en la Spamhaus Block\n\t\t \tList (código %(code)s), lo que puede impedir que los destinatarios reciban su correo. Consulte\n\t\t \thttp://www.spamhaus.org/query/ip/%(addr)s.",
+    "it": "L'indirizzo %(type)s di questa macchina %(addr)s è elencato nella Spamhaus Block\n\t\t \tList (codice %(code)s), il che può impedire ai destinatari di ricevere la vostra e-mail. Vedere\n\t\t \thttp://www.spamhaus.org/query/ip/%(addr)s.",
+    "pt": "O endereço %(type)s desta máquina %(addr)s está listado na Spamhaus Block\n\t\t \tList (código %(code)s), o que pode impedir que os destinatários recebam o seu e-mail. Consulte\n\t\t \thttp://www.spamhaus.org/query/ip/%(addr)s.",
+    "nl": "Het %(type)s-adres van deze machine %(addr)s staat op de Spamhaus Block\n\t\t \tList (code %(code)s), wat ontvangers kan verhinderen uw e-mail te ontvangen. Zie\n\t\t \thttp://www.spamhaus.org/query/ip/%(addr)s.",
+    "pl": "Adres %(type)s tej maszyny %(addr)s znajduje się na Spamhaus Block\n\t\t \tList (kod %(code)s), co może uniemożliwić odbiorcom otrzymanie Twojej poczty. Zobacz\n\t\t \thttp://www.spamhaus.org/query/ip/%(addr)s."
+  },
+  "Domain name is invalid: %(err)s": {
+    "de": "Domänenname ist ungültig: %(err)s",
+    "fr": "Le nom de domaine est invalide : %(err)s",
+    "es": "El nombre de dominio no es válido: %(err)s",
+    "it": "Il nome di dominio non è valido: %(err)s",
+    "pt": "O nome de domínio é inválido: %(err)s",
+    "nl": "Domeinnaam is ongeldig: %(err)s",
+    "pl": "Nazwa domeny jest nieprawidłowa: %(err)s"
+  },
+  "Nameserver glue records are correct at registrar. [ns1/ns2.%(host)s ↦ %(ip)s]": {
+    "de": "Nameserver-Glue-Einträge sind beim Registrar korrekt. [ns1/ns2.%(host)s ↦ %(ip)s]",
+    "fr": "Les enregistrements glue des serveurs de noms sont corrects chez le registraire. [ns1/ns2.%(host)s ↦ %(ip)s]",
+    "es": "Los registros glue de los servidores de nombres son correctos en el registrador. [ns1/ns2.%(host)s ↦ %(ip)s]",
+    "it": "I record glue dei nameserver sono corretti presso il registrar. [ns1/ns2.%(host)s ↦ %(ip)s]",
+    "pt": "Os registos glue dos nameservers estão correctos no registador. [ns1/ns2.%(host)s ↦ %(ip)s]",
+    "nl": "Nameserver-glue-records zijn correct bij de registrar. [ns1/ns2.%(host)s ↦ %(ip)s]",
+    "pl": "Rekordy glue serwerów nazw są poprawne u rejestratora. [ns1/ns2.%(host)s ↦ %(ip)s]"
+  },
+  "Nameserver glue records (ns1.%(host)s and ns2.%(host)s) should be configured at your domain name\n\t\t\tregistrar as having the IP address of this box (%(ip)s). They currently report addresses of %(ns_ips)s. If you have set up External DNS, this may be OK.": {
+    "de": "Nameserver-Glue-Einträge (ns1.%(host)s und ns2.%(host)s) sollten bei Ihrem Domänennamen-\n\t\t\tRegistrar so konfiguriert sein, dass sie die IP-Adresse dieses Systems (%(ip)s) haben. Sie melden derzeit die Adressen %(ns_ips)s. Wenn Sie externes DNS eingerichtet haben, kann das in Ordnung sein.",
+    "fr": "Les enregistrements glue des serveurs de noms (ns1.%(host)s et ns2.%(host)s) devraient être configurés chez votre registraire\n\t\t\tde nom de domaine comme ayant l'adresse IP de cette box (%(ip)s). Ils indiquent actuellement les adresses %(ns_ips)s. Si vous avez configuré un DNS externe, cela peut être correct.",
+    "es": "Los registros glue de los servidores de nombres (ns1.%(host)s y ns2.%(host)s) deberían configurarse en su registrador\n\t\t\tde nombres de dominio con la dirección IP de este sistema (%(ip)s). Actualmente informan de las direcciones %(ns_ips)s. Si ha configurado DNS externo, esto puede estar bien.",
+    "it": "I record glue dei nameserver (ns1.%(host)s e ns2.%(host)s) dovrebbero essere configurati presso il registrar\n\t\t\tdel nome di dominio come aventi l'indirizzo IP di questo box (%(ip)s). Attualmente riportano gli indirizzi %(ns_ips)s. Se avete configurato DNS esterno, ciò può essere corretto.",
+    "pt": "Os registos glue dos nameservers (ns1.%(host)s e ns2.%(host)s) devem ser configurados no seu registador\n\t\t\tde nomes de domínio como tendo o endereço IP deste sistema (%(ip)s). Actualmente reportam os endereços %(ns_ips)s. Se configurou DNS externo, isto pode estar correcto.",
+    "nl": "Nameserver-glue-records (ns1.%(host)s en ns2.%(host)s) moeten bij uw domeinnaam-\n\t\t\tregistrar zo zijn geconfigureerd dat ze het IP-adres van dit systeem (%(ip)s) hebben. Ze melden momenteel de adressen %(ns_ips)s. Als u externe DNS hebt ingesteld, kan dit in orde zijn.",
+    "pl": "Rekordy glue serwerów nazw (ns1.%(host)s i ns2.%(host)s) powinny być skonfigurowane u rejestratora\n\t\t\tnazwy domeny jako mające adres IP tego systemu (%(ip)s). Obecnie zgłaszają adresy %(ns_ips)s. Jeśli skonfigurowano zewnętrzny DNS, może to być w porządku."
+  },
+  "Nameserver glue records are incorrect. The ns1.%(host)s and ns2.%(host)s nameservers must be configured at your domain name\n\t\t\tregistrar as having the IP address %(ip)s. They currently report addresses of %(ns_ips)s. It may take several hours for\n\t\t\tpublic DNS to update after a change.": {
+    "de": "Nameserver-Glue-Einträge sind falsch. Die Nameserver ns1.%(host)s und ns2.%(host)s müssen bei Ihrem Domänennamen-\n\t\t\tRegistrar so konfiguriert sein, dass sie die IP-Adresse %(ip)s haben. Sie melden derzeit die Adressen %(ns_ips)s. Es kann mehrere Stunden dauern, bis\n\t\t\tdas öffentliche DNS nach einer Änderung aktualisiert ist.",
+    "fr": "Les enregistrements glue des serveurs de noms sont incorrects. Les serveurs de noms ns1.%(host)s et ns2.%(host)s doivent être configurés chez votre registraire\n\t\t\tde nom de domaine comme ayant l'adresse IP %(ip)s. Ils indiquent actuellement les adresses %(ns_ips)s. La mise à jour du\n\t\t\tDNS public après une modification peut prendre plusieurs heures.",
+    "es": "Los registros glue de los servidores de nombres son incorrectos. Los servidores ns1.%(host)s y ns2.%(host)s deben configurarse en su registrador\n\t\t\tde nombres de dominio con la dirección IP %(ip)s. Actualmente informan de las direcciones %(ns_ips)s. Puede tardar varias horas en\n\t\t\tactualizarse el DNS público tras un cambio.",
+    "it": "I record glue dei nameserver sono errati. I nameserver ns1.%(host)s e ns2.%(host)s devono essere configurati presso il registrar\n\t\t\tdel nome di dominio come aventi l'indirizzo IP %(ip)s. Attualmente riportano gli indirizzi %(ns_ips)s. Possono passare diverse ore prima che\n\t\t\til DNS pubblico si aggiorni dopo una modifica.",
+    "pt": "Os registos glue dos nameservers estão incorrectos. Os nameservers ns1.%(host)s e ns2.%(host)s devem ser configurados no seu registador\n\t\t\tde nomes de domínio como tendo o endereço IP %(ip)s. Actualmente reportam os endereços %(ns_ips)s. Pode demorar várias horas até\n\t\t\to DNS público actualizar após uma alteração.",
+    "nl": "Nameserver-glue-records zijn onjuist. De nameservers ns1.%(host)s en ns2.%(host)s moeten bij uw domeinnaam-\n\t\t\tregistrar zo zijn geconfigureerd dat ze het IP-adres %(ip)s hebben. Ze melden momenteel de adressen %(ns_ips)s. Het kan enkele uren duren voordat\n\t\t\tde openbare DNS na een wijziging is bijgewerkt.",
+    "pl": "Rekordy glue serwerów nazw są nieprawidłowe. Serwery nazw ns1.%(host)s i ns2.%(host)s muszą być skonfigurowane u rejestratora\n\t\t\tnazwy domeny jako mające adres IP %(ip)s. Obecnie zgłaszają adresy %(ns_ips)s. Aktualizacja\n\t\t\tpublicznego DNS po zmianie może potrwać kilka godzin."
+  },
+  "Domain resolves to box's IP address. [%(host)s ↦ %(ips)s]": {
+    "de": "Domäne löst zur IP-Adresse des Systems auf. [%(host)s ↦ %(ips)s]",
+    "fr": "Le domaine résout vers l'adresse IP de la box. [%(host)s ↦ %(ips)s]",
+    "es": "El dominio resuelve a la dirección IP del sistema. [%(host)s ↦ %(ips)s]",
+    "it": "Il dominio risolve all'indirizzo IP del box. [%(host)s ↦ %(ips)s]",
+    "pt": "O domínio resolve para o endereço IP do sistema. [%(host)s ↦ %(ips)s]",
+    "nl": "Domein lost op naar het IP-adres van het systeem. [%(host)s ↦ %(ips)s]",
+    "pl": "Domena wskazuje na adres IP systemu. [%(host)s ↦ %(ips)s]"
+  },
+  "This domain must resolve to this box's IP address (%(ips)s) in public DNS but it currently resolves\n\t\t\tto %(resolved)s. It may take several hours for public DNS to update after a change. This problem may result from other\n\t\t\tissues listed above.": {
+    "de": "Diese Domäne muss in öffentlichem DNS zur IP-Adresse dieses Systems (%(ips)s) auflösen, löst derzeit aber\n\t\t\tzu %(resolved)s auf. Es kann mehrere Stunden dauern, bis öffentliches DNS nach einer Änderung aktualisiert ist. Dieses Problem kann von anderen\n\t\t\tobigen Problemen herrühren.",
+    "fr": "Ce domaine doit résoudre vers l'adresse IP de cette box (%(ips)s) dans le DNS public mais il résout actuellement\n\t\t\tvers %(resolved)s. La mise à jour du DNS public après une modification peut prendre plusieurs heures. Ce problème peut résulter d'autres\n\t\t\tproblèmes listés ci-dessus.",
+    "es": "Este dominio debe resolver a la dirección IP de este sistema (%(ips)s) en el DNS público pero actualmente resuelve\n\t\t\ta %(resolved)s. Puede tardar varias horas en actualizarse el DNS público tras un cambio. Este problema puede deberse a otros\n\t\t\tproblemas listados arriba.",
+    "it": "Questo dominio deve risolvere all'indirizzo IP di questo box (%(ips)s) nel DNS pubblico ma attualmente risolve\n\t\t\ta %(resolved)s. Possono passare diverse ore prima che il DNS pubblico si aggiorni dopo una modifica. Questo problema può derivare da altri\n\t\t\tproblemi elencati sopra.",
+    "pt": "Este domínio deve resolver para o endereço IP deste sistema (%(ips)s) no DNS público mas actualmente resolve\n\t\t\tpara %(resolved)s. Pode demorar várias horas até o DNS público actualizar após uma alteração. Este problema pode resultar de outros\n\t\t\tproblemas listados acima.",
+    "nl": "Dit domein moet in openbare DNS naar het IP-adres van dit systeem (%(ips)s) oplossen, maar lost momenteel\n\t\t\top naar %(resolved)s. Het kan enkele uren duren voordat openbare DNS na een wijziging is bijgewerkt. Dit probleem kan voortkomen uit andere\n\t\t\tbovenstaande problemen.",
+    "pl": "Ta domena musi wskazywać na adres IP tego systemu (%(ips)s) w publicznym DNS, ale obecnie wskazuje\n\t\t\tna %(resolved)s. Aktualizacja publicznego DNS po zmianie może potrwać kilka godzin. Ten problem może wynikać z innych\n\t\t\tproblemów wymienionych powyżej."
+  },
+  "Reverse DNS is set correctly at ISP. [%(ips)s ↦ %(host)s]": {
+    "de": "Reverse DNS ist beim ISP korrekt gesetzt. [%(ips)s ↦ %(host)s]",
+    "fr": "Le DNS inverse est correctement défini chez le FAI. [%(ips)s ↦ %(host)s]",
+    "es": "El DNS inverso está configurado correctamente en el ISP. [%(ips)s ↦ %(host)s]",
+    "it": "Il DNS inverso è impostato correttamente presso l'ISP. [%(ips)s ↦ %(host)s]",
+    "pt": "O DNS inverso está definido correctamente no ISP. [%(ips)s ↦ %(host)s]",
+    "nl": "Reverse DNS is correct ingesteld bij de ISP. [%(ips)s ↦ %(host)s]",
+    "pl": "Reverse DNS jest poprawnie ustawiony u ISP. [%(ips)s ↦ %(host)s]"
+  },
+  "This box's reverse DNS is currently %(rdns)s, but it should be %(domain)s. Your ISP or cloud provider will have instructions\n\t\t\ton setting up reverse DNS for this box.": {
+    "de": "Das Reverse DNS dieses Systems ist derzeit %(rdns)s, sollte aber %(domain)s sein. Ihr ISP oder Cloud-Anbieter hat Anweisungen\n\t\t\tzur Einrichtung von Reverse DNS für dieses System.",
+    "fr": "Le DNS inverse de cette box est actuellement %(rdns)s, mais il devrait être %(domain)s. Votre FAI ou fournisseur cloud aura des instructions\n\t\t\tpour configurer le DNS inverse pour cette box.",
+    "es": "El DNS inverso de este sistema es actualmente %(rdns)s, pero debería ser %(domain)s. Su ISP o proveedor de nube tendrá instrucciones\n\t\t\tsobre cómo configurar el DNS inverso para este sistema.",
+    "it": "Il DNS inverso di questo box è attualmente %(rdns)s, ma dovrebbe essere %(domain)s. Il vostro ISP o provider cloud avrà istruzioni\n\t\t\tsu come configurare il DNS inverso per questo box.",
+    "pt": "O DNS inverso deste sistema é actualmente %(rdns)s, mas deveria ser %(domain)s. O seu ISP ou fornecedor de cloud terá instruções\n\t\t\tsobre como configurar o DNS inverso para este sistema.",
+    "nl": "De reverse DNS van dit systeem is momenteel %(rdns)s, maar zou %(domain)s moeten zijn. Uw ISP of cloudprovider heeft instructies\n\t\t\tvoor het instellen van reverse DNS voor dit systeem.",
+    "pl": "Reverse DNS tego systemu to obecnie %(rdns)s, ale powinien to być %(domain)s. Twój ISP lub dostawca chmury będzie miał instrukcje\n\t\t\tdotyczące konfiguracji reverse DNS dla tego systemu."
+  },
+  "This box's reverse DNS is currently %(rdns4)s (IPv4) and %(rdns6)s (IPv6), but it should be %(domain)s. Your ISP or cloud provider will have instructions\n\t\t\ton setting up reverse DNS for this box.": {
+    "de": "Das Reverse DNS dieses Systems ist derzeit %(rdns4)s (IPv4) und %(rdns6)s (IPv6), sollte aber %(domain)s sein. Ihr ISP oder Cloud-Anbieter hat Anweisungen\n\t\t\tzur Einrichtung von Reverse DNS für dieses System.",
+    "fr": "Le DNS inverse de cette box est actuellement %(rdns4)s (IPv4) et %(rdns6)s (IPv6), mais il devrait être %(domain)s. Votre FAI ou fournisseur cloud aura des instructions\n\t\t\tpour configurer le DNS inverse pour cette box.",
+    "es": "El DNS inverso de este sistema es actualmente %(rdns4)s (IPv4) y %(rdns6)s (IPv6), pero debería ser %(domain)s. Su ISP o proveedor de nube tendrá instrucciones\n\t\t\tsobre cómo configurar el DNS inverso para este sistema.",
+    "it": "Il DNS inverso di questo box è attualmente %(rdns4)s (IPv4) e %(rdns6)s (IPv6), ma dovrebbe essere %(domain)s. Il vostro ISP o provider cloud avrà istruzioni\n\t\t\tsu come configurare il DNS inverso per questo box.",
+    "pt": "O DNS inverso deste sistema é actualmente %(rdns4)s (IPv4) e %(rdns6)s (IPv6), mas deveria ser %(domain)s. O seu ISP ou fornecedor de cloud terá instruções\n\t\t\tsobre como configurar o DNS inverso para este sistema.",
+    "nl": "De reverse DNS van dit systeem is momenteel %(rdns4)s (IPv4) en %(rdns6)s (IPv6), maar zou %(domain)s moeten zijn. Uw ISP of cloudprovider heeft instructies\n\t\t\tvoor het instellen van reverse DNS voor dit systeem.",
+    "pl": "Reverse DNS tego systemu to obecnie %(rdns4)s (IPv4) i %(rdns6)s (IPv6), ale powinien to być %(domain)s. Twój ISP lub dostawca chmury będzie miał instrukcje\n\t\t\tdotyczące konfiguracji reverse DNS dla tego systemu."
+  },
+  "The DANE TLSA record for incoming mail is correct (%(qname)s).": {
+    "de": "Der DANE-TLSA-Eintrag für eingehende E-Mail ist korrekt (%(qname)s).",
+    "fr": "L'enregistrement DANE TLSA pour le courrier entrant est correct (%(qname)s).",
+    "es": "El registro DANE TLSA para el correo entrante es correcto (%(qname)s).",
+    "it": "Il record DANE TLSA per la posta in arrivo è corretto (%(qname)s).",
+    "pt": "O registo DANE TLSA para o correio de entrada está correcto (%(qname)s).",
+    "nl": "Het DANE TLSA-record voor inkomende e-mail is correct (%(qname)s).",
+    "pl": "Rekord DANE TLSA dla poczty przychodzącej jest poprawny (%(qname)s)."
+  },
+  "The DANE TLSA record for incoming mail is not set. This is optional.": {
+    "de": "Der DANE-TLSA-Eintrag für eingehende E-Mail ist nicht gesetzt. Dies ist optional.",
+    "fr": "L'enregistrement DANE TLSA pour le courrier entrant n'est pas défini. Ceci est facultatif.",
+    "es": "El registro DANE TLSA para el correo entrante no está establecido. Esto es opcional.",
+    "it": "Il record DANE TLSA per la posta in arrivo non è impostato. Questo è facoltativo.",
+    "pt": "O registo DANE TLSA para o correio de entrada não está definido. Isto é opcional.",
+    "nl": "Het DANE TLSA-record voor inkomende e-mail is niet ingesteld. Dit is optioneel.",
+    "pl": "Rekord DANE TLSA dla poczty przychodzącej nie jest ustawiony. To opcjonalne."
+  },
+  "The DANE TLSA record for incoming mail (%(qname)s) is not correct. It is '%(got)s' but it should be '%(expected)s'.\n\t\t\tIt may take several hours for public DNS to update after a change.": {
+    "de": "Der DANE-TLSA-Eintrag für eingehende E-Mail (%(qname)s) ist nicht korrekt. Er ist '%(got)s', sollte aber '%(expected)s' sein.\n\t\t\tEs kann mehrere Stunden dauern, bis öffentliches DNS nach einer Änderung aktualisiert ist.",
+    "fr": "L'enregistrement DANE TLSA pour le courrier entrant (%(qname)s) n'est pas correct. Il est '%(got)s' mais devrait être '%(expected)s'.\n\t\t\tLa mise à jour du DNS public après une modification peut prendre plusieurs heures.",
+    "es": "El registro DANE TLSA para el correo entrante (%(qname)s) no es correcto. Es '%(got)s' pero debería ser '%(expected)s'.\n\t\t\tPuede tardar varias horas en actualizarse el DNS público tras un cambio.",
+    "it": "Il record DANE TLSA per la posta in arrivo (%(qname)s) non è corretto. È '%(got)s' ma dovrebbe essere '%(expected)s'.\n\t\t\tPossono passare diverse ore prima che il DNS pubblico si aggiorni dopo una modifica.",
+    "pt": "O registo DANE TLSA para o correio de entrada (%(qname)s) não está correcto. É '%(got)s' mas deveria ser '%(expected)s'.\n\t\t\tPode demorar várias horas até o DNS público actualizar após uma alteração.",
+    "nl": "Het DANE TLSA-record voor inkomende e-mail (%(qname)s) is niet correct. Het is '%(got)s' maar zou '%(expected)s' moeten zijn.\n\t\t\tHet kan enkele uren duren voordat openbare DNS na een wijziging is bijgewerkt.",
+    "pl": "Rekord DANE TLSA dla poczty przychodzącej (%(qname)s) jest nieprawidłowy. Jest '%(got)s', a powinien być '%(expected)s'.\n\t\t\tAktualizacja publicznego DNS po zmianie może potrwać kilka godzin."
+  },
+  "Hostmaster contact address": {
+    "de": "Hostmaster-Kontaktadresse",
+    "fr": "Adresse de contact du hostmaster",
+    "es": "Dirección de contacto del hostmaster",
+    "it": "Indirizzo di contatto del hostmaster",
+    "pt": "Endereço de contacto do hostmaster",
+    "nl": "Hostmaster-contactadres",
+    "pl": "Adres kontaktowy hostmastera"
+  },
+  "%(name)s exists as a mail alias. [%(alias)s ↦ %(dest)s]": {
+    "de": "%(name)s existiert als E-Mail-Alias. [%(alias)s ↦ %(dest)s]",
+    "fr": "%(name)s existe en tant qu'alias de courrier. [%(alias)s ↦ %(dest)s]",
+    "es": "%(name)s existe como alias de correo. [%(alias)s ↦ %(dest)s]",
+    "it": "%(name)s esiste come alias di posta. [%(alias)s ↦ %(dest)s]",
+    "pt": "%(name)s existe como alias de correio. [%(alias)s ↦ %(dest)s]",
+    "nl": "%(name)s bestaat als e-mailalias. [%(alias)s ↦ %(dest)s]",
+    "pl": "%(name)s istnieje jako alias pocztowy. [%(alias)s ↦ %(dest)s]"
+  },
+  "You must set the destination of the mail alias for %(alias)s to direct email to you or another administrator.": {
+    "de": "Sie müssen das Ziel des E-Mail-Alias für %(alias)s so setzen, dass E-Mails an Sie oder einen anderen Administrator geleitet werden.",
+    "fr": "Vous devez définir la destination de l'alias de courrier pour %(alias)s afin de diriger les e-mails vers vous ou un autre administrateur.",
+    "es": "Debe establecer el destino del alias de correo para %(alias)s de modo que dirija el correo a usted u otro administrador.",
+    "it": "È necessario impostare la destinazione dell'alias di posta per %(alias)s in modo da indirizzare le e-mail a voi o a un altro amministratore.",
+    "pt": "Deve definir o destino do alias de correio para %(alias)s de forma a direcionar o e-mail para si ou outro administrador.",
+    "nl": "U moet de bestemming van het e-mailalias voor %(alias)s zo instellen dat e-mail naar u of een andere beheerder gaat.",
+    "pl": "Musisz ustawić cel aliasu pocztowego dla %(alias)s tak, aby poczta trafiała do Ciebie lub innego administratora."
+  },
+  "You must add a mail alias for %(alias)s which directs email to you or another administrator.": {
+    "de": "Sie müssen einen E-Mail-Alias für %(alias)s hinzufügen, der E-Mails an Sie oder einen anderen Administrator leitet.",
+    "fr": "Vous devez ajouter un alias de courrier pour %(alias)s qui dirige les e-mails vers vous ou un autre administrateur.",
+    "es": "Debe añadir un alias de correo para %(alias)s que dirija el correo a usted u otro administrador.",
+    "it": "È necessario aggiungere un alias di posta per %(alias)s che indirizzi le e-mail a voi o a un altro amministratore.",
+    "pt": "Deve adicionar um alias de correio para %(alias)s que direcione o e-mail para si ou outro administrador.",
+    "nl": "U moet een e-mailalias voor %(alias)s toevoegen dat e-mail naar u of een andere beheerder stuurt.",
+    "pl": "Musisz dodać alias pocztowy dla %(alias)s, który kieruje pocztę do Ciebie lub innego administratora."
+  },
+  "Nameservers are set correctly at registrar. [%(ns)s]": {
+    "de": "Nameserver sind beim Registrar korrekt gesetzt. [%(ns)s]",
+    "fr": "Les serveurs de noms sont correctement définis chez le registraire. [%(ns)s]",
+    "es": "Los servidores de nombres están configurados correctamente en el registrador. [%(ns)s]",
+    "it": "I nameserver sono impostati correttamente presso il registrar. [%(ns)s]",
+    "pt": "Os nameservers estão definidos correctamente no registador. [%(ns)s]",
+    "nl": "Nameservers zijn correct ingesteld bij de registrar. [%(ns)s]",
+    "pl": "Serwery nazw są poprawnie ustawione u rejestratora. [%(ns)s]"
+  },
+  "The nameservers set on this domain at your domain name registrar should be %(correct)s. They are currently %(existing)s.\n\t\t\tIf you are using External DNS, this may be OK.": {
+    "de": "Die bei Ihrem Domänennamen-Registrar für diese Domäne gesetzten Nameserver sollten %(correct)s sein. Derzeit sind sie %(existing)s.\n\t\t\tWenn Sie externes DNS verwenden, kann das in Ordnung sein.",
+    "fr": "Les serveurs de noms définis pour ce domaine chez votre registraire de nom de domaine devraient être %(correct)s. Ils sont actuellement %(existing)s.\n\t\t\tSi vous utilisez un DNS externe, cela peut être correct.",
+    "es": "Los servidores de nombres establecidos para este dominio en su registrador deberían ser %(correct)s. Actualmente son %(existing)s.\n\t\t\tSi usa DNS externo, esto puede estar bien.",
+    "it": "I nameserver impostati su questo dominio presso il registrar dovrebbero essere %(correct)s. Attualmente sono %(existing)s.\n\t\t\tSe si usa DNS esterno, ciò può essere corretto.",
+    "pt": "Os nameservers definidos neste domínio no seu registador de nomes de domínio devem ser %(correct)s. Actualmente são %(existing)s.\n\t\t\tSe estiver a usar DNS externo, isto pode estar correcto.",
+    "nl": "De nameservers die voor dit domein bij uw domeinnaamregistrar zijn ingesteld, zouden %(correct)s moeten zijn. Ze zijn momenteel %(existing)s.\n\t\t\tAls u externe DNS gebruikt, kan dit in orde zijn.",
+    "pl": "Serwery nazw ustawione dla tej domeny u rejestratora powinny być %(correct)s. Obecnie są %(existing)s.\n\t\t\tJeśli używasz zewnętrznego DNS, może to być w porządku."
+  },
+  "The nameservers set on this domain are incorrect. They are currently %(existing)s. Use your domain name registrar's\n\t\t\tcontrol panel to set the nameservers to %(correct)s.": {
+    "de": "Die für diese Domäne gesetzten Nameserver sind falsch. Derzeit sind sie %(existing)s. Verwenden Sie das\n\t\t\tKontrollpanel Ihres Domänennamen-Registrars, um die Nameserver auf %(correct)s zu setzen.",
+    "fr": "Les serveurs de noms définis pour ce domaine sont incorrects. Ils sont actuellement %(existing)s. Utilisez le\n\t\t\tpanneau de contrôle de votre registraire de nom de domaine pour définir les serveurs de noms sur %(correct)s.",
+    "es": "Los servidores de nombres establecidos en este dominio son incorrectos. Actualmente son %(existing)s. Use el\n\t\t\tpanel de control de su registrador de nombres de dominio para establecer los servidores de nombres en %(correct)s.",
+    "it": "I nameserver impostati su questo dominio sono errati. Attualmente sono %(existing)s. Usare il\n\t\t\tpannello di controllo del registrar del nome di dominio per impostare i nameserver su %(correct)s.",
+    "pt": "Os nameservers definidos neste domínio estão incorrectos. Actualmente são %(existing)s. Use o\n\t\t\tpainel de controlo do seu registador de nomes de domínio para definir os nameservers para %(correct)s.",
+    "nl": "De nameservers die voor dit domein zijn ingesteld, zijn onjuist. Ze zijn momenteel %(existing)s. Gebruik het\n\t\t\tcontrolepaneel van uw domeinnaamregistrar om de nameservers in te stellen op %(correct)s.",
+    "pl": "Serwery nazw ustawione dla tej domeny są nieprawidłowe. Obecnie są %(existing)s. Użyj\n\t\t\tpanelu kontrolnego rejestratora nazwy domeny, aby ustawić serwery nazw na %(correct)s."
+  },
+  "Secondary nameserver %(ns)s is not valid (it doesn't resolve to an IP address).": {
+    "de": "Sekundärer Nameserver %(ns)s ist ungültig (er löst nicht zu einer IP-Adresse auf).",
+    "fr": "Le serveur de noms secondaire %(ns)s n'est pas valide (il ne résout pas vers une adresse IP).",
+    "es": "El servidor de nombres secundario %(ns)s no es válido (no resuelve a una dirección IP).",
+    "it": "Il nameserver secondario %(ns)s non è valido (non risolve a un indirizzo IP).",
+    "pt": "O nameserver secundário %(ns)s não é válido (não resolve para um endereço IP).",
+    "nl": "Secundaire nameserver %(ns)s is niet geldig (lost niet op naar een IP-adres).",
+    "pl": "Zapasowy serwer nazw %(ns)s jest nieprawidłowy (nie wskazuje na adres IP)."
+  },
+  "Secondary nameserver %(ns)s resolved the domain correctly.": {
+    "de": "Sekundärer Nameserver %(ns)s hat die Domäne korrekt aufgelöst.",
+    "fr": "Le serveur de noms secondaire %(ns)s a résolu le domaine correctement.",
+    "es": "El servidor de nombres secundario %(ns)s resolvió el dominio correctamente.",
+    "it": "Il nameserver secondario %(ns)s ha risolto correttamente il dominio.",
+    "pt": "O nameserver secundário %(ns)s resolveu o domínio correctamente.",
+    "nl": "Secundaire nameserver %(ns)s heeft het domein correct opgelost.",
+    "pl": "Zapasowy serwer nazw %(ns)s poprawnie rozwiązał domenę."
+  },
+  "Secondary nameserver %(ns)s is not configured to resolve this domain.": {
+    "de": "Sekundärer Nameserver %(ns)s ist nicht konfiguriert, diese Domäne aufzulösen.",
+    "fr": "Le serveur de noms secondaire %(ns)s n'est pas configuré pour résoudre ce domaine.",
+    "es": "El servidor de nombres secundario %(ns)s no está configurado para resolver este dominio.",
+    "it": "Il nameserver secondario %(ns)s non è configurato per risolvere questo dominio.",
+    "pt": "O nameserver secundário %(ns)s não está configurado para resolver este domínio.",
+    "nl": "Secundaire nameserver %(ns)s is niet geconfigureerd om dit domein op te lossen.",
+    "pl": "Zapasowy serwer nazw %(ns)s nie jest skonfigurowany do rozwiązywania tej domeny."
+  },
+  "Secondary nameserver %(ns)s did not resolve this domain, result: %(ip)s": {
+    "de": "Sekundärer Nameserver %(ns)s hat diese Domäne nicht aufgelöst, Ergebnis: %(ip)s",
+    "fr": "Le serveur de noms secondaire %(ns)s n'a pas résolu ce domaine, résultat : %(ip)s",
+    "es": "El servidor de nombres secundario %(ns)s no resolvió este dominio, resultado: %(ip)s",
+    "it": "Il nameserver secondario %(ns)s non ha risolto questo dominio, risultato: %(ip)s",
+    "pt": "O nameserver secundário %(ns)s não resolveu este domínio, resultado: %(ip)s",
+    "nl": "Secundaire nameserver %(ns)s heeft dit domein niet opgelost, resultaat: %(ip)s",
+    "pl": "Zapasowy serwer nazw %(ns)s nie rozwiązał tej domeny, wynik: %(ip)s"
+  },
+  "Secondary nameserver %(ns)s is not configured correctly. (It resolved this domain as %(ip)s. It should be %(correct)s.)": {
+    "de": "Sekundärer Nameserver %(ns)s ist nicht korrekt konfiguriert. (Er hat diese Domäne als %(ip)s aufgelöst. Es sollte %(correct)s sein.)",
+    "fr": "Le serveur de noms secondaire %(ns)s n'est pas configuré correctement. (Il a résolu ce domaine comme %(ip)s. Cela devrait être %(correct)s.)",
+    "es": "El servidor de nombres secundario %(ns)s no está configurado correctamente. (Resolvió este dominio como %(ip)s. Debería ser %(correct)s.)",
+    "it": "Il nameserver secondario %(ns)s non è configurato correttamente. (Ha risolto questo dominio come %(ip)s. Dovrebbe essere %(correct)s.)",
+    "pt": "O nameserver secundário %(ns)s não está configurado correctamente. (Resolveu este domínio como %(ip)s. Deveria ser %(correct)s.)",
+    "nl": "Secundaire nameserver %(ns)s is niet correct geconfigureerd. (Heeft dit domein opgelost als %(ip)s. Het zou %(correct)s moeten zijn.)",
+    "pl": "Zapasowy serwer nazw %(ns)s nie jest poprawnie skonfigurowany. (Rozwiązał tę domenę jako %(ip)s. Powinno być %(correct)s.)"
+  },
+  "Secondary nameserver %(ns)s has consistent SOA record.": {
+    "de": "Sekundärer Nameserver %(ns)s hat einen konsistenten SOA-Eintrag.",
+    "fr": "Le serveur de noms secondaire %(ns)s a un enregistrement SOA cohérent.",
+    "es": "El servidor de nombres secundario %(ns)s tiene un registro SOA coherente.",
+    "it": "Il nameserver secondario %(ns)s ha un record SOA coerente.",
+    "pt": "O nameserver secundário %(ns)s tem um registo SOA consistente.",
+    "nl": "Secundaire nameserver %(ns)s heeft een consistent SOA-record.",
+    "pl": "Zapasowy serwer nazw %(ns)s ma spójny rekord SOA."
+  },
+  "Secondary nameserver %(ns)s has no SOA record configured.": {
+    "de": "Sekundärer Nameserver %(ns)s hat keinen SOA-Eintrag konfiguriert.",
+    "fr": "Le serveur de noms secondaire %(ns)s n'a aucun enregistrement SOA configuré.",
+    "es": "El servidor de nombres secundario %(ns)s no tiene un registro SOA configurado.",
+    "it": "Il nameserver secondario %(ns)s non ha un record SOA configurato.",
+    "pt": "O nameserver secundário %(ns)s não tem um registo SOA configurado.",
+    "nl": "Secundaire nameserver %(ns)s heeft geen SOA-record geconfigureerd.",
+    "pl": "Zapasowy serwer nazw %(ns)s nie ma skonfigurowanego rekordu SOA."
+  },
+  "Secondary nameserver %(ns)s timed out on checking SOA record.": {
+    "de": "Zeitüberschreitung bei sekundärem Nameserver %(ns)s beim Prüfen des SOA-Eintrags.",
+    "fr": "Délai d'attente dépassé pour le serveur de noms secondaire %(ns)s lors de la vérification de l'enregistrement SOA.",
+    "es": "Tiempo de espera agotado en el servidor de nombres secundario %(ns)s al comprobar el registro SOA.",
+    "it": "Timeout del nameserver secondario %(ns)s durante il controllo del record SOA.",
+    "pt": "Tempo limite esgotado no nameserver secundário %(ns)s ao verificar o registo SOA.",
+    "nl": "Time-out bij secundaire nameserver %(ns)s bij controleren van SOA-record.",
+    "pl": "Przekroczono limit czasu zapasowego serwera nazw %(ns)s przy sprawdzaniu rekordu SOA."
+  },
+  "Secondary nameserver %(ns)s has inconsistent SOA record (primary: %(primary)s versus secondary: %(secondary)s).\n\t\t\t\t\tCheck that synchronization between secondary and primary DNS servers is properly set-up.": {
+    "de": "Sekundärer Nameserver %(ns)s hat einen inkonsistenten SOA-Eintrag (primär: %(primary)s gegenüber sekundär: %(secondary)s).\n\t\t\t\t\tPrüfen Sie, ob die Synchronisation zwischen sekundären und primären DNS-Servern korrekt eingerichtet ist.",
+    "fr": "Le serveur de noms secondaire %(ns)s a un enregistrement SOA incohérent (primaire : %(primary)s versus secondaire : %(secondary)s).\n\t\t\t\t\tVérifiez que la synchronisation entre les serveurs DNS secondaires et primaires est correctement configurée.",
+    "es": "El servidor de nombres secundario %(ns)s tiene un registro SOA incoherente (primario: %(primary)s frente a secundario: %(secondary)s).\n\t\t\t\t\tCompruebe que la sincronización entre los servidores DNS secundarios y primarios esté correctamente configurada.",
+    "it": "Il nameserver secondario %(ns)s ha un record SOA incoerente (primario: %(primary)s versus secondario: %(secondary)s).\n\t\t\t\t\tVerificare che la sincronizzazione tra i server DNS secondari e primari sia configurata correttamente.",
+    "pt": "O nameserver secundário %(ns)s tem um registo SOA inconsistente (primário: %(primary)s versus secundário: %(secondary)s).\n\t\t\t\t\tVerifique se a sincronização entre os servidores DNS secundários e primários está correctamente configurada.",
+    "nl": "Secundaire nameserver %(ns)s heeft een inconsistent SOA-record (primair: %(primary)s versus secundair: %(secondary)s).\n\t\t\t\t\tControleer of de synchronisatie tussen secundaire en primaire DNS-servers correct is ingesteld.",
+    "pl": "Zapasowy serwer nazw %(ns)s ma niespójny rekord SOA (główny: %(primary)s kontra zapasowy: %(secondary)s).\n\t\t\t\t\tSprawdź, czy synchronizacja między zapasowymi a głównymi serwerami DNS jest poprawnie skonfigurowana."
+  },
+  "Web has been disabled for this domain because you have set a custom DNS record.": {
+    "de": "Das Web wurde für diese Domäne deaktiviert, weil Sie einen benutzerdefinierten DNS-Eintrag gesetzt haben.",
+    "fr": "Le web a été désactivé pour ce domaine car vous avez défini un enregistrement DNS personnalisé.",
+    "es": "La web se ha desactivado para este dominio porque ha establecido un registro DNS personalizado.",
+    "it": "Il web è stato disabilitato per questo dominio perché è stato impostato un record DNS personalizzato.",
+    "pt": "A web foi desactivada para este domínio porque definiu um registo DNS personalizado.",
+    "nl": "Web is uitgeschakeld voor dit domein omdat u een aangepast DNS-record hebt ingesteld.",
+    "pl": "WWW zostało wyłączone dla tej domeny, ponieważ ustawiono niestandardowy rekord DNS."
+  },
+  "A redirect from 'www.%(domain)s' has been disabled for this domain because you have set a custom DNS record on the www subdomain.": {
+    "de": "Eine Umleitung von 'www.%(domain)s' wurde für diese Domäne deaktiviert, weil Sie einen benutzerdefinierten DNS-Eintrag auf der www-Subdomäne gesetzt haben.",
+    "fr": "Une redirection depuis 'www.%(domain)s' a été désactivée pour ce domaine car vous avez défini un enregistrement DNS personnalisé sur le sous-domaine www.",
+    "es": "Se ha desactivado una redirección desde 'www.%(domain)s' para este dominio porque ha establecido un registro DNS personalizado en el subdominio www.",
+    "it": "Un reindirizzamento da 'www.%(domain)s' è stato disabilitato per questo dominio perché è stato impostato un record DNS personalizzato sul sottodominio www.",
+    "pt": "Um redireccionamento de 'www.%(domain)s' foi desactivado para este domínio porque definiu um registo DNS personalizado no subdomínio www.",
+    "nl": "Een omleiding vanaf 'www.%(domain)s' is uitgeschakeld voor dit domein omdat u een aangepast DNS-record op het www-subdomein hebt ingesteld.",
+    "pl": "Przekierowanie z 'www.%(domain)s' zostało wyłączone dla tej domeny, ponieważ ustawiono niestandardowy rekord DNS na subdomenie www."
+  },
+  "This domain's DNSSEC DS record is not set. The DS record is optional. The DS record activates DNSSEC. See below for instructions.": {
+    "de": "Der DNSSEC-DS-Eintrag dieser Domäne ist nicht gesetzt. Der DS-Eintrag ist optional. Der DS-Eintrag aktiviert DNSSEC. Siehe unten für Anweisungen.",
+    "fr": "L'enregistrement DNSSEC DS de ce domaine n'est pas défini. L'enregistrement DS est facultatif. L'enregistrement DS active DNSSEC. Voir ci-dessous pour les instructions.",
+    "es": "El registro DNSSEC DS de este dominio no está establecido. El registro DS es opcional. El registro DS activa DNSSEC. Consulte abajo las instrucciones.",
+    "it": "Il record DNSSEC DS di questo dominio non è impostato. Il record DS è facoltativo. Il record DS attiva DNSSEC. Vedere sotto per le istruzioni.",
+    "pt": "O registo DNSSEC DS deste domínio não está definido. O registo DS é opcional. O registo DS activa o DNSSEC. Consulte abaixo as instruções.",
+    "nl": "Het DNSSEC DS-record van dit domein is niet ingesteld. Het DS-record is optioneel. Het DS-record activeert DNSSEC. Zie hieronder voor instructies.",
+    "pl": "Rekord DNSSEC DS tej domeny nie jest ustawiony. Rekord DS jest opcjonalny. Rekord DS aktywuje DNSSEC. Instrukcje poniżej."
+  },
+  "DNSSEC 'DS' record is set correctly at registrar.": {
+    "de": "DNSSEC-'DS'-Eintrag ist beim Registrar korrekt gesetzt.",
+    "fr": "L'enregistrement DNSSEC 'DS' est correctement défini chez le registraire.",
+    "es": "El registro DNSSEC 'DS' está configurado correctamente en el registrador.",
+    "it": "Il record DNSSEC 'DS' è impostato correttamente presso il registrar.",
+    "pt": "O registo DNSSEC 'DS' está definido correctamente no registador.",
+    "nl": "DNSSEC-'DS'-record is correct ingesteld bij de registrar.",
+    "pl": "Rekord DNSSEC 'DS' jest poprawnie ustawiony u rejestratora."
+  },
+  "DNSSEC 'DS' record is set correctly at registrar. (Records using algorithm other than ECDSAP256SHA256 and digest types other than SHA-256/384 should be removed.)": {
+    "de": "DNSSEC-'DS'-Eintrag ist beim Registrar korrekt gesetzt. (Einträge mit einem anderen Algorithmus als ECDSAP256SHA256 und Digest-Typen außer SHA-256/384 sollten entfernt werden.)",
+    "fr": "L'enregistrement DNSSEC 'DS' est correctement défini chez le registraire. (Les enregistrements utilisant un algorithme autre que ECDSAP256SHA256 et des types de digest autres que SHA-256/384 devraient être supprimés.)",
+    "es": "El registro DNSSEC 'DS' está configurado correctamente en el registrador. (Los registros que usen un algoritmo distinto de ECDSAP256SHA256 y tipos de digest distintos de SHA-256/384 deberían eliminarse.)",
+    "it": "Il record DNSSEC 'DS' è impostato correttamente presso il registrar. (I record che usano un algoritmo diverso da ECDSAP256SHA256 e tipi di digest diversi da SHA-256/384 dovrebbero essere rimossi.)",
+    "pt": "O registo DNSSEC 'DS' está definido correctamente no registador. (Os registos que usem um algoritmo diferente de ECDSAP256SHA256 e tipos de digest diferentes de SHA-256/384 devem ser removidos.)",
+    "nl": "DNSSEC-'DS'-record is correct ingesteld bij de registrar. (Records die een ander algoritme dan ECDSAP256SHA256 en andere digesttypen dan SHA-256/384 gebruiken, zouden moeten worden verwijderd.)",
+    "pl": "Rekord DNSSEC 'DS' jest poprawnie ustawiony u rejestratora. (Rekordy używające algorytmu innego niż ECDSAP256SHA256 oraz typów skrótu innych niż SHA-256/384 powinny zostać usunięte.)"
+  },
+  "DNSSEC 'DS' record set at registrar is valid but should be updated to ECDSAP256SHA256 and SHA-256 (see below).\n\t\t\t\tIMPORTANT: Do not delete existing DNSSEC 'DS' records for this domain until confirmation that the new DNSSEC 'DS' record\n\t\t\t\tfor this domain is valid.": {
+    "de": "Der beim Registrar gesetzte DNSSEC-'DS'-Eintrag ist gültig, sollte aber auf ECDSAP256SHA256 und SHA-256 aktualisiert werden (siehe unten).\n\t\t\t\tWICHTIG: Löschen Sie vorhandene DNSSEC-'DS'-Einträge für diese Domäne erst, wenn bestätigt ist, dass der neue DNSSEC-'DS'-Eintrag\n\t\t\t\tfür diese Domäne gültig ist.",
+    "fr": "L'enregistrement DNSSEC 'DS' défini chez le registraire est valide mais devrait être mis à jour vers ECDSAP256SHA256 et SHA-256 (voir ci-dessous).\n\t\t\t\tIMPORTANT : Ne supprimez pas les enregistrements DNSSEC 'DS' existants pour ce domaine avant confirmation que le nouvel enregistrement DNSSEC 'DS'\n\t\t\t\tpour ce domaine est valide.",
+    "es": "El registro DNSSEC 'DS' establecido en el registrador es válido pero debería actualizarse a ECDSAP256SHA256 y SHA-256 (véase abajo).\n\t\t\t\tIMPORTANTE: No elimine los registros DNSSEC 'DS' existentes para este dominio hasta confirmar que el nuevo registro DNSSEC 'DS'\n\t\t\t\tde este dominio es válido.",
+    "it": "Il record DNSSEC 'DS' impostato presso il registrar è valido ma dovrebbe essere aggiornato a ECDSAP256SHA256 e SHA-256 (vedere sotto).\n\t\t\t\tIMPORTANTE: Non eliminare i record DNSSEC 'DS' esistenti per questo dominio fino alla conferma che il nuovo record DNSSEC 'DS'\n\t\t\t\tper questo dominio è valido.",
+    "pt": "O registo DNSSEC 'DS' definido no registador é válido mas deve ser actualizado para ECDSAP256SHA256 e SHA-256 (ver abaixo).\n\t\t\t\tIMPORTANTE: Não elimine os registos DNSSEC 'DS' existentes para este domínio até confirmação de que o novo registo DNSSEC 'DS'\n\t\t\t\tpara este domínio é válido.",
+    "nl": "Het bij de registrar ingestelde DNSSEC-'DS'-record is geldig maar zou moeten worden bijgewerkt naar ECDSAP256SHA256 en SHA-256 (zie hieronder).\n\t\t\t\tBELANGRIJK: Verwijder bestaande DNSSEC-'DS'-records voor dit domein pas na bevestiging dat het nieuwe DNSSEC-'DS'-record\n\t\t\t\tvoor dit domein geldig is.",
+    "pl": "Rekord DNSSEC 'DS' ustawiony u rejestratora jest ważny, ale powinien zostać zaktualizowany do ECDSAP256SHA256 i SHA-256 (patrz poniżej).\n\t\t\t\tWAŻNE: Nie usuwaj istniejących rekordów DNSSEC 'DS' dla tej domeny, dopóki nie potwierdzisz, że nowy rekord DNSSEC 'DS'\n\t\t\t\tdla tej domeny jest ważny."
+  },
+  "The DNSSEC 'DS' record for %(domain)s is incorrect. See further details below.": {
+    "de": "Der DNSSEC-'DS'-Eintrag für %(domain)s ist falsch. Weitere Details siehe unten.",
+    "fr": "L'enregistrement DNSSEC 'DS' pour %(domain)s est incorrect. Voir plus de détails ci-dessous.",
+    "es": "El registro DNSSEC 'DS' para %(domain)s es incorrecto. Consulte más detalles abajo.",
+    "it": "Il record DNSSEC 'DS' per %(domain)s è errato. Vedere ulteriori dettagli sotto.",
+    "pt": "O registo DNSSEC 'DS' para %(domain)s está incorrecto. Consulte mais detalhes abaixo.",
+    "nl": "Het DNSSEC-'DS'-record voor %(domain)s is onjuist. Zie hieronder voor meer details.",
+    "pl": "Rekord DNSSEC 'DS' dla %(domain)s jest nieprawidłowy. Więcej szczegółów poniżej."
+  },
+  "This domain's DNSSEC DS record is incorrect. The chain of trust is broken between the public DNS system\n\t\t\t\tand this machine's DNS server. It may take several hours for public DNS to update after a change. If you did not recently\n\t\t\t\tmake a change, you must resolve this immediately (see below).": {
+    "de": "Der DNSSEC-DS-Eintrag dieser Domäne ist falsch. Die Vertrauenskette zwischen dem öffentlichen DNS-System\n\t\t\t\tund dem DNS-Server dieses Rechners ist unterbrochen. Es kann mehrere Stunden dauern, bis öffentliches DNS nach einer Änderung aktualisiert ist. Wenn Sie kürzlich keine\n\t\t\t\tÄnderung vorgenommen haben, müssen Sie dies sofort beheben (siehe unten).",
+    "fr": "L'enregistrement DNSSEC DS de ce domaine est incorrect. La chaîne de confiance est rompue entre le système DNS public\n\t\t\t\tet le serveur DNS de cette machine. La mise à jour du DNS public après une modification peut prendre plusieurs heures. Si vous n'avez pas récemment\n\t\t\t\teffectué de modification, vous devez résoudre cela immédiatement (voir ci-dessous).",
+    "es": "El registro DNSSEC DS de este dominio es incorrecto. La cadena de confianza está rota entre el sistema DNS público\n\t\t\t\ty el servidor DNS de esta máquina. Puede tardar varias horas en actualizarse el DNS público tras un cambio. Si no ha realizado\n\t\t\t\tun cambio recientemente, debe resolverlo de inmediato (véase abajo).",
+    "it": "Il record DNSSEC DS di questo dominio è errato. La catena di fiducia è interrotta tra il sistema DNS pubblico\n\t\t\t\te il server DNS di questa macchina. Possono passare diverse ore prima che il DNS pubblico si aggiorni dopo una modifica. Se non avete di recente\n\t\t\t\teffettuato una modifica, dovete risolvere immediatamente (vedere sotto).",
+    "pt": "O registo DNSSEC DS deste domínio está incorrecto. A cadeia de confiança está quebrada entre o sistema DNS público\n\t\t\t\te o servidor DNS desta máquina. Pode demorar várias horas até o DNS público actualizar após uma alteração. Se não fez recentemente\n\t\t\t\tuma alteração, deve resolver isto imediatamente (ver abaixo).",
+    "nl": "Het DNSSEC DS-record van dit domein is onjuist. De vertrouwensketen tussen het openbare DNS-systeem\n\t\t\t\ten de DNS-server van deze machine is verbroken. Het kan enkele uren duren voordat openbare DNS na een wijziging is bijgewerkt. Als u recent geen\n\t\t\t\twijziging hebt aangebracht, moet u dit onmiddellijk oplossen (zie hieronder).",
+    "pl": "Rekord DNSSEC DS tej domeny jest nieprawidłowy. Łańcuch zaufania jest przerwany między publicznym systemem DNS\n\t\t\t\ta serwerem DNS tej maszyny. Aktualizacja publicznego DNS po zmianie może potrwać kilka godzin. Jeśli niedawno nie\n\t\t\t\twprowadziłeś zmiany, musisz to rozwiązać natychmiast (patrz poniżej)."
+  },
+  "Follow the instructions provided by your domain name registrar to set a DS record.\n\t\tRegistrars support different sorts of DS records. Use the first option that works:": {
+    "de": "Folgen Sie den Anweisungen Ihres Domänennamen-Registrars, um einen DS-Eintrag zu setzen.\n\t\tRegistrar unterstützen verschiedene Arten von DS-Einträgen. Verwenden Sie die erste Option, die funktioniert:",
+    "fr": "Suivez les instructions fournies par votre registraire de nom de domaine pour définir un enregistrement DS.\n\t\tLes registraires prennent en charge différents types d'enregistrements DS. Utilisez la première option qui fonctionne :",
+    "es": "Siga las instrucciones de su registrador de nombres de dominio para establecer un registro DS.\n\t\tLos registradores admiten distintos tipos de registros DS. Use la primera opción que funcione:",
+    "it": "Seguire le istruzioni fornite dal registrar del nome di dominio per impostare un record DS.\n\t\tI registrar supportano diversi tipi di record DS. Usare la prima opzione che funziona:",
+    "pt": "Siga as instruções fornecidas pelo seu registador de nomes de domínio para definir um registo DS.\n\t\tOs registadores suportam diferentes tipos de registos DS. Use a primeira opção que funcionar:",
+    "nl": "Volg de instructies van uw domeinnaamregistrar om een DS-record in te stellen.\n\t\tRegistrars ondersteunen verschillende soorten DS-records. Gebruik de eerste optie die werkt:",
+    "pl": "Postępuj zgodnie z instrukcjami rejestratora nazwy domeny, aby ustawić rekord DS.\n\t\tRejestratorzy obsługują różne rodzaje rekordów DS. Użyj pierwszej opcji, która działa:"
+  },
+  "Option %(n)s:": {
+    "de": "Option %(n)s:",
+    "fr": "Option %(n)s :",
+    "es": "Opción %(n)s:",
+    "it": "Opzione %(n)s:",
+    "pt": "Opção %(n)s:",
+    "nl": "Optie %(n)s:",
+    "pl": "Opcja %(n)s:"
+  },
+  "----------": {
+    "de": "----------",
+    "fr": "----------",
+    "es": "----------",
+    "it": "----------",
+    "pt": "----------",
+    "nl": "----------",
+    "pl": "----------"
+  },
+  "Key Tag: %(tag)s": {
+    "de": "Schlüsselkennzeichnung: %(tag)s",
+    "fr": "Étiquette de clé : %(tag)s",
+    "es": "Etiqueta de clave: %(tag)s",
+    "it": "Tag della chiave: %(tag)s",
+    "pt": "Etiqueta da chave: %(tag)s",
+    "nl": "Sleutel-tag: %(tag)s",
+    "pl": "Tag klucza: %(tag)s"
+  },
+  "Key Flags: KSK / 257": {
+    "de": "Schlüsselflags: KSK / 257",
+    "fr": "Indicateurs de clé : KSK / 257",
+    "es": "Indicadores de clave: KSK / 257",
+    "it": "Flag della chiave: KSK / 257",
+    "pt": "Indicadores da chave: KSK / 257",
+    "nl": "Sleutelvlaggen: KSK / 257",
+    "pl": "Flagi klucza: KSK / 257"
+  },
+  "Algorithm: %(alg)s / %(name)s": {
+    "de": "Algorithmus: %(alg)s / %(name)s",
+    "fr": "Algorithme : %(alg)s / %(name)s",
+    "es": "Algoritmo: %(alg)s / %(name)s",
+    "it": "Algoritmo: %(alg)s / %(name)s",
+    "pt": "Algoritmo: %(alg)s / %(name)s",
+    "nl": "Algoritme: %(alg)s / %(name)s",
+    "pl": "Algorytm: %(alg)s / %(name)s"
+  },
+  "Digest Type: %(type)s / %(name)s": {
+    "de": "Digest-Typ: %(type)s / %(name)s",
+    "fr": "Type de digest : %(type)s / %(name)s",
+    "es": "Tipo de digest: %(type)s / %(name)s",
+    "it": "Tipo di digest: %(type)s / %(name)s",
+    "pt": "Tipo de digest: %(type)s / %(name)s",
+    "nl": "Digesttype: %(type)s / %(name)s",
+    "pl": "Typ skrótu: %(type)s / %(name)s"
+  },
+  "Digest: %(digest)s": {
+    "de": "Digest: %(digest)s",
+    "fr": "Digest : %(digest)s",
+    "es": "Digest: %(digest)s",
+    "it": "Digest: %(digest)s",
+    "pt": "Digest: %(digest)s",
+    "nl": "Digest: %(digest)s",
+    "pl": "Skrót: %(digest)s"
+  },
+  "Public Key: ": {
+    "de": "Öffentlicher Schlüssel: ",
+    "fr": "Clé publique : ",
+    "es": "Clave pública: ",
+    "it": "Chiave pubblica: ",
+    "pt": "Chave pública: ",
+    "nl": "Openbare sleutel: ",
+    "pl": "Klucz publiczny: "
+  },
+  "Bulk/Record Format:": {
+    "de": "Bulk-/Datensatzformat:",
+    "fr": "Format bulk/enregistrement :",
+    "es": "Formato bulk/registro:",
+    "it": "Formato bulk/record:",
+    "pt": "Formato bulk/registo:",
+    "nl": "Bulk-/recordformaat:",
+    "pl": "Format bulk/rekordu:"
+  },
+  "The DS record is currently set to:": {
+    "de": "Der DS-Eintrag ist derzeit gesetzt auf:",
+    "fr": "L'enregistrement DS est actuellement défini sur :",
+    "es": "El registro DS está actualmente establecido en:",
+    "it": "Il record DS è attualmente impostato su:",
+    "pt": "O registo DS está actualmente definido como:",
+    "nl": "Het DS-record is momenteel ingesteld op:",
+    "pl": "Rekord DS jest obecnie ustawiony na:"
+  },
+  "Key Tag: %(tag)s, Algorithm: %(alg)s, Digest Type: %(dtype)s, Digest: %(digest)s": {
+    "de": "Schlüsselkennzeichnung: %(tag)s, Algorithmus: %(alg)s, Digest-Typ: %(dtype)s, Digest: %(digest)s",
+    "fr": "Étiquette de clé : %(tag)s, Algorithme : %(alg)s, Type de digest : %(dtype)s, Digest : %(digest)s",
+    "es": "Etiqueta de clave: %(tag)s, Algoritmo: %(alg)s, Tipo de digest: %(dtype)s, Digest: %(digest)s",
+    "it": "Tag della chiave: %(tag)s, Algoritmo: %(alg)s, Tipo di digest: %(dtype)s, Digest: %(digest)s",
+    "pt": "Etiqueta da chave: %(tag)s, Algoritmo: %(alg)s, Tipo de digest: %(dtype)s, Digest: %(digest)s",
+    "nl": "Sleutel-tag: %(tag)s, Algoritme: %(alg)s, Digesttype: %(dtype)s, Digest: %(digest)s",
+    "pl": "Tag klucza: %(tag)s, Algorytm: %(alg)s, Typ skrótu: %(dtype)s, Skrót: %(digest)s"
+  },
+  "Domain's email is directed to this domain. [%(domain)s has no MX record, which is ok]": {
+    "de": "Die E-Mail der Domäne wird an diese Domäne geleitet. [%(domain)s hat keinen MX-Eintrag, was in Ordnung ist]",
+    "fr": "Le courrier du domaine est dirigé vers ce domaine. [%(domain)s n'a pas d'enregistrement MX, ce qui est correct]",
+    "es": "El correo del dominio se dirige a este dominio. [%(domain)s no tiene registro MX, lo cual está bien]",
+    "it": "La posta del dominio è indirizzata a questo dominio. [%(domain)s non ha un record MX, il che va bene]",
+    "pt": "O correio do domínio é direcionado para este domínio. [%(domain)s não tem registo MX, o que está correcto]",
+    "nl": "E-mail van het domein wordt naar dit domein gestuurd. [%(domain)s heeft geen MX-record, wat in orde is]",
+    "pl": "Poczta domeny jest kierowana do tej domeny. [%(domain)s nie ma rekordu MX, co jest w porządku]"
+  },
+  "Domain's email is directed to this domain. [%(domain)s has no MX record but its A record is OK]": {
+    "de": "Die E-Mail der Domäne wird an diese Domäne geleitet. [%(domain)s hat keinen MX-Eintrag, aber der A-Eintrag ist in Ordnung]",
+    "fr": "Le courrier du domaine est dirigé vers ce domaine. [%(domain)s n'a pas d'enregistrement MX mais son enregistrement A est correct]",
+    "es": "El correo del dominio se dirige a este dominio. [%(domain)s no tiene registro MX pero su registro A está bien]",
+    "it": "La posta del dominio è indirizzata a questo dominio. [%(domain)s non ha un record MX ma il suo record A è OK]",
+    "pt": "O correio do domínio é direcionado para este domínio. [%(domain)s não tem registo MX mas o seu registo A está correcto]",
+    "nl": "E-mail van het domein wordt naar dit domein gestuurd. [%(domain)s heeft geen MX-record maar het A-record is OK]",
+    "pl": "Poczta domeny jest kierowana do tej domeny. [%(domain)s nie ma rekordu MX, ale rekord A jest w porządku]"
+  },
+  "This domain's DNS MX record is not set. It should be '%(mx)s'. Mail will not\n\t\t\t\t\tbe delivered to this box. It may take several hours for public DNS to update after a\n\t\t\t\t\tchange. This problem may result from other issues listed here.": {
+    "de": "Der DNS-MX-Eintrag dieser Domäne ist nicht gesetzt. Er sollte '%(mx)s' sein. E-Mail wird nicht\n\t\t\t\t\tan dieses System zugestellt. Es kann mehrere Stunden dauern, bis öffentliches DNS nach einer\n\t\t\t\t\tÄnderung aktualisiert ist. Dieses Problem kann von anderen hier aufgeführten Problemen herrühren.",
+    "fr": "L'enregistrement DNS MX de ce domaine n'est pas défini. Il devrait être '%(mx)s'. Le courrier ne sera pas\n\t\t\t\t\tlivré à cette box. La mise à jour du DNS public après une\n\t\t\t\t\tmodification peut prendre plusieurs heures. Ce problème peut résulter d'autres problèmes listés ici.",
+    "es": "El registro DNS MX de este dominio no está establecido. Debería ser '%(mx)s'. El correo no\n\t\t\t\t\tse entregará a este sistema. Puede tardar varias horas en actualizarse el DNS público tras un\n\t\t\t\t\tcambio. Este problema puede deberse a otros problemas listados aquí.",
+    "it": "Il record DNS MX di questo dominio non è impostato. Dovrebbe essere '%(mx)s'. La posta non\n\t\t\t\t\tverrà consegnata a questo box. Possono passare diverse ore prima che il DNS pubblico si aggiorni dopo una\n\t\t\t\t\tmodifica. Questo problema può derivare da altri problemi elencati qui.",
+    "pt": "O registo DNS MX deste domínio não está definido. Deveria ser '%(mx)s'. O correio não\n\t\t\t\t\tserá entregue neste sistema. Pode demorar várias horas até o DNS público actualizar após uma\n\t\t\t\t\talteração. Este problema pode resultar de outros problemas listados aqui.",
+    "nl": "Het DNS MX-record van dit domein is niet ingesteld. Het zou '%(mx)s' moeten zijn. E-mail wordt niet\n\t\t\t\t\taan dit systeem afgeleverd. Het kan enkele uren duren voordat openbare DNS na een\n\t\t\t\t\twijziging is bijgewerkt. Dit probleem kan voortkomen uit andere hier vermelde problemen.",
+    "pl": "Rekord DNS MX tej domeny nie jest ustawiony. Powinien być '%(mx)s'. Poczta nie\n\t\t\t\t\tbędzie dostarczana do tego systemu. Aktualizacja publicznego DNS po\n\t\t\t\t\tzmianie może potrwać kilka godzin. Ten problem może wynikać z innych problemów wymienionych tutaj."
+  },
+  "Domain's email is directed to this domain. [%(domain)s ↦ %(mx)s]": {
+    "de": "Die E-Mail der Domäne wird an diese Domäne geleitet. [%(domain)s ↦ %(mx)s]",
+    "fr": "Le courrier du domaine est dirigé vers ce domaine. [%(domain)s ↦ %(mx)s]",
+    "es": "El correo del dominio se dirige a este dominio. [%(domain)s ↦ %(mx)s]",
+    "it": "La posta del dominio è indirizzata a questo dominio. [%(domain)s ↦ %(mx)s]",
+    "pt": "O correio do domínio é direcionado para este domínio. [%(domain)s ↦ %(mx)s]",
+    "nl": "E-mail van het domein wordt naar dit domein gestuurd. [%(domain)s ↦ %(mx)s]",
+    "pl": "Poczta domeny jest kierowana do tej domeny. [%(domain)s ↦ %(mx)s]"
+  },
+  "  This configuration is non-standard.  The recommended configuration is '%(mx)s'.": {
+    "de": "  Diese Konfiguration ist nicht standardmäßig.  Die empfohlene Konfiguration ist '%(mx)s'.",
+    "fr": "  Cette configuration n'est pas standard.  La configuration recommandée est '%(mx)s'.",
+    "es": "  Esta configuración no es estándar.  La configuración recomendada es '%(mx)s'.",
+    "it": "  Questa configurazione non è standard.  La configurazione consigliata è '%(mx)s'.",
+    "pt": "  Esta configuração não é padrão.  A configuração recomendada é '%(mx)s'.",
+    "nl": "  Deze configuratie is niet-standaard.  De aanbevolen configuratie is '%(mx)s'.",
+    "pl": "  Ta konfiguracja jest niestandardowa.  Zalecana konfiguracja to '%(mx)s'."
+  },
+  "MTA-STS policy is present.": {
+    "de": "MTA-STS-Richtlinie ist vorhanden.",
+    "fr": "La politique MTA-STS est présente.",
+    "es": "La política MTA-STS está presente.",
+    "it": "La policy MTA-STS è presente.",
+    "pt": "A política MTA-STS está presente.",
+    "nl": "MTA-STS-beleid is aanwezig.",
+    "pl": "Polityka MTA-STS jest obecna."
+  },
+  "MTA-STS policy is present but has unexpected settings. [%(policy)s]": {
+    "de": "MTA-STS-Richtlinie ist vorhanden, hat aber unerwartete Einstellungen. [%(policy)s]",
+    "fr": "La politique MTA-STS est présente mais a des paramètres inattendus. [%(policy)s]",
+    "es": "La política MTA-STS está presente pero tiene ajustes inesperados. [%(policy)s]",
+    "it": "La policy MTA-STS è presente ma ha impostazioni inattese. [%(policy)s]",
+    "pt": "A política MTA-STS está presente mas tem definições inesperadas. [%(policy)s]",
+    "nl": "MTA-STS-beleid is aanwezig maar heeft onverwachte instellingen. [%(policy)s]",
+    "pl": "Polityka MTA-STS jest obecna, ale ma nieoczekiwane ustawienia. [%(policy)s]"
+  },
+  "MTA-STS policy is missing: %(valid)s": {
+    "de": "MTA-STS-Richtlinie fehlt: %(valid)s",
+    "fr": "La politique MTA-STS est manquante : %(valid)s",
+    "es": "Falta la política MTA-STS: %(valid)s",
+    "it": "La policy MTA-STS è mancante: %(valid)s",
+    "pt": "A política MTA-STS está em falta: %(valid)s",
+    "nl": "MTA-STS-beleid ontbreekt: %(valid)s",
+    "pl": "Brakuje polityki MTA-STS: %(valid)s"
+  },
+  "This domain's DNS MX record is incorrect. It is currently set to '%(mx)s' but should be '%(recommended)s'. Mail will not\n\t\t\tbe delivered to this box. It may take several hours for public DNS to update after a change. This problem may result from\n\t\t\tother issues listed here.": {
+    "de": "Der DNS-MX-Eintrag dieser Domäne ist falsch. Er ist derzeit auf '%(mx)s' gesetzt, sollte aber '%(recommended)s' sein. E-Mail wird nicht\n\t\t\tan dieses System zugestellt. Es kann mehrere Stunden dauern, bis öffentliches DNS nach einer Änderung aktualisiert ist. Dieses Problem kann von\n\t\t\tanderen hier aufgeführten Problemen herrühren.",
+    "fr": "L'enregistrement DNS MX de ce domaine est incorrect. Il est actuellement défini sur '%(mx)s' mais devrait être '%(recommended)s'. Le courrier ne sera pas\n\t\t\tlivré à cette box. La mise à jour du DNS public après une modification peut prendre plusieurs heures. Ce problème peut résulter d'\n\t\t\tautres problèmes listés ici.",
+    "es": "El registro DNS MX de este dominio es incorrecto. Actualmente está establecido en '%(mx)s' pero debería ser '%(recommended)s'. El correo no\n\t\t\tse entregará a este sistema. Puede tardar varias horas en actualizarse el DNS público tras un cambio. Este problema puede deberse a\n\t\t\totras problemas listados aquí.",
+    "it": "Il record DNS MX di questo dominio è errato. Attualmente è impostato su '%(mx)s' ma dovrebbe essere '%(recommended)s'. La posta non\n\t\t\tverrà consegnata a questo box. Possono passare diverse ore prima che il DNS pubblico si aggiorni dopo una modifica. Questo problema può derivare da\n\t\t\taltri problemi elencati qui.",
+    "pt": "O registo DNS MX deste domínio está incorrecto. Está actualmente definido como '%(mx)s' mas deveria ser '%(recommended)s'. O correio não\n\t\t\tserá entregue neste sistema. Pode demorar várias horas até o DNS público actualizar após uma alteração. Este problema pode resultar de\n\t\t\toutros problemas listados aqui.",
+    "nl": "Het DNS MX-record van dit domein is onjuist. Het is momenteel ingesteld op '%(mx)s' maar zou '%(recommended)s' moeten zijn. E-mail wordt niet\n\t\t\tan dit systeem afgeleverd. Het kan enkele uren duren voordat openbare DNS na een wijziging is bijgewerkt. Dit probleem kan voortkomen uit\n\t\t\tandere hier vermelde problemen.",
+    "pl": "Rekord DNS MX tej domeny jest nieprawidłowy. Jest obecnie ustawiony na '%(mx)s', a powinien być '%(recommended)s'. Poczta nie\n\t\t\tbędzie dostarczana do tego systemu. Aktualizacja publicznego DNS po zmianie może potrwać kilka godzin. Ten problem może wynikać z\n\t\t\tinnych problemów wymienionych tutaj."
+  },
+  "Postmaster contact address": {
+    "de": "Postmaster-Kontaktadresse",
+    "fr": "Adresse de contact du postmaster",
+    "es": "Dirección de contacto del postmaster",
+    "it": "Indirizzo di contatto del postmaster",
+    "pt": "Endereço de contacto do postmaster",
+    "nl": "Postmaster-contactadres",
+    "pl": "Adres kontaktowy postmastera"
+  },
+  "Domain is not blacklisted by dbl.spamhaus.org.": {
+    "de": "Domäne ist bei dbl.spamhaus.org nicht auf der schwarzen Liste.",
+    "fr": "Le domaine n'est pas sur liste noire chez dbl.spamhaus.org.",
+    "es": "El dominio no está en la lista negra de dbl.spamhaus.org.",
+    "it": "Il dominio non è in blacklist su dbl.spamhaus.org.",
+    "pt": "O domínio não está na lista negra do dbl.spamhaus.org.",
+    "nl": "Domein staat niet op de zwarte lijst van dbl.spamhaus.org.",
+    "pl": "Domena nie jest na czarnej liście dbl.spamhaus.org."
+  },
+  "Connection to dbl.spamhaus.org timed out. Could not determine whether the domain %(domain)s is blacklisted. Please try again later.": {
+    "de": "Zeitüberschreitung bei der Verbindung zu dbl.spamhaus.org. Es konnte nicht ermittelt werden, ob die Domäne %(domain)s auf der schwarzen Liste steht. Bitte versuchen Sie es später erneut.",
+    "fr": "Délai d'attente de la connexion à dbl.spamhaus.org dépassé. Impossible de déterminer si le domaine %(domain)s est sur liste noire. Veuillez réessayer plus tard.",
+    "es": "Tiempo de espera agotado al conectar con dbl.spamhaus.org. No se pudo determinar si el dominio %(domain)s está en la lista negra. Inténtelo de nuevo más tarde.",
+    "it": "Timeout della connessione a dbl.spamhaus.org. Impossibile determinare se il dominio %(domain)s è in blacklist. Riprovare più tardi.",
+    "pt": "Tempo limite da ligação a dbl.spamhaus.org esgotado. Não foi possível determinar se o domínio %(domain)s está na lista negra. Tente novamente mais tarde.",
+    "nl": "Time-out bij verbinding met dbl.spamhaus.org. Kon niet bepalen of het domein %(domain)s op de zwarte lijst staat. Probeer het later opnieuw.",
+    "pl": "Przekroczono limit czasu połączenia z dbl.spamhaus.org. Nie udało się ustalić, czy domena %(domain)s jest na czarnej liście. Spróbuj ponownie później."
+  },
+  "Could not connect to dbl.spamhaus.org. Could not determine whether the domain %(domain)s is blacklisted. Please try again later.": {
+    "de": "Verbindung zu dbl.spamhaus.org fehlgeschlagen. Es konnte nicht ermittelt werden, ob die Domäne %(domain)s auf der schwarzen Liste steht. Bitte versuchen Sie es später erneut.",
+    "fr": "Impossible de se connecter à dbl.spamhaus.org. Impossible de déterminer si le domaine %(domain)s est sur liste noire. Veuillez réessayer plus tard.",
+    "es": "No se pudo conectar con dbl.spamhaus.org. No se pudo determinar si el dominio %(domain)s está en la lista negra. Inténtelo de nuevo más tarde.",
+    "it": "Impossibile connettersi a dbl.spamhaus.org. Impossibile determinare se il dominio %(domain)s è in blacklist. Riprovare più tardi.",
+    "pt": "Não foi possível ligar a dbl.spamhaus.org. Não foi possível determinar se o domínio %(domain)s está na lista negra. Tente novamente mais tarde.",
+    "nl": "Kon geen verbinding maken met dbl.spamhaus.org. Kon niet bepalen of het domein %(domain)s op de zwarte lijst staat. Probeer het later opnieuw.",
+    "pl": "Nie udało się połączyć z dbl.spamhaus.org. Nie udało się ustalić, czy domena %(domain)s jest na czarnej liście. Spróbuj ponownie później."
+  },
+  "Incorrect spamhaus query: %(query)s. Could not determine whether the domain %(domain)s is blacklisted.": {
+    "de": "Falsche spamhaus-Abfrage: %(query)s. Es konnte nicht ermittelt werden, ob die Domäne %(domain)s auf der schwarzen Liste steht.",
+    "fr": "Requête spamhaus incorrecte : %(query)s. Impossible de déterminer si le domaine %(domain)s est sur liste noire.",
+    "es": "Consulta spamhaus incorrecta: %(query)s. No se pudo determinar si el dominio %(domain)s está en la lista negra.",
+    "it": "Query spamhaus non corretta: %(query)s. Impossibile determinare se il dominio %(domain)s è in blacklist.",
+    "pt": "Consulta spamhaus incorrecta: %(query)s. Não foi possível determinar se o domínio %(domain)s está na lista negra.",
+    "nl": "Onjuiste spamhaus-query: %(query)s. Kon niet bepalen of het domein %(domain)s op de zwarte lijst staat.",
+    "pl": "Nieprawidłowe zapytanie spamhaus: %(query)s. Nie udało się ustalić, czy domena %(domain)s jest na czarnej liście."
+  },
+  "Trixie Mail is configured to use a public DNS server. This is not supported by spamhaus. Could not determine whether the domain %(domain)s is blacklisted.": {
+    "de": "Trixie Mail ist so konfiguriert, dass ein öffentlicher DNS-Server verwendet wird. Das wird von spamhaus nicht unterstützt. Es konnte nicht ermittelt werden, ob die Domäne %(domain)s auf der schwarzen Liste steht.",
+    "fr": "Trixie Mail est configuré pour utiliser un serveur DNS public. Cela n'est pas pris en charge par spamhaus. Impossible de déterminer si le domaine %(domain)s est sur liste noire.",
+    "es": "Trixie Mail está configurado para usar un servidor DNS público. Esto no es compatible con spamhaus. No se pudo determinar si el dominio %(domain)s está en la lista negra.",
+    "it": "Trixie Mail è configurato per usare un server DNS pubblico. Ciò non è supportato da spamhaus. Impossibile determinare se il dominio %(domain)s è in blacklist.",
+    "pt": "O Trixie Mail está configurado para usar um servidor DNS público. Isto não é suportado pelo spamhaus. Não foi possível determinar se o domínio %(domain)s está na lista negra.",
+    "nl": "Trixie Mail is geconfigureerd om een openbare DNS-server te gebruiken. Dit wordt niet ondersteund door spamhaus. Kon niet bepalen of het domein %(domain)s op de zwarte lijst staat.",
+    "pl": "Trixie Mail jest skonfigurowany do używania publicznego serwera DNS. Nie jest to obsługiwane przez spamhaus. Nie udało się ustalić, czy domena %(domain)s jest na czarnej liście."
+  },
+  "Too many queries have been performed on the spamhaus server. Could not determine whether the domain %(domain)s is blacklisted.": {
+    "de": "Zu viele Abfragen wurden an den spamhaus-Server gesendet. Es konnte nicht ermittelt werden, ob die Domäne %(domain)s auf der schwarzen Liste steht.",
+    "fr": "Trop de requêtes ont été effectuées sur le serveur spamhaus. Impossible de déterminer si le domaine %(domain)s est sur liste noire.",
+    "es": "Se han realizado demasiadas consultas al servidor spamhaus. No se pudo determinar si el dominio %(domain)s está en la lista negra.",
+    "it": "Sono state eseguite troppe query sul server spamhaus. Impossibile determinare se il dominio %(domain)s è in blacklist.",
+    "pt": "Foram efectuadas demasiadas consultas ao servidor spamhaus. Não foi possível determinar se o domínio %(domain)s está na lista negra.",
+    "nl": "Er zijn te veel query's uitgevoerd op de spamhaus-server. Kon niet bepalen of het domein %(domain)s op de zwarte lijst staat.",
+    "pl": "Wykonano zbyt wiele zapytań do serwera spamhaus. Nie udało się ustalić, czy domena %(domain)s jest na czarnej liście."
+  },
+  "This domain is listed in the Spamhaus Domain Block List (code %(code)s),\n\t\t\twhich may prevent recipients from receiving your mail.\n\t\t\tSee http://www.spamhaus.org/dbl/ and http://www.spamhaus.org/query/domain/%(domain)s.": {
+    "de": "Diese Domäne steht auf der Spamhaus Domain Block List (Code %(code)s),\n\t\t\twas Empfänger daran hindern kann, Ihre E-Mail zu erhalten.\n\t\t\tSiehe http://www.spamhaus.org/dbl/ und http://www.spamhaus.org/query/domain/%(domain)s.",
+    "fr": "Ce domaine figure dans la Spamhaus Domain Block List (code %(code)s),\n\t\t\tce qui peut empêcher les destinataires de recevoir votre courrier.\n\t\t\tVoir http://www.spamhaus.org/dbl/ et http://www.spamhaus.org/query/domain/%(domain)s.",
+    "es": "Este dominio figura en la Spamhaus Domain Block List (código %(code)s),\n\t\t\tlo que puede impedir que los destinatarios reciban su correo.\n\t\t\tConsulte http://www.spamhaus.org/dbl/ y http://www.spamhaus.org/query/domain/%(domain)s.",
+    "it": "Questo dominio è elencato nella Spamhaus Domain Block List (codice %(code)s),\n\t\t\til che può impedire ai destinatari di ricevere la vostra posta.\n\t\t\tVedere http://www.spamhaus.org/dbl/ e http://www.spamhaus.org/query/domain/%(domain)s.",
+    "pt": "Este domínio está listado na Spamhaus Domain Block List (código %(code)s),\n\t\t\to que pode impedir que os destinatários recebam o seu correio.\n\t\t\tConsulte http://www.spamhaus.org/dbl/ e http://www.spamhaus.org/query/domain/%(domain)s.",
+    "nl": "Dit domein staat op de Spamhaus Domain Block List (code %(code)s),\n\t\t\twat ontvangers kan verhinderen uw e-mail te ontvangen.\n\t\t\tZie http://www.spamhaus.org/dbl/ en http://www.spamhaus.org/query/domain/%(domain)s.",
+    "pl": "Ta domena znajduje się na Spamhaus Domain Block List (kod %(code)s),\n\t\t\tco może uniemożliwić odbiorcom otrzymanie Twojej poczty.\n\t\t\tZobacz http://www.spamhaus.org/dbl/ oraz http://www.spamhaus.org/query/domain/%(domain)s."
+  },
+  "This domain should resolve to this box's IP address (%(rtype)s %(expected)s) if you would like the box to serve\n\t\t\t\t\twebmail or a website on this domain. The domain currently resolves to %(value)s in public DNS. It may take several hours for\n\t\t\t\t\tpublic DNS to update after a change. This problem may result from other issues listed here.": {
+    "de": "Diese Domäne sollte zur IP-Adresse dieses Systems (%(rtype)s %(expected)s) auflösen, wenn das System\n\t\t\t\t\tWebmail oder eine Website auf dieser Domäne bereitstellen soll. Die Domäne löst derzeit zu %(value)s in öffentlichem DNS auf. Es kann mehrere Stunden dauern, bis\n\t\t\t\t\töffentliches DNS nach einer Änderung aktualisiert ist. Dieses Problem kann von anderen hier aufgeführten Problemen herrühren.",
+    "fr": "Ce domaine devrait résoudre vers l'adresse IP de cette box (%(rtype)s %(expected)s) si vous souhaitez que la box serve\n\t\t\t\t\tle webmail ou un site web sur ce domaine. Le domaine résout actuellement vers %(value)s dans le DNS public. La mise à jour du\n\t\t\t\t\tDNS public après une modification peut prendre plusieurs heures. Ce problème peut résulter d'autres problèmes listés ici.",
+    "es": "Este dominio debería resolver a la dirección IP de este sistema (%(rtype)s %(expected)s) si desea que el sistema sirva\n\t\t\t\t\twebmail o un sitio web en este dominio. El dominio actualmente resuelve a %(value)s en el DNS público. Puede tardar varias horas en\n\t\t\t\t\tactualizarse el DNS público tras un cambio. Este problema puede deberse a otros problemas listados aquí.",
+    "it": "Questo dominio dovrebbe risolvere all'indirizzo IP di questo box (%(rtype)s %(expected)s) se si desidera che il box fornisca\n\t\t\t\t\twebmail o un sito web su questo dominio. Il dominio attualmente risolve a %(value)s nel DNS pubblico. Possono passare diverse ore prima che\n\t\t\t\t\til DNS pubblico si aggiorni dopo una modifica. Questo problema può derivare da altri problemi elencati qui.",
+    "pt": "Este domínio deve resolver para o endereço IP deste sistema (%(rtype)s %(expected)s) se pretender que o sistema sirva\n\t\t\t\t\twebmail ou um sítio web neste domínio. O domínio actualmente resolve para %(value)s no DNS público. Pode demorar várias horas até\n\t\t\t\t\to DNS público actualizar após uma alteração. Este problema pode resultar de outros problemas listados aqui.",
+    "nl": "Dit domein zou naar het IP-adres van dit systeem (%(rtype)s %(expected)s) moeten oplossen als u wilt dat het systeem\n\t\t\t\t\twebmail of een website op dit domein aanbiedt. Het domein lost momenteel op naar %(value)s in openbare DNS. Het kan enkele uren duren voordat\n\t\t\t\t\topenbare DNS na een wijziging is bijgewerkt. Dit probleem kan voortkomen uit andere hier vermelde problemen.",
+    "pl": "Ta domena powinna wskazywać na adres IP tego systemu (%(rtype)s %(expected)s), jeśli chcesz, aby system obsługiwał\n\t\t\t\t\twebmail lub stronę WWW na tej domenie. Domena obecnie wskazuje na %(value)s w publicznym DNS. Aktualizacja\n\t\t\t\t\tpublicznego DNS po zmianie może potrwać kilka godzin. Ten problem może wynikać z innych problemów wymienionych tutaj."
+  },
+  "Domain resolves to this box's IP address. [%(domain)s ↦ %(ips)s]": {
+    "de": "Domäne löst zur IP-Adresse dieses Systems auf. [%(domain)s ↦ %(ips)s]",
+    "fr": "Le domaine résout vers l'adresse IP de cette box. [%(domain)s ↦ %(ips)s]",
+    "es": "El dominio resuelve a la dirección IP de este sistema. [%(domain)s ↦ %(ips)s]",
+    "it": "Il dominio risolve all'indirizzo IP di questo box. [%(domain)s ↦ %(ips)s]",
+    "pt": "O domínio resolve para o endereço IP deste sistema. [%(domain)s ↦ %(ips)s]",
+    "nl": "Domein lost op naar het IP-adres van dit systeem. [%(domain)s ↦ %(ips)s]",
+    "pl": "Domena wskazuje na adres IP tego systemu. [%(domain)s ↦ %(ips)s]"
+  },
+  "No TLS (SSL) certificate is installed for this domain. Visitors to a website on\n\t\t\tthis domain will get a security warning. If you are not serving a website on this domain, you do\n\t\t\tnot need to take any action. Use the TLS Certificates page in the control panel to install a\n\t\t\tTLS certificate.": {
+    "de": "Für diese Domäne ist kein TLS-(SSL-)Zertifikat installiert. Besucher einer Website auf\n\t\t\tdieser Domäne erhalten eine Sicherheitswarnung. Wenn Sie auf dieser Domäne keine Website betreiben, müssen Sie\n\t\t\tnichts unternehmen. Verwenden Sie die Seite TLS-Zertifikate im Kontrollpanel, um ein\n\t\t\tTLS-Zertifikat zu installieren.",
+    "fr": "Aucun certificat TLS (SSL) n'est installé pour ce domaine. Les visiteurs d'un site web sur\n\t\t\tce domaine recevront un avertissement de sécurité. Si vous ne servez pas de site web sur ce domaine, vous n'\n\t\t\tavez aucune action à entreprendre. Utilisez la page Certificats TLS du panneau de contrôle pour installer un\n\t\t\tcertificat TLS.",
+    "es": "No hay ningún certificado TLS (SSL) instalado para este dominio. Los visitantes de un sitio web en\n\t\t\teste dominio recibirán una advertencia de seguridad. Si no sirve un sitio web en este dominio, no\n\t\t\tnecesita hacer nada. Use la página Certificados TLS del panel de control para instalar un\n\t\t\tcertificado TLS.",
+    "it": "Nessun certificato TLS (SSL) è installato per questo dominio. I visitatori di un sito web su\n\t\t\tquesto dominio riceveranno un avviso di sicurezza. Se non si fornisce un sito web su questo dominio, non\n\t\t\tè necessario alcun intervento. Usare la pagina Certificati TLS nel pannello di controllo per installare un\n\t\t\tcertificato TLS.",
+    "pt": "Nenhum certificado TLS (SSL) está instalado para este domínio. Os visitantes de um sítio web neste\n\t\t\tdomínio receberão um aviso de segurança. Se não estiver a servir um sítio web neste domínio, não\n\t\t\tprecisa de tomar qualquer acção. Use a página Certificados TLS no painel de controlo para instalar um\n\t\t\tcertificado TLS.",
+    "nl": "Er is geen TLS-(SSL-)certificaat geïnstalleerd voor dit domein. Bezoekers van een website op\n\t\t\tdit domein krijgen een beveiligingswaarschuwing. Als u geen website op dit domein aanbiedt, hoeft u\n\t\t\tniet te handelen. Gebruik de pagina TLS-certificaten in het controlepaneel om een\n\t\t\tTLS-certificaat te installeren.",
+    "pl": "Dla tej domeny nie zainstalowano certyfikatu TLS (SSL). Odwiedzający stronę WWW na\n\t\t\ttej domenie otrzymają ostrzeżenie o bezpieczeństwie. Jeśli nie serwujesz strony WWW na tej domenie, nie\n\t\t\tmusisz nic robić. Użyj strony Certyfikaty TLS w panelu kontrolnym, aby zainstalować\n\t\t\tcertyfikat TLS."
+  },
+  "TLS (SSL) certificate is signed & valid. %(details)s": {
+    "de": "TLS-(SSL-)Zertifikat ist signiert und gültig. %(details)s",
+    "fr": "Le certificat TLS (SSL) est signé et valide. %(details)s",
+    "es": "El certificado TLS (SSL) está firmado y es válido. %(details)s",
+    "it": "Il certificato TLS (SSL) è firmato e valido. %(details)s",
+    "pt": "O certificado TLS (SSL) está assinado e é válido. %(details)s",
+    "nl": "TLS-(SSL-)certificaat is ondertekend en geldig. %(details)s",
+    "pl": "Certyfikat TLS (SSL) jest podpisany i ważny. %(details)s"
+  },
+  "The TLS (SSL) certificate for this domain is currently self-signed. You will get a security\n\t\t\twarning when you check or send email and when visiting this domain in a web browser (for webmail or\n\t\t\tstatic site hosting).": {
+    "de": "Das TLS-(SSL-)Zertifikat für diese Domäne ist derzeit selbstsigniert. Sie erhalten eine Sicherheits-\n\t\t\tWarnung beim Abrufen oder Senden von E-Mail und beim Besuch dieser Domäne in einem Webbrowser (für Webmail oder\n\t\t\tHosting einer statischen Website).",
+    "fr": "Le certificat TLS (SSL) pour ce domaine est actuellement auto-signé. Vous recevrez un avertissement de\n\t\t\tsécurité lorsque vous consultez ou envoyez des e-mails et lors de la visite de ce domaine dans un navigateur web (pour le webmail ou\n\t\t\tl'hébergement de site statique).",
+    "es": "El certificado TLS (SSL) de este dominio está actualmente autofirmado. Recibirá una advertencia de\n\t\t\tseguridad al comprobar o enviar correo y al visitar este dominio en un navegador web (para webmail o\n\t\t\talojamiento de sitio estático).",
+    "it": "Il certificato TLS (SSL) per questo dominio è attualmente autofirmato. Riceverete un avviso di\n\t\t\tsicurezza quando controllate o inviate e-mail e quando visitate questo dominio in un browser web (per webmail o\n\t\t\thosting di siti statici).",
+    "pt": "O certificado TLS (SSL) para este domínio está actualmente autoassinado. Receberá um aviso de\n\t\t\tsegurança ao verificar ou enviar e-mail e ao visitar este domínio num navegador web (para webmail ou\n\t\t\talojamento de sítio estático).",
+    "nl": "Het TLS-(SSL-)certificaat voor dit domein is momenteel zelfondertekend. U krijgt een beveiligings-\n\t\t\twaarschuwing bij het controleren of verzenden van e-mail en bij het bezoeken van dit domein in een webbrowser (voor webmail of\n\t\t\thosting van een statische site).",
+    "pl": "Certyfikat TLS (SSL) dla tej domeny jest obecnie samopodpisany. Otrzymasz ostrzeżenie o\n\t\t\tbezpieczeństwie przy sprawdzaniu lub wysyłaniu poczty oraz przy odwiedzaniu tej domeny w przeglądarce (dla webmaila lub\n\t\t\thostingu strony statycznej)."
+  },
+  "The TLS (SSL) certificate for this domain is self-signed.": {
+    "de": "Das TLS-(SSL-)Zertifikat für diese Domäne ist selbstsigniert.",
+    "fr": "Le certificat TLS (SSL) pour ce domaine est auto-signé.",
+    "es": "El certificado TLS (SSL) de este dominio está autofirmado.",
+    "it": "Il certificato TLS (SSL) per questo dominio è autofirmato.",
+    "pt": "O certificado TLS (SSL) para este domínio é autoassinado.",
+    "nl": "Het TLS-(SSL-)certificaat voor dit domein is zelfondertekend.",
+    "pl": "Certyfikat TLS (SSL) dla tej domeny jest samopodpisany."
+  },
+  "The TLS (SSL) certificate has a problem: %(status)s": {
+    "de": "Das TLS-(SSL-)Zertifikat hat ein Problem: %(status)s",
+    "fr": "Le certificat TLS (SSL) a un problème : %(status)s",
+    "es": "El certificado TLS (SSL) tiene un problema: %(status)s",
+    "it": "Il certificato TLS (SSL) ha un problema: %(status)s",
+    "pt": "O certificado TLS (SSL) tem um problema: %(status)s",
+    "nl": "Het TLS-(SSL-)certificaat heeft een probleem: %(status)s",
+    "pl": "Certyfikat TLS (SSL) ma problem: %(status)s"
+  },
+  "You are running version Trixie Mail %(ver)s. Trixie Mail version check disabled by privacy setting.": {
+    "de": "Sie verwenden Version Trixie Mail %(ver)s. Die Versionsprüfung von Trixie Mail ist durch die Datenschutzeinstellung deaktiviert.",
+    "fr": "Vous utilisez la version Trixie Mail %(ver)s. La vérification de version de Trixie Mail est désactivée par le paramètre de confidentialité.",
+    "es": "Está ejecutando la versión Trixie Mail %(ver)s. La comprobación de versión de Trixie Mail está desactivada por la configuración de privacidad.",
+    "it": "Si sta eseguendo la versione Trixie Mail %(ver)s. Il controllo della versione di Trixie Mail è disabilitato dall'impostazione sulla privacy.",
+    "pt": "Está a executar a versão Trixie Mail %(ver)s. A verificação de versão do Trixie Mail está desactivada pela definição de privacidade.",
+    "nl": "U gebruikt versie Trixie Mail %(ver)s. Versiecontrole van Trixie Mail is uitgeschakeld door de privacy-instelling.",
+    "pl": "Uruchomiona jest wersja Trixie Mail %(ver)s. Sprawdzanie wersji Trixie Mail wyłączone przez ustawienie prywatności."
+  },
+  "Trixie Mail is up to date. You are running version %(ver)s.": {
+    "de": "Trixie Mail ist auf dem neuesten Stand. Sie verwenden Version %(ver)s.",
+    "fr": "Trixie Mail est à jour. Vous utilisez la version %(ver)s.",
+    "es": "Trixie Mail está actualizado. Está ejecutando la versión %(ver)s.",
+    "it": "Trixie Mail è aggiornato. Si sta eseguendo la versione %(ver)s.",
+    "pt": "O Trixie Mail está actualizado. Está a executar a versão %(ver)s.",
+    "nl": "Trixie Mail is up-to-date. U gebruikt versie %(ver)s.",
+    "pl": "Trixie Mail jest aktualny. Uruchomiona jest wersja %(ver)s."
+  },
+  "Latest Trixie Mail version could not be determined. You are running version %(ver)s.": {
+    "de": "Die neueste Version von Trixie Mail konnte nicht ermittelt werden. Sie verwenden Version %(ver)s.",
+    "fr": "La dernière version de Trixie Mail n'a pas pu être déterminée. Vous utilisez la version %(ver)s.",
+    "es": "No se pudo determinar la última versión de Trixie Mail. Está ejecutando la versión %(ver)s.",
+    "it": "Impossibile determinare l'ultima versione di Trixie Mail. Si sta eseguendo la versione %(ver)s.",
+    "pt": "Não foi possível determinar a última versão do Trixie Mail. Está a executar a versão %(ver)s.",
+    "nl": "Nieuwste Trixie Mail-versie kon niet worden bepaald. U gebruikt versie %(ver)s.",
+    "pl": "Nie udało się ustalić najnowszej wersji Trixie Mail. Uruchomiona jest wersja %(ver)s."
+  },
+  "A new version of Trixie Mail is available. You are running version %(ver)s. The latest version is %(latest)s. For upgrade instructions, see https://github.com/quantenland-ai/TrixieMail. ": {
+    "de": "Eine neue Version von Trixie Mail ist verfügbar. Sie verwenden Version %(ver)s. Die neueste Version ist %(latest)s. Upgrade-Anweisungen finden Sie unter https://github.com/quantenland-ai/TrixieMail. ",
+    "fr": "Une nouvelle version de Trixie Mail est disponible. Vous utilisez la version %(ver)s. La dernière version est %(latest)s. Pour les instructions de mise à niveau, voir https://github.com/quantenland-ai/TrixieMail. ",
+    "es": "Hay una nueva versión de Trixie Mail disponible. Está ejecutando la versión %(ver)s. La última versión es %(latest)s. Para instrucciones de actualización, consulte https://github.com/quantenland-ai/TrixieMail. ",
+    "it": "È disponibile una nuova versione di Trixie Mail. Si sta eseguendo la versione %(ver)s. L'ultima versione è %(latest)s. Per le istruzioni di aggiornamento, vedere https://github.com/quantenland-ai/TrixieMail. ",
+    "pt": "Está disponível uma nova versão do Trixie Mail. Está a executar a versão %(ver)s. A última versão é %(latest)s. Para instruções de actualização, consulte https://github.com/quantenland-ai/TrixieMail. ",
+    "nl": "Er is een nieuwe versie van Trixie Mail beschikbaar. U gebruikt versie %(ver)s. De nieuwste versie is %(latest)s. Voor upgrade-instructies, zie https://github.com/quantenland-ai/TrixieMail. ",
+    "pl": "Dostępna jest nowa wersja Trixie Mail. Uruchomiona jest wersja %(ver)s. Najnowsza wersja to %(latest)s. Instrukcje aktualizacji: https://github.com/quantenland-ai/TrixieMail. "
+  },
+  "No Category": {
+    "de": "Keine Kategorie",
+    "fr": "Aucune catégorie",
+    "es": "Sin categoría",
+    "it": "Nessuna categoria",
+    "pt": "Sem categoria",
+    "nl": "Geen categorie",
+    "pl": "Brak kategorii"
+  },
+  "%(category)s -- Added": {
+    "de": "%(category)s -- Hinzugefügt",
+    "fr": "%(category)s -- Ajouté",
+    "es": "%(category)s -- Añadido",
+    "it": "%(category)s -- Aggiunto",
+    "pt": "%(category)s -- Adicionado",
+    "nl": "%(category)s -- Toegevoegd",
+    "pl": "%(category)s -- Dodano"
+  },
+  "%(category)s -- Previously:": {
+    "de": "%(category)s -- Zuvor:",
+    "fr": "%(category)s -- Précédemment :",
+    "es": "%(category)s -- Anteriormente:",
+    "it": "%(category)s -- In precedenza:",
+    "pt": "%(category)s -- Anteriormente:",
+    "nl": "%(category)s -- Eerder:",
+    "pl": "%(category)s -- Wcześniej:"
+  },
+  "%(category)s -- Removed": {
+    "de": "%(category)s -- Entfernt",
+    "fr": "%(category)s -- Supprimé",
+    "es": "%(category)s -- Eliminado",
+    "it": "%(category)s -- Rimosso",
+    "pt": "%(category)s -- Removido",
+    "nl": "%(category)s -- Verwijderd",
+    "pl": "%(category)s -- Usunięto"
+  },
+  "%(category)s -- Currently:": {
+    "de": "%(category)s -- Derzeit:",
+    "fr": "%(category)s -- Actuellement :",
+    "es": "%(category)s -- Actualmente:",
+    "it": "%(category)s -- Attualmente:",
+    "pt": "%(category)s -- Actualmente:",
+    "nl": "%(category)s -- Momenteel:",
+    "pl": "%(category)s -- Obecnie:"
+  },
+  "This section was removed.": {
+    "de": "Dieser Abschnitt wurde entfernt.",
+    "fr": "Cette section a été supprimée.",
+    "es": "Esta sección se eliminó.",
+    "it": "Questa sezione è stata rimossa.",
+    "pt": "Esta secção foi removida.",
+    "nl": "Deze sectie is verwijderd.",
+    "pl": "Ta sekcja została usunięta."
+  },
+  "No certificate installed.": {
+    "de": "Kein Zertifikat installiert.",
+    "fr": "Aucun certificat installé.",
+    "es": "Ningún certificado instalado.",
+    "it": "Nessun certificato installato.",
+    "pt": "Nenhum certificado instalado.",
+    "nl": "Geen certificaat geïnstalleerd.",
+    "pl": "Nie zainstalowano certyfikatu."
+  },
+  "Signed & valid. %(details)s": {
+    "de": "Signiert und gültig. %(details)s",
+    "fr": "Signé et valide. %(details)s",
+    "es": "Firmado y válido. %(details)s",
+    "it": "Firmato e valido. %(details)s",
+    "pt": "Assinado e válido. %(details)s",
+    "nl": "Ondertekend en geldig. %(details)s",
+    "pl": "Podpisany i ważny. %(details)s"
+  },
+  "Self-signed. Get a signed certificate to stop warnings.": {
+    "de": "Selbstsigniert. Holen Sie sich ein signiertes Zertifikat, um Warnungen zu beenden.",
+    "fr": "Auto-signé. Obtenez un certificat signé pour arrêter les avertissements.",
+    "es": "Autofirmado. Obtenga un certificado firmado para detener las advertencias.",
+    "it": "Autofirmato. Ottenere un certificato firmato per interrompere gli avvisi.",
+    "pt": "Autoassinado. Obtenha um certificado assinado para parar os avisos.",
+    "nl": "Zelfondertekend. Haal een ondertekend certificaat om waarschuwingen te stoppen.",
+    "pl": "Samopodpisany. Uzyskaj podpisany certyfikat, aby zatrzymać ostrzeżenia."
+  },
+  "Certificate has a problem: %(status)s": {
+    "de": "Zertifikat hat ein Problem: %(status)s",
+    "fr": "Le certificat a un problème : %(status)s",
+    "es": "El certificado tiene un problema: %(status)s",
+    "it": "Il certificato ha un problema: %(status)s",
+    "pt": "O certificado tem um problema: %(status)s",
+    "nl": "Certificaat heeft een probleem: %(status)s",
+    "pl": "Certyfikat ma problem: %(status)s"
+  },
+  "The disk has more than %(pct)s%% free space.": {
+    "de": "Auf dem Datenträger sind mehr als %(pct)s%% freier Speicherplatz.",
+    "fr": "Le disque a plus de %(pct)s%% d'espace libre.",
+    "es": "El disco tiene más de un %(pct)s%% de espacio libre.",
+    "it": "Il disco ha più del %(pct)s%% di spazio libero.",
+    "pt": "O disco tem mais de %(pct)s%% de espaço livre.",
+    "nl": "De schijf heeft meer dan %(pct)s%% vrije ruimte.",
+    "pl": "Dysk ma więcej niż %(pct)s%% wolnego miejsca."
+  },
+  "The disk has less than %(pct)s%% free space.": {
+    "de": "Auf dem Datenträger sind weniger als %(pct)s%% freier Speicherplatz.",
+    "fr": "Le disque a moins de %(pct)s%% d'espace libre.",
+    "es": "El disco tiene menos de un %(pct)s%% de espacio libre.",
+    "it": "Il disco ha meno del %(pct)s%% di spazio libero.",
+    "pt": "O disco tem menos de %(pct)s%% de espaço livre.",
+    "nl": "De schijf heeft minder dan %(pct)s%% vrije ruimte.",
+    "pl": "Dysk ma mniej niż %(pct)s%% wolnego miejsca."
+  },
+  "System free memory is at least %(pct)s%%.": {
+    "de": "Der freie Systemspeicher beträgt mindestens %(pct)s%%.",
+    "fr": "La mémoire système libre est d'au moins %(pct)s%%.",
+    "es": "La memoria libre del sistema es al menos del %(pct)s%%.",
+    "it": "La memoria di sistema libera è almeno del %(pct)s%%.",
+    "pt": "A memória livre do sistema é de pelo menos %(pct)s%%.",
+    "nl": "Het vrije systeemgeheugen is ten minste %(pct)s%%.",
+    "pl": "Wolna pamięć systemu wynosi co najmniej %(pct)s%%."
+  },
+  "System free memory is below %(pct)s%%.": {
+    "de": "Der freie Systemspeicher liegt unter %(pct)s%%.",
+    "fr": "La mémoire système libre est inférieure à %(pct)s%%.",
+    "es": "La memoria libre del sistema está por debajo del %(pct)s%%.",
+    "it": "La memoria di sistema libera è inferiore al %(pct)s%%.",
+    "pt": "A memória livre do sistema está abaixo de %(pct)s%%.",
+    "nl": "Het vrije systeemgeheugen is onder %(pct)s%%.",
+    "pl": "Wolna pamięć systemu jest poniżej %(pct)s%%."
+  },
+  "There is a problem with the certificate file: %(err)s": {
+    "de": "Es gibt ein Problem mit der Zertifikatsdatei: %(err)s",
+    "fr": "Il y a un problème avec le fichier de certificat : %(err)s",
+    "es": "Hay un problema con el archivo de certificado: %(err)s",
+    "it": "C’è un problema con il file del certificato: %(err)s",
+    "pt": "Há um problema com o ficheiro do certificado: %(err)s",
+    "nl": "Er is een probleem met het certificaatbestand: %(err)s",
+    "pl": "Wystąpił problem z plikiem certyfikatu: %(err)s"
+  },
+  "The private key file %(path)s is not a private key file: %(err)s": {
+    "de": "Die private Schlüsseldatei %(path)s ist keine private Schlüsseldatei: %(err)s",
+    "fr": "Le fichier de clé privée %(path)s n’est pas un fichier de clé privée : %(err)s",
+    "es": "El archivo de clave privada %(path)s no es un archivo de clave privada: %(err)s",
+    "it": "Il file della chiave privata %(path)s non è un file di chiave privata: %(err)s",
+    "pt": "O ficheiro de chave privada %(path)s não é um ficheiro de chave privada: %(err)s",
+    "nl": "Het privé-sleutelbestand %(path)s is geen privé-sleutelbestand: %(err)s",
+    "pl": "Plik klucza prywatnego %(path)s nie jest plikiem klucza prywatnego: %(err)s"
+  },
+  "The private key file %(path)s is not a private key file.": {
+    "de": "Die private Schlüsseldatei %(path)s ist keine private Schlüsseldatei.",
+    "fr": "Le fichier de clé privée %(path)s n’est pas un fichier de clé privée.",
+    "es": "El archivo de clave privada %(path)s no es un archivo de clave privada.",
+    "it": "Il file della chiave privata %(path)s non è un file di chiave privata.",
+    "pt": "O ficheiro de chave privada %(path)s não é um ficheiro de chave privada.",
+    "nl": "Het privé-sleutelbestand %(path)s is geen privé-sleutelbestand.",
+    "pl": "Plik klucza prywatnego %(path)s nie jest plikiem klucza prywatnego."
+  },
+  "The certificate does not correspond to the private key at %(path)s.": {
+    "de": "Das Zertifikat entspricht nicht dem privaten Schlüssel unter %(path)s.",
+    "fr": "Le certificat ne correspond pas à la clé privée à %(path)s.",
+    "es": "El certificado no corresponde a la clave privada en %(path)s.",
+    "it": "Il certificato non corrisponde alla chiave privata in %(path)s.",
+    "pt": "O certificado não corresponde à chave privada em %(path)s.",
+    "nl": "Het certificaat komt niet overeen met de privésleutel op %(path)s.",
+    "pl": "Certyfikat nie odpowiada kluczowi prywatnemu w %(path)s."
+  },
+  "The certificate has expired or is not yet valid. It is valid from %(start)s to %(end)s.": {
+    "de": "Das Zertifikat ist abgelaufen oder noch nicht gültig. Es ist gültig von %(start)s bis %(end)s.",
+    "fr": "Le certificat a expiré ou n’est pas encore valide. Il est valide du %(start)s au %(end)s.",
+    "es": "El certificado ha caducado o aún no es válido. Es válido desde %(start)s hasta %(end)s.",
+    "it": "Il certificato è scaduto o non è ancora valido. È valido dal %(start)s al %(end)s.",
+    "pt": "O certificado expirou ou ainda não é válido. É válido de %(start)s a %(end)s.",
+    "nl": "Het certificaat is verlopen of nog niet geldig. Het is geldig van %(start)s tot %(end)s.",
+    "pl": "Certyfikat wygasł lub nie jest jeszcze ważny. Jest ważny od %(start)s do %(end)s."
+  },
+  "The certificate is missing an intermediate chain or the intermediate chain is incorrect or incomplete. (%(detail)s)": {
+    "de": "Dem Zertifikat fehlt eine Zwischenzertifikatskette oder die Kette ist falsch oder unvollständig. (%(detail)s)",
+    "fr": "Il manque une chaîne intermédiaire au certificat, ou la chaîne est incorrecte ou incomplète. (%(detail)s)",
+    "es": "Al certificado le falta una cadena intermedia o la cadena es incorrecta o incompleta. (%(detail)s)",
+    "it": "Al certificato manca una catena intermedia oppure la catena è errata o incompleta. (%(detail)s)",
+    "pt": "Falta ao certificado uma cadeia intermédia ou a cadeia está incorrecta ou incompleta. (%(detail)s)",
+    "nl": "Het certificaat mist een intermediaire keten of de keten is onjuist of onvolledig. (%(detail)s)",
+    "pl": "Certyfikatowi brakuje łańcucha pośredniego albo łańcuch jest niepoprawny lub niekompletny. (%(detail)s)"
+  },
+  "The certificate expires in %(days)d days on %(date)s.": {
+    "de": "Das Zertifikat läuft in %(days)d Tagen am %(date)s ab.",
+    "fr": "Le certificat expire dans %(days)d jours le %(date)s.",
+    "es": "El certificado caduca en %(days)d días el %(date)s.",
+    "it": "Il certificato scade tra %(days)d giorni il %(date)s.",
+    "pt": "O certificado expira em %(days)d dias a %(date)s.",
+    "nl": "Het certificaat verloopt over %(days)d dagen op %(date)s.",
+    "pl": "Certyfikat wygasa za %(days)d dni w dniu %(date)s."
+  },
+  "The certificate expires on %(date)s.": {
+    "de": "Das Zertifikat läuft am %(date)s ab.",
+    "fr": "Le certificat expire le %(date)s.",
+    "es": "El certificado caduca el %(date)s.",
+    "it": "Il certificato scade il %(date)s.",
+    "pt": "O certificado expira a %(date)s.",
+    "nl": "Het certificaat verloopt op %(date)s.",
+    "pl": "Certyfikat wygasa w dniu %(date)s."
+  },
+  "This is a self-signed certificate. I can't install that.": {
+    "de": "Dies ist ein selbstsigniertes Zertifikat. Das kann ich nicht installieren.",
+    "fr": "Ceci est un certificat auto-signé. Je ne peux pas l’installer.",
+    "es": "Este es un certificado autofirmado. No puedo instalarlo.",
+    "it": "Questo è un certificato autofirmato. Non posso installarlo.",
+    "pt": "Este é um certificado autoassinado. Não o posso instalar.",
+    "nl": "Dit is een zelfondertekend certificaat. Dat kan ik niet installeren.",
+    "pl": "To jest certyfikat z podpisem własnym. Nie mogę go zainstalować."
+  }
+}
