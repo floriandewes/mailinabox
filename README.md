@@ -5,8 +5,6 @@ Trixie Mail
 
 It remains a one-click mail server (SMTP, IMAP, webmail, contacts, calendar, DNS) on a single machine, with changes aimed at Debian 13 and headless / AI-agent installs.
 
-**Upstream website / Ubuntu line:** [https://mailinabox.email](https://mailinabox.email) — do not use that installer for this fork.
-
 **This repository:** [https://github.com/quantenland-ai/TrixieMail](https://github.com/quantenland-ai/TrixieMail) (Quantenland AI GmbH / `quantenland-ai`)
 
 
