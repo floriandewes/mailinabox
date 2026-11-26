@@ -112,6 +112,24 @@ SECRET_KEY=$(dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64 | sed s/=//g)
 # For security, temp and log files are not stored in the default locations
 # which are inside the roundcube sources directory. We put them instead
 # in normal places.
+#
+# Default UI language follows the box-wide preference written by the control
+# panel ($STORAGE_ROOT/ui_locale). Users can still change language in Roundcube.
+UI_LOCALE=en
+if [ -f "$STORAGE_ROOT/ui_locale" ]; then
+	UI_LOCALE=$(tr -d '[:space:]' < "$STORAGE_ROOT/ui_locale" | tr '[:upper:]' '[:lower:]')
+fi
+case "$UI_LOCALE" in
+	de) RCM_LANGUAGE=de_DE ;;
+	fr) RCM_LANGUAGE=fr_FR ;;
+	es) RCM_LANGUAGE=es_ES ;;
+	it) RCM_LANGUAGE=it_IT ;;
+	pt) RCM_LANGUAGE=pt_PT ;;
+	nl) RCM_LANGUAGE=nl_NL ;;
+	pl) RCM_LANGUAGE=pl_PL ;;
+	*)  RCM_LANGUAGE=en_US ;;
+esac
+
 cat > $RCM_CONFIG <<EOF;
 <?php
 /*
@@ -138,6 +156,7 @@ cat > $RCM_CONFIG <<EOF;
  );
 \$config['support_url'] = 'https://mailinabox.email/';
 \$config['product_name'] = '$PRIMARY_HOSTNAME Webmail';
+\$config['language'] = '$RCM_LANGUAGE';
 \$config['cipher_method'] = 'AES-256-CBC'; # persistent login cookie and potentially other things
 \$config['des_key'] = '$SECRET_KEY'; # 37 characters -> ~256 bits for AES-256, see above
 \$config['plugins'] = array('html5_notifier', 'archive', 'zipdownload', 'password', 'managesieve', 'jqueryui', 'persistent_login', 'carddav');

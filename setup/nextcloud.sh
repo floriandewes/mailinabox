@@ -253,6 +253,17 @@ fi
 # * mail_domain' needs to be set every time we run the setup. Making sure we are setting
 #   the correct domain name if the domain is being change from the previous setup.
 # Use PHP to read the settings file, modify it, and write out the new settings array.
+# Default UI language follows $STORAGE_ROOT/ui_locale (same preference as admin emails).
+UI_LOCALE=en
+if [ -f "$STORAGE_ROOT/ui_locale" ]; then
+	UI_LOCALE=$(tr -d '[:space:]' < "$STORAGE_ROOT/ui_locale" | tr '[:upper:]' '[:lower:]')
+fi
+case "$UI_LOCALE" in
+	de|fr|es|it|nl|pl) NC_LANGUAGE="$UI_LOCALE" ;;
+	pt) NC_LANGUAGE=pt_PT ;;
+	*)  NC_LANGUAGE=en ;;
+esac
+
 TIMEZONE=$(cat /etc/timezone)
 CONFIG_TEMP=$(/bin/mktemp)
 php"$PHP_VER" <<EOF > "$CONFIG_TEMP" && mv "$CONFIG_TEMP" "$STORAGE_ROOT/owncloud/config.php";
@@ -266,6 +277,7 @@ include("$STORAGE_ROOT/owncloud/config.php");
 
 \$CONFIG['memcache.local'] = '\OC\Memcache\APCu';
 \$CONFIG['overwrite.cli.url'] = 'https://${PRIMARY_HOSTNAME}/cloud';
+\$CONFIG['default_language'] = '$NC_LANGUAGE';
 
 \$CONFIG['logtimezone'] = '$TIMEZONE';
 \$CONFIG['logdateformat'] = 'Y-m-d H:i:s';

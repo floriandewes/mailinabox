@@ -1,10 +1,70 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
+		<meta charset="utf-8">
 		<title>this is Trixie Mail</title>
 		<meta name="robots" content="noindex">
 	</head>
 	<body>
-		<h1>this is Trixie Mail</h1>
-		<p>an agentic fork of Mail-in-a-Box — <a href="https://github.com/quantenland-ai/TrixieMail">https://github.com/quantenland-ai/TrixieMail</a></p>
+		<h1 id="headline">this is Trixie Mail</h1>
+		<p id="blurb">an agentic fork of Mail-in-a-Box — <a href="https://github.com/quantenland-ai/TrixieMail">https://github.com/quantenland-ai/TrixieMail</a></p>
+		<script>
+		/* Phase 1 public homepage i18n. "Trixie Mail" stays untranslated.
+		   Locale: navigator.language → en. Not the /admin cookie (Path=/admin). */
+		(function () {
+			var STRINGS = {
+				en: {
+					title: "this is Trixie Mail",
+					blurb: "an agentic fork of Mail-in-a-Box — "
+				},
+				de: {
+					title: "dies ist Trixie Mail",
+					blurb: "ein agentischer Fork von Mail-in-a-Box — "
+				},
+				fr: {
+					title: "ceci est Trixie Mail",
+					blurb: "une version agentique de Mail-in-a-Box — "
+				},
+				es: {
+					title: "esto es Trixie Mail",
+					blurb: "un fork agentico de Mail-in-a-Box — "
+				},
+				it: {
+					title: "questo è Trixie Mail",
+					blurb: "un fork agentico di Mail-in-a-Box — "
+				},
+				pt: {
+					title: "isto é Trixie Mail",
+					blurb: "um fork agentico do Mail-in-a-Box — "
+				},
+				nl: {
+					title: "dit is Trixie Mail",
+					blurb: "een agentische fork van Mail-in-a-Box — "
+				},
+				pl: {
+					title: "to jest Trixie Mail",
+					blurb: "agentyczny fork Mail-in-a-Box — "
+				}
+			};
+			var nav = (navigator.language || "en").toLowerCase().replace("_", "-");
+			var base = nav.split("-")[0];
+			var lang = STRINGS[base] ? base : "en";
+			var s = STRINGS[lang];
+			document.documentElement.lang = lang;
+			document.title = s.title;
+			var h = document.getElementById("headline");
+			if (h) h.textContent = s.title;
+			var b = document.getElementById("blurb");
+			if (b) {
+				var href = "https://github.com/quantenland-ai/TrixieMail";
+				b.textContent = "";
+				b.appendChild(document.createTextNode(s.blurb));
+				var a = document.createElement("a");
+				a.href = href;
+				a.textContent = href;
+				b.appendChild(a);
+			}
+		})();
+		</script>
 	</body>
 </html>
