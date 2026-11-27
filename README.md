@@ -1,7 +1,7 @@
-Trixie Mail
+Trixiemail
 ===========
 
-**Trixie Mail** (software id **TrixieMail**) is an **agentic fork** of [Mail-in-a-Box](https://github.com/mail-in-a-box/mailinabox) by [@JoshData](https://github.com/JoshData) and [contributors](https://github.com/mail-in-a-box/mailinabox/graphs/contributors). This fork updates all the software to the latest available versions. It is a one-click mail server (SMTP, IMAP, webmail, contacts, calendar, DNS) on a single machine, with changes aimed at Debian 13 and headless / AI-agent installs.
+**Trixiemail** is an **agentic fork** of [Mail-in-a-Box](https://github.com/mail-in-a-box/mailinabox) by [@JoshData](https://github.com/JoshData) and [contributors](https://github.com/mail-in-a-box/mailinabox/graphs/contributors). This fork updates all the software to the latest available versions. It is a one-click mail server (SMTP, IMAP, webmail, contacts, calendar, DNS) on a single machine, with changes aimed at Debian 13 and headless / AI-agent installs.
 
 
 Requirements
