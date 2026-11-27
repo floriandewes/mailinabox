@@ -14,7 +14,7 @@ test -z "$1" || ADMIN=$1
 echo "I am going to unlock admin features for $ADMIN."
 echo "You can provide another user to unlock as the first argument of this script."
 echo
-echo "WARNING: you could break Trixie Mail when fiddling around with Nextcloud's admin interface"
+echo "WARNING: you could break Trixiemail when fiddling around with Nextcloud's admin interface"
 echo "If in doubt, press CTRL-C to cancel."
 echo
 echo "Press enter to continue."

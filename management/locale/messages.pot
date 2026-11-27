@@ -1,13 +1,13 @@
-# Translations template for Trixie Mail.
-# Copyright (C) 2026 Trixie Mail
-# This file is distributed under the same license as the Trixie Mail
+# Translations template for Trixiemail.
+# Copyright (C) 2026 Trixiemail
+# This file is distributed under the same license as the Trixiemail
 # project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Trixie Mail VERSION\n"
+"Project-Id-Version: Trixiemail VERSION\n"
 "Report-Msgid-Bugs-To: https://github.com/quantenland-ai/trixiemail\n"
 "POT-Creation-Date: 2026-11-26 15:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -361,7 +361,7 @@ msgid "OpenDMARC"
 msgstr ""
 
 #: status_checks.py:35
-msgid "Trixie Mail Management Daemon"
+msgid "Trixiemail Management Daemon"
 msgstr ""
 
 #: status_checks.py:36
@@ -610,7 +610,7 @@ msgstr ""
 #: status_checks.py:349
 #, python-format
 msgid ""
-"Trixie Mail is configured to use a public DNS server. This is not "
+"Trixiemail is configured to use a public DNS server. This is not "
 "supported by\n"
 "\t\t\tspamhaus. Could not determine whether this box's %(type)s address "
 "is blacklisted."
@@ -1024,7 +1024,7 @@ msgstr ""
 #: status_checks.py:818
 #, python-format
 msgid ""
-"Trixie Mail is configured to use a public DNS server. This is not "
+"Trixiemail is configured to use a public DNS server. This is not "
 "supported by spamhaus. Could not determine whether the domain %(domain)s "
 "is blacklisted."
 msgstr ""
@@ -1098,26 +1098,26 @@ msgstr ""
 #: status_checks.py:1014
 #, python-format
 msgid ""
-"You are running version Trixie Mail %(ver)s. Trixie Mail version check "
+"You are running version Trixiemail %(ver)s. Trixiemail version check "
 "disabled by privacy setting."
 msgstr ""
 
 #: status_checks.py:1019
 #, python-format
-msgid "Trixie Mail is up to date. You are running version %(ver)s."
+msgid "Trixiemail is up to date. You are running version %(ver)s."
 msgstr ""
 
 #: status_checks.py:1021
 #, python-format
 msgid ""
-"Latest Trixie Mail version could not be determined. You are running "
+"Latest Trixiemail version could not be determined. You are running "
 "version %(ver)s."
 msgstr ""
 
 #: status_checks.py:1023
 #, python-format
 msgid ""
-"A new version of Trixie Mail is available. You are running version "
+"A new version of Trixiemail is available. You are running version "
 "%(ver)s. The latest version is %(latest)s. For upgrade instructions, see "
 "https://github.com/quantenland-ai/TrixieMail. "
 msgstr ""
@@ -1169,7 +1169,7 @@ msgid "Certificate has a problem: %(status)s"
 msgstr ""
 
 #: locale/email_messages.py:9
-msgid "Trixie Mail Usage Report"
+msgid "Trixiemail Usage Report"
 msgstr ""
 
 #: locale/email_messages.py:10 templates/index.html:117
@@ -1371,7 +1371,7 @@ msgstr ""
 
 #: locale/js_messages.py:66
 #, python-format
-msgid "This will reboot your Trixie Mail <code>%(hostname)s</code>."
+msgid "This will reboot your Trixiemail <code>%(hostname)s</code>."
 msgstr ""
 
 #: locale/js_messages.py:67
@@ -1713,7 +1713,7 @@ msgstr ""
 
 #: templates/aliases.html:44
 msgid ""
-"Only forward mail to addresses handled by this Trixie Mail, since mail "
+"Only forward mail to addresses handled by this Trixiemail, since mail "
 "forwarded by aliases to other domains may be rejected or filtered by the "
 "receiver. To forward mail to other domains, create a mail user and then "
 "log into webmail for the user and create a filter rule to forward mail."
@@ -2228,7 +2228,7 @@ msgid "QName"
 msgstr ""
 
 #: templates/index.html:8
-msgid "Trixie Mail Control Panel"
+msgid "Trixiemail Control Panel"
 msgstr ""
 
 #: templates/index.html:96
@@ -2295,8 +2295,7 @@ msgstr ""
 
 #: templates/index.html:215
 msgid ""
-"This is <a href=\"https://github.com/quantenland-ai/TrixieMail\">Trixie "
-"Mail</a> (agentic fork of Mail-in-a-Box)."
+"This is <a href=\"https://github.com/quantenland-ai/TrixieMail\">Trixiemail</a> (agentic fork of Mail-in-a-Box)."
 msgstr ""
 
 #: templates/login.html:32
@@ -2306,7 +2305,7 @@ msgid ""
 msgstr ""
 
 #: templates/login.html:33 templates/login.html:38
-msgid "from your Trixie Mail install directory (e.g. TrixieMail or mailinabox)"
+msgid "from your Trixiemail install directory (e.g. TrixieMail or mailinabox)"
 msgstr ""
 
 #: templates/login.html:37
@@ -2317,7 +2316,7 @@ msgid ""
 msgstr ""
 
 #: templates/login.html:46
-msgid "Log in here for your Trixie Mail control panel."
+msgid "Log in here for your Trixiemail control panel."
 msgstr ""
 
 #: templates/login.html:51 templates/login.html:53
@@ -2926,7 +2925,7 @@ msgid ""
 "<tt>~/.ssh/authorized_keys</tt>\n"
 "        of target user on the backup server specified above. That way "
 "you'll enable secure and\n"
-"        passwordless authentication from your Trixie Mail server and your"
+"        passwordless authentication from your Trixiemail server and your"
 " backup server."
 msgstr ""
 
@@ -3070,7 +3069,7 @@ msgstr ""
 #: templates/system-status.html:49
 msgid ""
 "(When enabled, status checks phone-home to check for a new release of "
-"Trixie Mail.)"
+"Trixiemail.)"
 msgstr ""
 
 #: templates/users.html:12
@@ -3322,6 +3321,6 @@ msgid ""
 msgstr ""
 
 #: templates/welcome.html:15
-msgid "Welcome to your Trixie Mail control panel."
+msgid "Welcome to your Trixiemail control panel."
 msgstr ""
 

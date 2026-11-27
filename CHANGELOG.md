@@ -4,7 +4,7 @@ CHANGELOG
 Versioning
 ----------
 
-**Trixie Mail** (this Debian 13 / agentic fork of Mail-in-a-Box) uses **YY.MM[.N]**
+**Trixiemail** (this Debian 13 / agentic fork of Mail-in-a-Box) uses **YY.MM[.N]**
 version numbers (for example **26.11.1**) and aims to cut a release about every
 1–2 months. The product version shown in the control panel status checks,
 `/admin/system/version` API, and setup banner is the contents of the top-level
@@ -14,7 +14,7 @@ version numbers (for example **26.11.1**) and aims to cut a release about every
 Version 26.11.1 (November 26, 2026)
 -----------------------------------
 
-* Rebrand: product name **Trixie Mail**, software id **TrixieMail**.
+* Rebrand: product name **Trixiemail**.
 * Documented as an agentic fork of Mail-in-a-Box (Debian 13, headless
   `install.conf`, experimental uninstall).
 * Clone / phone-home URLs target `quantenland-ai/TrixieMail`.

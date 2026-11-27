@@ -32,7 +32,7 @@ def get_services():
 		{ "name": _("Spamassassin"), "port": 10025, "public": False, },
 		{ "name": _("OpenDKIM"), "port": 8891, "public": False, },
 		{ "name": _("OpenDMARC"), "port": 8893, "public": False, },
-		{ "name": _("Trixie Mail Management Daemon"), "port": 10222, "public": False, },
+		{ "name": _("Trixiemail Management Daemon"), "port": 10222, "public": False, },
 		{ "name": _("SSH Login (ssh)"), "port": get_ssh_port(), "public": True, },
 		{ "name": _("Public DNS (nsd4)"), "port": 53, "public": True, },
 		{ "name": _("Incoming Mail (SMTP/postfix)"), "port": 25, "public": True, },
@@ -346,7 +346,7 @@ def evaluate_spamhaus_lookup(lookupaddress, lookuptype, lookupdomain, output, ze
 		output.print_warning(_("""Incorrect spamhaus query: %(query)s. Could not determine whether
 		 	this box's %(type)s address is blacklisted.""") % {"query": lookupdomain + '.zen.spamhaus.org', "type": lookuptype})
 	elif zen == "127.255.255.254":
-		output.print_warning(_("""Trixie Mail is configured to use a public DNS server. This is not supported by
+		output.print_warning(_("""Trixiemail is configured to use a public DNS server. This is not supported by
 			spamhaus. Could not determine whether this box's %(type)s address is blacklisted.""") % {"type": lookuptype})
 	elif zen == "127.255.255.255":
 		output.print_warning(_("""Too many queries have been performed on the spamhaus server. Could not determine
@@ -815,7 +815,7 @@ def check_mail_domain(domain, env, output):
 	elif dbl == "127.255.255.252":
 		output.print_warning(_("Incorrect spamhaus query: %(query)s. Could not determine whether the domain %(domain)s is blacklisted.") % {"query": domain+'.dbl.spamhaus.org', "domain": domain})
 	elif dbl == "127.255.255.254":
-		output.print_warning(_("Trixie Mail is configured to use a public DNS server. This is not supported by spamhaus. Could not determine whether the domain %(domain)s is blacklisted.") % {"domain": domain})
+		output.print_warning(_("Trixiemail is configured to use a public DNS server. This is not supported by spamhaus. Could not determine whether the domain %(domain)s is blacklisted.") % {"domain": domain})
 	elif dbl == "127.255.255.255":
 		output.print_warning(_("Too many queries have been performed on the spamhaus server. Could not determine whether the domain %(domain)s is blacklisted.") % {"domain": domain})
 	else:
@@ -985,7 +985,7 @@ def what_version_is_this(env):
 			return ver
 	except OSError:
 		pass
-	# Git may not be installed and Trixie Mail may not have been cloned from github,
+	# Git may not be installed and Trixiemail may not have been cloned from github,
 	# so this may raise all sorts of exceptions.
 	return shell("check_output", ["/usr/bin/git", "describe", "--always", "--abbrev=0"], env={"GIT_DIR": os.path.join(miab_dir, '.git')}).strip()
 
@@ -1011,16 +1011,16 @@ def check_miab_version(env, output):
 		this_ver = "Unknown"
 
 	if config.get("privacy", True):
-		output.print_warning(_("You are running version Trixie Mail %(ver)s. Trixie Mail version check disabled by privacy setting.") % {"ver": this_ver})
+		output.print_warning(_("You are running version Trixiemail %(ver)s. Trixiemail version check disabled by privacy setting.") % {"ver": this_ver})
 	else:
 		latest_ver = get_latest_miab_version()
 
 		if this_ver == latest_ver:
-			output.print_ok(_("Trixie Mail is up to date. You are running version %(ver)s.") % {"ver": this_ver})
+			output.print_ok(_("Trixiemail is up to date. You are running version %(ver)s.") % {"ver": this_ver})
 		elif latest_ver is None:
-			output.print_error(_("Latest Trixie Mail version could not be determined. You are running version %(ver)s.") % {"ver": this_ver})
+			output.print_error(_("Latest Trixiemail version could not be determined. You are running version %(ver)s.") % {"ver": this_ver})
 		else:
-			output.print_error(_("A new version of Trixie Mail is available. You are running version %(ver)s. The latest version is %(latest)s. For upgrade instructions, see https://github.com/quantenland-ai/TrixieMail. ") % {"ver": this_ver, "latest": latest_ver})
+			output.print_error(_("A new version of Trixiemail is available. You are running version %(ver)s. The latest version is %(latest)s. For upgrade instructions, see https://github.com/quantenland-ai/TrixieMail. ") % {"ver": this_ver, "latest": latest_ver})
 
 def run_and_output_changes(env, pool):
 	import json

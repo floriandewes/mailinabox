@@ -1,5 +1,5 @@
 #!/bin/bash
-# Trixie Mail uninstaller
+# Trixiemail uninstaller
 # -------------------------
 #
 # Removes the mail stack this repository's setup scripts install, using a
@@ -30,7 +30,7 @@ function usage {
 	cat <<EOF
 Usage: setup/uninstall.sh [options]
 
-Remove Trixie Mail packages, services, and configuration written by setup/.
+Remove Trixiemail packages, services, and configuration written by setup/.
 
 Options:
   --yes               Do not ask for interactive confirmation
@@ -125,12 +125,12 @@ fi
 cat <<EOF
 
 ========================================
-  Trixie Mail UNINSTALL
+  Trixiemail UNINSTALL
 ========================================
 
 This is DESTRUCTIVE. It will:
 
-  * Stop Trixie Mail related services
+  * Stop Trixiemail related services
   * Purge apt packages the installer added
   * Remove MIAB configuration under /etc, systemd units, cron jobs,
     nginx site fragments, fail2ban jails, and software under
@@ -161,7 +161,7 @@ WARNING: No package baseline found at:
   $STORAGE_ROOT/installer/dpkg-selections-baseline.txt
 
 This box was likely installed before baseline capture existed. Package
-removal will use a curated list of Trixie Mail packages from setup/*.sh
+removal will use a curated list of Trixiemail packages from setup/*.sh
 only. Packages the installer pulled in as dependencies that are not on
 that list may remain. After uninstall you can run:
 
@@ -314,7 +314,7 @@ function packages_to_purge {
 # --- Stop services ---------------------------------------------------------
 
 echo
-echo "Stopping Trixie Mail services..."
+echo "Stopping Trixiemail services..."
 
 MIAB_SERVICES=(
 	mailinabox
@@ -350,7 +350,7 @@ fi
 
 # --- Remove non-package side effects ---------------------------------------
 
-echo "Removing Trixie Mail configuration and locally installed software..."
+echo "Removing Trixiemail configuration and locally installed software..."
 
 # systemd units installed by management.sh / munin.sh
 run rm -f /lib/systemd/system/mailinabox.service
@@ -543,7 +543,7 @@ Likely residual / manual follow-up:
     locally edited remnants if those packages were not fully purged
   * Review firewall: ufw status
   * Review DNS: cat /etc/resolv.conf
-  * The Trixie Mail git checkout itself was not deleted
+  * The Trixiemail git checkout itself was not deleted
   * Swap file /swapfile (if setup created one) was left in place
 
 To reinstall cleanly on this machine:

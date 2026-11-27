@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Bootstrap Phase 1 .po files with machine translations (MT-ok; fork-only).
 
-Keeps the product name \"Trixie Mail\" untranslated. Run after extract.sh:
+Keeps the product name \"Trixiemail\" untranslated. Run after extract.sh:
   python3 locale/bootstrap_mt.py
 Then: ./locale/compile.sh
 
@@ -22,7 +22,7 @@ from babel.messages.pofile import read_po, write_po
 LOCALE_DIR = Path(__file__).resolve().parent
 POT_PATH = LOCALE_DIR / "messages.pot"
 LANGS = ("en", "de", "fr", "es", "it", "pt", "nl", "pl")
-BRAND = "Trixie Mail"
+BRAND = "Trixiemail"
 
 PLURAL_FORMS = {
 	"en": "nplurals=2; plural=(n != 1);",
@@ -126,7 +126,7 @@ def main():
 			msgid_bugs_address=pot.msgid_bugs_address,
 			creation_date=pot.creation_date,
 			revision_date="2026-11-26 15:10+0000",
-			last_translator="Trixie Mail MT bootstrap <noreply@localhost>",
+			last_translator="Trixiemail MT bootstrap <noreply@localhost>",
 			language_team=lang,
 			fuzzy=False,
 		)

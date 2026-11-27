@@ -90,7 +90,7 @@ fi
 # If the STORAGE_ROOT is missing the mailinabox.version file that lists a
 # migration (schema) number for the files stored there, assume this is a fresh
 # installation to that directory and write the file to contain the current
-# migration number for this version of Trixie Mail.
+# migration number for this version of Trixiemail.
 if ! id -u "$STORAGE_USER" >/dev/null 2>&1; then
 	useradd -m "$STORAGE_USER"
 fi
@@ -122,7 +122,7 @@ EOF
 # Capture installed packages before setup starts installing the mail
 # stack. The uninstaller diffs against this file to decide what apt
 # packages to purge. Only do this on first-time setup: capturing on a
-# later re-run would snapshot Trixie Mail packages as the baseline and
+# later re-run would snapshot Trixiemail packages as the baseline and
 # make uninstall via diff a no-op. Existing baselines are never
 # overwritten. questions.sh may already have pulled in dialog/python;
 # those stay in the baseline and are kept. Boxes installed before this
@@ -132,7 +132,7 @@ if [ -n "${FIRST_TIME_SETUP:-}" ]; then
 	capture_package_baseline "$STORAGE_ROOT"
 elif [ ! -f "$(package_baseline_path "$STORAGE_ROOT")" ]; then
 	echo "Note: no package baseline at $STORAGE_ROOT/installer/dpkg-selections-baseline.txt"
-	echo "Uninstall will use the curated Trixie Mail package list (see setup/uninstall.sh)."
+	echo "Uninstall will use the curated Trixiemail package list (see setup/uninstall.sh)."
 fi
 
 # Start service configuration.
@@ -154,7 +154,7 @@ source setup/munin.sh
 # Wait for the management daemon to start...
 until nc -z -w 4 127.0.0.1 10222
 do
-	echo "Waiting for the Trixie Mail management daemon to start..."
+	echo "Waiting for the Trixiemail management daemon to start..."
 	sleep 2
 done
 
@@ -177,7 +177,7 @@ source setup/firstuser.sh
 if [ ! -d "$STORAGE_ROOT/ssl/lets_encrypt/accounts/acme-v02.api.letsencrypt.org/" ]; then
 echo
 echo "-----------------------------------------------"
-echo "Trixie Mail uses Let's Encrypt to provision free SSL/TLS certificates"
+echo "Trixiemail uses Let's Encrypt to provision free SSL/TLS certificates"
 echo "to enable HTTPS connections to your box. We're automatically"
 echo "agreeing you to their subscriber agreement. See https://letsencrypt.org."
 echo
@@ -188,7 +188,7 @@ fi
 echo
 echo "-----------------------------------------------"
 echo
-echo "Your Trixie Mail is running."
+echo "Your Trixiemail is running."
 echo
 echo "Please log in to the control panel for further instructions at:"
 echo

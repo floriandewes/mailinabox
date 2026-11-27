@@ -28,7 +28,7 @@ M.select()
 print("IMAP login is OK.")
 
 # Attempt to send a mail to ourself.
-mailsubject = "Trixie Mail Automated Test Message " + uuid.uuid4().hex
+mailsubject = "Trixiemail Automated Test Message " + uuid.uuid4().hex
 emailto = emailaddress
 msg = f"""From: {emailaddress}
 To: {emailto}

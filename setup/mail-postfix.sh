@@ -58,7 +58,7 @@ tools/editconf.py /etc/postfix/main.cf \
 	smtp_bind_address="$PRIVATE_IP" \
 	smtp_bind_address6="$PRIVATE_IPV6" \
 	myhostname="$PRIMARY_HOSTNAME"\
-	smtpd_banner="\$myhostname ESMTP Hi, I'm a Trixie Mail (Debian/Postfix; see https://github.com/quantenland-ai/TrixieMail)" \
+	smtpd_banner="\$myhostname ESMTP Hi, I'm a Trixiemail (Debian/Postfix; see https://github.com/quantenland-ai/TrixieMail)" \
 	mydestination=localhost
 
 # Tweak some queue settings:
@@ -74,7 +74,7 @@ tools/editconf.py /etc/postfix/main.cf \
 # This beecame supported in a backported fix in package version 3.6.4-1ubuntu1.3. It is
 # unnecessary in Postfix 3.9+ where this is the default. The "short-term" workarounds
 # that we previously had are reverted to postfix defaults (though smtpd_discard_ehlo_keywords
-# was never included in a released version of Trixie Mail).
+# was never included in a released version of Trixiemail).
 tools/editconf.py /etc/postfix/main.cf -e \
        smtpd_data_restrictions= \
        smtpd_discard_ehlo_keywords=
@@ -213,7 +213,7 @@ tools/editconf.py /etc/postfix/main.cf \
 # virtual_transport to `lmtp:unix:private/dovecot-lmtp`.
 tools/editconf.py /etc/postfix/main.cf "virtual_transport=lmtp:[127.0.0.1]:10025"
 # Clear the lmtp_destination_recipient_limit setting which in previous
-# versions of Trixie Mail was set to 1 because of a spampd bug.
+# versions of Trixiemail was set to 1 because of a spampd bug.
 # See https://github.com/mail-in-a-box/mailinabox/issues/1523.
 tools/editconf.py /etc/postfix/main.cf  -e lmtp_destination_recipient_limit=
 
@@ -282,7 +282,7 @@ chmod 700 "$STORAGE_ROOT/mail/postgrey/"{,db}
 cat > /etc/cron.daily/mailinabox-postgrey-whitelist << EOF;
 #!/bin/bash
 
-# Trixie Mail
+# Trixiemail
 
 # check we have a postgrey_whitelist_clients file and that it is not older than 28 days
 if [ ! -f /etc/postgrey/whitelist_clients ] || find /etc/postgrey/whitelist_clients -mtime +28 | grep -q '.' ; then

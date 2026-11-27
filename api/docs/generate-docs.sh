@@ -7,8 +7,8 @@
 redoc-cli bundle ../mailinabox.yml \
   -t template.hbs \
   -o api-docs.html \
-  --templateOptions.metaDescription="Trixie Mail HTTP API" \
-  --title="Trixie Mail HTTP API" \
+  --templateOptions.metaDescription="Trixiemail HTTP API" \
+  --title="Trixiemail HTTP API" \
   --options.expandSingleSchemaField \
   --options.hideSingleRequestSampleTab \
   --options.jsonSampleExpandLevel=10 \

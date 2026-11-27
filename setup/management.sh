@@ -3,7 +3,7 @@
 source setup/functions.sh
 source /etc/mailinabox.conf # load global vars
 
-echo "Installing Trixie Mail system management daemon..."
+echo "Installing Trixiemail system management daemon..."
 
 # DEPENDENCIES
 
@@ -131,7 +131,7 @@ hide_output systemctl enable mailinabox.service
 
 minute=$((RANDOM % 60))  # avoid overloading mailinabox.email
 cat > /etc/cron.d/mailinabox-nightly << EOF;
-# Trixie Mail --- Do not edit / will be overwritten on update.
+# Trixiemail --- Do not edit / will be overwritten on update.
 # Run nightly tasks: backup, status checks.
 $minute 1 * * *	root	(cd $PWD && management/daily_tasks.sh)
 EOF

@@ -112,7 +112,7 @@ fi
 # Cleanup expired SSL certificates from $STORAGE_ROOT/ssl daily
 cat > /etc/cron.daily/mailinabox-ssl-cleanup << EOF;
 #!/bin/bash
-# Trixie Mail
+# Trixiemail
 # Cleanup expired SSL certificates
 $(pwd)/tools/ssl_cleanup
 EOF

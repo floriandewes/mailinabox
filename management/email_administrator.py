@@ -2,7 +2,7 @@
 
 # Reads in STDIN. If the stream is not empty, mail it to the system administrator.
 # Subject lines (argv) are English gettext msgids; translated via the box-wide
-# UI locale ($STORAGE_ROOT/ui_locale). Brand name "Trixie Mail" stays untranslated.
+# UI locale ($STORAGE_ROOT/ui_locale). Brand name "Trixiemail" stays untranslated.
 
 import sys
 

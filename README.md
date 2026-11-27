@@ -39,7 +39,7 @@ Setup asks for:
 * Public IP — when the machine cannot detect it; leave IPv6 empty if none
 * Password for the first mail account — the prompt does not echo it
 
-When it finishes it prints `Your Trixie Mail is running.` and the control panel URL:
+When it finishes it prints `Your Trixiemail is running.` and the control panel URL:
 
 	https://box.example.com/admin
 
@@ -144,7 +144,7 @@ After uninstall, review `ufw status` and `/etc/resolv.conf`. Prefer a fresh OS i
 Runtime paths
 -------------
 
-These Mail-in-a-Box paths are **unchanged** in Trixie Mail (compatibility):
+These Mail-in-a-Box paths are **unchanged** in Trixiemail (compatibility):
 
 | Path / name | Role |
 | --- | --- |
@@ -157,7 +157,7 @@ These Mail-in-a-Box paths are **unchanged** in Trixie Mail (compatibility):
 | `$HOME/mailinabox` | Directory used by `setup/bootstrap.sh` when cloning |
 | `$STORAGE_ROOT/mailinabox.version` | Migration marker |
 
-Display name in the UI and docs is **Trixie Mail**; the software id is **TrixieMail**.
+The product brand name is **Trixiemail** (capital T only).
 
 
 Compared with the original
@@ -165,7 +165,7 @@ Compared with the original
 
 The original column is what [mail-in-a-box/mailinabox](https://github.com/mail-in-a-box/mailinabox) `master` installs today. The fork column is what this repository installs on Debian 13.
 
-| Software | Original Mail-in-a-Box | Trixie Mail |
+| Software | Original Mail-in-a-Box | Trixiemail |
 | --- | --- | --- |
 | Operating system | Ubuntu 22.04 LTS | Debian 13 (Trixie) only |
 | PHP | 8.0 | 8.4 |
@@ -202,7 +202,7 @@ Additionally, this project has a [Code of Conduct](CODE_OF_CONDUCT.md), which su
 In The Box
 ----------
 
-Trixie Mail turns a fresh Debian 13 (Trixie) 64-bit machine into a working mail server by installing and configuring various components.
+Trixiemail turns a fresh Debian 13 (Trixie) 64-bit machine into a working mail server by installing and configuring various components.
 
 It is a one-click email appliance. There are no user-configurable setup options beyond the few install questions (or `install.conf`). It "just works."
 
@@ -223,7 +223,7 @@ It also includes system management tools:
 
 Internationalized domain names are supported and configured easily (but SMTPUTF8 is not supported, unfortunately).
 
-It also supports static website hosting since the box is serving HTTPS anyway. (To serve a website for your domains elsewhere, just add a custom DNS "A" record in your Trixie Mail control panel to point domains to another server.)
+It also supports static website hosting since the box is serving HTTPS anyway. (To serve a website for your domains elsewhere, just add a custom DNS "A" record in your Trixiemail control panel to point domains to another server.)
 
 For more information on privacy, see the [security details page](security.md).
 
@@ -241,7 +241,7 @@ This fork versions as **YY.MM[.N]** (see the top-level `VERSION` file; current r
 Contributing and Development
 ----------------------------
 
-Trixie Mail is an open source project. Your contributions and pull requests are welcome. See [CONTRIBUTING](CONTRIBUTING.md) to get started.
+Trixiemail is an open source project. Your contributions and pull requests are welcome. See [CONTRIBUTING](CONTRIBUTING.md) to get started.
 
 
 The Acknowledgements
@@ -260,4 +260,4 @@ The History
 * Mail-in-a-Box was a semifinalist in the 2014 [Knight News Challenge](https://www.newschallenge.org/challenge/2014/submissions/mail-in-a-box), but it was not selected as a winner.
 * Mail-in-a-Box hit the front page of Hacker News in [April](https://news.ycombinator.com/item?id=7634514) 2014, [September](https://news.ycombinator.com/item?id=8276171) 2014, [May](https://news.ycombinator.com/item?id=9624267) 2015, and [November](https://news.ycombinator.com/item?id=13050500) 2016.
 * FastCompany mentioned Mail-in-a-Box in a [roundup of privacy projects](http://www.fastcompany.com/3047645/your-own-private-cloud) on June 26, 2015.
-* This **Trixie Mail** fork ports the stack to Debian 13 (Trixie), adds headless/`install.conf` agent installs, an experimental uninstaller, and is maintained under Quantenland AI as **TrixieMail**.
+* This **Trixiemail** fork ports the stack to Debian 13 (Trixie), adds headless/`install.conf` agent installs, an experimental uninstaller, and is maintained under Quantenland AI as **Trixiemail**.
