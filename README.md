@@ -45,7 +45,7 @@ When it finishes it prints `Your Trixie Mail is running.` and the control panel 
 
 Log in with that email and password. If DNS is not ready yet, use the `https://<ip>/admin` address printed at the end and verify the certificate fingerprint. The control panel lists the nameserver records to set at your registrar.
 
-To change an answer later, run `sudo trixiemail` or `sudo mailinabox` from the install directory (both invoke the same setup).
+To change an answer later, run `sudo trixiemail` from the install directory.
 
 
 ### Installation instructions for agents
