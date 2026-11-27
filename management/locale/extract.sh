@@ -24,8 +24,8 @@ fi
 	-F locale/babel.cfg \
 	-k _ -k gettext -k ngettext:1,2 -k lazy_gettext \
 	-o locale/messages.pot \
-	--project="Trixie Mail" \
-	--copyright-holder="Trixie Mail" \
+	--project="Trixiemail" \
+	--copyright-holder="Trixiemail" \
 	--msgid-bugs-address="https://github.com/quantenland-ai/trixiemail" \
 	.
 

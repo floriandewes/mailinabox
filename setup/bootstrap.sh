@@ -1,6 +1,6 @@
 #!/bin/bash
 #########################################################
-# Bootstrap for Trixie Mail (Debian 13). Example:
+# Bootstrap for Trixiemail (Debian 13). Example:
 #
 #   curl -sL https://raw.githubusercontent.com/quantenland-ai/TrixieMail/main/setup/bootstrap.sh | sudo bash
 #
@@ -42,7 +42,7 @@ if [[ $EUID -ne 0 ]]; then
 	exit 1
 fi
 
-# Clone the Trixie Mail repository if it doesn't exist.
+# Clone the Trixiemail repository if it doesn't exist.
 if [ ! -d "$HOME/mailinabox" ]; then
 	if [ ! -f /usr/bin/git ]; then
 		echo "Installing git . . ."
@@ -55,7 +55,7 @@ if [ ! -d "$HOME/mailinabox" ]; then
 		SOURCE=https://github.com/quantenland-ai/TrixieMail
 	fi
 
-	echo "Downloading Trixie Mail $TAG. . ."
+	echo "Downloading Trixiemail $TAG. . ."
 	git clone \
 		-b "$TAG" --depth 1 \
 		"$SOURCE" \
@@ -70,7 +70,7 @@ cd "$HOME/mailinabox" || exit
 
 # Update it.
 if [ "$TAG" != "$(git describe --always)" ]; then
-	echo "Updating Trixie Mail to $TAG . . ."
+	echo "Updating Trixiemail to $TAG . . ."
 	git fetch --depth 1 --force --prune origin tag "$TAG"
 	if ! git checkout -q "$TAG"; then
 		echo "Update failed. Did you modify something in $PWD?"

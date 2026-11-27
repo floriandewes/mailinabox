@@ -30,12 +30,12 @@
 <div class="col-md-offset-2 col-md-8">
   {% if no_users_exist %}
   <p class="text-danger">{% trans %}There are no users on this system! To make an administrative user, log into this machine using SSH (like when you first set it up) and run:{% endtrans %}</p>
-  <pre># {% trans %}from your Trixie Mail install directory (e.g. TrixieMail or mailinabox){% endtrans %}
+  <pre># {% trans %}from your Trixiemail install directory (e.g. TrixieMail or mailinabox){% endtrans %}
 sudo management/cli.py user add me@{{hostname}}
 sudo management/cli.py user make-admin me@{{hostname}}</pre>
   {% else %}
   <p class="text-danger">{% trans %}There are no administrative users on this system! To make an administrative user, log into this machine using SSH (like when you first set it up) and run:{% endtrans %}</p>
-  <pre># {% trans %}from your Trixie Mail install directory (e.g. TrixieMail or mailinabox){% endtrans %}
+  <pre># {% trans %}from your Trixiemail install directory (e.g. TrixieMail or mailinabox){% endtrans %}
 sudo management/cli.py user make-admin me@{{hostname}}</pre>
   {% endif %}
   <hr>
@@ -43,7 +43,7 @@ sudo management/cli.py user make-admin me@{{hostname}}</pre>
 </div>
 {% endif %}
 
-<p class="subtitle">{% trans %}Log in here for your Trixie Mail control panel.{% endtrans %}</p>
+<p class="subtitle">{% trans %}Log in here for your Trixiemail control panel.{% endtrans %}</p>
 
 <div class="login">
   <form id="loginForm" class="form-horizontal" role="form" onsubmit="do_login(); return false;" method="get">

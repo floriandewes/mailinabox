@@ -1,4 +1,4 @@
-# Trixie Mail control-panel localization helpers (fork-only; not for upstream MIAB).
+# Trixiemail control-panel localization helpers (fork-only; not for upstream MIAB).
 # Locale preference: cookie trixiemail_lang → Accept-Language → en.
 # Client mirror: localStorage key trixiemail-cp-lang.
 # System preference (admin emails / Roundcube / Nextcloud defaults):

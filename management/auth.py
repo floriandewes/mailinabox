@@ -9,7 +9,7 @@ from mailconfig import get_mail_password, get_mail_user_privileges
 from mfa import get_hash_mfa_state, validate_auth_mfa
 
 DEFAULT_KEY_PATH   = '/var/lib/mailinabox/api.key'
-DEFAULT_AUTH_REALM = 'Trixie Mail Management Server'
+DEFAULT_AUTH_REALM = 'Trixiemail Management Server'
 
 class AuthService:
 	def __init__(self):

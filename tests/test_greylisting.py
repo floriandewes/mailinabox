@@ -230,7 +230,7 @@ class MainCfEditTests(unittest.TestCase):
 			main_cf = os.path.join(storage, "main.cf")
 			with open(main_cf, "w", encoding="utf-8") as fh:
 				fh.write(textwrap.dedent(f"""\
-					# Trixie Mail
+					# Trixiemail
 					smtpd_sender_restrictions={SENDER_RESTRICTIONS}
 					smtpd_recipient_restrictions={ON_LINE}
 					virtual_transport=lmtp:[127.0.0.1]:10025

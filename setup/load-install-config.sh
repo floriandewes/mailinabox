@@ -15,7 +15,7 @@
 
 show_install_usage() {
 	cat <<'EOF'
-Trixie Mail setup
+Trixiemail setup
 
 Usage:
   sudo setup/start.sh

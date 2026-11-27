@@ -20,7 +20,7 @@ source /etc/mailinabox.conf # load global vars
 
 
 # Install packages for dovecot. These are all core dovecot plugins,
-# but dovecot-lucene is packaged by *us* in the Trixie Mail PPA,
+# but dovecot-lucene is packaged by *us* in the Trixiemail PPA,
 # not by Ubuntu.
 
 echo "Installing Dovecot (IMAP server)..."

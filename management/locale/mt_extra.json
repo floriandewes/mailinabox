@@ -602,14 +602,14 @@
     "nl": "OpenDMARC",
     "pl": "OpenDMARC"
   },
-  "Trixie Mail Management Daemon": {
-    "de": "Trixie Mail Verwaltungsdaemon",
-    "fr": "Démon de gestion Trixie Mail",
-    "es": "Daemon de gestión de Trixie Mail",
-    "it": "Demone di gestione Trixie Mail",
-    "pt": "Daemon de gestão do Trixie Mail",
-    "nl": "Trixie Mail-beheerdaemon",
-    "pl": "Demon zarządzania Trixie Mail"
+  "Trixiemail Management Daemon": {
+    "de": "Trixiemail Verwaltungsdaemon",
+    "fr": "Démon de gestion Trixiemail",
+    "es": "Daemon de gestión de Trixiemail",
+    "it": "Demone di gestione Trixiemail",
+    "pt": "Daemon de gestão do Trixiemail",
+    "nl": "Trixiemail-beheerdaemon",
+    "pl": "Demon zarządzania Trixiemail"
   },
   "SSH Login (ssh)": {
     "de": "SSH-Anmeldung (ssh)",
@@ -971,14 +971,14 @@
     "nl": "Onjuiste spamhaus-query: %(query)s. Kon niet bepalen of\n\t\t \thet %(type)s-adres van dit systeem op de zwarte lijst staat.",
     "pl": "Nieprawidłowe zapytanie spamhaus: %(query)s. Nie udało się ustalić, czy\n\t\t \tadres %(type)s tego systemu jest na czarnej liście."
   },
-  "Trixie Mail is configured to use a public DNS server. This is not supported by\n\t\t\tspamhaus. Could not determine whether this box's %(type)s address is blacklisted.": {
-    "de": "Trixie Mail ist so konfiguriert, dass ein öffentlicher DNS-Server verwendet wird. Das wird von\n\t\t\tspamhaus nicht unterstützt. Es konnte nicht ermittelt werden, ob die %(type)s-Adresse dieses Systems auf der schwarzen Liste steht.",
-    "fr": "Trixie Mail est configuré pour utiliser un serveur DNS public. Cela n'est pas pris en charge par\n\t\t\tspamhaus. Impossible de déterminer si l'adresse %(type)s de cette box est sur liste noire.",
-    "es": "Trixie Mail está configurado para usar un servidor DNS público. Esto no es compatible con\n\t\t\tspamhaus. No se pudo determinar si la dirección %(type)s de este sistema está en la lista negra.",
-    "it": "Trixie Mail è configurato per usare un server DNS pubblico. Ciò non è supportato da\n\t\t\tspamhaus. Impossibile determinare se l'indirizzo %(type)s di questo box è in blacklist.",
-    "pt": "O Trixie Mail está configurado para usar um servidor DNS público. Isto não é suportado pelo\n\t\t\tspamhaus. Não foi possível determinar se o endereço %(type)s deste sistema está na lista negra.",
-    "nl": "Trixie Mail is geconfigureerd om een openbare DNS-server te gebruiken. Dit wordt niet ondersteund door\n\t\t\tspamhaus. Kon niet bepalen of het %(type)s-adres van dit systeem op de zwarte lijst staat.",
-    "pl": "Trixie Mail jest skonfigurowany do używania publicznego serwera DNS. Nie jest to obsługiwane przez\n\t\t\tspamhaus. Nie udało się ustalić, czy adres %(type)s tego systemu jest na czarnej liście."
+  "Trixiemail is configured to use a public DNS server. This is not supported by\n\t\t\tspamhaus. Could not determine whether this box's %(type)s address is blacklisted.": {
+    "de": "Trixiemail ist so konfiguriert, dass ein öffentlicher DNS-Server verwendet wird. Das wird von\n\t\t\tspamhaus nicht unterstützt. Es konnte nicht ermittelt werden, ob die %(type)s-Adresse dieses Systems auf der schwarzen Liste steht.",
+    "fr": "Trixiemail est configuré pour utiliser un serveur DNS public. Cela n'est pas pris en charge par\n\t\t\tspamhaus. Impossible de déterminer si l'adresse %(type)s de cette box est sur liste noire.",
+    "es": "Trixiemail está configurado para usar un servidor DNS público. Esto no es compatible con\n\t\t\tspamhaus. No se pudo determinar si la dirección %(type)s de este sistema está en la lista negra.",
+    "it": "Trixiemail è configurato per usare un server DNS pubblico. Ciò non è supportato da\n\t\t\tspamhaus. Impossibile determinare se l'indirizzo %(type)s di questo box è in blacklist.",
+    "pt": "O Trixiemail está configurado para usar um servidor DNS público. Isto não é suportado pelo\n\t\t\tspamhaus. Não foi possível determinar se o endereço %(type)s deste sistema está na lista negra.",
+    "nl": "Trixiemail is geconfigureerd om een openbare DNS-server te gebruiken. Dit wordt niet ondersteund door\n\t\t\tspamhaus. Kon niet bepalen of het %(type)s-adres van dit systeem op de zwarte lijst staat.",
+    "pl": "Trixiemail jest skonfigurowany do używania publicznego serwera DNS. Nie jest to obsługiwane przez\n\t\t\tspamhaus. Nie udało się ustalić, czy adres %(type)s tego systemu jest na czarnej liście."
   },
   "Too many queries have been performed on the spamhaus server. Could not determine\n\t\t \twhether this box's %(type)s address is blacklisted.": {
     "de": "Zu viele Abfragen wurden an den spamhaus-Server gesendet. Es konnte nicht ermittelt werden,\n\t\t \tob die %(type)s-Adresse dieses Systems auf der schwarzen Liste steht.",
@@ -1556,14 +1556,14 @@
     "nl": "Onjuiste spamhaus-query: %(query)s. Kon niet bepalen of het domein %(domain)s op de zwarte lijst staat.",
     "pl": "Nieprawidłowe zapytanie spamhaus: %(query)s. Nie udało się ustalić, czy domena %(domain)s jest na czarnej liście."
   },
-  "Trixie Mail is configured to use a public DNS server. This is not supported by spamhaus. Could not determine whether the domain %(domain)s is blacklisted.": {
-    "de": "Trixie Mail ist so konfiguriert, dass ein öffentlicher DNS-Server verwendet wird. Das wird von spamhaus nicht unterstützt. Es konnte nicht ermittelt werden, ob die Domäne %(domain)s auf der schwarzen Liste steht.",
-    "fr": "Trixie Mail est configuré pour utiliser un serveur DNS public. Cela n'est pas pris en charge par spamhaus. Impossible de déterminer si le domaine %(domain)s est sur liste noire.",
-    "es": "Trixie Mail está configurado para usar un servidor DNS público. Esto no es compatible con spamhaus. No se pudo determinar si el dominio %(domain)s está en la lista negra.",
-    "it": "Trixie Mail è configurato per usare un server DNS pubblico. Ciò non è supportato da spamhaus. Impossibile determinare se il dominio %(domain)s è in blacklist.",
-    "pt": "O Trixie Mail está configurado para usar um servidor DNS público. Isto não é suportado pelo spamhaus. Não foi possível determinar se o domínio %(domain)s está na lista negra.",
-    "nl": "Trixie Mail is geconfigureerd om een openbare DNS-server te gebruiken. Dit wordt niet ondersteund door spamhaus. Kon niet bepalen of het domein %(domain)s op de zwarte lijst staat.",
-    "pl": "Trixie Mail jest skonfigurowany do używania publicznego serwera DNS. Nie jest to obsługiwane przez spamhaus. Nie udało się ustalić, czy domena %(domain)s jest na czarnej liście."
+  "Trixiemail is configured to use a public DNS server. This is not supported by spamhaus. Could not determine whether the domain %(domain)s is blacklisted.": {
+    "de": "Trixiemail ist so konfiguriert, dass ein öffentlicher DNS-Server verwendet wird. Das wird von spamhaus nicht unterstützt. Es konnte nicht ermittelt werden, ob die Domäne %(domain)s auf der schwarzen Liste steht.",
+    "fr": "Trixiemail est configuré pour utiliser un serveur DNS public. Cela n'est pas pris en charge par spamhaus. Impossible de déterminer si le domaine %(domain)s est sur liste noire.",
+    "es": "Trixiemail está configurado para usar un servidor DNS público. Esto no es compatible con spamhaus. No se pudo determinar si el dominio %(domain)s está en la lista negra.",
+    "it": "Trixiemail è configurato per usare un server DNS pubblico. Ciò non è supportato da spamhaus. Impossibile determinare se il dominio %(domain)s è in blacklist.",
+    "pt": "O Trixiemail está configurado para usar um servidor DNS público. Isto não é suportado pelo spamhaus. Não foi possível determinar se o domínio %(domain)s está na lista negra.",
+    "nl": "Trixiemail is geconfigureerd om een openbare DNS-server te gebruiken. Dit wordt niet ondersteund door spamhaus. Kon niet bepalen of het domein %(domain)s op de zwarte lijst staat.",
+    "pl": "Trixiemail jest skonfigurowany do używania publicznego serwera DNS. Nie jest to obsługiwane przez spamhaus. Nie udało się ustalić, czy domena %(domain)s jest na czarnej liście."
   },
   "Too many queries have been performed on the spamhaus server. Could not determine whether the domain %(domain)s is blacklisted.": {
     "de": "Zu viele Abfragen wurden an den spamhaus-Server gesendet. Es konnte nicht ermittelt werden, ob die Domäne %(domain)s auf der schwarzen Liste steht.",
@@ -1646,41 +1646,41 @@
     "nl": "Het TLS-(SSL-)certificaat heeft een probleem: %(status)s",
     "pl": "Certyfikat TLS (SSL) ma problem: %(status)s"
   },
-  "You are running version Trixie Mail %(ver)s. Trixie Mail version check disabled by privacy setting.": {
-    "de": "Sie verwenden Version Trixie Mail %(ver)s. Die Versionsprüfung von Trixie Mail ist durch die Datenschutzeinstellung deaktiviert.",
-    "fr": "Vous utilisez la version Trixie Mail %(ver)s. La vérification de version de Trixie Mail est désactivée par le paramètre de confidentialité.",
-    "es": "Está ejecutando la versión Trixie Mail %(ver)s. La comprobación de versión de Trixie Mail está desactivada por la configuración de privacidad.",
-    "it": "Si sta eseguendo la versione Trixie Mail %(ver)s. Il controllo della versione di Trixie Mail è disabilitato dall'impostazione sulla privacy.",
-    "pt": "Está a executar a versão Trixie Mail %(ver)s. A verificação de versão do Trixie Mail está desactivada pela definição de privacidade.",
-    "nl": "U gebruikt versie Trixie Mail %(ver)s. Versiecontrole van Trixie Mail is uitgeschakeld door de privacy-instelling.",
-    "pl": "Uruchomiona jest wersja Trixie Mail %(ver)s. Sprawdzanie wersji Trixie Mail wyłączone przez ustawienie prywatności."
+  "You are running version Trixiemail %(ver)s. Trixiemail version check disabled by privacy setting.": {
+    "de": "Sie verwenden Version Trixiemail %(ver)s. Die Versionsprüfung von Trixiemail ist durch die Datenschutzeinstellung deaktiviert.",
+    "fr": "Vous utilisez la version Trixiemail %(ver)s. La vérification de version de Trixiemail est désactivée par le paramètre de confidentialité.",
+    "es": "Está ejecutando la versión Trixiemail %(ver)s. La comprobación de versión de Trixiemail está desactivada por la configuración de privacidad.",
+    "it": "Si sta eseguendo la versione Trixiemail %(ver)s. Il controllo della versione di Trixiemail è disabilitato dall'impostazione sulla privacy.",
+    "pt": "Está a executar a versão Trixiemail %(ver)s. A verificação de versão do Trixiemail está desactivada pela definição de privacidade.",
+    "nl": "U gebruikt versie Trixiemail %(ver)s. Versiecontrole van Trixiemail is uitgeschakeld door de privacy-instelling.",
+    "pl": "Uruchomiona jest wersja Trixiemail %(ver)s. Sprawdzanie wersji Trixiemail wyłączone przez ustawienie prywatności."
   },
-  "Trixie Mail is up to date. You are running version %(ver)s.": {
-    "de": "Trixie Mail ist auf dem neuesten Stand. Sie verwenden Version %(ver)s.",
-    "fr": "Trixie Mail est à jour. Vous utilisez la version %(ver)s.",
-    "es": "Trixie Mail está actualizado. Está ejecutando la versión %(ver)s.",
-    "it": "Trixie Mail è aggiornato. Si sta eseguendo la versione %(ver)s.",
-    "pt": "O Trixie Mail está actualizado. Está a executar a versão %(ver)s.",
-    "nl": "Trixie Mail is up-to-date. U gebruikt versie %(ver)s.",
-    "pl": "Trixie Mail jest aktualny. Uruchomiona jest wersja %(ver)s."
+  "Trixiemail is up to date. You are running version %(ver)s.": {
+    "de": "Trixiemail ist auf dem neuesten Stand. Sie verwenden Version %(ver)s.",
+    "fr": "Trixiemail est à jour. Vous utilisez la version %(ver)s.",
+    "es": "Trixiemail está actualizado. Está ejecutando la versión %(ver)s.",
+    "it": "Trixiemail è aggiornato. Si sta eseguendo la versione %(ver)s.",
+    "pt": "O Trixiemail está actualizado. Está a executar a versão %(ver)s.",
+    "nl": "Trixiemail is up-to-date. U gebruikt versie %(ver)s.",
+    "pl": "Trixiemail jest aktualny. Uruchomiona jest wersja %(ver)s."
   },
-  "Latest Trixie Mail version could not be determined. You are running version %(ver)s.": {
-    "de": "Die neueste Version von Trixie Mail konnte nicht ermittelt werden. Sie verwenden Version %(ver)s.",
-    "fr": "La dernière version de Trixie Mail n'a pas pu être déterminée. Vous utilisez la version %(ver)s.",
-    "es": "No se pudo determinar la última versión de Trixie Mail. Está ejecutando la versión %(ver)s.",
-    "it": "Impossibile determinare l'ultima versione di Trixie Mail. Si sta eseguendo la versione %(ver)s.",
-    "pt": "Não foi possível determinar a última versão do Trixie Mail. Está a executar a versão %(ver)s.",
-    "nl": "Nieuwste Trixie Mail-versie kon niet worden bepaald. U gebruikt versie %(ver)s.",
-    "pl": "Nie udało się ustalić najnowszej wersji Trixie Mail. Uruchomiona jest wersja %(ver)s."
+  "Latest Trixiemail version could not be determined. You are running version %(ver)s.": {
+    "de": "Die neueste Version von Trixiemail konnte nicht ermittelt werden. Sie verwenden Version %(ver)s.",
+    "fr": "La dernière version de Trixiemail n'a pas pu être déterminée. Vous utilisez la version %(ver)s.",
+    "es": "No se pudo determinar la última versión de Trixiemail. Está ejecutando la versión %(ver)s.",
+    "it": "Impossibile determinare l'ultima versione di Trixiemail. Si sta eseguendo la versione %(ver)s.",
+    "pt": "Não foi possível determinar a última versão do Trixiemail. Está a executar a versão %(ver)s.",
+    "nl": "Nieuwste Trixiemail-versie kon niet worden bepaald. U gebruikt versie %(ver)s.",
+    "pl": "Nie udało się ustalić najnowszej wersji Trixiemail. Uruchomiona jest wersja %(ver)s."
   },
-  "A new version of Trixie Mail is available. You are running version %(ver)s. The latest version is %(latest)s. For upgrade instructions, see https://github.com/quantenland-ai/TrixieMail. ": {
-    "de": "Eine neue Version von Trixie Mail ist verfügbar. Sie verwenden Version %(ver)s. Die neueste Version ist %(latest)s. Upgrade-Anweisungen finden Sie unter https://github.com/quantenland-ai/TrixieMail. ",
-    "fr": "Une nouvelle version de Trixie Mail est disponible. Vous utilisez la version %(ver)s. La dernière version est %(latest)s. Pour les instructions de mise à niveau, voir https://github.com/quantenland-ai/TrixieMail. ",
-    "es": "Hay una nueva versión de Trixie Mail disponible. Está ejecutando la versión %(ver)s. La última versión es %(latest)s. Para instrucciones de actualización, consulte https://github.com/quantenland-ai/TrixieMail. ",
-    "it": "È disponibile una nuova versione di Trixie Mail. Si sta eseguendo la versione %(ver)s. L'ultima versione è %(latest)s. Per le istruzioni di aggiornamento, vedere https://github.com/quantenland-ai/TrixieMail. ",
-    "pt": "Está disponível uma nova versão do Trixie Mail. Está a executar a versão %(ver)s. A última versão é %(latest)s. Para instruções de actualização, consulte https://github.com/quantenland-ai/TrixieMail. ",
-    "nl": "Er is een nieuwe versie van Trixie Mail beschikbaar. U gebruikt versie %(ver)s. De nieuwste versie is %(latest)s. Voor upgrade-instructies, zie https://github.com/quantenland-ai/TrixieMail. ",
-    "pl": "Dostępna jest nowa wersja Trixie Mail. Uruchomiona jest wersja %(ver)s. Najnowsza wersja to %(latest)s. Instrukcje aktualizacji: https://github.com/quantenland-ai/TrixieMail. "
+  "A new version of Trixiemail is available. You are running version %(ver)s. The latest version is %(latest)s. For upgrade instructions, see https://github.com/quantenland-ai/TrixieMail. ": {
+    "de": "Eine neue Version von Trixiemail ist verfügbar. Sie verwenden Version %(ver)s. Die neueste Version ist %(latest)s. Upgrade-Anweisungen finden Sie unter https://github.com/quantenland-ai/TrixieMail. ",
+    "fr": "Une nouvelle version de Trixiemail est disponible. Vous utilisez la version %(ver)s. La dernière version est %(latest)s. Pour les instructions de mise à niveau, voir https://github.com/quantenland-ai/TrixieMail. ",
+    "es": "Hay una nueva versión de Trixiemail disponible. Está ejecutando la versión %(ver)s. La última versión es %(latest)s. Para instrucciones de actualización, consulte https://github.com/quantenland-ai/TrixieMail. ",
+    "it": "È disponibile una nuova versione di Trixiemail. Si sta eseguendo la versione %(ver)s. L'ultima versione è %(latest)s. Per le istruzioni di aggiornamento, vedere https://github.com/quantenland-ai/TrixieMail. ",
+    "pt": "Está disponível uma nova versão do Trixiemail. Está a executar a versão %(ver)s. A última versão é %(latest)s. Para instruções de actualização, consulte https://github.com/quantenland-ai/TrixieMail. ",
+    "nl": "Er is een nieuwe versie van Trixiemail beschikbaar. U gebruikt versie %(ver)s. De nieuwste versie is %(latest)s. Voor upgrade-instructies, zie https://github.com/quantenland-ai/TrixieMail. ",
+    "pl": "Dostępna jest nowa wersja Trixiemail. Uruchomiona jest wersja %(ver)s. Najnowsza wersja to %(latest)s. Instrukcje aktualizacji: https://github.com/quantenland-ai/TrixieMail. "
   },
   "No Category": {
     "de": "Keine Kategorie",

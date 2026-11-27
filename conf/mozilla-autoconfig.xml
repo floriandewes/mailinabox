@@ -4,7 +4,7 @@
       <domain>PRIMARY_HOSTNAME</domain>
       <domain purpose="mx">PRIMARY_HOSTNAME</domain>
 
-      <displayName>PRIMARY_HOSTNAME (Trixie Mail)</displayName>
+      <displayName>PRIMARY_HOSTNAME (Trixiemail)</displayName>
       <displayShortName>PRIMARY_HOSTNAME</displayShortName>
 
       <incomingServer type="imap">

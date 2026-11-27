@@ -1,8 +1,8 @@
 openapi: 3.0.3
 info:
-  title: Trixie Mail
+  title: Trixiemail
   description: |
-    Trixie Mail API HTTP specification.
+    Trixiemail API HTTP specification.
 
     # Introduction
     This API is documented in [**OpenAPI format**](http://spec.openapis.org/oas/v3.0.3).
@@ -10,7 +10,7 @@ info:
 
     All endpoints are relative to `https://{host}/admin` and are secured with [`Basic Access` authentication](https://en.wikipedia.org/wiki/Basic_access_authentication). If you have multi-factor authentication enabled, authentication with a `user:password` combination will fail unless a valid OTP is supplied via the `x-auth-token` header. Authentication via a `user:user_key` pair is possible without the header being present.
   contact:
-    name: Trixie Mail
+    name: Trixiemail
     url: https://github.com/quantenland-ai/TrixieMail
   license:
     name: CC0 1.0 Universal
@@ -18,9 +18,9 @@ info:
   version: "26.11.1"
   x-logo:
     url: https://mailinabox.email/static/logo.png
-    altText: Trixie Mail (fork of Mail-in-a-Box)
+    altText: Trixiemail (fork of Mail-in-a-Box)
 externalDocs:
-  description: Trixie Mail repository (agentic fork of Mail-in-a-Box).
+  description: Trixiemail repository (agentic fork of Mail-in-a-Box).
   url: https://github.com/quantenland-ai/TrixieMail
 servers:
   - url: https://{host}/admin
@@ -152,7 +152,7 @@ paths:
       tags:
         - System
       summary: Get system version
-      description: Returns installed Trixie Mail version.
+      description: Returns installed Trixiemail version.
       operationId: getSystemVersion
       x-codeSamples:
         - lang: curl
@@ -178,7 +178,7 @@ paths:
       tags:
         - System
       summary: Get system upstream version
-      description: Returns Trixie Mail upstream version.
+      description: Returns Trixiemail upstream version.
       operationId: getSystemUpstreamVersion
       x-codeSamples:
         - lang: curl

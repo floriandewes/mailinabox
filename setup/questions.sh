@@ -24,11 +24,11 @@ if [ -z "${NONINTERACTIVE:-}" ]; then
 		hide_output pip3 install "email_validator>=1.0.0" || exit 1
 	fi
 
-	message_box "Trixie Mail Installation" \
-		"Hello and thanks for deploying Trixie Mail!
+	message_box "Trixiemail Installation" \
+		"Hello and thanks for deploying Trixiemail!
 		\n\nI'm going to ask you a few questions.
 		\n\nTo change your answers later, just run 'sudo trixiemail' (or 'sudo mailinabox') from the command line.
-		\n\nNOTE: You should only install this on a brand new Debian 13 (Trixie) installation 100% dedicated to Trixie Mail. Trixie Mail will, for example, remove apache2."
+		\n\nNOTE: You should only install this on a brand new Debian 13 (Trixie) installation 100% dedicated to Trixiemail. Trixiemail will, for example, remove apache2."
 fi
 
 # Fail closed in headless mode instead of calling dialog/getpass with no TTY.
@@ -234,8 +234,8 @@ if [ "$PRIVATE_IPV6" != "$PUBLIC_IPV6" ]; then
 	echo "Private IPv6 Address: $PRIVATE_IPV6"
 fi
 if [ -f VERSION ]; then
-	echo "Trixie Mail Version: $(tr -d '[:space:]' < VERSION)"
+	echo "Trixiemail Version: $(tr -d '[:space:]' < VERSION)"
 elif [ -f /usr/bin/git ] && [ -d .git ]; then
-	echo "Trixie Mail Version: $(git describe --always)"
+	echo "Trixiemail Version: $(git describe --always)"
 fi
 echo

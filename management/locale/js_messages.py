@@ -1,5 +1,5 @@
 # Seed catalog for client-side strings used via t() / tn() in control-panel JS.
-# Keep "Trixie Mail" untranslated in every language.
+# Keep "Trixiemail" untranslated in every language.
 # pybabel extract picks these up so they land in messages.pot / JSON catalogs.
 
 def _(s):
@@ -63,7 +63,7 @@ _("%(num)s %(symbol)s OK, ")
 _("%(num)s %(symbol)s Error, ")
 _("%(num)s %(symbol)s Warning")
 _("Reboot")
-_("This will reboot your Trixie Mail <code>%(hostname)s</code>.")
+_("This will reboot your Trixiemail <code>%(hostname)s</code>.")
 _("Until the machine is fully restarted, your users will not be able to send and receive email, and you will not be able to connect to this control panel or with SSH. The reboot cannot be cancelled.")
 _("Reboot Now")
 _("Please reload this page after a minute or so.")

@@ -1,4 +1,4 @@
-# Control panel locales (Trixie Mail fork-only)
+# Control panel locales (Trixiemail fork-only)
 
 gettext catalogs for the admin UI. Phase 1 languages: `en de fr es it pt nl pl`.
 
@@ -6,7 +6,7 @@ gettext catalogs for the admin UI. Phase 1 languages: `en de fr es it pt nl pl`.
 - `compile.sh` — build `.mo` and browser `json/<lang>.json`
 - `bootstrap_mt.py` — fill Phase 1 `.po` files with MT strings (re-run after extract when bootstrapping)
 
-Brand name **Trixie Mail** stays untranslated. Switcher lists every Phase 1 locale that has a catalog.
+Brand name **Trixiemail** stays untranslated. Switcher lists every Phase 1 locale that has a catalog.
 
 ## Box-wide preference (`$STORAGE_ROOT/ui_locale`)
 

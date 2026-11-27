@@ -793,7 +793,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Scan the mail log files for interesting data. By default, this script "
                     "shows today's incoming and outgoing mail statistics. This script was ("
-                    "re)written for the Trixie Mail email server."
+                    "re)written for the Trixiemail email server."
                     "https://github.com/mail-in-a-box/mailinabox",
         add_help=False
     )

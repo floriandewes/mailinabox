@@ -1,5 +1,5 @@
 [Unit]
-Description=Trixie Mail System Management Service
+Description=Trixiemail System Management Service
 After=multi-user.target
 
 [Service]

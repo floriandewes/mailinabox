@@ -46,7 +46,7 @@
 
 <div id="system-privacy-setting" style="display: none">
 	<div><a onclick="return enable_privacy(!current_privacy_setting)" href="#"><span>{% trans %}Enable/Disable{% endtrans %}</span> {% trans %}New-Version Check{% endtrans %}</a></div>
-	<p style="line-height: 125%"><small>{% trans %}(When enabled, status checks phone-home to check for a new release of Trixie Mail.){% endtrans %}</small></p>
+	<p style="line-height: 125%"><small>{% trans %}(When enabled, status checks phone-home to check for a new release of Trixiemail.){% endtrans %}</small></p>
 </div>
 
 	</div> <!-- /col -->
@@ -176,7 +176,7 @@ function confirm_reboot() {
   var hostname_esc = $("<div/>").text("{{hostname}}").html();
   show_modal_confirm(
     t("Reboot"),
-    $("<p>" + t("This will reboot your Trixie Mail <code>%(hostname)s</code>.", {hostname: hostname_esc}) + "</p> <p>" + t("Until the machine is fully restarted, your users will not be able to send and receive email, and you will not be able to connect to this control panel or with SSH. The reboot cannot be cancelled.") + "</p>"),
+    $("<p>" + t("This will reboot your Trixiemail <code>%(hostname)s</code>.", {hostname: hostname_esc}) + "</p> <p>" + t("Until the machine is fully restarted, your users will not be able to send and receive email, and you will not be able to connect to this control panel or with SSH. The reboot cannot be cancelled.") + "</p>"),
     t("Reboot Now"),
     function() {
       api(
